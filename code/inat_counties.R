@@ -38,4 +38,7 @@ sc <- sc %>%
       group_by(COUNTYNS) %>%
       summarize(n_spp=n())
 
+s@data <- left_join(s@data, sc)
+f <- ggplot2::fortify(s)
 
+f <- broom::tidy(s)

@@ -3,32 +3,69 @@
 <style>
 
 .counties {
-  fill: none;
+    fill: none;
 }
 .counties :hover {
-        fill-opacity: 0.5;
+    fill-opacity: 0.5;
 }
 
 .states {
-  fill: none;
-  stroke: #fff;
-  stroke-linejoin: round;
+    fill: none;
+    stroke: #fff;
+    stroke-linejoin: round;
+}
+
+.icon {
+    fill: lightgray;
 }
 
 </style>
-<svg width="960" height="600"></svg>
+
+</br></br></br>
+<div> </div>
+</br></br></br>
+
+<svg></svg>
+
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 <script src="https://d3js.org/topojson.v2.min.js"></script>
 <script>
 
-var svg = d3.select("svg"),
-    width = +svg.attr("width"),
-    height = +svg.attr("height");
+
+var w = document.body.clientWidth;
+var h = Math.round(w * .5); 
+            
+var svg = d3.select("svg")
+    .attr("width", w)
+    .attr("height", h);
+
+
+var nav = d3.select("div")
+    .append("svg")
+    .attr("width", 1000)
+    .attr("height", 100);
+
+d3.xml("icons.svg").mimeType("image/svg+xml").get(function(error, xml) {
+        if (error) throw error;
+
+        nav.node().appendChild(xml.documentElement);
+
+        var icons = nav.select("svg")
+            .select("g").select("g");
+
+        icons.selectAll("path")
+            .attr("class", "icon")
+            .on("mouseover", function(a) { d3.select(this).style("fill", "darkgreen"); })
+            .on("mouseout", function(a) { d3.select(this).style("fill", "lightgray"); });
+  
+    });
+
+
 
 var richness = d3.map();
 
-var path = d3.geoPath();
+var path = d3.geoPath()
 
 var x = d3.scaleLinear()
     .domain([0, 50])
@@ -42,7 +79,6 @@ var color = d3.scaleThreshold()
 var g = svg.append("g")
     .attr("class", "key")
     .attr("transform", "translate(0,40)");
-
 
 g.selectAll("rect")
   .data(color.range().map(function(d) {
@@ -96,6 +132,9 @@ function ready(error, us) {
       .attr("class", "states")
       .attr("d", path);
 }
+
+
+
 
 </script>
 

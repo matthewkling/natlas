@@ -16,7 +16,13 @@
 }
 
 .icon {
-    fill: lightgray;
+    fill: gray;
+    fill-opacity: .3;
+}
+
+.selected_icon {
+    fill: darkgreen;
+    fill-opacity: 1;
 }
 
 </style>
@@ -54,10 +60,22 @@ d3.xml("icons.svg").mimeType("image/svg+xml").get(function(error, xml) {
         var icons = nav.select("svg")
             .select("g").select("g");
 
+        //set lizard as selected; it happens to be the 5th path element.
+        d3.select("path:nth-child(5)")
+            .attr("class", "selected_icon")
+        
         icons.selectAll("path")
+            .filter(function (d, i) { return i !== 4;})
             .attr("class", "icon")
-            .on("mouseover", function(a) { d3.select(this).style("fill", "darkgreen"); })
-            .on("mouseout", function(a) { d3.select(this).style("fill", "lightgray"); });
+            .on("mouseover", function(a) { 
+                d3.select(this)
+                .style("fill-opacity", 1); })
+            .on("mouseout", function(a) { 
+                d3.select(this)
+                .transition().duration(500)      
+                .style("fill-opacity", .3); });
+
+        
   
     });
 

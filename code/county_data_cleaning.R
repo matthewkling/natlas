@@ -2,7 +2,6 @@
   #Output includes population and land/water area (data also exist and could be obtained for demographic, economic, and educational characteristics)
 
 #FIPS repair function
-
 FIPSfix <- function(fipscol)
 {
   fipscol <- as.character(fipscol)
@@ -27,6 +26,7 @@ popData$FIPS <- FIPSfix(popData$FIPS) #function to correct FIPS missing leading 
     #data downloaded from https://factfinder.census.gov/faces/tableservices/jsf/pages/productview.xhtml?pid=DEC_10_SF1_G001&prodType=table (use options to add all counties to the geography, then transpose rows and columns)
     #seven hundred pages of help/documentation available here: http://www.census.gov/prod/cen2010/doc/sf1.pdf
     #This dataset includes population
+  # County shapefiles also have this information
 
 rawGeo <- read.csv("raw_data/county_information/DEC_10_SF1_G001.csv",header = T, skip = 1)
 geoData <- subset(rawGeo,select = c(

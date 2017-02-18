@@ -3,6 +3,7 @@ library(maps)
 library(rgdal)
 library(dplyr)
 library(raster)
+library(vioplot)
 #library(maptools)
 
 #setwd("/Users/lauraalexander/taxorama")
@@ -38,6 +39,7 @@ usObs <- usObs[,c(
 )]
 
 safeus <- usObs
+usObs$eventDate <- as.Date(usObs$eventDate)
 
 #### Add counties, if in a park ####
   # This is borrowed from Matt's reptiles code, thanks Matt!
@@ -90,6 +92,57 @@ reptiles <- subset(usObs, class == "Reptilia");
 # write.csv(reptiles, "processed_data/reptiles.csv", row.names = F)
 
 
+
+#### US Users ####
+user_id <- unique(usObs$recordedBy)
+userData <- data.frame(user_id)
+
+userData$total_observations <- NA
+userData$active_counties <- NA
+userData$active_states <- NA
+userData$proportion_obs_park  <- NA
+
+userData$species_observed <- NA
+userData$genus_observed <- NA
+userData$family_observed <- NA
+userData$order_observed <- NA
+userData$class_observed <- NA
+userData$phylum_observed <- NA
+userData$kingdom_observed <- NA
+userData$first_date <- as.Date(NA)
+userData$last_date <- as.Date(NA)
+userData$activity_period_days <- NA
+
+
+for (i in 967:length(userData$user_id)){
+  #for (i in 1:10){
+  userObs <- usObs[which(usObs$recordedBy==userData$user_id[i]),]
+  # userData$total_observations[i] <- length(unique(userObs$id))
+  # userData$active_counties[i] <- length(unique(userObs$FIPS))
+  # userData$active_states[i] <- length(unique(userObs$STATEFP))
+  # 
+  # userData$proportion_obs_park[i] <- sum(userObs$IN_PARK == T)/length(unique(userObs$id)) #identification ID vs id????????? Only use those with identification id?
+  # 
+  # 
+  # userData$species_observed[i]  <- length(unique(userObs$scientificName))
+  # userData$genus_observed[i]  <- length(unique(userObs$genus))
+  # userData$family_observed[i]  <- length(unique(userObs$family))
+  # userData$order_observed[i]  <- length(unique(userObs$order))
+  # userData$class_observed[i]  <- length(unique(userObs$class))
+  # userData$phylum_observed[i]  <- length(unique(userObs$phylum))
+  # userData$kingdom_observed[i]  <- length(unique(userObs$kingdom))
+  # userData$first_event_date[i]  <- as.Date(min(userObs$eventDate))
+  userData$first_id_date[i]  <- as.Date(min(userObs$idDate))
+  # userData$last_date[i]  <- as.Date(max(userObs$eventDate))
+  userData$activity_period_days[i]  <- max(userObs$eventDate) - min(userObs$eventDate)
+  # 
+  # percentthrough <- 100*i/length(userData$user_id)
+  # print(paste(percentthrough, "%"))
+}
+
+ 
+
+
 #### Map for the curious ####
 
 map(parks, col = "darkgreen", boundary = F, xlim=c(-179,-67), add = T, interior = TRUE)
@@ -109,10 +162,11 @@ map("world", c("USA","hawaii"), xlim=c(-179,-67), ylim=c(19,71), interior = TRUE
 # points(insects$decimalLongitude, insects$decimalLatitude , col = "green", pch = ".")
 # points(mammals$decimalLongitude, mammals$decimalLatitude , col = "red", pch = ".")
 # points(plants$decimalLongitude, plants$decimalLatitude , col = "darkgreen", pch = ".")
-# points(rayfish$decimalLongitude, rayfish$decimalLatitude , col = "cyan", pch = ".")
+# points(rayfish$decimalLongitude, rayfish$decsimalLatitude , col = "cyan", pch = ".")
 # points(reptiles$decimalLongitude, reptiles$decimalLatitude , col = "brown", pch = ".")
 
 
-
-
-
+userData <- userData[-which(userData$total_observations > 10000),]
+realUserData <- userData[-which(userData$total_observations <= 10),]
+absurdUserData <-userData[which(userData$total_observations > 1000),]
+undergrads <- userData[which(userData$total_observations <= 10),]

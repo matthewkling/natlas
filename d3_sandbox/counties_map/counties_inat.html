@@ -5,9 +5,6 @@
 .counties {
     fill: none;
 }
-.counties :hover {
-    fill-opacity: 0.5;
-}
 
 .states {
     fill: none;
@@ -20,7 +17,7 @@
     fill-opacity: .3;
 }
 
-.selected_icon {
+.icon_active {
     fill: darkgreen;
     fill-opacity: 1;
 }
@@ -62,23 +59,22 @@ d3.xml("icons.svg").mimeType("image/svg+xml").get(function(error, xml) {
 
         //set lizard as selected; it happens to be the 5th path element.
         d3.select("path:nth-child(5)")
-            .attr("class", "selected_icon")
+            .attr("class", "icon_active")
         
         icons.selectAll("path")
             .filter(function (d, i) { return i !== 4;})
             .attr("class", "icon")
             .on("mouseover", function(a) { 
                 d3.select(this)
-                .style("fill-opacity", 1); })
+                .transition().duration(150)      
+                .style("fill-opacity", 1)
+                .style("fill", "green"); })
             .on("mouseout", function(a) { 
                 d3.select(this)
                 .transition().duration(500)      
-                .style("fill-opacity", .3); });
-
-        
-  
+                .style("fill-opacity", .3)
+                .style("fill", "gray"); });
     });
-
 
 
 var richness = d3.map();
@@ -135,7 +131,7 @@ d3.queue()
 function ready(error, us) {
   if (error) throw error;
 
-  svg.append("g")
+  var counties = svg.append("g")
       .attr("class", "counties")
     .selectAll("path")
     .data(topojson.feature(us, us.objects.counties).features)
@@ -145,13 +141,15 @@ function ready(error, us) {
     .append("title")
       .text(function(d) { return d.n_spp + " reptile species"; });
 
-  svg.append("path")
-      .datum(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; }))
-      .attr("class", "states")
-      .attr("d", path);
+//  svg.append("path")
+//      .datum(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; }))
+//      .attr("class", "states")
+//      .attr("d", path);
+
+  counties.on("mouseover", function(a) { 
+                d3.select(this)
+                .style("fill", "red"); })
 }
-
-
 
 
 </script>

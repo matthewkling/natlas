@@ -1,3 +1,4 @@
+# this script processes iNat observations into a taxonomic tree in json format
 
 library(rgdal)
 library(dplyr)
@@ -12,6 +13,7 @@ setwd("~/documents/inviz/taxorama/d3_sandbox/taxonomy")
 #d <- read.csv("observations-15832.csv", stringsAsFactors=F)
 f <- fread("~/documents/inviz/gbif-observations-dwca/observations.csv") %>%
       filter(is.finite(decimalLatitude),
+             decimalLongitude < -115, ##### temporary -- limit taxa to west coast
             countryCode=="US")
 
 # taxonomic data frame
@@ -21,11 +23,13 @@ f <- f %>%
       mutate(species=regexpr(" ", scientificName),
              species=substr(scientificName, species+1, nchar(scientificName))) %>%
       group_by(kingdom, phylum, class, order, family, genus, species) %>%
-      summarize(n_records=n()) %>%
+      summarize(n_records=n(),
+                n_users=length(unique(recordedBy))) %>%
       arrange(kingdom, phylum, class, order, family, genus, species) %>%
       as.data.frame() 
 
 # target json structure: https://bl.ocks.org/mbostock/5944371
+# or http://bl.ocks.org/vgrocha/1580af34e56ee6224d33
 # at any level, each taxon is a list of two elements: a name, and a list of children.
 
 
@@ -35,7 +39,9 @@ d <- filter(f, class=="Aves")
 # leaf-level nodes have data on species and frequency
 p <- lapply(1:nrow(d), function(i) data.frame(name=d$species[i],
                                               level="species",
-                                              size=d$n_records[i]))
+                                              n_records=d$n_records[i],
+                                              n_users=d$n_users[i],
+                                              n_species=1))
 
 # function aggregates taxa list into parent clades
 group_taxa <- function(data, groupings, level){
@@ -59,10 +65,13 @@ for(level in rev(levels)[2:length(levels)]){
 ### convert to JSON format
 
 # serialize to json
-json <- toJSON(p)  
+json <- toJSON(p)
+jsonn <- json
+
+jsonn <- gsub(',\\{\\}', '', jsonn)
 
 # remove brackets from taxon names to match target format
-jsonn <- gsub('name":\\[', 'name":', json)
+jsonn <- gsub('name":\\[', 'name":', jsonn)
 jsonn <- gsub('\\],"level', ',"level', jsonn)
 jsonn <- gsub('level":\\[', 'level":', jsonn)
 jsonn <- gsub('\\],"children', ',"children', jsonn)

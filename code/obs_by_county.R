@@ -1,8 +1,22 @@
 #Working with observations at county level
 
-obs <- read.csv("processed_data/mammals.csv", header = T)
+setwd("/Users/lauraalexander/Desktop/taxorama")
+#FIRST RUN data_download.R, iNat_obs_tidy.R, and county_data_cleaning.R
+
+obs <- read.csv("processed_data/clean_us_obs.csv", header = T)
 countyData <- read.csv("processed_data/county_info.csv", header = T)
 countyData$FIPS <- as.factor(countyData$FIPS)
+
+# load counties shapefile
+s <- readOGR("raw_data/cb_2015_us_county_5m", "cb_2015_us_county_5m")
+coordinates(usObs) <- c("decimalLongitude","decimalLatitude")
+crs(usObs) <- crs(s)
+
+o <- over(usObs, s)
+o$FIPS <- NA
+o$FIPS <- paste(o$STATEFP,o$COUNTYFP,sep="")
+usObs <- cbind(coordinates(usObs), usObs@data, o[,c("STATEFP", "NAME","FIPS")])
+#write.csv(usObs, "processed_data/us_obs_counties.csv", row.names = F)
 
 #FIPS hate staying put, fixing those
 FIPSfix <- function(fipscol)

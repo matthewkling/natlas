@@ -1,15 +1,7 @@
 #Cleaning county data
 #Output includes population and land/water area (data also exist and could be obtained for demographic, economic, and educational characteristics)
 
-setwd("~/Desktop/partners/taxorama") #feel shame
-
-#### National Park Boundaries ####
-
-# Found at https://catalog.data.gov/dataset/national-park-boundariesf0a4c
-# Metadata at https://catalog.data.gov/harvest/object/d66865e2-e232-4da9-b399-1da516e1b73c/html
-download.file("http://gstore.unm.edu/apps/rgis/datasets/7bbe8af5-029b-4adf-b06c-134f0dd57226/nps_boundary.original.zip", "raw_data/park_boundaries_download")
-unzip("raw_data/park_boundaries_download", exdir = "raw_data/park_boundaries")
-file.remove("raw_data/park_boundaries_download")
+setwd("~/Desktop/taxorama")
 
 #FIPS repair function
 FIPSfix <- function(fipscol)

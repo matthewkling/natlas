@@ -1,6 +1,10 @@
 raw_data/all_inat_obs
 raw_data/observations.csv
 
+processed_data/clean_us_obs.csv
+processed_data/park_obs.csv
+processed_data/us_users.csv
+
 processed_data/us_obs.csv
 
 processed_data/amphibians.csv

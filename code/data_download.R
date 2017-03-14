@@ -17,6 +17,10 @@ download.file("http://www.inaturalist.org/observations/gbif-observations-dwca.zi
     unzip("raw_data/park_boundaries_download", exdir = "raw_data/park_boundaries")
     file.remove("raw_data/park_boundaries_download")
 
+#List source for species list
+    
 #### Sources for the county data ####
 #Links to populatopn, shapefiles, economic/educational all exist if we ever want to go back to them
+    
+
 

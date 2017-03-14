@@ -5,11 +5,11 @@ library(rgdal)
 library(raster)
 
 
-setwd("/Users/lauraalexander/Desktop/taxorama")
+setwd("/Users/lauraalexander/Desktop/taxorama") 
 #First run data_download.R to get all the datasets used in this code
 
 #### Read in data, select columns ####
-allObs <- read.csv("raw_data/observations.csv", header = T) #read in complete iNat dataset
+allObs <- read.csv("raw_data/observations.csv", header = TRUE) #read in complete iNat dataset
 usObsRaw <- subset(allObs,countryCode == "US") #select only observations from inside US
 
 usObs <- usObsRaw #means that if we make an error while removing columns or other data, we don't have to read in all the data over again.
@@ -38,8 +38,8 @@ cleanObs <- usObs[-which(usObs$eventDate < "2007-01-01"),] #removes pre-2007 obs
 write.csv(cleanObs, "processed_data/clean_us_obs.csv", row.names = F) #writes out files 
 
 #### Add park info; for counties, see obs_by_county.R ####
-#obs <- cleanObs
-obs <- read.csv("processed_data/clean_us_obs.csv", header = T) #if we have already run the top bit, we can just read in the output; I also like this as a check that the top bit worked. It's more time consuming than reassigning cleanObs (or just using cleanObs, but eh.)
+obs <- cleanObs
+#obs <- read.csv("processed_data/clean_us_obs.csv", header = T) #if we have already run the top bit, we can just read in the output; I also like this as a check that the top bit worked. It's more time consuming than reassigning cleanObs (or just using cleanObs, but eh.)
 parks <- readOGR("raw_data/park_boundaries","nps_boundary")
 coordinates(obs) <- c("decimalLongitude","decimalLatitude") #tell R that these are coordinates
 crs(obs) <- crs(parks)
@@ -54,14 +54,14 @@ parkInfo$IN_PARK <- !is.na(parkInfo$PARK_CODE) #if a point was in a park, it got
 
 obs <- cbind(coordinates(obs), obs@data, parkInfo) #adds the park information to the observations dataframe
 
-parkObs <- usObs[which(obs$IN_PARK == T),] #pulls all observations made within park
+parkObs <- obs[which(obs$IN_PARK == T),] #pulls all observations made within park
 write.csv(parkObs, "processed_data/park_obs.csv", row.names = F) #writes file of park observations.
 
 #### US user data ####
 allUS <- cleanObs
 #allUS <- read.csv("processed_data/clean_us_obs.csv", header = T) #if we have already run the top bit, we can just read in the output
 
-  user_id <- unique(observationData$recordedBy)
+  user_id <- unique(allUS$recordedBy)
   userData <- data.frame(user_id)
   
   userData$total_observations <- NA
@@ -84,7 +84,7 @@ allUS <- cleanObs
   
   userLen <- length(userData$user_id)
   
-for (i in 1:9906){
+for (i in 1:userLen){
   # #for (i in 1:10){
   userObs <- allUS[which(allUS$recordedBy==userData$user_id[i]),]
   userData$total_observations[i] <- length(unique(userObs$id))
@@ -104,8 +104,9 @@ for (i in 1:9906){
   userData$first_id_date[i]  <- as.Date(min(userObs$dateIdentified))
   userData$last_event_date[i]  <- as.Date(max(userObs$eventDate))
 
-  if(i %% 100 == 0){print(paste(100 * i/userLen, "%")); print(summary(userData[,c("total_observations","proportion_obs_park","species_observed","first_event_date","first_id_date")]))}
+  if(i %% 100 == 0){print(paste(100 * i/userLen, "%")); print(summary(userData$total_observations))}
 }
 
 write.csv(userData, "processed_data/us_users.csv",row.names = F)
 
+users$activity_period <- users$first_event_date - users$last_event_date

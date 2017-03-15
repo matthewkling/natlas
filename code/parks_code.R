@@ -3,20 +3,24 @@ library(lubridate)
 
 allParkObs <- read.csv("processed_data/park_obs.csv",header = T)
 
+#### Park Observations ####
 #Point Reyes is park of interest
-parkObs <- allParkObs[which(allParkObs$PARK_CODE == "PORE"),]
 
+park_id = "PORE"
+parkObservations = function(park_id,allParkObs){
+parkObs <- allParkObs[which(allParkObs$PARK_CODE == park_id),]
+
+#add dates
 parkObs$eventDate <- as.Date(parkObs$eventDate)
 parkObs$dateIdentified <- as.Date(parkObs$dateIdentified)
 parkObs$year <- year(parkObs$eventDate)
 parkObs$month <- month(parkObs$eventDate)
 
-#### species statistics  #####
 #correct species names
 parkObs$speciesFixed <- parkObs$scientificName
 parkObs$speciesFixed[which(parkObs$taxonRank == "hybrid")] <- NA
 parkObs$speciesFixed <- gsub("([A-z]+) ([A-z]+) ([A-z]+)",'\\1 \\2', parkObs$speciesFixed)
-parkObs$speciesFixed[which(parkObs$speciesFixed == "Agaricus xanthoderma 'xanthodermus']")] <- "Agaricus xanthodermus"
+parkObs$speciesFixed[which(parkObs$speciesFixed == "Agaricus xanthoderma 'xanthodermus']")] <- "Agaricus xanthodermus" #specific error in PORE observations
 
 #add category
 parkObs$category <- NA
@@ -33,18 +37,33 @@ parkObs$category[which(parkObs$class == "Chondrichthyes")] <- "Fish" #cartelagin
 parkObs$category[which(parkObs$class == "Actinopterygii")] <- "Fish" #bony fishes
 
 #Write out the observation data
-cleanObs <- parkObs[,c("decimalLongitude","decimalLatitude","coordinateUncertaintyInMeters","kingdom","phylum","class","order","family","genus","year","month","speciesFixed","category"  )]
-write.csv(cleanObs,"processed_data/PORE_obs.csv",row.names = F)
+fullObs <- parkObs
+filePathFull = paste0("processed_data/",park_id,"_data/",park_id,"_obs_FULL.csv")
+write.csv(fullObs,filePathFull,row.names = F)
+
+cleanObs <- parkObs[,c("decimalLongitude","decimalLatitude","category","family","speciesFixed","year","month")]
+filePathClean = paste0("processed_data/",park_id,"_data/",park_id,"_obs_tidy.csv")
+write.csv(cleanObs,filePathClean,row.names = F)
+
+return(parkObs)
+}
+parkObsPORE <- parkObservations(park_id, allParkObs)
 
 #### species stats #####
+# if above function has already been run, park obs can be retreived from file
+#obsFilepath = paste0("processed_data/",park_id,"_data/",park_id,"_obs_FULL.csv"); parkObs <- read.csv(obsFilepath, header = T)
+
+#
+inatStats <- function(parkObs)
+{
 speciesFixed <- unique(parkObs$speciesFixed)
 inatSpecies <- data.frame(speciesFixed)
 
 inatSpecies$total_obs <- NA
 inatSpecies$user_obs <- NA
 inatSpecies[c("kingdom","phylum","class","order","family","genus","category")] <- NA
-# inatSpecies[c(paste("m",1:12,sep=""))]<- NA
-# inatSpecies[c(paste("y",2007:2017,sep=""))] <- NA
+inatSpecies[c(paste("m",1:12,sep=""))]<- NA
+inatSpecies[c(paste("y",2007:2017,sep=""))] <- NA
 numSp <- length(inatSpecies$speciesFixed)
 
 for (i in 1:numSp){
@@ -69,28 +88,35 @@ for (k in 2007:2017)
   inatSpecies[i,paste("y",k,sep="")] <- length(which(spObs$year == k))
 }
 
-print(paste("percent done =", 100*i/numSp) )
+#print(paste("percent done =", 100*i/numSp) )
+}
+return(inatSpecies)
 }
 
-#### comparing to NPS species list ####
-  # species list downloaded from NPSpecies, converted to .csv by excel, 
-parkSpeciesData <- read.csv("raw_data/NPSpecies_PORE.csv",header =T)
+inatSpecies <- inatStats(parkObs = parkObsPORE)
 
+#### comparing to NPS species list ####
+  # species list downloaded from NPSpecies, converted to .csv by excel
+
+NPSinatSpecies <- function(inatSpecies,park_id){
+parkSpeciesFilepath <- paste0("raw_data/NPSpecies_",park_id,".csv")
+parkSpeciesData <- read.csv(parkSpeciesFilepath,header =T)
 
 parkSpeciesFixed <- parkSpeciesData[,c("Taxon.Record.Status","Scientific.Name","Common.Names","Synonyms","Park.Accepted", "Record.Status","Occurrence")]
 parkSpeciesFixed <- parkSpeciesFixed[-(grep("([A-z]+) X ([A-z]+)",parkSpeciesFixed$Scientific.Name)),] #removing hybrids
 parkSpeciesFixed$speciesFixed <- parkSpeciesFixed$Scientific.Name
 parkSpeciesFixed$speciesFixed <- gsub("([A-z]+) ([A-z]+) var.*",'\\1 \\2', parkSpeciesFixed$speciesFixed)
 parkSpeciesFixed$speciesFixed <- gsub("([A-z]+) ([A-z]+) ssp.*",'\\1 \\2', parkSpeciesFixed$speciesFixed)
-#parkSpeciesFixed$scientificName <- gsub("([A-z]+) ([A-z]+) ([A-z]+)",'\\1 \\2', parkSpeciesFixed$scientificName)
 
-# park <- unique(parkSpeciesFixed$scientificName); parkOnly <- sort(park[-which(park %in% inat)])
-# inat <- unique(parkObs$speciesFixed); inatOnly <- sort(inat[-which(inat %in% park)])
+parkSpeciesFixed <- parkSpeciesFixed[!duplicated(parkSpeciesFixed$speciesFixed),] #removes duplicates due to subspecies/varieties
 
 totalSpecies <- merge(inatSpecies,parkSpeciesFixed,by = "speciesFixed", all = T)
-totalSpecies <- totalSpecies[-which(totalSpecies$total_obs == NA & totalSpecies$Occurrence == "Not In Park")]
+totalSpecies <- totalSpecies[-which(totalSpecies$Occurrence == "Not In Park" & is.na(totalSpecies$total_obs)),]
 
-write.csv(totalSpecies,"processed_data/PORE_species.csv",row.names = F)
+speciesListPath <- paste0("processed_data/",park_id,"_data/",park_id,"_species.csv")
+write.csv(totalSpecies,speciesListPath,row.names = F)
+}
 
+NPSinatSpecies(inatSpecies,park_id = park_id)
 
 

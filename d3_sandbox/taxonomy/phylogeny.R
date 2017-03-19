@@ -35,10 +35,11 @@ f <- f %>%
 
 # for expediency during testing
 d <- filter(f, class=="Aves")
+#d <- filter(f, phylum=="Chordata")
 
 # leaf-level nodes have data on species and frequency
-p <- lapply(1:nrow(d), function(i) data.frame(name=d$species[i],
-                                              level="species",
+p <- lapply(1:nrow(d), function(i) data.frame(level="species",
+                                              name=d$species[i],
                                               n_records=d$n_records[i],
                                               n_users=d$n_users[i],
                                               n_species=1))

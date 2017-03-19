@@ -106,7 +106,7 @@ d3.json("taxonomy.json", function(error, root) {
   // and stash the children so they can be restored as we descend.
   
   partition
-      .value(function(d) { return d.n_species; })
+      .value(function(d) { return d.n_records; })
       //.value(function(d) { return 1; })
       .nodes(root)
       .forEach(function(d) {

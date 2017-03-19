@@ -19,7 +19,7 @@ f <- spp %>%
       as.data.frame() 
 
 d <- f
-d <- ungroup(f) %>% group_by(category) %>% sample_n(10) %>% as.data.frame()
+#d <- ungroup(f) %>% group_by(category) %>% sample_n(10) %>% as.data.frame()
 d <- filter(d, total_obs>0, !is.na(category))
 d$Common.Names <- gsub("'", "", d$Common.Names)
 

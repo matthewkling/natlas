@@ -40,7 +40,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + width / 2 + "," + (height / 2) + ")");
 
-d3.json("taxonomy.json", function(error, root) {
+d3.json("taxonomy_pore.json", function(error, root) {
   if (error) throw error;
 
   svg.selectAll("path")
@@ -48,10 +48,11 @@ d3.json("taxonomy.json", function(error, root) {
     .enter().append("path")
       .attr("d", arc)
       //.style("fill", function(d) { return color((d.children ? d : d.parent).name); })
-      .style("fill", "gray")
+      //.style("fill", "rgb(100, 100, 200)")
+      .style("fill", function(d){ return d.hex })
       .on("click", click)
     .append("title")
-      .text(function(d) { return d.name + "\n" + formatNumber(d.value); });
+      .text(function(d) { return d.common_name + ":\n" + formatNumber(d.value) + " observations"; });
 });
 
 function click(d) {

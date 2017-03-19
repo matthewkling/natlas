@@ -10,23 +10,37 @@ spp <- read.csv(paste0("processed_data/",park_id,"_data/",park_id,"_species.csv"
 
 
 f <- spp %>%
-      #mutate(species=regexpr(" ", speciesFixed),
-      #       species=substr(speciesFixed, species+1, nchar(speciesFixed))) %>%
       mutate(species=speciesFixed,
-             category=tolower(category)) %>%
+             category=tolower(category),
+             root="life") %>%
+      distinct() %>%
       group_by(category, family, species) %>%
       arrange(category, family, species) %>%
       as.data.frame() 
 
+# add species-level common names from our dictionary
+
+
+# TODO: add family-level common names
+
+
+# add colors
+colors <- read.csv(paste0("processed_data/",park_id,"_data/",park_id,"_species_colors.csv"), stringsAsFactors=F) %>%
+      mutate(species=binomial) %>% select(-binomial)
+f <- left_join(f, colors)
+f$hex[is.na(f$hex)] <- "#000000"
+
 d <- f
-#d <- ungroup(f) %>% group_by(category) %>% sample_n(10) %>% as.data.frame()
+#d <- ungroup(f) %>% group_by(category) %>% sample_n(5) %>% as.data.frame()
 d <- filter(d, total_obs>0, !is.na(category))
-d$Common.Names <- gsub("'", "", d$Common.Names)
+#d$Common.Names <- gsub("'", "", d$Common.Names)
 
 # generate list of leaf-level species datasets
 leaves <- lapply(1:nrow(d), function(i) data.frame(level="species",
-                                                   name=d$speciesFixed[i],
+                                                   name=paste0(d$common_name[i], "\n (", d$speciesFixed[i], ")"),
+                                                   binomial=d$speciesFixed[i],
                                                    common_name=ifelse(!is.na(d$Common.Names[i]), d$Common.Names[i], "godzilla"),
+                                                   hex=d$hex[i],
                                                    n_records=d$total_obs[i],
                                                    n_users=d$user_obs[i],
                                                    n_species=1))
@@ -56,17 +70,26 @@ leaves <- lapply(1:nrow(d), function(i) data.frame(level="species",
 # y2017=d$y2017[i],
 # npsOccurence = d$Occurrence[i]))
 
+
+
 # function aggregates taxa list into parent clades
 group_taxa <- function(data, groupings, level){
       parents <- as.vector(unique(groupings[,1]))
       lapply(parents, function(x){
             children <- which(groupings[,1]==x)
-            list(level=level, name=x, children=data[children])
+            
+            color <- sapply(data[children], function(x) x$hex) %>%
+                  col2rgb() %>% apply(1, mean)
+            
+            list(name=x, 
+                 level=level, 
+                 hex=rgb(color[1], color[2], color[3], maxColorValue=255), 
+                 children=data[children])
       })
 }
 
 # apply over all levels of hierarchy, generating tree-like list
-levels <- c("category", "family", "species")
+levels <- c("root", "category", "family", "species")
 p <- leaves
 for(level in rev(levels)[2:length(levels)]){
       child_level <- levels[match(level, levels)+1]
@@ -90,9 +113,9 @@ jsonn <- gsub('\\],\\[', ',', jsonn)
 jsonn <- prettify(jsonn)
 
 # remove outermost brackets to match target format
-#jsonn <- stringr::str_trim(jsonn)
-#jsonn <- substr(jsonn, 4, nchar(jsonn)-3)
-#jsonn <- stringr::str_trim(jsonn)
+jsonn <- stringr::str_trim(jsonn)
+jsonn <- substr(jsonn, 2, nchar(jsonn)-1)
+jsonn <- stringr::str_trim(jsonn)
 
 jsonPath <- paste0("processed_data/",park_id,"_data/",park_id,"_taxonomy.json")
 write(jsonn, jsonPath)

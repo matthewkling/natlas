@@ -1,1 +1,989 @@
-{"name":"Accipiter","level":"genus","children":[{"name":"Accipiter cooperii","level":"speciesFixed","species":"cooperii","total_obs":3,"user_obs":3,"commonName":"Cooper's Hawk","n_species":1}]},{"name":"Actinemys","level":"genus","children":[{"name":"Accipiter striatus","level":"speciesFixed","species":"striatus","total_obs":1,"user_obs":1,"commonName":"Sharp-shinned Hawk","n_species":1}]},{"name":"Acronicta","level":"genus","children":[{"name":"Actinemys marmorata","level":"speciesFixed","species":"marmorata","total_obs":1,"user_obs":1,"commonName":"Northern Western Pond Turtle, Pacific Pond Turtle, Western Pond Turtle","n_species":1}]},{"name":"Achillea","level":"genus","children":[{"name":"Acronicta spinea","level":"speciesFixed","species":"spinea","total_obs":1,"user_obs":1,"n_species":1}]},{"name":"Abronia","level":"genus","children":[{"name":"Achillea millefolium","level":"speciesFixed","species":"millefolium","total_obs":25,"user_obs":17,"commonName":"common yarrow, Yarrow","n_species":1}]},{"name":"Acmispon","level":"genus","children":[{"name":"Abronia latifolia","level":"speciesFixed","species":"latifolia","total_obs":20,"user_obs":15,"commonName":"coastal sand verbena, Yellow Sand-verbena","n_species":1}]}
+[
+    {
+        "level": "category",
+        "name": "bird",
+        "children": [
+            {
+                "level": "family",
+                "name": "Accipitridae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Buteo regalis",
+                        "common_name": "Ferruginous Hawk",
+                        "n_records": 5,
+                        "n_users": 3,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Cathartidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Coragyps atratus",
+                        "common_name": "godzilla",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Sittidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Sitta canadensis",
+                        "common_name": "Red-breasted Nuthatch",
+                        "n_records": 2,
+                        "n_users": 2,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Anatidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Cygnus olor",
+                        "common_name": "godzilla",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Scolopacidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Calidris virgata",
+                        "common_name": "godzilla",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Icteridae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Icterus bullockii",
+                        "common_name": "godzilla",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Parulidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Geothlypis tolmiei",
+                        "common_name": "godzilla",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Fringillidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Spinus psaltria",
+                        "common_name": "godzilla",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Turdidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Sialia mexicana",
+                        "common_name": "Western Bluebird",
+                        "n_records": 10,
+                        "n_users": 7,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Sturnidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Sturnus vulgaris",
+                        "common_name": "European Starling",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "level": "category",
+        "name": "fish",
+        "children": [
+            {
+                "level": "family",
+                "name": "Embiotocidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Rhacochilus vacca",
+                        "common_name": "pile perch",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    },
+                    {
+                        "level": "species",
+                        "name": "Embiotoca jacksoni",
+                        "common_name": "black perch",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Paralichthyidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Paralichthys californicus",
+                        "common_name": "California halibut, California Halibut",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Cottidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Oligocottus maculosus",
+                        "common_name": "tidepool sculpin",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Gasterosteidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Gasterosteus aculeatus",
+                        "common_name": "Alaskan stickleback, threespine stickleback",
+                        "n_records": 3,
+                        "n_users": 3,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Myliobatidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Myliobatis californica",
+                        "common_name": "bat ray",
+                        "n_records": 5,
+                        "n_users": 5,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Salmonidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Oncorhynchus kisutch",
+                        "common_name": "coho salmon, silver salmon",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Molidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Mola mola",
+                        "common_name": "ocean sunfish",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Poeciliidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Gambusia affinis",
+                        "common_name": "mosquitofish, western mosquitofish",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Triakidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Triakis semifasciata",
+                        "common_name": "leopard shark",
+                        "n_records": 3,
+                        "n_users": 3,
+                        "n_species": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "level": "category",
+        "name": "fungi",
+        "children": [
+            {
+                "level": "family",
+                "name": "Ramalinaceae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Niebla cephalota",
+                        "common_name": "",
+                        "n_records": 4,
+                        "n_users": 3,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Pluteaceae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Pluteus exilis",
+                        "common_name": "godzilla",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Amanitaceae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Amanita velosa",
+                        "common_name": "godzilla",
+                        "n_records": 2,
+                        "n_users": 2,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Russulaceae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Russula silvicola",
+                        "common_name": "godzilla",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Paxillaceae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Paxillus involutus",
+                        "common_name": "godzilla",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Agaricaceae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Agaricus augustus",
+                        "common_name": "godzilla",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Suillaceae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Suillus lakei",
+                        "common_name": "godzilla",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Xylariaceae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Xylaria hypoxylon",
+                        "common_name": "godzilla",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Teloschistaceae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Teloschistes flavicans",
+                        "common_name": "",
+                        "n_records": 7,
+                        "n_users": 5,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Parmeliaceae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Usnea intermedia",
+                        "common_name": "godzilla",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "level": "category",
+        "name": "herp",
+        "children": [
+            {
+                "level": "family",
+                "name": "Anguidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Elgaria coerulea",
+                        "common_name": "Northern Alligator Lizard",
+                        "n_records": 14,
+                        "n_users": 12,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Emydidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Actinemys marmorata",
+                        "common_name": "Northern Western Pond Turtle, Pacific Pond Turtle, Western Pond Turtle",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Boidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Charina bottae",
+                        "common_name": "Rubber Boa",
+                        "n_records": 2,
+                        "n_users": 2,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Colubridae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Thamnophis sirtalis",
+                        "common_name": "Common Garter Snake",
+                        "n_records": 9,
+                        "n_users": 7,
+                        "n_species": 1
+                    },
+                    {
+                        "level": "species",
+                        "name": "Pituophis catenifer",
+                        "common_name": "Bullsnake, Gopher Snake",
+                        "n_records": 3,
+                        "n_users": 3,
+                        "n_species": 1
+                    },
+                    {
+                        "level": "species",
+                        "name": "Thamnophis elegans",
+                        "common_name": "godzilla",
+                        "n_records": 23,
+                        "n_users": 17,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Phrynosomatidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Sceloporus occidentalis",
+                        "common_name": "Western Fence Lizard",
+                        "n_records": 20,
+                        "n_users": 16,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Ranidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Rana boylii",
+                        "common_name": "Foothill Yellow-legged Frog",
+                        "n_records": 4,
+                        "n_users": 2,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Salamandridae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Taricha torosa",
+                        "common_name": "California Newt",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Plethodontidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Ensatina eschscholtzii",
+                        "common_name": "Ensatina",
+                        "n_records": 6,
+                        "n_users": 6,
+                        "n_species": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "level": "category",
+        "name": "invertebrate",
+        "children": [
+            {
+                "level": "family",
+                "name": "Sabellariidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Phragmatopoma californica",
+                        "common_name": "godzilla",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Nymphalidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Danaus plexippus",
+                        "common_name": "godzilla",
+                        "n_records": 2,
+                        "n_users": 2,
+                        "n_species": 1
+                    },
+                    {
+                        "level": "species",
+                        "name": "Vanessa atalanta",
+                        "common_name": "godzilla",
+                        "n_records": 14,
+                        "n_users": 9,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Lasiocampidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Malacosoma californicum",
+                        "common_name": "godzilla",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Blepharipodidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Blepharipoda occidentalis",
+                        "common_name": "godzilla",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Papilionidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Papilio eurymedon",
+                        "common_name": "godzilla",
+                        "n_records": 3,
+                        "n_users": 3,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Nassariidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Nassarius fossatus",
+                        "common_name": "godzilla",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Sphecidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Chalybion californicum",
+                        "common_name": "godzilla",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Pollicipedidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Pollicipes polymerus",
+                        "common_name": "godzilla",
+                        "n_records": 5,
+                        "n_users": 5,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Pieridae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Colias eurytheme",
+                        "common_name": "godzilla",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "level": "category",
+        "name": "mammal",
+        "children": [
+            {
+                "level": "family",
+                "name": "Otariidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Eumetopias jubatus",
+                        "common_name": "northern sea lion, Steller Sea Lion, steller sealion, Stellers sea lion",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Cricetidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Peromyscus maniculatus",
+                        "common_name": "Deer Mouse, North American Deermouse",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Sciuridae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Sciurus griseus",
+                        "common_name": "Western Gray Squirrel",
+                        "n_records": 6,
+                        "n_users": 6,
+                        "n_species": 1
+                    },
+                    {
+                        "level": "species",
+                        "name": "Tamias sonomae",
+                        "common_name": "Sonoma Chipmunk",
+                        "n_records": 6,
+                        "n_users": 6,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Canidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Canis latrans",
+                        "common_name": "Coyote",
+                        "n_records": 29,
+                        "n_users": 22,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Mephitidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Mephitis mephitis",
+                        "common_name": "Striped Skunk",
+                        "n_records": 5,
+                        "n_users": 5,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Mustelidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Lontra canadensis",
+                        "common_name": "godzilla",
+                        "n_records": 11,
+                        "n_users": 11,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Geomyidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Thomomys bottae",
+                        "common_name": "Bottas Pocket Gopher",
+                        "n_records": 9,
+                        "n_users": 9,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Delphinidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Tursiops truncatus",
+                        "common_name": "Bottlenose Dolphin, Bottlenosed Dolphin",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Talpidae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Scapanus latimanus",
+                        "common_name": "Broad-footed Mole",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "level": "category",
+        "name": "plant",
+        "children": [
+            {
+                "level": "family",
+                "name": "Lamiaceae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Clinopodium douglasii",
+                        "common_name": "yerba buena",
+                        "n_records": 2,
+                        "n_users": 2,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Iridaceae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Iris pseudacorus",
+                        "common_name": "paleyellow iris, yellow flag",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Asteraceae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Cirsium vulgare",
+                        "common_name": "Bull Thistle",
+                        "n_records": 21,
+                        "n_users": 14,
+                        "n_species": 1
+                    },
+                    {
+                        "level": "species",
+                        "name": "Jaumea carnosa",
+                        "common_name": "Jaumea, marsh jaumea",
+                        "n_records": 3,
+                        "n_users": 3,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Fabaceae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Vicia villosa",
+                        "common_name": "godzilla",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Crassulaceae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Sedum spathulifolium",
+                        "common_name": "broadleaf stonecrop, Pacific Stonecrop",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Garryaceae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Garrya elliptica",
+                        "common_name": "Lowland Silk Tassel Bush, wavyleaf silktassel",
+                        "n_records": 2,
+                        "n_users": 2,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Plantaginaceae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Veronica americana",
+                        "common_name": "American Brooklime, American speedwell",
+                        "n_records": 1,
+                        "n_users": 1,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Plumbaginaceae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Armeria maritima",
+                        "common_name": "California seapink, Thrift",
+                        "n_records": 16,
+                        "n_users": 13,
+                        "n_species": 1
+                    }
+                ]
+            },
+            {
+                "level": "family",
+                "name": "Gentianaceae",
+                "children": [
+                    {
+                        "level": "species",
+                        "name": "Gentiana affinis",
+                        "common_name": "Blue Gentian",
+                        "n_records": 6,
+                        "n_users": 6,
+                        "n_species": 1
+                    }
+                ]
+            }
+        ]
+    }
+]
+

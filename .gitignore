@@ -18,4 +18,6 @@ processed_data/mammals.csv
 processed_data/plants.csv
 processed_data/reptiles.csv
 
+*.DS_Store
+
 

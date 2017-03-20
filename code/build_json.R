@@ -28,6 +28,7 @@ f <- spp %>%
 colors <- read.csv(paste0("processed_data/",park_id,"_data/",park_id,"_species_colors.csv"), stringsAsFactors=F) %>%
       mutate(species=binomial) %>% select(-binomial)
 f <- left_join(f, colors)
+f$hex <- f$hex_ecdf # hex_fit or hex_ecdf
 f$hex[is.na(f$hex)] <- "#000000"
 
 d <- f
@@ -77,47 +78,51 @@ group_taxa <- function(data, groupings, level){
       parents <- as.vector(unique(groupings[,1]))
       lapply(parents, function(x){
             children <- which(groupings[,1]==x)
+            children <- data[children]
+            children <- children[!sapply(children, is.null)]
             
-            color <- sapply(data[children], function(x) x$hex) %>%
+            color <- sapply(children, function(x) x$hex) %>%
                   col2rgb() %>% apply(1, mean)
             
             list(name=x, 
                  level=level, 
-                 hex=rgb(color[1], color[2], color[3], maxColorValue=255), 
-                 children=data[children])
+                 hex=rgb(color[1], color[2], color[3], maxColorValue=350), # mcv controls fade rate to black
+                 children=children)
       })
 }
 
 # apply over all levels of hierarchy, generating tree-like list
-levels <- c("root", "category", "family", "species")
-p <- leaves
-for(level in rev(levels)[2:length(levels)]){
-      child_level <- levels[match(level, levels)+1]
-      p <- group_taxa(p, distinct(d[,c(level, child_level)]), level)
+
+hierarchies <- list(simple=c("root", "category", "family", "species"),
+                    linnean=c("root", "kingdom", "phylum", "class", "order", "family", "genus", "species"))
+
+for(hierarchy in names(hierarchies)){
+      levels <- hierarchies[[hierarchy]]
+      p <- leaves
+      for(level in rev(levels)[2:length(levels)]){
+            child_level <- levels[match(level, levels)+1]
+            p <- group_taxa(p, distinct(d[,c(level, child_level)]), level)
+      }
+      
+      ### convert to JSON format
+      
+      # serialize to json
+      json <- toJSON(p, auto_unbox=T)
+      jsonn <- json
+      
+      # remove brackets from level names to match target format
+      jsonn <- gsub('\\[\\[', '[', jsonn)
+      jsonn <- gsub('\\]\\]', '\\]', jsonn)
+      jsonn <- gsub('\\],\\[', ',', jsonn)
+      
+      jsonn <- prettify(jsonn)
+      
+      # remove outermost brackets to match target format
+      jsonn <- stringr::str_trim(jsonn)
+      jsonn <- substr(jsonn, 2, nchar(jsonn)-1)
+      jsonn <- stringr::str_trim(jsonn)
+      
+      write(jsonn, paste0("processed_data/",park_id,"_data/",park_id,"_taxonomy_", hierarchy, ".json"))
+      write(jsonn, paste0("d3_sandbox/taxonomy/taxonomy_pore_", hierarchy, ".json"))
 }
 
-### convert to JSON format
-
-# serialize to json
-json <- toJSON(p, auto_unbox=T)
-jsonn <- json
-
-# remove empty lists
-#jsonn <- gsub(',\\{\\}', '', jsonn)
-
-# remove brackets from level names to match target format
-jsonn <- gsub('\\[\\[', '[', jsonn)
-jsonn <- gsub('\\]\\]', '\\]', jsonn)
-jsonn <- gsub('\\],\\[', ',', jsonn)
-
-jsonn <- prettify(jsonn)
-
-# remove outermost brackets to match target format
-jsonn <- stringr::str_trim(jsonn)
-jsonn <- substr(jsonn, 2, nchar(jsonn)-1)
-jsonn <- stringr::str_trim(jsonn)
-
-jsonPath <- paste0("processed_data/",park_id,"_data/",park_id,"_taxonomy.json")
-write(jsonn, jsonPath)
-jsonPath <- "d3_sandbox/taxonomy/taxonomy_pore.json"
-write(jsonn, jsonPath)

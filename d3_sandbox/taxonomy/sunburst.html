@@ -57,7 +57,7 @@ d3.json("taxonomy_pore_linnean.json", function(error, root) {
 
 function click(d) {
   svg.transition()
-      .duration(750)
+      .duration(4000)
       .tween("scale", function() {
         var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
             yd = d3.interpolate(y.domain(), [d.y, 1]),

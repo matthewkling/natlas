@@ -38,9 +38,9 @@ d <- filter(d, total_obs>0, !is.na(category))
 
 # generate list of leaf-level species datasets
 leaves <- lapply(1:nrow(d), function(i) data.frame(level="species",
-                                                   name=paste0(d$common_name[i], "\n (", d$speciesFixed[i], ")"),
+                                                   name=d$Common.Names[i],
                                                    binomial=d$speciesFixed[i],
-                                                   common_name=ifelse(!is.na(d$Common.Names[i]), d$Common.Names[i], "godzilla"),
+                                                   common_name=ifelse(!is.na(d$Common.Names[i]), d$Common.Names[i], "[common name unknown]"),
                                                    hex=d$hex[i],
                                                    n_records=d$total_obs[i],
                                                    n_users=d$user_obs[i],
@@ -77,32 +77,36 @@ leaves <- lapply(1:nrow(d), function(i) data.frame(level="species",
 group_taxa <- function(data, groupings, level){
       parents <- as.vector(unique(groupings[,1]))
       lapply(parents, function(x){
-            children <- which(groupings[,1]==x)
-            children <- data[children]
-            children <- children[!sapply(children, is.null)]
             
-            color <- sapply(children, function(x) x$hex) %>%
-                  col2rgb() %>% apply(1, mean)
+            kids <- which(groupings[,1]==x)
+            kids <- data[kids]
+            kids <- kids[!sapply(kids, is.null)]
             
+            color <- sapply(kids, function(x) x$hex) %>% col2rgb() %>% apply(1, mean)
+            #if(x=="Chordata") browser()
             list(name=x, 
                  level=level, 
-                 hex=rgb(color[1], color[2], color[3], maxColorValue=350), # mcv controls fade rate to black
-                 children=children)
+                 hex=rgb(color[1], color[2], color[3], maxColorValue=375), # mcv/255 ratio controls fade to black
+                 children=kids)
       })
 }
-
-# apply over all levels of hierarchy, generating tree-like list
 
 hierarchies <- list(simple=c("root", "category", "family", "species"),
                     linnean=c("root", "kingdom", "phylum", "class", "order", "family", "genus", "species"))
 
 for(hierarchy in names(hierarchies)){
+      
+      # construct hierarchy
       levels <- hierarchies[[hierarchy]]
       p <- leaves
       for(level in rev(levels)[2:length(levels)]){
             child_level <- levels[match(level, levels)+1]
-            p <- group_taxa(p, distinct(d[,c(level, child_level)]), level)
+            groupings <- distinct(d[,c(level, child_level)])
+            groupings <- groupings[apply(groupings, 1, function(x) min(nchar(x))>0),]
+            p <- group_taxa(p, groupings, level)
       }
+      
+      
       
       ### convert to JSON format
       

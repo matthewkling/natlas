@@ -14,7 +14,7 @@ f <- spp %>%
              category=tolower(category),
              root="life") %>%
       distinct() %>%
-      group_by(category, family, species) %>%
+      #group_by(category, family, species) %>%
       arrange(category, family, species) %>%
       as.data.frame() 
 
@@ -33,7 +33,10 @@ f$hex[is.na(f$hex)] <- "#000000"
 
 d <- f
 #d <- ungroup(f) %>% group_by(category) %>% sample_n(5) %>% as.data.frame()
-d <- filter(d, total_obs>0, !is.na(category))
+d <- filter(d, 
+            total_obs>0, 
+            !is.na(category),
+            nchar(class)>0)
 #d$Common.Names <- gsub("'", "", d$Common.Names)
 
 # generate list of leaf-level species datasets
@@ -42,6 +45,7 @@ leaves <- lapply(1:nrow(d), function(i) data.frame(level="species",
                                                    binomial=d$speciesFixed[i],
                                                    common_name=ifelse(!is.na(d$Common.Names[i]), d$Common.Names[i], "[common name unknown]"),
                                                    hex=d$hex[i],
+                                                   nspp=1,
                                                    n_records=d$total_obs[i],
                                                    n_users=d$user_obs[i],
                                                    n_species=1))
@@ -74,7 +78,7 @@ leaves <- lapply(1:nrow(d), function(i) data.frame(level="species",
 
 
 # function aggregates taxa list into parent clades
-group_taxa <- function(data, groupings, level){
+group_taxa <- function(data, groupings, level, max_col){
       parents <- as.vector(unique(groupings[,1]))
       lapply(parents, function(x){
             
@@ -82,17 +86,21 @@ group_taxa <- function(data, groupings, level){
             kids <- data[kids]
             kids <- kids[!sapply(kids, is.null)]
             
-            color <- sapply(kids, function(x) x$hex) %>% col2rgb() %>% apply(1, mean)
-            #if(x=="Chordata") browser()
+            weights <- sapply(kids, function(x) x$nspp)
+            
+            color <- sapply(kids, function(x) x$hex) %>% col2rgb()
+            color <- sapply(1:3, function(x) weighted.mean(color[x,], weights))
+            
             list(name=x, 
                  level=level, 
-                 hex=rgb(color[1], color[2], color[3], maxColorValue=375), # mcv/255 ratio controls fade to black
+                 hex=rgb(color[1], color[2], color[3], maxColorValue=max_col), # mcv/255 ratio controls fade to black
+                 nspp=sum(weights),
                  children=kids)
       })
 }
 
-hierarchies <- list(simple=c("root", "category", "family", "species"),
-                    linnean=c("root", "kingdom", "phylum", "class", "order", "family", "genus", "species"))
+hierarchies <- list(linnean=c("root", "kingdom", "phylum", "class", "order", "family", "genus", "species"),
+                    simple=c("root", "category", "family", "species"))
 
 for(hierarchy in names(hierarchies)){
       
@@ -103,7 +111,8 @@ for(hierarchy in names(hierarchies)){
             child_level <- levels[match(level, levels)+1]
             groupings <- distinct(d[,c(level, child_level)])
             groupings <- groupings[apply(groupings, 1, function(x) min(nchar(x))>0),]
-            p <- group_taxa(p, groupings, level)
+            p <- group_taxa(p, groupings, level,
+                            max_col=switch(hierarchy, "linnean"=400, "simple"=800))
       }
       
       

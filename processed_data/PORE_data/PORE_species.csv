@@ -3,12 +3,12 @@
 "Abronia umbellata",3,3,"Plantae","Magnoliophyta","Magnoliopsida","Caryophyllales","Nyctaginaceae","Abronia","Plant",0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,2,0,"pink sand verbena, sand verbena","Present"
 "Accipiter cooperii",3,3,"Animalia","Chordata","Aves","Accipitriformes","Accipitridae","Accipiter","Bird",0,0,0,0,0,0,0,0,1,0,2,0,0,0,0,0,0,0,0,0,3,0,0,"Cooper's Hawk","Present"
 "Accipiter striatus",1,1,"Animalia","Chordata","Aves","Accipitriformes","Accipitridae","Accipiter","Bird",0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,"Sharp-shinned Hawk","Present"
-"Achillea millefolium",25,17,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Achillea","Plant",1,1,0,1,4,5,7,1,3,0,1,1,0,1,0,0,0,1,2,1,5,14,1,"common yarrow, Yarrow","Present"
+"Achillea millefolium",26,17,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Achillea","Plant",1,1,1,1,4,5,7,1,3,0,1,1,0,1,0,0,0,1,2,1,5,14,2,"common yarrow, Yarrow","Present"
 "Acmispon americanus",3,3,"Plantae","Magnoliophyta","Magnoliopsida","Fabales","Fabaceae","Acmispon","Plant",0,0,0,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,1,0,2,0,NA,NA
 "Acmispon glaber",2,2,"Plantae","Magnoliophyta","Magnoliopsida","Fabales","Fabaceae","Acmispon","Plant",0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,"deerweed","Present"
 "Acmispon heermannii",2,2,"Plantae","Magnoliophyta","Magnoliopsida","Fabales","Fabaceae","Acmispon","Plant",0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,"Heermann's bird's-foot trefoil","Present"
 "Acronicta spinea",1,1,"Animalia","Arthropoda","Insecta","Lepidoptera","Noctuidae","Acronicta","Invertebrate",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
-"Actinemys marmorata",1,1,"Animalia","Chordata","Reptilia","Testudines","Emydidae","Actinemys","Herp",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,"Northern Western Pond Turtle, Pacific Pond Turtle, Western Pond Turtle","Present"
+"Actinemys marmorata",2,2,"Animalia","Chordata","Reptilia","Testudines","Emydidae","Actinemys","Herp",0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,"Northern Western Pond Turtle, Pacific Pond Turtle, Western Pond Turtle","Present"
 "Adenocaulon bicolor",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Adenocaulon","Plant",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"American trailplant, Trail Marker","Present"
 "Adenostoma fasciculatum",2,2,"Plantae","Magnoliophyta","Magnoliopsida","Rosales","Rosaceae","Adenostoma","Plant",0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,"Chamise","Probably Present"
 "Adiantum aleuticum",5,5,"Plantae","Pteridophyta","Filicopsida","Polypodiales","Pteridaceae","Adiantum","Plant",2,0,0,2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,2,1,1,1,"Five-finger Fern","Present"
@@ -29,10 +29,10 @@
 "Allium dichlamydeum",1,1,"Plantae","Magnoliophyta","Liliopsida","Asparagales","Alliaceae","Allium","Plant",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"Coast Onion","Present"
 "Allium triquetrum",1,1,"Plantae","Magnoliophyta","Liliopsida","Asparagales","Alliaceae","Allium","Plant",0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"European Onion","Unconfirmed"
 "Alloniscus perconvexus",3,3,"Animalia","Arthropoda","Malacostraca","Isopoda","Alloniscidae","Alloniscus","Invertebrate",0,2,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,NA,NA
-"Alnus rubra",5,5,"Plantae","Magnoliophyta","Magnoliopsida","Fagales","Betulaceae","Alnus","Plant",0,0,0,0,1,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,1,4,0,"Red Alder","Present"
+"Alnus rubra",6,5,"Plantae","Magnoliophyta","Magnoliopsida","Fagales","Betulaceae","Alnus","Plant",0,0,0,0,1,0,0,2,0,1,2,0,0,0,0,0,0,0,0,0,1,5,0,"Red Alder","Present"
 "Alopecurus pratensis",1,1,"Plantae","Magnoliophyta","Liliopsida","Poales","Poaceae","Alopecurus","Plant",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"Meadow Foxtail","Present"
-"Amanita augusta",11,6,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Amanitaceae","Amanita","Fungi",3,1,1,0,0,0,0,0,2,0,2,2,0,0,0,0,0,0,0,1,0,9,1,NA,NA
-"Amanita gemmata",2,2,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Amanitaceae","Amanita","Fungi",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,NA,NA
+"Amanita augusta",12,6,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Amanitaceae","Amanita","Fungi",3,1,2,0,0,0,0,0,2,0,2,2,0,0,0,0,0,0,0,1,0,9,2,NA,NA
+"Amanita gemmata",3,3,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Amanitaceae","Amanita","Fungi",1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,NA,NA
 "Amanita magniverrucata",2,2,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Amanitaceae","Amanita","Fungi",0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,2,0,NA,NA
 "Amanita muscaria",18,10,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Amanitaceae","Amanita","Fungi",6,0,0,1,0,1,0,0,0,0,4,6,1,0,0,1,0,2,1,4,0,9,0,NA,NA
 "Amanita novinupta",5,4,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Amanitaceae","Amanita","Fungi",0,1,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,2,1,NA,NA
@@ -44,15 +44,16 @@
 "Ambrosia chamissonis",11,7,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Ambrosia","Plant",1,0,0,0,1,3,2,4,0,0,0,0,0,0,0,0,1,0,2,2,5,0,1,"Beach-bur","Present"
 "Ammodramus leconteii",3,3,"Animalia","Chordata","Aves","Passeriformes","Emberizidae","Ammodramus","Bird",1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,1,1,0,0,NA,NA
 "Ammodramus savannarum",3,2,"Animalia","Chordata","Aves","Passeriformes","Emberizidae","Ammodramus","Bird",0,0,0,0,2,0,1,0,0,0,0,0,0,0,0,0,0,0,1,2,0,0,0,"Grasshopper Sparrow","Present"
-"Ammophila arenaria",1,1,"Plantae","Magnoliophyta","Liliopsida","Poales","Poaceae","Ammophila","Plant",0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,"European Beachgrass","Present"
+"Ammophila arenaria",2,2,"Plantae","Magnoliophyta","Liliopsida","Poales","Poaceae","Ammophila","Plant",0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,"European Beachgrass","Present"
 "Amphissa columbiana",1,1,"Animalia","Mollusca","Gastropoda","Neogastropoda","Columbellidae","Amphissa","Invertebrate",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Amsinckia intermedia",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Boraginales","Boraginaceae","Amsinckia","Plant",0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"fiddleneck","Present"
 "Amsinckia spectabilis",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Boraginales","Boraginaceae","Amsinckia","Plant",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,"Coast Fiddleneck","Present"
-"Anagallis arvensis",17,13,"Plantae","Magnoliophyta","Magnoliopsida","Ericales","Myrsinaceae","Anagallis","Plant",0,0,0,2,6,5,1,0,2,0,1,0,0,0,0,0,0,0,0,2,2,13,0,"pimpernel, Scarlet (or Blue) Pimpernel","Present"
+"Anagallis arvensis",16,13,"Plantae","Magnoliophyta","Magnoliopsida","Ericales","Myrsinaceae","Anagallis","Plant",0,1,0,2,5,4,1,0,2,0,1,0,0,0,0,0,0,0,0,1,2,12,1,"pimpernel, Scarlet (or Blue) Pimpernel","Present"
+"Anagallis foemina",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Ericales","Myrsinaceae","Anagallis","Plant",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,NA,NA
 "Analipus japonicus",1,1,"Chromista","Ochrophyta","Phaeophyceae","Ectocarpales","Chordariaceae","Analipus",NA,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Anaphalis margaritacea",28,20,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Anaphalis","Plant",0,0,0,0,2,4,7,8,6,0,1,0,0,0,0,1,0,1,0,3,7,16,0,"Pearly Everlasting","Present"
 "Anas acuta",2,2,"Animalia","Chordata","Aves","Anseriformes","Anatidae","Anas","Bird",1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,2,0,0,0,0,0,"Northern Pintail","Present"
-"Anas americana",6,6,"Animalia","Chordata","Aves","Anseriformes","Anatidae","Anas","Bird",2,0,0,2,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,3,0,1,"American Wigeon","Present"
+"Anas americana",7,7,"Animalia","Chordata","Aves","Anseriformes","Anatidae","Anas","Bird",2,1,0,2,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,3,0,2,"American Wigeon","Present"
 "Anas clypeata",1,1,"Animalia","Chordata","Aves","Anseriformes","Anatidae","Anas","Bird",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,"Northern Shoveler","Present"
 "Anas crecca",1,1,"Animalia","Chordata","Aves","Anseriformes","Anatidae","Anas","Bird",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,"Green-winged Teal","Present"
 "Anas cyanoptera",2,1,"Animalia","Chordata","Aves","Anseriformes","Anatidae","Anas","Bird",0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,"Cinnamon Teal","Present"
@@ -71,7 +72,7 @@
 "Anthopleura xanthogrammica",4,4,"Animalia","Cnidaria","Anthozoa","Actiniaria","Actiniidae","Anthopleura","Invertebrate",0,0,0,0,0,0,1,2,1,0,0,0,0,0,0,0,1,0,0,0,0,3,0,NA,NA
 "Anthus rubescens",6,5,"Animalia","Chordata","Aves","Passeriformes","Motacillidae","Anthus","Bird",2,0,0,0,0,0,0,0,0,2,1,1,0,0,0,0,0,0,0,3,0,1,2,"American Pipit","Present"
 "Antrodiaetus riversi",1,1,"Animalia","Arthropoda","Arachnida","Araneae","Antrodiaetidae","Antrodiaetus","Invertebrate",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,NA,NA
-"Aphelocoma californica",12,8,"Animalia","Chordata","Aves","Passeriformes","Corvidae","Aphelocoma","Bird",1,0,0,2,0,0,2,3,0,2,0,2,0,0,0,1,0,0,0,6,3,2,0,"Western scrub jay","Present"
+"Aphelocoma californica",13,8,"Animalia","Chordata","Aves","Passeriformes","Corvidae","Aphelocoma","Bird",1,0,1,2,0,0,2,3,0,2,0,2,0,0,0,1,0,0,0,6,3,2,1,"Western scrub jay","Present"
 "Apis mellifera",5,3,"Animalia","Arthropoda","Insecta","Hymenoptera","Apidae","Apis","Invertebrate",0,0,0,0,0,0,1,1,1,1,1,0,0,0,1,0,0,0,0,0,1,3,0,NA,NA
 "Aplysia californica",2,2,"Animalia","Mollusca","Gastropoda","Anaspidea","Aplysiidae","Aplysia","Invertebrate",0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,2,0,0,NA,NA
 "Aptenia cordifolia",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Caryophyllales","Aizoaceae","Aptenia","Plant",0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,"Aptenia","Present"
@@ -93,25 +94,25 @@
 "Armeria maritima",16,13,"Plantae","Magnoliophyta","Magnoliopsida","Caryophyllales","Plumbaginaceae","Armeria","Plant",0,1,0,3,2,3,4,0,1,1,1,0,0,0,0,0,0,1,1,3,5,6,0,"California seapink, Thrift","Present"
 "Armillaria sinapina",1,1,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Physalacriaceae","Armillaria","Fungi",0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Armillaria solidipes",1,1,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Physalacriaceae","Armillaria","Fungi",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
-"Artemisia californica",5,3,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Artemisia","Plant",0,0,0,0,1,0,0,1,2,0,1,0,0,0,0,0,0,0,0,1,1,3,0,"California Sagebrush, coastal sagebrush","Present"
+"Artemisia californica",6,3,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Artemisia","Plant",0,0,1,0,1,0,0,1,2,0,1,0,0,0,0,0,0,0,0,1,1,3,1,"California Sagebrush, coastal sagebrush","Present"
 "Artemisia douglasiana",11,3,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Artemisia","Plant",0,0,1,1,0,1,4,1,2,1,0,0,0,0,0,0,0,0,0,1,1,9,0,"Douglas' sagewort, Mugwort","Present"
-"Artemisia pycnocephala",10,9,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Artemisia","Plant",0,1,2,1,1,3,1,0,0,1,0,0,0,0,0,1,0,1,0,3,1,4,0,"beach wormwood, Coastal Sagewort","Present"
+"Artemisia pycnocephala",11,9,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Artemisia","Plant",0,1,3,1,1,3,1,0,0,1,0,0,0,0,0,1,0,1,0,3,1,4,1,"beach wormwood, Coastal Sagewort","Present"
 "Asarum caudatum",8,7,"Plantae","Magnoliophyta","Magnoliopsida","Piperales","Aristolochiaceae","Asarum","Plant",0,0,1,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,2,0,"British Columbia wildginger, Wild Ginger","Present"
 "Asio flammeus",2,2,"Animalia","Chordata","Aves","Strigiformes","Strigidae","Asio","Bird",0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,1,1,0,0,"Short-eared Owl","Present"
 "Athene cunicularia",3,3,"Animalia","Chordata","Aves","Strigiformes","Strigidae","Athene","Bird",0,0,0,0,0,0,0,0,1,0,0,2,0,0,0,0,0,0,0,1,1,1,0,"Burrowing Owl","Present"
 "Athyrium filix-femina",4,4,"Plantae","Pteridophyta","Filicopsida","Polypodiales","Athyriaceae","Athyrium","Plant",0,0,0,0,0,1,0,1,2,0,0,0,0,0,0,0,0,0,0,1,0,3,0,NA,NA
-"Auriscalpium vulgare",1,1,"Fungi","Basidiomycota","Agaricomycetes","Russulales","Auriscalpiaceae","Auriscalpium","Fungi",0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,NA,NA
+"Auriscalpium vulgare",2,1,"Fungi","Basidiomycota","Agaricomycetes","Russulales","Auriscalpiaceae","Auriscalpium","Fungi",0,0,0,0,0,0,0,1,1,0,0,0,2,0,0,0,0,0,0,0,0,0,0,NA,NA
 "Avena barbata",1,1,"Plantae","Magnoliophyta","Liliopsida","Poales","Poaceae","Avena","Plant",0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"slender oat, Slender Wild Oat","Present"
 "Aythya affinis",2,2,"Animalia","Chordata","Aves","Anseriformes","Anatidae","Aythya","Bird",0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,"Lesser Scaup","Present"
 "Aythya collaris",5,4,"Animalia","Chordata","Aves","Anseriformes","Anatidae","Aythya","Bird",1,0,0,1,0,0,0,0,0,0,2,1,0,0,0,0,0,0,2,0,1,1,1,"Ring-necked Duck","Present"
-"Aythya marila",1,1,"Animalia","Chordata","Aves","Anseriformes","Anatidae","Aythya","Bird",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,"Greater Scaup","Present"
+"Aythya marila",2,2,"Animalia","Chordata","Aves","Anseriformes","Anatidae","Aythya","Bird",0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,"Greater Scaup","Present"
 "Aythya valisineria",1,1,"Animalia","Chordata","Aves","Anseriformes","Anatidae","Aythya","Bird",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,"Canvasback","Present"
-"Baccharis pilularis",30,12,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Baccharis","Plant",2,2,0,1,0,1,8,2,8,3,3,0,0,0,0,1,0,1,0,2,5,19,2,"Coyote Brush, coyotebrush","Present"
+"Baccharis pilularis",31,12,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Baccharis","Plant",2,2,1,1,0,1,8,2,8,3,3,0,0,0,0,1,0,1,0,2,5,19,3,"Coyote Brush, coyotebrush","Present"
 "Batillaria attramentaria",1,1,"Animalia","Mollusca","Gastropoda","Neotaenioglossa","Batillariidae","Batillaria","Invertebrate",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Batrachoseps attenuatus",12,10,"Animalia","Chordata","Amphibia","Caudata","Plethodontidae","Batrachoseps","Herp",5,1,0,4,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,3,1,6,1,"California Slender Salamander","Present"
 "Bellis perennis",6,3,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Bellis","Plant",0,3,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,5,0,"English Daisy","Present"
 "Bembix americana",2,2,"Animalia","Arthropoda","Insecta","Hymenoptera","Crabronidae","Bembix","Invertebrate",0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,NA,NA
-"Berberis darwinii",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Ranunculales","Berberidaceae","Berberis","Plant",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"Darwin's Barberry","Present"
+"Berberis darwinii",2,2,"Plantae","Magnoliophyta","Magnoliopsida","Ranunculales","Berberidaceae","Berberis","Plant",0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,"Darwin's Barberry","Present"
 "Berberis pinnata",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Ranunculales","Berberidaceae","Berberis","Plant",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"barberry, Oregon-grape","Present"
 "Blechnum spicant",5,3,"Plantae","Pteridophyta","Filicopsida","Polypodiales","Blechnaceae","Blechnum","Plant",1,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,3,0,2,0,"Deer Fern","Present"
 "Blennosperma nanum",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Blennosperma","Plant",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,"Point Reyes Blennosperma","Present"
@@ -133,10 +134,10 @@
 "Bromus diandrus",1,1,"Plantae","Magnoliophyta","Liliopsida","Poales","Poaceae","Bromus","Plant",0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"ripgut brome, Ripgut Grass","Present"
 "Bubo virginianus",11,8,"Animalia","Chordata","Aves","Strigiformes","Strigidae","Bubo","Bird",0,1,0,1,2,0,1,0,2,1,0,3,0,0,0,0,2,2,1,2,1,3,0,"Great Horned Owl","Present"
 "Bucephala albeola",15,9,"Animalia","Chordata","Aves","Anseriformes","Anatidae","Bucephala","Bird",3,1,4,0,0,0,0,0,0,1,5,1,0,0,0,0,0,0,5,2,3,4,1,"Bufflehead","Present"
-"Bucephala clangula",3,3,"Animalia","Chordata","Aves","Anseriformes","Anatidae","Bucephala","Bird",0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,3,0,"Common Goldeneye","Present"
+"Bucephala clangula",4,4,"Animalia","Chordata","Aves","Anseriformes","Anatidae","Bucephala","Bird",0,1,2,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,3,1,"Common Goldeneye","Present"
 "Bugula neritina",1,1,"Animalia","Bryozoa","Gymnolaemata","Cheilostomatida","Bugulidae","Bugula","Invertebrate",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Bulgaria inquinans",1,1,"Fungi","Ascomycota","Leotiomycetes","Leotiales","Bulgariaceae","Bulgaria","Fungi",0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,NA,NA
-"Buteo jamaicensis",38,26,"Animalia","Chordata","Aves","Accipitriformes","Accipitridae","Buteo","Bird",5,4,2,1,3,1,1,1,3,4,12,1,0,0,1,2,0,2,4,6,17,5,1,"Red-tailed Hawk","Present"
+"Buteo jamaicensis",39,27,"Animalia","Chordata","Aves","Accipitriformes","Accipitridae","Buteo","Bird",5,5,2,1,3,1,1,1,3,4,12,1,0,0,1,2,0,2,4,6,17,5,2,"Red-tailed Hawk","Present"
 "Buteo lagopus",2,2,"Animalia","Chordata","Aves","Accipitriformes","Accipitridae","Buteo","Bird",0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,2,0,0,"Rough-legged Hawk","Present"
 "Buteo lineatus",9,6,"Animalia","Chordata","Aves","Accipitriformes","Accipitridae","Buteo","Bird",1,1,1,0,0,0,1,0,0,1,4,0,0,0,0,0,0,0,1,2,4,1,1,"Red-shouldered Hawk","Present"
 "Buteo regalis",5,3,"Animalia","Chordata","Aves","Accipitriformes","Accipitridae","Buteo","Bird",0,0,0,0,0,0,0,0,0,0,2,3,0,0,0,0,0,0,1,1,2,1,0,"Ferruginous Hawk","Present"
@@ -147,6 +148,7 @@
 "Calamagrostis ophitidis",1,1,"Plantae","Magnoliophyta","Liliopsida","Poales","Poaceae","Calamagrostis","Plant",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Calandrinia ciliata",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Caryophyllales","Montiaceae","Calandrinia","Plant",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,"fringed redmaids, Red Maids","Present"
 "Calandrinia menziesii",5,5,"Plantae","Magnoliophyta","Magnoliopsida","Caryophyllales","Montiaceae","Calandrinia","Plant",0,0,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,4,0,NA,NA
+"Calendula arvensis",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Calendula","Plant",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,"field marigold, Field-marigold","Present"
 "Calidris alba",13,12,"Animalia","Chordata","Aves","Charadriiformes","Scolopacidae","Calidris","Bird",2,1,0,0,1,0,3,1,0,1,1,3,0,0,0,0,0,3,1,1,2,4,2,"Sanderling","Present"
 "Calidris alpina",2,2,"Animalia","Chordata","Aves","Charadriiformes","Scolopacidae","Calidris","Bird",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,1,0,"Dunlin","Present"
 "Calidris bairdii",2,2,"Animalia","Chordata","Aves","Charadriiformes","Scolopacidae","Calidris","Bird",0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,"Baird's Sandpiper","Present"
@@ -154,7 +156,9 @@
 "Calidris melanotos",1,1,"Animalia","Chordata","Aves","Charadriiformes","Scolopacidae","Calidris","Bird",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,"Pectoral Sandpiper","Present"
 "Calidris minutilla",5,5,"Animalia","Chordata","Aves","Charadriiformes","Scolopacidae","Calidris","Bird",1,0,0,1,0,0,0,0,0,2,0,1,0,0,0,0,0,0,0,1,2,1,1,"Least Sandpiper","Present"
 "Calidris virgata",1,1,"Animalia","Chordata","Aves","Charadriiformes","Scolopacidae","Calidris","Bird",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,NA,NA
-"Callipepla californica",70,44,"Animalia","Chordata","Aves","Galliformes","Odontophoridae","Callipepla","Bird",6,3,4,8,11,4,5,5,9,3,10,2,2,1,0,1,1,7,2,8,23,23,2,"California Quail","Present"
+"Callipepla californica",71,44,"Animalia","Chordata","Aves","Galliformes","Odontophoridae","Callipepla","Bird",6,3,4,8,11,5,5,5,9,3,10,2,2,1,0,1,1,7,3,8,23,23,2,"California Quail","Present"
+"Callistosporium luteo-olivaceum",2,2,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Tricholomataceae","Callistosporium","Fungi",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,NA,NA
+"Callophrys eryphon",1,1,"Animalia","Arthropoda","Insecta","Lepidoptera","Lycaenidae","Callophrys","Invertebrate",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,NA,NA
 "Calochortus tolmiei",35,24,"Plantae","Magnoliophyta","Liliopsida","Liliales","Liliaceae","Calochortus","Plant",0,0,9,23,3,0,0,0,0,0,0,0,0,1,1,0,1,1,1,6,11,13,0,"Pussy Ears, Tolmie star-tulip","Present"
 "Calochortus umbellatus",4,4,"Plantae","Magnoliophyta","Liliopsida","Liliales","Liliaceae","Calochortus","Plant",0,0,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,1,0,NA,NA
 "Caltha palustris",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Ranunculales","Ranunculaceae","Caltha","Plant",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,"Marsh Marigold","Present"
@@ -170,7 +174,7 @@
 "Cantharellus californicus",1,1,"Fungi","Basidiomycota","Agaricomycetes","Cantharellales","Cantharellaceae","Cantharellus","Fungi",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,NA,NA
 "Capsella bursa-pastoris",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Brassicales","Brassicaceae","Capsella","Plant",0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"Shepherd's Purse","Present"
 "Carcinus maenas",1,1,"Animalia","Arthropoda","Malacostraca","Decapoda","Portunidae","Carcinus","Invertebrate",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"green crab","Present"
-"Cardamine californica",15,12,"Plantae","Magnoliophyta","Magnoliopsida","Brassicales","Brassicaceae","Cardamine","Plant",2,8,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,8,2,"milkmaids","Present"
+"Cardamine californica",17,13,"Plantae","Magnoliophyta","Magnoliopsida","Brassicales","Brassicaceae","Cardamine","Plant",2,8,4,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,8,4,"milkmaids","Present"
 "Cardamine oligosperma",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Brassicales","Brassicaceae","Cardamine","Plant",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"Bitter Cress, little western bittercress","Present"
 "Cardellina pusilla",7,5,"Animalia","Chordata","Aves","Passeriformes","Parulidae","Cardellina","Bird",0,0,1,1,1,2,2,0,0,0,0,0,0,1,0,0,0,0,1,3,2,0,0,NA,NA
 "Cardionema ramosissimum",5,5,"Plantae","Magnoliophyta","Magnoliopsida","Caryophyllales","Caryophyllaceae","Cardionema","Plant",0,0,0,1,2,0,2,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,"sandcarpet, Spiny Sand Mat","Present"
@@ -182,23 +186,23 @@
 "Castilleja ambigua",7,6,"Plantae","Magnoliophyta","Magnoliopsida","Lamiales","Orobanchaceae","Castilleja","Plant",0,0,0,3,1,1,2,0,0,0,0,0,0,0,0,1,1,0,1,0,0,4,0,"johnny-nip","Present"
 "Castilleja densiflora",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Lamiales","Orobanchaceae","Castilleja","Plant",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"denseflower Indian paintbrush","Unconfirmed"
 "Castilleja exserta",8,7,"Plantae","Magnoliophyta","Magnoliopsida","Lamiales","Orobanchaceae","Castilleja","Plant",0,0,0,2,1,2,2,1,0,0,0,0,0,0,0,1,1,0,0,1,1,4,0,"Banded Owl's-clover","Present"
-"Castilleja subinclusa",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Lamiales","Orobanchaceae","Castilleja","Plant",0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"Franciscan Paintbrush","Present"
+"Castilleja subinclusa",2,2,"Plantae","Magnoliophyta","Magnoliopsida","Lamiales","Orobanchaceae","Castilleja","Plant",0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,"Franciscan Paintbrush","Present"
 "Castilleja wightii",6,6,"Plantae","Magnoliophyta","Magnoliopsida","Lamiales","Orobanchaceae","Castilleja","Plant",0,0,0,2,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,5,0,"Wight's Indian Paintbrush","Present"
-"Cathartes aura",41,32,"Animalia","Chordata","Aves","Accipitriformes","Cathartidae","Cathartes","Bird",3,6,3,1,3,4,4,3,1,5,5,3,1,2,1,2,0,3,4,9,6,12,1,"Turkey Vulture","Present"
+"Cathartes aura",42,33,"Animalia","Chordata","Aves","Accipitriformes","Cathartidae","Cathartes","Bird",3,7,3,1,3,4,4,3,1,5,5,3,1,2,1,2,0,3,4,9,6,12,2,"Turkey Vulture","Present"
 "Catharus guttatus",4,3,"Animalia","Chordata","Aves","Passeriformes","Turdidae","Catharus","Bird",0,0,0,0,0,0,1,0,0,0,2,1,0,0,0,0,0,1,3,0,0,0,0,"Hermit Thrush","Present"
 "Catharus ustulatus",2,2,"Animalia","Chordata","Aves","Passeriformes","Turdidae","Catharus","Bird",0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,"Swainson's Thrush","Present"
 "Ceanothus masonii",2,1,"Plantae","Magnoliophyta","Magnoliopsida","Rosales","Rhamnaceae","Ceanothus","Plant",0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,"Bolinas ceanothus, Mason's ceanothus","Not In Park"
 "Ceanothus thyrsiflorus",7,7,"Plantae","Magnoliophyta","Magnoliopsida","Rosales","Rhamnaceae","Ceanothus","Plant",1,0,0,1,2,0,1,0,1,1,0,0,0,0,0,0,0,1,1,1,2,2,0,"Blue Blossom, blueblossom","Present"
-"Celastrina echo",6,4,"Animalia","Arthropoda","Insecta","Lepidoptera","Lycaenidae","Celastrina","Invertebrate",0,0,1,1,0,2,2,0,0,0,0,0,0,0,0,0,0,0,2,1,0,3,0,NA,NA
+"Celastrina echo",7,4,"Animalia","Arthropoda","Insecta","Lepidoptera","Lycaenidae","Celastrina","Invertebrate",0,0,2,1,0,2,2,0,0,0,0,0,0,0,0,0,0,0,2,1,0,3,1,NA,NA
 "Cepphus columba",4,4,"Animalia","Chordata","Aves","Charadriiformes","Alcidae","Cepphus","Bird",0,0,0,0,0,0,1,2,0,0,0,1,0,0,1,0,0,0,1,0,0,2,0,"Pigeon Guillemot","Present"
 "Cerastium arvense",9,7,"Plantae","Magnoliophyta","Magnoliopsida","Caryophyllales","Caryophyllaceae","Cerastium","Plant",0,0,3,4,2,0,0,0,0,0,0,0,0,0,1,0,1,0,0,3,1,3,0,"Field Chickweed","Present"
 "Cerastium viride",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Caryophyllales","Caryophyllaceae","Cerastium","Plant",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,NA,NA
 "Cercyonis pegala",1,1,"Animalia","Arthropoda","Insecta","Lepidoptera","Nymphalidae","Cercyonis","Invertebrate",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,NA,NA
 "Certhia americana",3,3,"Animalia","Chordata","Aves","Passeriformes","Certhiidae","Certhia","Bird",0,0,0,0,0,1,0,0,0,0,2,0,0,0,0,0,0,0,0,2,1,0,0,"Brown Creeper","Present"
-"Cervus elaphus",80,61,"Animalia","Chordata","Mammalia","Artiodactyla","Cervidae","Cervus","Mammal",6,2,8,6,6,3,2,6,11,9,15,6,3,2,0,4,2,7,5,13,18,25,1,NA,NA
+"Cervus elaphus",81,61,"Animalia","Chordata","Mammalia","Artiodactyla","Cervidae","Cervus","Mammal",6,2,9,6,6,3,2,6,11,9,15,6,3,2,0,4,2,7,5,13,18,25,2,NA,NA
 "Chalybion californicum",1,1,"Animalia","Arthropoda","Insecta","Hymenoptera","Sphecidae","Chalybion","Invertebrate",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,NA,NA
 "Chamaea fasciata",6,4,"Animalia","Chordata","Aves","Passeriformes","Paradoxornithidae","Chamaea","Bird",0,1,0,1,2,1,0,0,0,0,0,1,0,0,0,0,0,0,1,3,2,0,0,"Wrentit","Present"
-"Charadrius mongolus",1,1,"Animalia","Chordata","Aves","Charadriiformes","Charadriidae","Charadrius","Bird",0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,"Lesser Sand Plover, Lesser Sand-Plover, Mongolian Plover","Unconfirmed"
+"Charadrius mongolus",2,2,"Animalia","Chordata","Aves","Charadriiformes","Charadriidae","Charadrius","Bird",0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,2,0,"Lesser Sand Plover, Lesser Sand-Plover, Mongolian Plover","Unconfirmed"
 "Charadrius nivosus",6,6,"Animalia","Chordata","Aves","Charadriiformes","Charadriidae","Charadrius","Bird",1,0,0,0,0,0,1,0,0,0,0,4,0,0,0,0,0,0,1,0,2,2,1,NA,NA
 "Charadrius semipalmatus",10,9,"Animalia","Chordata","Aves","Charadriiformes","Charadriidae","Charadrius","Bird",1,1,0,1,0,0,1,2,1,1,0,2,0,0,0,0,0,0,1,2,1,4,2,"Semipalmated Plover","Present"
 "Charadrius vociferus",2,2,"Animalia","Chordata","Aves","Charadriiformes","Charadriidae","Charadrius","Bird",0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0,"Killdeer","Present"
@@ -231,15 +235,16 @@
 "Cladonia macilenta",1,1,"Fungi","Ascomycota","Lecanoromycetes","Lecanorales","Cladoniaceae","Cladonia","Fungi",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,NA,NA
 "Clarkia davyi",3,3,"Plantae","Magnoliophyta","Magnoliopsida","Myrtales","Onagraceae","Clarkia","Plant",0,0,0,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,"Davy's Godetia","Present"
 "Clarkia rubicunda",6,5,"Plantae","Magnoliophyta","Magnoliopsida","Myrtales","Onagraceae","Clarkia","Plant",0,0,0,0,0,5,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,4,0,"Ruby Chalice Godetia","Present"
+"Clavulina coralloides",1,1,"Fungi","Basidiomycota","Agaricomycetes","Cantharellales","Clavulinaceae","Clavulina","Fungi",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,NA,NA
 "Clavulina rugosa",1,1,"Fungi","Basidiomycota","Agaricomycetes","Cantharellales","Clavulinaceae","Clavulina","Fungi",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,NA,NA
-"Claytonia perfoliata",16,13,"Plantae","Magnoliophyta","Magnoliopsida","Caryophyllales","Montiaceae","Claytonia","Plant",1,2,3,6,2,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,3,11,1,"miner's lettuce","Present"
+"Claytonia perfoliata",20,13,"Plantae","Magnoliophyta","Magnoliopsida","Caryophyllales","Montiaceae","Claytonia","Plant",1,2,7,6,2,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,3,11,5,"miner's lettuce","Present"
 "Claytonia sibirica",39,24,"Plantae","Magnoliophyta","Magnoliopsida","Caryophyllales","Montiaceae","Claytonia","Plant",1,4,4,5,5,8,7,5,0,0,0,0,0,0,0,0,1,2,3,6,7,17,3,"Candy-striped Claytonia, Siberian springbeauty","Present"
 "Clematis ligusticifolia",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Ranunculales","Ranunculaceae","Clematis","Plant",0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,NA,NA
 "Clinocardium nuttallii",1,1,"Animalia","Mollusca","Bivalvia","Veneroida","Cardiidae","Clinocardium","Invertebrate",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,NA,NA
 "Clinopodium douglasii",2,2,"Plantae","Magnoliophyta","Magnoliopsida","Lamiales","Lamiaceae","Clinopodium","Plant",0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,"yerba buena","Present"
 "Clitocybe nuda",3,2,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Tricholomataceae","Clitocybe","Fungi",1,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,3,0,NA,NA
 "Coccinella californica",2,1,"Animalia","Arthropoda","Insecta","Coleoptera","Coccinellidae","Coccinella","Invertebrate",0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,NA,NA
-"Coccinella septempunctata",9,6,"Animalia","Arthropoda","Insecta","Coleoptera","Coccinellidae","Coccinella","Invertebrate",0,0,1,1,0,3,2,1,1,0,0,0,0,0,0,0,0,0,1,2,1,5,0,NA,NA
+"Coccinella septempunctata",10,6,"Animalia","Arthropoda","Insecta","Coleoptera","Coccinellidae","Coccinella","Invertebrate",0,0,2,1,0,3,2,1,1,0,0,0,0,0,0,0,0,0,1,2,1,5,1,NA,NA
 "Codium fragile",1,1,"Plantae","Chlorophyta","Bryopsidophyceae","Bryopsidales","Codiaceae","Codium","Plant",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Codium setchellii",1,1,"Plantae","Chlorophyta","Bryopsidophyceae","Bryopsidales","Codiaceae","Codium","Plant",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Coenonympha tullia",4,4,"Animalia","Arthropoda","Insecta","Lepidoptera","Nymphalidae","Coenonympha","Invertebrate",0,0,0,0,2,0,0,1,1,0,0,0,0,0,0,0,0,0,1,2,0,1,0,NA,NA
@@ -256,16 +261,17 @@
 "Coragyps atratus",1,1,"Animalia","Chordata","Aves","Accipitriformes","Cathartidae","Coragyps","Bird",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Cordulegaster dorsalis",1,1,"Animalia","Arthropoda","Insecta","Odonata","Cordulegastridae","Cordulegaster","Invertebrate",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,NA,NA
 "Corethrogyne filaginifolia",5,5,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Corethrogyne","Plant",0,0,0,0,1,2,2,0,0,0,0,0,0,0,0,0,0,0,1,1,1,2,0,"California sandaster, common sandaster, whiteleaf sandaster","Present"
-"Cornu aspersum",7,1,"Animalia","Mollusca","Gastropoda","Stylommatophora","Helicidae","Cornu","Invertebrate",0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,NA,NA
+"Cornu aspersum",8,1,"Animalia","Mollusca","Gastropoda","Stylommatophora","Helicidae","Cornu","Invertebrate",0,7,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,NA,NA
 "Corolla spectabilis",2,2,"Animalia","Mollusca","Gastropoda","Thecosomata","Cymbuliidae","Corolla","Invertebrate",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,NA,NA
 "Cortaderia jubata",8,2,"Plantae","Magnoliophyta","Liliopsida","Poales","Poaceae","Cortaderia","Plant",8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,1,"Pampas Grass, purple pampas grass","Present"
 "Cortinarius smithii",2,2,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Cortinariaceae","Cortinarius","Fungi",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,NA,NA
 "Corvus corax",23,19,"Animalia","Chordata","Aves","Passeriformes","Corvidae","Corvus","Bird",1,2,4,2,1,0,0,0,1,1,8,3,0,1,0,2,0,1,2,4,4,8,1,"Common Raven","Present"
-"Corylus cornuta",10,7,"Plantae","Magnoliophyta","Magnoliopsida","Fagales","Betulaceae","Corylus","Plant",0,0,0,0,6,1,1,0,2,0,0,0,0,0,0,0,1,0,0,0,0,9,0,"California hazelnut","Present"
-"Cotula coronopifolia",12,7,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Cotula","Plant",0,1,0,2,2,5,2,0,0,0,0,0,0,0,0,0,0,1,5,0,1,5,0,"Brass Buttons, common brassbuttons","Present"
+"Corylus cornuta",11,8,"Plantae","Magnoliophyta","Magnoliopsida","Fagales","Betulaceae","Corylus","Plant",0,1,0,0,6,1,1,0,2,0,0,0,0,0,0,0,1,0,0,0,0,9,1,"California hazelnut","Present"
+"Cotula coronopifolia",13,7,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Cotula","Plant",0,1,1,2,2,5,2,0,0,0,0,0,0,0,0,0,0,1,5,0,1,5,1,"Brass Buttons, common brassbuttons","Present"
 "Cotula turbinata",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Cotula","Plant",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Craterellus tubaeformis",2,1,"Fungi","Basidiomycota","Agaricomycetes","Cantharellales","Cantharellaceae","Craterellus","Fungi",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,NA,NA
 "Crepidotus mollis",1,1,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Crepidotaceae","Crepidotus","Fungi",0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,NA,NA
+"Cryptantha leiocarpa",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Boraginales","Boraginaceae","Cryptantha","Plant",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,"Coast Cryptantha","Present"
 "Cryptochiton stelleri",2,2,"Animalia","Mollusca","Polyplacophora","Chitonida","Mopaliidae","Cryptochiton","Invertebrate",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,NA,NA
 "Cryptomya californica",1,1,"Animalia","Mollusca","Bivalvia","Myoida","Myidae","Cryptomya","Invertebrate",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,"","Present"
 "Cryptoporus volvatus",2,2,"Fungi","Basidiomycota","Agaricomycetes","Polyporales","Polyporaceae","Cryptoporus","Fungi",0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,2,0,NA,NA
@@ -277,20 +283,20 @@
 "Cyanocitta stelleri",7,5,"Animalia","Chordata","Aves","Passeriformes","Corvidae","Cyanocitta","Bird",1,1,1,0,0,1,0,1,0,1,0,1,0,0,0,0,0,1,0,1,3,2,0,"Steller's Jay","Present"
 "Cygnus olor",1,1,"Animalia","Chordata","Aves","Anseriformes","Anatidae","Cygnus","Bird",0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,NA,NA
 "Cymbalaria muralis",5,5,"Plantae","Magnoliophyta","Magnoliopsida","Lamiales","Plantaginaceae","Cymbalaria","Plant",0,0,0,0,1,1,1,0,0,1,0,1,0,0,0,0,0,0,0,1,1,3,0,"Kenilworth Ivy","Present"
-"Cynoglossum grande",2,2,"Plantae","Magnoliophyta","Magnoliopsida","Boraginales","Boraginaceae","Cynoglossum","Plant",0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,"Hound's Tongue","Present"
+"Cynoglossum grande",3,3,"Plantae","Magnoliophyta","Magnoliopsida","Boraginales","Boraginaceae","Cynoglossum","Plant",0,0,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,"Hound's Tongue","Present"
 "Cynosurus echinatus",5,1,"Plantae","Magnoliophyta","Liliopsida","Poales","Poaceae","Cynosurus","Plant",1,0,0,0,0,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,4,1,"bristly dogstail grass, Hedgehog Dogtail","Present"
 "Cyperus eragrostis",3,2,"Plantae","Magnoliophyta","Liliopsida","Poales","Cyperaceae","Cyperus","Plant",0,0,0,0,0,1,0,2,0,0,0,0,0,0,0,0,0,0,1,0,0,2,0,"nutsedge, Tall Cyperus, tall flatsedge, umbrella sedge","Present"
 "Cytisus scoparius",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Fabales","Fabaceae","Cytisus","Plant",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"Scotch Broom, scotchbroom","Present"
 "Dacrymyces chrysocomus",1,1,"Fungi","Basidiomycota","Dacrymycetes","Dacrymycetales","Dacrymycetaceae","Dacrymyces","Fungi",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,NA,NA
 "Dacrymyces chrysospermus",2,2,"Fungi","Basidiomycota","Dacrymycetes","Dacrymycetales","Dacrymycetaceae","Dacrymyces","Fungi",1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,NA,NA
-"Dama dama",1,1,"Animalia","Chordata","Mammalia","Artiodactyla","Cervidae","Dama","Mammal",0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,"fallow deer, Fallow Deer","Present"
+"Dama dama",2,2,"Animalia","Chordata","Mammalia","Artiodactyla","Cervidae","Dama","Mammal",0,1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,"fallow deer, Fallow Deer","Present"
 "Danaus plexippus",2,2,"Animalia","Arthropoda","Insecta","Lepidoptera","Nymphalidae","Danaus","Invertebrate",0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0,NA,NA
 "Danthonia californica",1,1,"Plantae","Magnoliophyta","Liliopsida","Poales","Poaceae","Danthonia","Plant",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"California oatgrass","Present"
 "Datura stramonium",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Solanales","Solanaceae","Datura","Plant",0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,"Jimson Weed","Present"
 "Daucus pusillus",3,2,"Plantae","Magnoliophyta","Magnoliopsida","Apiales","Apiaceae","Daucus","Plant",0,0,0,0,1,0,2,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,"American wild carrot, Rattlesnake Weed","Present"
 "Deinandra corymbosa",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Deinandra","Plant",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,"coastal tarweed","Present"
 "Delphinium decorum",2,2,"Plantae","Magnoliophyta","Magnoliopsida","Ranunculales","Ranunculaceae","Delphinium","Plant",0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,"Coast Larkspur","Present"
-"Dendraster excentricus",9,7,"Animalia","Echinodermata","Echinoidea","Clypeasteroida","Dendrasteridae","Dendraster","Invertebrate",0,2,0,0,0,1,3,1,1,0,1,0,0,0,0,0,0,1,0,0,3,5,0,NA,NA
+"Dendraster excentricus",10,8,"Animalia","Echinodermata","Echinoidea","Clypeasteroida","Dendrasteridae","Dendraster","Invertebrate",0,2,1,0,0,1,3,1,1,0,1,0,0,0,0,0,0,1,0,0,3,5,1,NA,NA
 "Dendrographa alectoroides",1,1,"Fungi","Ascomycota","Arthoniomycetes","Arthoniales","Roccellaceae","Dendrographa","Fungi",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Dermasterias imbricata",1,1,"Animalia","Echinodermata","Asteroidea","Valvatida","Asteropseidae","Dermasterias","Invertebrate",0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,NA,NA
 "Diabrotica undecimpunctata",7,4,"Animalia","Arthropoda","Insecta","Coleoptera","Chrysomelidae","Diabrotica","Invertebrate",0,0,0,0,0,2,3,1,1,0,0,0,0,0,0,0,0,0,1,0,0,6,0,NA,NA
@@ -303,7 +309,7 @@
 "Digitalis purpurea",10,10,"Plantae","Magnoliophyta","Magnoliopsida","Lamiales","Plantaginaceae","Digitalis","Plant",0,0,0,3,4,3,0,0,0,0,0,0,0,0,1,0,0,0,0,2,2,5,0,"Foxglove, purple foxglove","Present"
 "Dipsacus fullonum",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Dipsacales","Caprifoliaceae","Dipsacus","Plant",0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,"Fuller's teasel, Wild Teasel","Present"
 "Dirca occidentalis",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Malvales","Thymelaeaceae","Dirca","Plant",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,"Leatherwood","Not In Park"
-"Distichlis spicata",4,3,"Plantae","Magnoliophyta","Liliopsida","Poales","Poaceae","Distichlis","Plant",0,0,0,0,1,0,1,1,0,1,0,0,0,0,0,0,0,1,0,1,1,1,0,"inland saltgrass, Saltgrass","Present"
+"Distichlis spicata",5,3,"Plantae","Magnoliophyta","Liliopsida","Poales","Poaceae","Distichlis","Plant",0,0,1,0,1,0,1,1,0,1,0,0,0,0,0,0,0,1,0,1,1,1,1,"inland saltgrass, Saltgrass","Present"
 "Dolichousnea longissima",1,1,"Fungi","Ascomycota","Lecanoromycetes","Lecanorales","Parmeliaceae","Dolichousnea","Fungi",0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Doris montereyensis",4,4,"Animalia","Mollusca","Gastropoda","Nudibranchia","Dorididae","Doris","Invertebrate",0,0,1,1,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,2,0,1,0,NA,NA
 "Drosanthemum floribundum",3,3,"Plantae","Magnoliophyta","Magnoliopsida","Caryophyllales","Aizoaceae","Drosanthemum","Plant",0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,0,"Pale Pink Iceplant","Present"
@@ -314,7 +320,7 @@
 "Ehrharta erecta",1,1,"Plantae","Magnoliophyta","Liliopsida","Poales","Poaceae","Ehrharta","Plant",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"panic veldt grass, panic veldtgrass","Present"
 "Elanus leucurus",12,8,"Animalia","Chordata","Aves","Accipitriformes","Accipitridae","Elanus","Bird",1,1,0,0,0,1,1,0,4,0,3,1,0,0,0,0,0,0,3,2,6,0,1,"White-tailed Kite","Present"
 "Eleocharis rostellata",1,1,"Plantae","Magnoliophyta","Liliopsida","Poales","Cyperaceae","Eleocharis","Plant",0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"walking sedge, Walking Spikerush","Present"
-"Elgaria coerulea",14,12,"Animalia","Chordata","Reptilia","Squamata","Anguidae","Elgaria","Herp",0,2,1,2,1,0,2,2,1,2,1,0,0,0,0,2,0,1,0,1,6,4,0,"Northern Alligator Lizard","Present"
+"Elgaria coerulea",16,14,"Animalia","Chordata","Reptilia","Squamata","Anguidae","Elgaria","Herp",0,2,1,2,1,0,3,2,2,2,1,0,0,0,0,2,0,1,1,2,6,4,0,"Northern Alligator Lizard","Present"
 "Elgaria multicarinata",2,2,"Animalia","Chordata","Reptilia","Squamata","Anguidae","Elgaria","Herp",0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,"Southern Alligator Lizard","Probably Present"
 "Elymus californicus",1,1,"Plantae","Magnoliophyta","Liliopsida","Poales","Poaceae","Elymus","Plant",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"California bottlebrush grass, California Bottle-brush Grass","Present"
 "Embiotoca jacksoni",1,1,"Animalia","Chordata","Actinopterygii","Perciformes","Embiotocidae","Embiotoca","Fish",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"black perch","Present"
@@ -330,27 +336,28 @@
 "Equisetum telmateia",4,4,"Plantae","Equisetophyta","Equisetopsida","Equisetales","Equisetaceae","Equisetum","Plant",0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,2,0,"giant horsetail","Present"
 "Eremophila alpestris",4,4,"Animalia","Chordata","Aves","Passeriformes","Alaudidae","Eremophila","Bird",0,1,1,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,2,2,0,0,"Horned Lark","Present"
 "Ericameria ericoides",6,6,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Ericameria","Plant",0,0,1,0,1,0,0,2,1,1,0,0,0,0,0,0,0,0,0,1,2,3,0,"California goldenbush, Dune Mock Heather","Present"
-"Erigeron glaucus",26,21,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Erigeron","Plant",1,2,1,1,6,4,6,1,3,0,0,1,0,0,0,0,1,1,2,4,10,7,1,"Seaside Daisy, seaside fleabane","Present"
+"Erigeron glaucus",27,21,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Erigeron","Plant",1,2,2,1,6,4,6,1,3,0,0,1,0,0,0,0,1,1,2,4,10,7,2,"Seaside Daisy, seaside fleabane","Present"
 "Eriodictyon californicum",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Boraginales","Boraginaceae","Eriodictyon","Plant",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,"California yerba santa, Yerba Santa","Present"
 "Eriogonum fasciculatum",2,2,"Plantae","Magnoliophyta","Magnoliopsida","Caryophyllales","Polygonaceae","Eriogonum","Plant",0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,"California Buckwheat","Present"
 "Eriogonum latifolium",13,11,"Plantae","Magnoliophyta","Magnoliopsida","Caryophyllales","Polygonaceae","Eriogonum","Plant",0,0,0,1,1,4,4,2,0,0,0,1,0,0,0,0,0,0,2,0,2,9,0,"seaside buckwheat, Coast Buckwheat","Present"
 "Eriogonum nudum",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Caryophyllales","Polygonaceae","Eriogonum","Plant",0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"naked buckwheat","Present"
 "Eriophyllum confertiflorum",2,2,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Eriophyllum","Plant",0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,NA,NA
 "Eriophyllum lanatum",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Eriophyllum","Plant",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,"common woolly sunflower, Woolly Sunflower","Present"
-"Eriophyllum staechadifolium",17,13,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Eriophyllum","Plant",0,1,0,0,2,4,5,0,3,1,0,1,0,0,0,0,0,0,1,1,6,9,0,"Lizard-tail, seaside woolly sunflower","Present"
+"Eriophyllum staechadifolium",18,13,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Eriophyllum","Plant",0,1,1,0,2,4,5,0,3,1,0,1,0,0,0,0,0,0,1,1,6,9,1,"Lizard-tail, seaside woolly sunflower","Present"
 "Eristalis tenax",1,1,"Animalia","Arthropoda","Insecta","Diptera","Syrphidae","Eristalis","Invertebrate",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,NA,NA
 "Erodium botrys",3,3,"Plantae","Magnoliophyta","Magnoliopsida","Geraniales","Geraniaceae","Erodium","Plant",0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,"Broad-leaf Filaree, longbeak stork's bill","Present"
 "Erodium cicutarium",3,3,"Plantae","Magnoliophyta","Magnoliopsida","Geraniales","Geraniaceae","Erodium","Plant",0,0,1,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,"Red-stem Filaree, redstem stork's bill","Present"
 "Erodium moschatum",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Geraniales","Geraniaceae","Erodium","Plant",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,"White-stem Filaree","Present"
 "Eryngium armatum",8,8,"Plantae","Magnoliophyta","Magnoliopsida","Apiales","Apiaceae","Eryngium","Plant",0,0,0,0,1,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,2,6,0,"coastal eryngo, Coyote Thistle","Present"
 "Erysimum concinnum",5,5,"Plantae","Magnoliophyta","Magnoliopsida","Brassicales","Brassicaceae","Erysimum","Plant",0,1,2,0,2,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,2,0,"coast wallflower, common wallflower","Present"
+"Erysimum franciscanum",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Brassicales","Brassicaceae","Erysimum","Plant",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,"San Francisco Wallflower","Unconfirmed"
 "Erythemis collocata",2,2,"Animalia","Arthropoda","Insecta","Odonata","Libellulidae","Erythemis","Invertebrate",0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,NA,NA
 "Erythranthe moschata",6,5,"Plantae","Magnoliophyta","Magnoliopsida","Lamiales","Phrymaceae","Erythranthe","Plant",0,0,0,0,0,1,4,1,0,0,0,0,0,0,1,0,1,0,0,2,1,1,0,NA,NA
-"Eschscholzia californica",41,27,"Plantae","Magnoliophyta","Magnoliopsida","Ranunculales","Papaveraceae","Eschscholzia","Plant",0,1,5,5,10,5,9,1,3,1,1,0,0,0,0,1,0,2,2,4,8,23,1,"California Poppy","Present"
+"Eschscholzia californica",43,28,"Plantae","Magnoliophyta","Magnoliopsida","Ranunculales","Papaveraceae","Eschscholzia","Plant",0,1,7,5,10,5,9,1,3,1,1,0,0,0,0,1,0,2,2,4,8,23,3,"California Poppy","Present"
 "Eucalyptus globulus",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Myrtales","Myrtaceae","Eucalyptus","Plant",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"Blue Gum, Tasmanian bluegum","Present"
 "Eumetopias jubatus",1,1,"Animalia","Chordata","Mammalia","Carnivora","Otariidae","Eumetopias","Mammal",0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,"northern sea lion, Steller Sea Lion, steller sealion, Steller's sea lion","Present"
 "Euphagus carolinus",1,1,"Animalia","Chordata","Aves","Passeriformes","Icteridae","Euphagus","Bird",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,"Rusty Blackbird","Unconfirmed"
-"Euphagus cyanocephalus",9,6,"Animalia","Chordata","Aves","Passeriformes","Icteridae","Euphagus","Bird",0,0,0,1,4,0,1,1,0,0,2,0,0,0,0,0,0,0,2,2,1,4,0,"Brewer's Blackbird","Present"
+"Euphagus cyanocephalus",10,6,"Animalia","Chordata","Aves","Passeriformes","Icteridae","Euphagus","Bird",0,0,0,1,4,0,2,1,0,0,2,0,0,0,0,0,0,0,2,2,1,5,0,"Brewer's Blackbird","Present"
 "Euphorbia lathyris",2,2,"Plantae","Magnoliophyta","Magnoliopsida","Malpighiales","Euphorbiaceae","Euphorbia","Plant",0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,2,0,"Caper spurge, Gopher Plant","Present"
 "Euphorbia oblongata",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Malpighiales","Euphorbiaceae","Euphorbia","Plant",0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"eggleaf spurge, oblong spurge","Present"
 "Exidia glandulosa",2,2,"Fungi","Basidiomycota","Agaricomycetes","Auriculariales","Auriculariaceae","Exidia","Fungi",2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,NA,NA
@@ -360,11 +367,11 @@
 "Fomitopsis pinicola",1,1,"Fungi","Basidiomycota","Agaricomycetes","Polyporales","Fomitopsidaceae","Fomitopsis","Fungi",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Formica lasioides",1,1,"Animalia","Arthropoda","Insecta","Hymenoptera","Formicidae","Formica","Invertebrate",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,NA,NA
 "Formica transmontanis",1,1,"Animalia","Arthropoda","Insecta","Hymenoptera","Formicidae","Formica","Invertebrate",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
-"Fragaria chiloensis",20,16,"Plantae","Magnoliophyta","Magnoliopsida","Rosales","Rosaceae","Fragaria","Plant",2,4,5,1,2,2,2,1,1,0,0,0,0,0,0,0,0,1,2,1,5,10,1,"Beach Strawberry","Present"
+"Fragaria chiloensis",22,17,"Plantae","Magnoliophyta","Magnoliopsida","Rosales","Rosaceae","Fragaria","Plant",2,5,6,1,2,2,2,1,1,0,0,0,0,0,0,0,0,1,2,1,5,10,3,"Beach Strawberry","Present"
 "Fragaria vesca",4,4,"Plantae","Magnoliophyta","Magnoliopsida","Rosales","Rosaceae","Fragaria","Plant",1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,0,1,"Wood Strawberry, woodland strawberry","Present"
 "Frangula californica",26,15,"Plantae","Magnoliophyta","Magnoliopsida","Rosales","Rhamnaceae","Frangula","Plant",0,1,0,0,2,2,7,6,3,4,1,0,0,0,0,0,0,0,2,2,3,19,0,"coffee berry","Present"
 "Frankenia salina",4,4,"Plantae","Magnoliophyta","Magnoliopsida","Caryophyllales","Frankeniaceae","Frankenia","Plant",0,0,0,0,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,3,1,0,"Alkali Heath, alkali seaheath","Present"
-"Fritillaria affinis",11,8,"Plantae","Magnoliophyta","Liliopsida","Liliales","Liliaceae","Fritillaria","Plant",0,0,7,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,4,4,0,"Checker Lily","Unconfirmed"
+"Fritillaria affinis",13,10,"Plantae","Magnoliophyta","Liliopsida","Liliales","Liliaceae","Fritillaria","Plant",0,0,9,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,4,4,2,"Checker Lily","Unconfirmed"
 "Fritillaria liliacea",1,1,"Plantae","Magnoliophyta","Liliopsida","Liliales","Liliaceae","Fritillaria","Plant",0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,"Fragrant Fritillary","Not In Park"
 "Fulica americana",8,5,"Animalia","Chordata","Aves","Gruiformes","Rallidae","Fulica","Bird",1,2,1,0,0,0,0,0,0,0,3,1,0,0,0,0,0,1,2,2,0,3,0,"American Coot","Present"
 "Fuligo septica",3,2,"Protozoa","Mycetozoa","Myxomycetes","Physarales","Physaraceae","Fuligo",NA,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,3,0,NA,NA
@@ -396,19 +403,19 @@
 "Haematopus bachmani",4,4,"Animalia","Chordata","Aves","Charadriiformes","Haematopodidae","Haematopus","Bird",0,0,0,0,0,0,0,2,0,0,1,1,0,0,0,0,0,1,0,2,0,1,0,"American Black Oystercatcher","Present"
 "Haemorhous mexicanus",3,2,"Animalia","Chordata","Aves","Passeriformes","Fringillidae","Haemorhous","Bird",0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,2,0,1,0,0,NA,NA
 "Haemorhous purpureus",6,4,"Animalia","Chordata","Aves","Passeriformes","Fringillidae","Haemorhous","Bird",2,0,0,0,1,0,1,0,0,1,1,0,0,0,0,0,0,0,1,2,1,2,0,NA,NA
-"Haplotrema minimum",1,1,"Animalia","Mollusca","Gastropoda","Stylommatophora","Haplotrematidae","Haplotrema","Invertebrate",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,NA,NA
+"Haplotrema minimum",2,2,"Animalia","Mollusca","Gastropoda","Stylommatophora","Haplotrematidae","Haplotrema","Invertebrate",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,NA,NA
 "Harmonia axyridis",3,2,"Animalia","Arthropoda","Insecta","Coleoptera","Coccinellidae","Harmonia","Invertebrate",0,0,0,1,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,NA,NA
-"Harpaphe haydeniana",2,2,"Animalia","Arthropoda","Diplopoda","Polydesmida","Xystodesmidae","Harpaphe","Invertebrate",0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,NA,NA
+"Harpaphe haydeniana",3,3,"Animalia","Arthropoda","Diplopoda","Polydesmida","Xystodesmidae","Harpaphe","Invertebrate",0,0,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,NA,NA
 "Hedera helix",2,2,"Plantae","Magnoliophyta","Magnoliopsida","Apiales","Araliaceae","Hedera","Plant",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,"English Ivy","Present"
 "Helenium puberulum",5,4,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Helenium","Plant",0,0,0,0,0,1,1,2,0,0,1,0,0,0,0,0,0,0,1,0,1,3,0,"Sneezeweed, rosilla","Present"
 "Heliotropium curassavicum",8,7,"Plantae","Magnoliophyta","Magnoliopsida","Boraginales","Boraginaceae","Heliotropium","Plant",0,0,0,0,1,3,2,2,0,0,0,0,0,0,2,0,0,1,1,1,3,0,0,"Heliotrope, salt heliotrope","Present"
 "Helminthoglypta arrosa",2,2,"Animalia","Mollusca","Gastropoda","Stylommatophora","Helminthoglyptidae","Helminthoglypta","Invertebrate",0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,NA,NA
 "Helminthoglypta stiversiana",1,1,"Animalia","Mollusca","Gastropoda","Stylommatophora","Helminthoglyptidae","Helminthoglypta","Invertebrate",0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
-"Helvella dryophila",1,1,"Fungi","Ascomycota","Pezizomycetes","Pezizales","Helvellaceae","Helvella","Fungi",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
-"Helvella vespertina",4,3,"Fungi","Ascomycota","Pezizomycetes","Pezizales","Helvellaceae","Helvella","Fungi",2,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,3,NA,NA
+"Helvella dryophila",2,2,"Fungi","Ascomycota","Pezizomycetes","Pezizales","Helvellaceae","Helvella","Fungi",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,NA,NA
+"Helvella vespertina",6,4,"Fungi","Ascomycota","Pezizomycetes","Pezizales","Helvellaceae","Helvella","Fungi",2,1,2,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,5,NA,NA
 "Hemigrapsus nudus",2,2,"Animalia","Arthropoda","Malacostraca","Decapoda","Varunidae","Hemigrapsus","Invertebrate",0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,"purple shore crab","Present"
 "Hemigrapsus oregonensis",4,4,"Animalia","Arthropoda","Malacostraca","Decapoda","Varunidae","Hemigrapsus","Invertebrate",0,0,0,0,0,2,1,0,0,0,1,0,0,0,0,0,1,1,0,0,1,1,0,NA,NA
-"Heracleum maximum",36,23,"Plantae","Magnoliophyta","Magnoliopsida","Apiales","Apiaceae","Heracleum","Plant",2,4,2,6,6,1,5,2,4,1,2,1,0,0,0,0,0,1,1,2,5,25,2,"cow parsnip","Present"
+"Heracleum maximum",37,23,"Plantae","Magnoliophyta","Magnoliopsida","Apiales","Apiaceae","Heracleum","Plant",2,4,3,6,6,1,5,2,4,1,2,1,0,0,0,0,0,1,1,2,5,25,3,"cow parsnip","Present"
 "Hermissenda crassicornis",2,2,"Animalia","Mollusca","Gastropoda","Nudibranchia","Facelinidae","Hermissenda","Invertebrate",0,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,NA,NA
 "Hermissenda opalescens",1,1,"Animalia","Mollusca","Gastropoda","Nudibranchia","Facelinidae","Hermissenda","Invertebrate",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Hesperolinon congestum",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Malpighiales","Linaceae","Hesperolinon","Plant",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,"Marin dwarf-flax","Not In Park"
@@ -431,7 +438,7 @@
 "Hydriomena nubilofasciata",1,1,"Animalia","Arthropoda","Insecta","Lepidoptera","Geometridae","Hydriomena","Invertebrate",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,NA,NA
 "Hydrocotyle ranunculoides",6,6,"Plantae","Magnoliophyta","Magnoliopsida","Apiales","Araliaceae","Hydrocotyle","Plant",0,0,1,0,0,1,2,0,1,0,1,0,0,0,0,0,1,0,1,0,1,3,0,"floating marshpennywort, Notched-leaf Marsh Pennywort","Present"
 "Hydroprogne caspia",8,7,"Animalia","Chordata","Aves","Charadriiformes","Laridae","Hydroprogne","Bird",0,0,0,1,2,1,2,2,0,0,0,0,0,1,2,0,0,0,0,0,4,1,0,NA,NA
-"Hygrocybe coccinea",5,4,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Hygrophoraceae","Hygrocybe","Fungi",2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,2,NA,NA
+"Hygrocybe coccinea",6,5,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Hygrophoraceae","Hygrocybe","Fungi",2,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,3,NA,NA
 "Hygrocybe flavescens",1,1,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Hygrophoraceae","Hygrocybe","Fungi",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,NA,NA
 "Hygrocybe singeri",2,1,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Hygrophoraceae","Hygrocybe","Fungi",0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,2,0,NA,NA
 "Hygrophoropsis aurantiaca",5,3,"Fungi","Basidiomycota","Agaricomycetes","Boletales","Hygrophoropsidaceae","Hygrophoropsis","Fungi",0,0,1,0,0,0,0,0,1,3,0,0,0,0,0,0,0,0,0,1,0,4,0,NA,NA
@@ -439,20 +446,20 @@
 "Hylephila phyleus",2,2,"Animalia","Arthropoda","Insecta","Lepidoptera","Hesperiidae","Hylephila","Invertebrate",0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,2,0,0,NA,NA
 "Hyles lineata",1,1,"Animalia","Arthropoda","Insecta","Lepidoptera","Sphingidae","Hyles","Invertebrate",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Hypericum anagalloides",3,3,"Plantae","Magnoliophyta","Magnoliopsida","Malpighiales","Hypericaceae","Hypericum","Plant",0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,2,0,"Tinker's Penny","Present"
-"Hypholoma fasciculare",6,6,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Strophariaceae","Hypholoma","Fungi",1,0,0,0,0,0,0,0,1,1,2,1,0,0,0,0,0,0,0,0,0,6,0,NA,NA
+"Hypholoma fasciculare",7,7,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Strophariaceae","Hypholoma","Fungi",1,0,1,0,0,0,0,0,1,1,2,1,0,0,0,0,0,0,0,0,0,6,1,NA,NA
 "Hypochaeris radicata",2,2,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Hypochaeris","Plant",0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,"hairy catsear, Hairy Cat's-ear","Present"
 "Hypogymnia heterophylla",1,1,"Fungi","Ascomycota","Lecanoromycetes","Lecanorales","Parmeliaceae","Hypogymnia","Fungi",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
-"Hypomyces cervinigenus",1,1,"Fungi","Ascomycota","Sordariomycetes","Hypocreales","Hypocreaceae","Hypomyces","Fungi",0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,NA,NA
+"Hypomyces cervinigenus",2,2,"Fungi","Ascomycota","Sordariomycetes","Hypocreales","Hypocreaceae","Hypomyces","Fungi",0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,NA,NA
 "Hypomyces chrysospermus",1,1,"Fungi","Ascomycota","Sordariomycetes","Hypocreales","Hypocreaceae","Hypomyces","Fungi",0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Icaricia acmon",6,4,"Animalia","Arthropoda","Insecta","Lepidoptera","Lycaenidae","Icaricia","Invertebrate",0,0,0,0,0,2,3,0,0,0,1,0,0,0,0,0,0,0,1,1,0,4,0,NA,NA
 "Icaricia icarioides",6,5,"Animalia","Arthropoda","Insecta","Lepidoptera","Lycaenidae","Icaricia","Invertebrate",0,0,1,0,5,0,0,0,0,0,0,0,0,0,0,0,0,1,0,3,1,1,0,NA,NA
 "Icterus bullockii",1,1,"Animalia","Chordata","Aves","Passeriformes","Icteridae","Icterus","Bird",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,NA,NA
 "Ilex aquifolium",2,2,"Plantae","Magnoliophyta","Magnoliopsida","Aquifoliales","Aquifoliaceae","Ilex","Plant",0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,"English Holly","Present"
-"Iris douglasiana",33,25,"Plantae","Magnoliophyta","Liliopsida","Asparagales","Iridaceae","Iris","Plant",1,3,9,12,5,2,0,0,0,0,0,1,0,0,1,0,0,1,4,4,8,13,2,"Douglas Iris","Present"
+"Iris douglasiana",36,28,"Plantae","Magnoliophyta","Liliopsida","Asparagales","Iridaceae","Iris","Plant",1,3,11,12,6,2,0,0,0,0,0,1,0,0,1,0,0,1,4,4,9,13,4,"Douglas Iris","Present"
 "Iris macrosiphon",1,1,"Plantae","Magnoliophyta","Liliopsida","Asparagales","Iridaceae","Iris","Plant",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"Ground Iris","Present"
 "Iris pseudacorus",1,1,"Plantae","Magnoliophyta","Liliopsida","Asparagales","Iridaceae","Iris","Plant",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,"paleyellow iris, yellow flag","Unconfirmed"
 "Ischnura cervula",11,8,"Animalia","Arthropoda","Insecta","Odonata","Coenagrionidae","Ischnura","Invertebrate",0,1,3,0,4,0,0,1,2,0,0,0,2,0,0,0,0,0,0,2,3,4,0,NA,NA
-"Ixoreus naevius",7,7,"Animalia","Chordata","Aves","Passeriformes","Turdidae","Ixoreus","Bird",4,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,1,0,3,2,1,0,"Varied Thrush","Present"
+"Ixoreus naevius",8,8,"Animalia","Chordata","Aves","Passeriformes","Turdidae","Ixoreus","Bird",4,0,1,0,0,0,0,0,0,0,0,3,0,0,0,0,0,1,0,3,2,1,1,"Varied Thrush","Present"
 "Jaumea carnosa",3,3,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Jaumea","Plant",0,0,0,0,0,0,2,1,0,0,0,0,0,0,0,0,0,0,1,0,2,0,0,"Jaumea, marsh jaumea","Present"
 "Junco hyemalis",4,3,"Animalia","Chordata","Aves","Passeriformes","Emberizidae","Junco","Bird",0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,2,0,0,2,0,"Dark-eyed Junco","Present"
 "Juncus patens",1,1,"Plantae","Magnoliophyta","Liliopsida","Poales","Juncaceae","Juncus","Plant",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,"Blue-green Rush, spreading rush","Present"
@@ -462,12 +469,14 @@
 "Kindbergia oregana",1,1,"Plantae","Bryophyta","Bryopsida","Hypnales","Brachytheciaceae","Kindbergia","Plant",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Kniphofia uvaria",1,1,"Plantae","Magnoliophyta","Liliopsida","Asparagales","Asphodelaceae","Kniphofia","Plant",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,"Red Hot Poker","Unconfirmed"
 "Laccaria amethysteo-occidentalis",2,2,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Hydnangiaceae","Laccaria","Fungi",2,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,NA,NA
+"Laccaria bicolor",1,1,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Hydnangiaceae","Laccaria","Fungi",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,NA,NA
 "Lachnum virgineum",2,2,"Fungi","Ascomycota","Leotiomycetes","Helotiales","Hyaloscyphaceae","Lachnum","Fungi",0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,NA,NA
 "Lactarius alnicola",1,1,"Fungi","Basidiomycota","Agaricomycetes","Russulales","Russulaceae","Lactarius","Fungi",0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,NA,NA
+"Lactarius atrobadius",1,1,"Fungi","Basidiomycota","Agaricomycetes","Russulales","Russulaceae","Lactarius","Fungi",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,NA,NA
 "Lactarius deliciosus",1,1,"Fungi","Basidiomycota","Agaricomycetes","Russulales","Russulaceae","Lactarius","Fungi",0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,NA,NA
-"Lactarius rubidus",3,3,"Fungi","Basidiomycota","Agaricomycetes","Russulales","Russulaceae","Lactarius","Fungi",2,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,2,1,NA,NA
+"Lactarius rubidus",4,4,"Fungi","Basidiomycota","Agaricomycetes","Russulales","Russulaceae","Lactarius","Fungi",2,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,2,2,NA,NA
 "Lactarius rufus",1,1,"Fungi","Basidiomycota","Agaricomycetes","Russulales","Russulaceae","Lactarius","Fungi",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
-"Lactarius subviscidus",1,1,"Fungi","Basidiomycota","Agaricomycetes","Russulales","Russulaceae","Lactarius","Fungi",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,NA,NA
+"Lactarius subviscidus",6,2,"Fungi","Basidiomycota","Agaricomycetes","Russulales","Russulaceae","Lactarius","Fungi",1,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,NA,NA
 "Lactarius xanthogalactus",2,2,"Fungi","Basidiomycota","Agaricomycetes","Russulales","Russulaceae","Lactarius","Fungi",0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,NA,NA
 "Lagurus ovatus",3,3,"Plantae","Magnoliophyta","Liliopsida","Poales","Poaceae","Lagurus","Plant",0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,2,1,0,"Hare's Tail","Present"
 "Laminaria sinclairii",1,1,"Chromista","Ochrophyta","Phaeophyceae","Laminariales","Laminariaceae","Laminaria",NA,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,"","Present"
@@ -476,17 +485,16 @@
 "Larus californicus",3,2,"Animalia","Chordata","Aves","Charadriiformes","Laridae","Larus","Bird",0,2,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,2,"California Gull","Present"
 "Larus canus",5,4,"Animalia","Chordata","Aves","Charadriiformes","Laridae","Larus","Bird",0,2,0,0,0,0,0,0,0,0,2,1,0,0,0,0,0,0,0,0,2,1,2,"Mew Gull","Present"
 "Larus delawarensis",3,3,"Animalia","Chordata","Aves","Charadriiformes","Laridae","Larus","Bird",0,2,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,1,"Ring-billed Gull","Present"
-"Larus glaucescens",3,3,"Animalia","Chordata","Aves","Charadriiformes","Laridae","Larus","Bird",0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,1,0,0,0,1,1,0,0,"Glaucous-winged Gull","Present"
-"Larus heermanni",16,12,"Animalia","Chordata","Aves","Charadriiformes","Laridae","Larus","Bird",0,0,0,0,0,0,6,1,3,2,1,3,0,2,0,0,0,1,2,6,3,2,0,"Heermann's Gull","Present"
-"Larus occidentalis",26,17,"Animalia","Chordata","Aves","Charadriiformes","Laridae","Larus","Bird",2,3,1,3,1,0,8,2,2,1,1,2,0,0,4,1,0,3,3,1,2,10,2,"Western Gull","Present"
+"Larus glaucescens",4,4,"Animalia","Chordata","Aves","Charadriiformes","Laridae","Larus","Bird",0,1,0,0,1,0,0,0,0,0,1,1,0,0,0,1,0,0,0,1,1,0,1,"Glaucous-winged Gull","Present"
+"Larus heermanni",18,13,"Animalia","Chordata","Aves","Charadriiformes","Laridae","Larus","Bird",0,0,0,0,0,2,6,1,3,2,1,3,0,2,0,0,0,1,2,8,3,2,0,"Heermann's Gull","Present"
+"Larus occidentalis",27,18,"Animalia","Chordata","Aves","Charadriiformes","Laridae","Larus","Bird",2,3,1,3,1,1,8,2,2,1,1,2,0,0,4,1,0,3,3,2,2,10,2,"Western Gull","Present"
 "Lasthenia californica",2,2,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Lasthenia","Plant",0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,"Goldfields","Present"
 "Lasthenia minor",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Lasthenia","Plant",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,"Woolly Goldfields","Present"
 "Lathyrus latifolius",11,9,"Plantae","Magnoliophyta","Magnoliopsida","Fabales","Fabaceae","Lathyrus","Plant",0,0,1,0,2,1,1,1,5,0,0,0,0,0,0,0,0,0,0,1,4,6,0,"perennial pea, Perennial Sweet Pea","Present"
 "Lathyrus littoralis",9,8,"Plantae","Magnoliophyta","Magnoliopsida","Fabales","Fabaceae","Lathyrus","Plant",0,0,4,1,3,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,7,0,"Beach Pea, silky beach pea","Present"
 "Lathyrus vestitus",2,1,"Plantae","Magnoliophyta","Magnoliopsida","Fabales","Fabaceae","Lathyrus","Plant",0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,"Pacific pea","Present"
 "Layia carnosa",4,2,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Layia","Plant",0,0,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,3,0,"Beach Layia, beach tidytips","Present"
-"Layia platyglossa",7,7,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Layia","Plant",0,0,2,1,2,2,0,0,0,0,0,0,0,0,0,0,0,0,1,2,2,2,0,"Tidy-tips","Present"
-"Lecanora pinguis",2,2,"Fungi","Ascomycota","Lecanoromycetes","Lecanorales","Lecanoraceae","Lecanora","Fungi",0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,2,0,NA,NA
+"Layia platyglossa",8,8,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Layia","Plant",0,0,2,1,3,2,0,0,0,0,0,0,0,0,0,0,0,0,1,2,3,2,0,"Tidy-tips","Present"
 "Leccinum manzanitae",3,2,"Fungi","Basidiomycota","Agaricomycetes","Boletales","Boletaceae","Leccinum","Fungi",2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,NA,NA
 "Lemna minor",1,1,"Plantae","Magnoliophyta","Liliopsida","Alismatales","Araceae","Lemna","Plant",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"Duckweed","Present"
 "Lenzites betulina",2,2,"Fungi","Basidiomycota","Agaricomycetes","Polyporales","Polyporaceae","Lenzites","Fungi",1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,2,0,NA,NA
@@ -510,7 +518,7 @@
 "Limenitis lorquini",4,3,"Animalia","Arthropoda","Insecta","Lepidoptera","Nymphalidae","Limenitis","Invertebrate",0,0,0,0,0,0,2,0,2,0,0,0,0,0,0,0,0,1,0,2,0,1,0,NA,NA
 "Limnanthes douglasii",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Brassicales","Limnanthaceae","Limnanthes","Plant",0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,"Common Meadowfoam, Douglas' meadowfoam","Present"
 "Limonium californicum",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Caryophyllales","Plumbaginaceae","Limonium","Plant",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"California sealavender, Western Marsh-rosemary","Present"
-"Limosa fedoa",8,8,"Animalia","Chordata","Aves","Charadriiformes","Scolopacidae","Limosa","Bird",1,2,0,0,0,0,1,1,1,1,0,1,0,0,1,0,0,0,0,3,1,2,1,"Marbled Godwit","Present"
+"Limosa fedoa",9,9,"Animalia","Chordata","Aves","Charadriiformes","Scolopacidae","Limosa","Bird",1,3,0,0,0,0,1,1,1,1,0,1,0,0,1,0,0,0,0,3,1,2,2,"Marbled Godwit","Present"
 "Linaria vulgaris",2,2,"Plantae","Magnoliophyta","Magnoliopsida","Lamiales","Plantaginaceae","Linaria","Plant",0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,"Butter-and-Eggs","Present"
 "Linum bienne",15,11,"Plantae","Magnoliophyta","Magnoliopsida","Malpighiales","Linaceae","Linum","Plant",0,0,0,2,6,2,2,2,0,0,1,0,0,0,0,0,0,1,1,0,1,12,0,"Narrow-leaved Flax, pale flax","Present"
 "Linum usitatissimum",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Malpighiales","Linaceae","Linum","Plant",0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,"Common Flax","Present"
@@ -521,11 +529,11 @@
 "Lonicera involucrata",15,9,"Plantae","Magnoliophyta","Magnoliopsida","Dipsacales","Caprifoliaceae","Lonicera","Plant",0,0,1,2,1,4,1,2,2,2,0,0,1,0,0,0,0,0,3,3,2,6,0,"Coast Twinberry, twinberry honeysuckle","Present"
 "Lontra canadensis",11,11,"Animalia","Chordata","Mammalia","Carnivora","Mustelidae","Lontra","Mammal",1,0,0,1,0,1,2,4,1,1,0,0,1,0,0,0,0,0,1,4,2,3,0,NA,NA
 "Lophocampa maculata",9,9,"Animalia","Arthropoda","Insecta","Lepidoptera","Erebidae","Lophocampa","Invertebrate",0,0,0,0,0,0,1,1,3,3,1,0,0,0,2,0,0,1,0,2,3,1,0,NA,NA
-"Lophodytes cucullatus",1,1,"Animalia","Chordata","Aves","Anseriformes","Anatidae","Lophodytes","Bird",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,"Hooded Merganser","Present"
+"Lophodytes cucullatus",2,2,"Animalia","Chordata","Aves","Anseriformes","Anatidae","Lophodytes","Bird",0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,"Hooded Merganser","Present"
 "Lophopanopeus bellus",1,1,"Animalia","Arthropoda","Malacostraca","Decapoda","Panopeidae","Lophopanopeus","Invertebrate",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Lottia gigantea",1,1,"Animalia","Mollusca","Gastropoda","Patellogastropoda","Lottiidae","Lottia","Invertebrate",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,NA,NA
 "Lottia scabra",1,1,"Animalia","Mollusca","Gastropoda","Patellogastropoda","Lottiidae","Lottia","Invertebrate",0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,NA,NA
-"Lotus corniculatus",16,8,"Plantae","Magnoliophyta","Magnoliopsida","Fabales","Fabaceae","Lotus","Plant",0,0,0,0,1,4,7,3,1,0,0,0,0,0,0,0,0,0,0,1,1,14,0,"birdfoot deervetch, BIRD'S FOOT TREFOIL, BIRD'S TREFOIL","Present"
+"Lotus corniculatus",17,8,"Plantae","Magnoliophyta","Magnoliopsida","Fabales","Fabaceae","Lotus","Plant",0,0,0,0,1,4,7,3,2,0,0,0,0,0,0,0,0,0,0,1,1,15,0,"birdfoot deervetch, BIRD'S FOOT TREFOIL, BIRD'S TREFOIL","Present"
 "Ludwigia hexapetala",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Myrtales","Onagraceae","Ludwigia","Plant",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Ludwigia peploides",2,2,"Plantae","Magnoliophyta","Magnoliopsida","Myrtales","Onagraceae","Ludwigia","Plant",0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,"Creeping Water Primrose","Unconfirmed"
 "Lupinus albifrons",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Fabales","Fabaceae","Lupinus","Plant",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"silver lupine, Silverleaf Lupine","Present"
@@ -548,7 +556,7 @@
 "Maianthemum racemosum",8,7,"Plantae","Magnoliophyta","Liliopsida","Asparagales","Asparagaceae","Maianthemum","Plant",1,0,4,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,4,2,1,NA,NA
 "Maianthemum stellatum",5,5,"Plantae","Magnoliophyta","Liliopsida","Asparagales","Asparagaceae","Maianthemum","Plant",0,0,1,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,0,"false Solomon's seal, little false Solomon's-seal, star false Solomon's-seal, star-flower Solomon's-seal, starry false lily of the valley, starry false Solomon's seal, starry false Solomon's-seal, starry Solomon's-seal","Present"
 "Malacosoma californicum",1,1,"Animalia","Arthropoda","Insecta","Lepidoptera","Lasiocampidae","Malacosoma","Invertebrate",0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,NA,NA
-"Marah fabacea",14,10,"Plantae","Magnoliophyta","Magnoliopsida","Cucurbitales","Cucurbitaceae","Marah","Plant",1,2,2,1,1,4,1,0,0,1,1,0,0,0,0,0,0,0,1,0,3,9,1,"wild cucumber","Present"
+"Marah fabacea",16,10,"Plantae","Magnoliophyta","Magnoliopsida","Cucurbitales","Cucurbitaceae","Marah","Plant",1,2,4,1,1,4,1,0,0,1,1,0,0,0,0,0,0,0,1,0,3,9,3,"wild cucumber","Present"
 "Marah oregana",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Cucurbitales","Cucurbitaceae","Marah","Plant",0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,"Oregon wild cucumber","Present"
 "Marasmius androsaceus",1,1,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Marasmiaceae","Marasmius","Fungi",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Marasmius plicatulus",2,2,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Marasmiaceae","Marasmius","Fungi",0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,1,0,NA,NA
@@ -562,7 +570,7 @@
 "Melanitta perspicillata",22,14,"Animalia","Chordata","Aves","Anseriformes","Anatidae","Melanitta","Bird",0,3,2,0,4,1,3,1,0,2,4,2,0,0,1,0,0,3,2,1,6,9,0,"Surf Scoter","Present"
 "Melanoplus devastator",1,1,"Animalia","Arthropoda","Insecta","Orthoptera","Acrididae","Melanoplus","Invertebrate",0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,NA,NA
 "Melospiza lincolnii",3,3,"Animalia","Chordata","Aves","Passeriformes","Emberizidae","Melospiza","Bird",0,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,1,1,0,1,0,"Lincoln's Sparrow","Present"
-"Melospiza melodia",22,15,"Animalia","Chordata","Aves","Passeriformes","Emberizidae","Melospiza","Bird",4,2,1,2,5,1,0,1,2,1,2,1,0,0,0,0,0,1,4,6,6,4,1,"Song Sparrow","Present"
+"Melospiza melodia",23,15,"Animalia","Chordata","Aves","Passeriformes","Emberizidae","Melospiza","Bird",4,2,2,2,5,1,0,1,2,1,2,1,0,0,0,0,0,1,4,6,6,4,2,"Song Sparrow","Present"
 "Melozone crissalis",2,2,"Animalia","Chordata","Aves","Passeriformes","Emberizidae","Melozone","Bird",0,0,0,0,2,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,NA,NA
 "Mentha aquatica",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Lamiales","Lamiaceae","Mentha","Plant",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,NA,NA
 "Mentha arvensis",3,3,"Plantae","Magnoliophyta","Magnoliopsida","Lamiales","Lamiaceae","Mentha","Plant",0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,1,0,0,0,0,2,0,0,"Marsh Mint, wild mint","Present"
@@ -575,11 +583,11 @@
 "Metacarcinus magister",5,5,"Animalia","Arthropoda","Malacostraca","Decapoda","Cancridae","Metacarcinus","Invertebrate",0,0,0,1,1,0,3,0,0,0,0,0,0,0,0,1,0,0,1,0,2,1,0,NA,NA
 "Microtes occidentalis",4,3,"Animalia","Arthropoda","Insecta","Orthoptera","Acrididae","Microtes","Invertebrate",0,0,0,0,0,0,1,3,0,0,0,0,0,0,1,0,0,0,0,0,3,0,0,NA,NA
 "Microtus californicus",2,2,"Animalia","Chordata","Mammalia","Rodentia","Cricetidae","Microtus","Mammal",0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,"Amargosa Vole, California Vole","Present"
-"Mimulus aurantiacus",34,23,"Plantae","Magnoliophyta","Magnoliopsida","Lamiales","Phrymaceae","Mimulus","Plant",2,0,1,0,4,5,6,4,7,3,2,0,0,0,0,0,0,1,1,3,4,24,1,"Bush Monkeyflower","Present"
+"Mimulus aurantiacus",35,24,"Plantae","Magnoliophyta","Magnoliopsida","Lamiales","Phrymaceae","Mimulus","Plant",2,0,2,0,4,5,6,4,7,3,2,0,0,0,0,0,0,1,1,3,4,24,2,"Bush Monkeyflower","Present"
 "Mimulus guttatus",26,21,"Plantae","Magnoliophyta","Magnoliopsida","Lamiales","Phrymaceae","Mimulus","Plant",0,0,1,3,6,7,6,3,0,0,0,0,0,1,0,0,0,1,2,4,5,13,0,"Common Monkeyflower, seep monkeyflower","Present"
 "Mimulus moschatus",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Lamiales","Phrymaceae","Mimulus","Plant",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"Musk Monkeyflower, muskflower","Present"
-"Mirounga angustirostris",90,46,"Animalia","Chordata","Mammalia","Carnivora","Phocidae","Mirounga","Mammal",18,8,6,5,9,8,7,3,1,3,11,11,0,0,5,3,2,4,6,12,13,32,13,"Northern Elephant Seal, northern sea elephant","Present"
-"Misumena vatia",1,1,"Animalia","Arthropoda","Arachnida","Araneae","Thomisidae","Misumena","Invertebrate",0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,NA,NA
+"Mirounga angustirostris",92,48,"Animalia","Chordata","Mammalia","Carnivora","Phocidae","Mirounga","Mammal",18,10,6,5,9,8,7,3,1,3,11,11,0,0,5,3,2,4,6,12,13,32,15,"Northern Elephant Seal, northern sea elephant","Present"
+"Misumena vatia",2,2,"Animalia","Arthropoda","Arachnida","Araneae","Thomisidae","Misumena","Invertebrate",0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Mola mola",1,1,"Animalia","Chordata","Actinopterygii","Tetraodontiformes","Molidae","Mola","Fish",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,"ocean sunfish","Probably Present"
 "Monadenia infumata",4,4,"Animalia","Mollusca","Gastropoda","Stylommatophora","Bradybaenidae","Monadenia","Invertebrate",1,0,0,1,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,4,0,NA,NA
 "Monardella sinuata",8,8,"Plantae","Magnoliophyta","Magnoliopsida","Lamiales","Lamiaceae","Monardella","Plant",0,0,0,0,0,2,4,2,0,0,0,0,0,0,0,0,1,0,0,2,4,1,0,NA,NA
@@ -590,9 +598,10 @@
 "Mustelus henlei",1,1,"Animalia","Chordata","Chondrichthyes","Carcharhiniformes","Triakidae","Mustelus","Fish",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,"brown smoothhound","Present"
 "Mycena acicula",2,1,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Mycenaceae","Mycena","Fungi",2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,NA,NA
 "Mycena capillaripes",1,1,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Mycenaceae","Mycena","Fungi",0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
+"Mycena pura",1,1,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Mycenaceae","Mycena","Fungi",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,NA,NA
 "Myliobatis californica",5,5,"Animalia","Chordata","Chondrichthyes","Myliobatiformes","Myliobatidae","Myliobatis","Fish",0,0,1,1,0,0,0,2,1,0,0,0,0,0,0,1,0,0,0,2,2,0,0,"bat ray","Present"
 "Myosotis discolor",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Boraginales","Boraginaceae","Myosotis","Plant",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,"changing forget-me-not, Yellow and Blue Forget-me-not","Present"
-"Myosotis latifolia",5,5,"Plantae","Magnoliophyta","Magnoliopsida","Boraginales","Boraginaceae","Myosotis","Plant",1,0,2,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,4,0,"broadleaf forget-me-not, Forget-me-not","Present"
+"Myosotis latifolia",6,6,"Plantae","Magnoliophyta","Magnoliopsida","Boraginales","Boraginaceae","Myosotis","Plant",1,0,3,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,4,1,"broadleaf forget-me-not, Forget-me-not","Present"
 "Myriophyllum aquaticum",3,2,"Plantae","Magnoliophyta","Magnoliopsida","Saxifragales","Haloragaceae","Myriophyllum","Plant",0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,3,0,"Parrot's Feather","Present"
 "Mytilus californianus",6,6,"Animalia","Mollusca","Bivalvia","Mytiloida","Mytilidae","Mytilus","Invertebrate",0,0,0,1,0,2,1,0,1,0,1,0,0,1,0,0,0,1,2,0,0,2,0,NA,NA
 "Nassarius fossatus",1,1,"Animalia","Mollusca","Gastropoda","Neogastropoda","Nassariidae","Nassarius","Invertebrate",0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
@@ -600,12 +609,13 @@
 "Navanax inermis",2,2,"Animalia","Mollusca","Gastropoda","Cephalaspidea","Aglajidae","Navanax","Invertebrate",0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,NA,NA
 "Navarretia rosulata",2,1,"Plantae","Magnoliophyta","Magnoliopsida","Ericales","Polemoniaceae","Navarretia","Plant",0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,NA,NA
 "Navarretia squarrosa",12,10,"Plantae","Magnoliophyta","Magnoliopsida","Ericales","Polemoniaceae","Navarretia","Plant",0,0,0,0,0,3,6,1,2,0,0,0,0,0,0,1,0,0,0,2,2,7,0,"skunkbush, Skunkweed","Present"
-"Nemophila menziesii",13,12,"Plantae","Magnoliophyta","Magnoliopsida","Boraginales","Boraginaceae","Nemophila","Plant",0,6,5,1,1,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,5,6,0,"baby blue eyes, BABY-BLUE-EYES","Present"
+"Nemophila menziesii",15,14,"Plantae","Magnoliophyta","Magnoliopsida","Boraginales","Boraginaceae","Nemophila","Plant",0,7,6,1,1,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,5,6,2,"baby blue eyes, BABY-BLUE-EYES","Present"
 "Neoalcis californiaria",1,1,"Animalia","Arthropoda","Insecta","Lepidoptera","Geometridae","Neoalcis","Invertebrate",0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Neotoma fuscipes",1,1,"Animalia","Chordata","Mammalia","Rodentia","Cricetidae","Neotoma","Mammal",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,"Dusky-footed Woodrat","Present"
 "Neotrypaea californiensis",2,2,"Animalia","Arthropoda","Malacostraca","Decapoda","Callianassidae","Neotrypaea","Invertebrate",0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,NA,NA
 "Nereocystis luetkeana",5,4,"Chromista","Ochrophyta","Phaeophyceae","Laminariales","Lessoniaceae","Nereocystis",NA,1,0,0,1,0,1,0,0,1,0,1,0,0,0,0,0,0,0,1,0,2,1,1,NA,NA
-"Neurotrichus gibbsii",2,2,"Animalia","Chordata","Mammalia","Soricomorpha","Talpidae","Neurotrichus","Mammal",0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,"American Shrew Mole, Gibbs's shrew mole, least shrew mole, Shrew-mole","Present"
+"Neurotrichus gibbsii",2,2,"Animalia","Chordata","Mammalia","Eulipotyphla","Talpidae","Neurotrichus","Mammal",0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,"American Shrew Mole, Gibbs's shrew mole, least shrew mole, Shrew-mole","Present"
+"Neverita reclusiana",1,1,"Animalia","Mollusca","Gastropoda","Neotaenioglossa","Naticidae","Neverita","Invertebrate",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,NA,NA
 "Nicrophorus guttula",1,1,"Animalia","Arthropoda","Insecta","Coleoptera","Silphidae","Nicrophorus","Invertebrate",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,NA,NA
 "Niebla cephalota",4,3,"Fungi","Ascomycota","Lecanoromycetes","Lecanorales","Ramalinaceae","Niebla","Fungi",0,0,2,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,1,3,0,"","Present"
 "Niebla ceruchoides",1,1,"Fungi","Ascomycota","Lecanoromycetes","Lecanorales","Ramalinaceae","Niebla","Fungi",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
@@ -613,33 +623,33 @@
 "Niebla homalea",10,7,"Fungi","Ascomycota","Lecanoromycetes","Lecanorales","Ramalinaceae","Niebla","Fungi",0,0,1,0,1,2,0,0,1,1,3,1,0,0,0,0,0,0,0,0,3,7,0,NA,NA
 "Noctua pronuba",2,2,"Animalia","Arthropoda","Insecta","Lepidoptera","Noctuidae","Noctua","Invertebrate",0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,NA,NA
 "Nothochrysa californica",1,1,"Animalia","Arthropoda","Insecta","Neuroptera","Chrysopidae","Nothochrysa","Invertebrate",0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,NA,NA
-"Notholithocarpus densiflorus",16,9,"Plantae","Magnoliophyta","Magnoliopsida","Fagales","Fagaceae","Notholithocarpus","Plant",1,2,0,1,5,2,2,1,1,1,0,0,0,0,0,0,0,0,0,5,0,10,1,"Tanoak","Present"
+"Notholithocarpus densiflorus",17,10,"Plantae","Magnoliophyta","Magnoliopsida","Fagales","Fagaceae","Notholithocarpus","Plant",1,2,0,1,6,2,2,1,1,1,0,0,0,0,0,0,0,0,0,5,1,10,1,"Tanoak","Present"
 "Nucella ostrina",2,2,"Animalia","Mollusca","Gastropoda","Neogastropoda","Muricidae","Nucella","Invertebrate",0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,NA,NA
 "Numenius americanus",2,2,"Animalia","Chordata","Aves","Charadriiformes","Scolopacidae","Numenius","Bird",0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,"Long-billed Curlew","Present"
 "Numenius phaeopus",3,3,"Animalia","Chordata","Aves","Charadriiformes","Scolopacidae","Numenius","Bird",1,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,1,0,2,0,0,"Whimbrel","Present"
-"Nuttallanthus texanus",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Lamiales","Plantaginaceae","Nuttallanthus","Plant",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"Texas toadflax","Present"
+"Nuttallanthus texanus",2,2,"Plantae","Magnoliophyta","Magnoliopsida","Lamiales","Plantaginaceae","Nuttallanthus","Plant",0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,"Texas toadflax","Present"
 "Nycticorax nycticorax",1,1,"Animalia","Chordata","Aves","Pelecaniformes","Ardeidae","Nycticorax","Bird",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"Black-crowned Night-Heron","Present"
 "Nymphaea alba",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Nymphaeales","Nymphaeaceae","Nymphaea","Plant",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,NA,NA
 "Ochlodes agricola",1,1,"Animalia","Arthropoda","Insecta","Lepidoptera","Hesperiidae","Ochlodes","Invertebrate",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,NA,NA
 "Ochlodes sylvanoides",3,3,"Animalia","Arthropoda","Insecta","Lepidoptera","Hesperiidae","Ochlodes","Invertebrate",0,0,0,0,0,0,0,2,1,0,0,0,0,0,0,0,0,0,1,1,0,1,0,NA,NA
 "Octogomphus specularis",1,1,"Animalia","Arthropoda","Insecta","Odonata","Gomphidae","Octogomphus","Invertebrate",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
-"Odocoileus hemionus",83,55,"Animalia","Chordata","Mammalia","Artiodactyla","Cervidae","Odocoileus","Mammal",5,12,4,4,10,4,9,6,10,6,10,3,1,0,3,1,1,6,5,12,21,30,3,NA,NA
+"Odocoileus hemionus",84,56,"Animalia","Chordata","Mammalia","Artiodactyla","Cervidae","Odocoileus","Mammal",5,13,4,4,10,4,9,6,10,6,10,3,1,0,3,1,1,6,5,12,21,30,4,NA,NA
 "Oemleria cerasiformis",2,2,"Plantae","Magnoliophyta","Magnoliopsida","Rosales","Rosaceae","Oemleria","Plant",0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,"Indian plum, Oso Berry","Present"
 "Oenanthe sarmentosa",4,2,"Plantae","Magnoliophyta","Magnoliopsida","Apiales","Apiaceae","Oenanthe","Plant",0,0,0,0,1,0,2,0,0,0,1,0,0,0,0,0,0,1,3,0,0,0,0,"water parsely, Water Parsley","Present"
 "Oligocottus maculosus",1,1,"Animalia","Chordata","Actinopterygii","Scorpaeniformes","Cottidae","Oligocottus","Fish",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,"tidepool sculpin","Present"
-"Olivella biplicata",1,1,"Animalia","Mollusca","Gastropoda","Neogastropoda","Olivellidae","Olivella","Invertebrate",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
+"Olivella biplicata",2,2,"Animalia","Mollusca","Gastropoda","Neogastropoda","Olivellidae","Olivella","Invertebrate",0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,NA,NA
 "Oncorhynchus kisutch",1,1,"Animalia","Chordata","Actinopterygii","Salmoniformes","Salmonidae","Oncorhynchus","Fish",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,"coho salmon, silver salmon","Present"
 "Ondatra zibethicus",1,1,"Animalia","Chordata","Mammalia","Rodentia","Cricetidae","Ondatra","Mammal",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,"Common Muskrat, Muskbeaver, Muskrat","Present"
 "Orobanche californica",3,2,"Plantae","Magnoliophyta","Magnoliopsida","Lamiales","Orobanchaceae","Orobanche","Plant",0,0,0,0,0,1,0,2,0,0,0,0,0,0,0,2,0,0,0,0,0,1,0,"Broom-rape","Present"
 "Ostrea lurida",1,1,"Animalia","Mollusca","Bivalvia","Ostreoida","Ostreidae","Ostrea","Invertebrate",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Oxalis incarnata",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Oxalidales","Oxalidaceae","Oxalis","Plant",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
-"Oxalis pes-caprae",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Oxalidales","Oxalidaceae","Oxalis","Plant",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"Bermuda Buttercup","Present"
+"Oxalis pes-caprae",2,2,"Plantae","Magnoliophyta","Magnoliopsida","Oxalidales","Oxalidaceae","Oxalis","Plant",0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,"Bermuda Buttercup","Present"
 "Oxalis pilosa",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Oxalidales","Oxalidaceae","Oxalis","Plant",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,"Hairy wood sorrel","Present"
 "Oxyura jamaicensis",6,5,"Animalia","Chordata","Aves","Anseriformes","Anatidae","Oxyura","Bird",1,1,1,0,1,0,0,0,0,0,2,0,0,0,0,0,0,0,1,3,1,1,0,"Ruddy Duck","Present"
-"Pachygrapsus crassipes",15,13,"Animalia","Arthropoda","Malacostraca","Decapoda","Grapsidae","Pachygrapsus","Invertebrate",0,0,0,1,1,7,1,1,2,0,2,0,0,0,0,0,0,0,1,1,4,9,0,"striped shore crab","Present"
+"Pachygrapsus crassipes",16,14,"Animalia","Arthropoda","Malacostraca","Decapoda","Grapsidae","Pachygrapsus","Invertebrate",0,0,1,1,1,7,1,1,2,0,2,0,0,0,0,0,0,0,1,1,4,9,1,"striped shore crab","Present"
 "Panaeolus papilionaceus",1,1,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Psathyrellaceae","Panaeolus","Fungi",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,NA,NA
 "Panaeolus semiovatus",1,1,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Psathyrellaceae","Panaeolus","Fungi",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
-"Pandion haliaetus",9,7,"Animalia","Chordata","Aves","Accipitriformes","Pandionidae","Pandion","Bird",1,0,1,1,1,2,1,0,0,0,2,0,0,1,0,0,0,1,2,2,1,2,0,"Osprey","Present"
+"Pandion haliaetus",10,8,"Animalia","Chordata","Aves","Accipitriformes","Pandionidae","Pandion","Bird",1,0,2,1,1,2,1,0,0,0,2,0,0,1,0,0,0,1,2,2,1,2,1,"Osprey","Present"
 "Papilio eurymedon",3,3,"Animalia","Arthropoda","Insecta","Lepidoptera","Papilionidae","Papilio","Invertebrate",0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,2,0,1,0,0,NA,NA
 "Papilio rutulus",1,1,"Animalia","Arthropoda","Insecta","Lepidoptera","Papilionidae","Papilio","Invertebrate",0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,NA,NA
 "Papilio zelicaon",2,1,"Animalia","Arthropoda","Insecta","Lepidoptera","Papilionidae","Papilio","Invertebrate",0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,NA,NA
@@ -652,7 +662,7 @@
 "Patiria miniata",6,5,"Animalia","Echinodermata","Asteroidea","Valvatida","Asterinidae","Patiria","Invertebrate",0,0,1,1,0,2,2,0,0,0,0,0,0,0,0,1,1,0,1,0,1,2,0,NA,NA
 "Paxillus involutus",1,1,"Fungi","Basidiomycota","Agaricomycetes","Boletales","Paxillaceae","Paxillus","Fungi",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Pelecanus erythrorhynchos",13,11,"Animalia","Chordata","Aves","Pelecaniformes","Pelecanidae","Pelecanus","Bird",1,0,1,0,0,2,3,3,0,0,2,1,0,0,0,0,0,1,2,5,4,1,0,"American White Pelican","Present"
-"Pelecanus occidentalis",30,20,"Animalia","Chordata","Aves","Pelecaniformes","Pelecanidae","Pelecanus","Bird",0,4,1,3,1,1,3,6,5,1,3,2,0,0,3,0,0,1,1,5,5,15,0,"Brown Pelican","Present"
+"Pelecanus occidentalis",31,21,"Animalia","Chordata","Aves","Pelecaniformes","Pelecanidae","Pelecanus","Bird",0,4,1,3,1,2,3,6,5,1,3,2,0,0,3,0,0,1,1,6,5,15,0,"Brown Pelican","Present"
 "Pelvetiopsis limitata",1,1,"Chromista","Ochrophyta","Phaeophyceae","Fucales","Fucaceae","Pelvetiopsis",NA,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,"","Present"
 "Pentagramma triangularis",1,1,"Plantae","Pteridophyta","Filicopsida","Polypodiales","Pteridaceae","Pentagramma","Plant",0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"Goldback Fern","Present"
 "Perizoma epictata",1,1,"Animalia","Arthropoda","Insecta","Lepidoptera","Geometridae","Perizoma","Invertebrate",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,NA,NA
@@ -675,16 +685,16 @@
 "Pheucticus ludovicianus",1,1,"Animalia","Chordata","Aves","Passeriformes","Cardinalidae","Pheucticus","Bird",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,"Rose-breasted Grosbeak","Present"
 "Pheucticus melanocephalus",1,1,"Animalia","Chordata","Aves","Passeriformes","Cardinalidae","Pheucticus","Bird",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,"Black-headed Grosbeak","Present"
 "Phoca vitulina",8,8,"Animalia","Chordata","Mammalia","Carnivora","Phocidae","Phoca","Mammal",1,0,0,0,0,2,0,2,0,0,2,1,0,0,1,1,0,1,0,1,0,3,1,NA,NA
-"Pholiota velaglutinosa",4,3,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Strophariaceae","Pholiota","Fungi",3,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,3,1,NA,NA
+"Pholiota velaglutinosa",5,3,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Strophariaceae","Pholiota","Fungi",3,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,3,2,NA,NA
 "Phragmatopoma californica",1,1,"Animalia","Annelida","Polychaeta","Sabellida","Sabellariidae","Phragmatopoma","Invertebrate",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Phyciodes mylitta",20,13,"Animalia","Arthropoda","Insecta","Lepidoptera","Nymphalidae","Phyciodes","Invertebrate",0,1,1,1,4,3,2,2,4,1,1,0,0,0,0,0,0,0,2,8,4,6,0,NA,NA
 "Phyciodes pulchella",8,6,"Animalia","Arthropoda","Insecta","Lepidoptera","Nymphalidae","Phyciodes","Invertebrate",0,0,0,0,7,0,0,0,0,1,0,0,0,0,1,0,0,0,0,6,0,1,0,NA,NA
 "Phycomyces blakesleeanus",1,1,"Fungi","Zygomycota","","Mucorales","Phycomycetaceae","Phycomyces","Fungi",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,NA,NA
-"Phyllaplysia taylori",3,3,"Animalia","Mollusca","Gastropoda","Anaspidea","Notarchidae","Phyllaplysia","Invertebrate",0,0,0,0,0,1,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,2,0,NA,NA
+"Phyllaplysia taylori",4,4,"Animalia","Mollusca","Gastropoda","Anaspidea","Notarchidae","Phyllaplysia","Invertebrate",0,0,0,0,0,1,1,1,1,0,0,0,0,0,1,0,0,0,0,0,0,3,0,NA,NA
 "Picoides pubescens",1,1,"Animalia","Chordata","Aves","Piciformes","Picidae","Picoides","Bird",0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,"Downy Woodpecker","Present"
 "Picoides villosus",1,1,"Animalia","Chordata","Aves","Piciformes","Picidae","Picoides","Bird",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,"Hairy Woodpecker","Present"
 "Pieris marginalis",7,6,"Animalia","Arthropoda","Insecta","Lepidoptera","Pieridae","Pieris","Invertebrate",0,2,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,3,1,NA,NA
-"Pieris rapae",2,2,"Animalia","Arthropoda","Insecta","Lepidoptera","Pieridae","Pieris","Invertebrate",0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,NA,NA
+"Pieris rapae",3,3,"Animalia","Arthropoda","Insecta","Lepidoptera","Pieridae","Pieris","Invertebrate",0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,1,NA,NA
 "Pinus muricata",4,4,"Plantae","Pinophyta","Pinopsida","Pinales","Pinaceae","Pinus","Plant",0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,4,0,"Bishop Pine","Present"
 "Pinus radiata",1,1,"Plantae","Pinophyta","Pinopsida","Pinales","Pinaceae","Pinus","Plant",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"Monterey Pine","Present"
 "Piperia elegans",3,3,"Plantae","Magnoliophyta","Liliopsida","Asparagales","Orchidaceae","Piperia","Plant",0,0,0,0,0,1,1,1,0,0,0,0,0,0,2,0,0,0,0,0,0,1,0,"Point Reyes Rein Orchid","Present"
@@ -703,7 +713,7 @@
 "Platystemon californicus",5,5,"Plantae","Magnoliophyta","Magnoliopsida","Ranunculales","Papaveraceae","Platystemon","Plant",0,0,2,1,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,3,0,"Cream-cups","Present"
 "Plectritis congesta",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Dipsacales","Caprifoliaceae","Plectritis","Plant",0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"small-flowered plectritis","Present"
 "Pleurotus ostreatus",3,3,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Pleurotaceae","Pleurotus","Fungi",0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1,2,0,NA,NA
-"Pluteus cervinus",1,1,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Pluteaceae","Pluteus","Fungi",0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,NA,NA
+"Pluteus cervinus",2,2,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Pluteaceae","Pluteus","Fungi",0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,NA,NA
 "Pluteus exilis",1,1,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Pluteaceae","Pluteus","Fungi",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Pluvialis fulva",1,1,"Animalia","Chordata","Aves","Charadriiformes","Charadriidae","Pluvialis","Bird",0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,"Pacific golden plover","Present"
 "Pluvialis squatarola",1,1,"Animalia","Chordata","Aves","Charadriiformes","Charadriidae","Pluvialis","Bird",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,"Black-bellied Plover","Present"
@@ -721,9 +731,10 @@
 "Polycera atra",1,1,"Animalia","Mollusca","Gastropoda","Nudibranchia","Polyceratidae","Polycera","Invertebrate",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Polycera hedgpethi",1,1,"Animalia","Mollusca","Gastropoda","Nudibranchia","Polyceratidae","Polycera","Invertebrate",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Polygala californica",4,4,"Plantae","Magnoliophyta","Magnoliopsida","Fabales","Polygalaceae","Polygala","Plant",0,0,0,1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,1,0,"Milkwort","Present"
-"Polygonia satyrus",8,4,"Animalia","Arthropoda","Insecta","Lepidoptera","Nymphalidae","Polygonia","Invertebrate",0,0,0,3,0,0,4,0,1,0,0,0,1,0,0,0,0,0,0,4,0,3,0,NA,NA
+"Polygonia satyrus",12,5,"Animalia","Arthropoda","Insecta","Lepidoptera","Nymphalidae","Polygonia","Invertebrate",0,1,3,3,0,0,4,0,1,0,0,0,1,0,0,0,0,0,0,4,0,3,4,NA,NA
 "Polygonum aviculare",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Caryophyllales","Polygonaceae","Polygonum","Plant",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"oval-leaf knotweed","Present"
 "Polygonum paronychia",2,2,"Plantae","Magnoliophyta","Magnoliopsida","Caryophyllales","Polygonaceae","Polygonum","Plant",0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,"Dune Knotweed","Present"
+"Polyorchis penicillatus",1,1,"Animalia","Cnidaria","Hydrozoa","Anthoathecata","Polyorchidae","Polyorchis","Invertebrate",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,NA,NA
 "Polypodium scouleri",15,14,"Plantae","Pteridophyta","Filicopsida","Polypodiales","Polypodiaceae","Polypodium","Plant",0,2,0,0,0,1,1,0,3,4,3,1,0,0,0,0,1,2,1,2,4,5,0,"Leather-leaf Fern, leathery polypody","Present"
 "Polypogon monspeliensis",2,2,"Plantae","Magnoliophyta","Liliopsida","Poales","Poaceae","Polypogon","Plant",0,0,0,0,0,0,2,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,"annual rabbitsfoot grass, Rabbitfoot Grass","Present"
 "Polystichum munitum",20,17,"Plantae","Pteridophyta","Filicopsida","Polypodiales","Dryopteridaceae","Polystichum","Plant",3,3,3,2,1,3,1,0,2,1,0,1,0,0,0,0,0,0,0,4,6,8,2,"Western Swordfern","Present"
@@ -737,9 +748,11 @@
 "Pritchardomyia vespoides",1,1,"Animalia","Arthropoda","Insecta","Diptera","Asilidae","Pritchardomyia","Invertebrate",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Procyon lotor",4,3,"Animalia","Chordata","Mammalia","Carnivora","Procyonidae","Procyon","Mammal",0,0,0,0,0,0,2,0,0,0,2,0,0,0,0,0,0,1,1,1,1,0,0,"common raccoon, northern raccoon, Raccoon","Present"
 "Progne subis",1,1,"Animalia","Chordata","Aves","Passeriformes","Hirundinidae","Progne","Bird",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"Purple Martin","Present"
+"Prosartes hookeri",1,1,"Plantae","Magnoliophyta","Liliopsida","Liliales","Liliaceae","Prosartes","Plant",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,NA,NA
+"Protoparmeliopsis pinguis",2,2,"Fungi","Ascomycota","Lecanoromycetes","Lecanorales","Lecanoraceae","Protoparmeliopsis","Fungi",0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,2,0,NA,NA
 "Prunella vulgaris",32,22,"Plantae","Magnoliophyta","Magnoliopsida","Lamiales","Lamiaceae","Prunella","Plant",0,0,1,0,6,9,12,3,0,0,1,0,0,0,0,0,0,0,2,4,6,20,0,"Large-flowered Selfheal","Present"
 "Psaltriparus minimus",2,2,"Animalia","Chordata","Aves","Passeriformes","Aegithalidae","Psaltriparus","Bird",0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,0,"Bushtit","Present"
-"Pseudacris sierra",10,7,"Animalia","Chordata","Amphibia","Anura","Hylidae","Pseudacris","Herp",0,4,0,2,1,0,0,2,0,0,1,0,0,0,0,0,0,1,0,3,2,3,1,NA,NA
+"Pseudacris sierra",12,7,"Animalia","Chordata","Amphibia","Anura","Hylidae","Pseudacris","Herp",0,4,2,2,1,0,0,2,0,0,1,0,0,0,0,0,0,1,0,3,2,3,3,NA,NA
 "Pseudoceros luteus",1,1,"Animalia","Platyhelminthes","Turbellaria","Polycladida","Pseudocerotidae","Pseudoceros","Invertebrate",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Pseudognaphalium californicum",2,2,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Pseudognaphalium","Plant",0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,"California cudweed","Present"
 "Pseudognaphalium luteoalbum",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Pseudognaphalium","Plant",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"Jersey cudweed","Present"
@@ -752,8 +765,8 @@
 "Pyrausta insequalis",1,1,"Animalia","Arthropoda","Insecta","Lepidoptera","Crambidae","Pyrausta","Invertebrate",0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,NA,NA
 "Pyrgus communis",4,4,"Animalia","Arthropoda","Insecta","Lepidoptera","Hesperiidae","Pyrgus","Invertebrate",0,0,0,0,1,0,3,0,0,0,0,0,0,0,0,0,0,0,0,2,1,1,0,NA,NA
 "Pyrgus ruralis",1,1,"Animalia","Arthropoda","Insecta","Lepidoptera","Hesperiidae","Pyrgus","Invertebrate",0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,NA,NA
-"Pyrrharctia isabella",4,4,"Animalia","Arthropoda","Insecta","Lepidoptera","Erebidae","Pyrrharctia","Invertebrate",0,1,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,2,0,0,NA,NA
-"Quercus agrifolia",12,10,"Plantae","Magnoliophyta","Magnoliopsida","Fagales","Fagaceae","Quercus","Plant",0,1,0,1,1,0,0,1,1,5,2,0,0,0,0,0,0,1,1,2,1,7,0,"California live oak, Coast Live Oak","Present"
+"Pyrrharctia isabella",5,5,"Animalia","Arthropoda","Insecta","Lepidoptera","Erebidae","Pyrrharctia","Invertebrate",0,1,1,1,1,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,2,0,1,NA,NA
+"Quercus agrifolia",13,10,"Plantae","Magnoliophyta","Magnoliopsida","Fagales","Fagaceae","Quercus","Plant",0,1,0,1,1,0,0,1,1,6,2,0,0,0,0,0,0,1,1,2,1,8,0,"California live oak, Coast Live Oak","Present"
 "Quercus chrysolepis",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Fagales","Fagaceae","Quercus","Plant",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"Canyon Live Oak","Present"
 "Rallus limicola",1,1,"Animalia","Chordata","Aves","Gruiformes","Rallidae","Rallus","Bird",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,"Virginia Rail","Present"
 "Ramalina canariensis",1,1,"Fungi","Ascomycota","Lecanoromycetes","Lecanorales","Ramalinaceae","Ramalina","Fungi",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,NA,NA
@@ -767,8 +780,8 @@
 "Ranunculus flammula",2,2,"Plantae","Magnoliophyta","Magnoliopsida","Ranunculales","Ranunculaceae","Ranunculus","Plant",0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,"Creeping Buttercup, greater creeping spearwort","Present"
 "Ranunculus muricatus",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Ranunculales","Ranunculaceae","Ranunculus","Plant",0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,"Pricklefruited Buttercup, spinyfruit buttercup","Present"
 "Ranunculus orthorhynchus",5,4,"Plantae","Magnoliophyta","Magnoliopsida","Ranunculales","Ranunculaceae","Ranunculus","Plant",0,1,2,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,3,0,"Big Marsh Buttercup","Probably Present"
-"Ranunculus repens",2,1,"Plantae","Magnoliophyta","Magnoliopsida","Ranunculales","Ranunculaceae","Ranunculus","Plant",0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,"creeping buttercup","Present"
-"Raphanus sativus",10,8,"Plantae","Magnoliophyta","Magnoliopsida","Brassicales","Brassicaceae","Raphanus","Plant",0,0,0,2,1,1,3,0,2,0,1,0,0,0,0,0,0,3,2,0,3,2,0,"cultivated radish, Radish","Present"
+"Ranunculus repens",3,2,"Plantae","Magnoliophyta","Magnoliopsida","Ranunculales","Ranunculaceae","Ranunculus","Plant",0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,"creeping buttercup","Present"
+"Raphanus sativus",12,8,"Plantae","Magnoliophyta","Magnoliopsida","Brassicales","Brassicaceae","Raphanus","Plant",0,0,2,2,1,1,3,0,2,0,1,0,0,0,0,0,0,3,2,0,3,2,2,"cultivated radish, Radish","Present"
 "Regulus calendula",7,7,"Animalia","Chordata","Aves","Passeriformes","Regulidae","Regulus","Bird",2,1,1,0,0,0,0,0,0,0,2,1,0,0,0,0,0,2,0,1,2,0,2,"Ruby-crowned Kinglet","Present"
 "Rhacochilus vacca",1,1,"Animalia","Chordata","Actinopterygii","Perciformes","Embiotocidae","Rhacochilus","Fish",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"pile perch","Present"
 "Rhinocyllus conicus",1,1,"Animalia","Arthropoda","Insecta","Coleoptera","Curculionidae","Rhinocyllus","Invertebrate",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,NA,NA
@@ -778,17 +791,17 @@
 "Rhododendron neoglandulosum",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Ericales","Ericaceae","Rhododendron","Plant",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Rhododendron occidentale",3,2,"Plantae","Magnoliophyta","Magnoliopsida","Ericales","Ericaceae","Rhododendron","Plant",0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,2,0,"Western Azalea","Present"
 "Rhopalomyia californica",3,2,"Animalia","Arthropoda","Insecta","Diptera","Cecidomyiidae","Rhopalomyia","Invertebrate",1,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,2,0,NA,NA
-"Ribes sanguineum",10,8,"Plantae","Magnoliophyta","Magnoliopsida","Saxifragales","Grossulariaceae","Ribes","Plant",1,5,2,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,2,1,4,3,"Pink Flowering Currant","Present"
+"Ribes sanguineum",11,9,"Plantae","Magnoliophyta","Magnoliopsida","Saxifragales","Grossulariaceae","Ribes","Plant",1,5,3,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,2,1,4,4,"Pink Flowering Currant","Present"
 "Riparia riparia",1,1,"Animalia","Chordata","Aves","Passeriformes","Hirundinidae","Riparia","Bird",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,"Bank Swallow","Unconfirmed"
 "Romaleon antennarium",1,1,"Animalia","Arthropoda","Malacostraca","Decapoda","Cancridae","Romaleon","Invertebrate",0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,NA,NA
-"Romulea rosea",8,8,"Plantae","Magnoliophyta","Liliopsida","Asparagales","Iridaceae","Romulea","Plant",0,0,4,3,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,2,4,0,"Romulea","Unconfirmed"
+"Romulea rosea",11,11,"Plantae","Magnoliophyta","Liliopsida","Asparagales","Iridaceae","Romulea","Plant",0,1,5,4,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,2,5,2,"Romulea","Unconfirmed"
 "Rorippa curvisiliqua",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Brassicales","Brassicaceae","Rorippa","Plant",0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,"Curved-capsule Cress","Present"
 "Rosa californica",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Rosales","Rosaceae","Rosa","Plant",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,"California Rose","Present"
 "Rostanga pulchra",1,1,"Animalia","Mollusca","Gastropoda","Nudibranchia","Rostangidae","Rostanga","Invertebrate",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Rubus armeniacus",3,2,"Plantae","Magnoliophyta","Magnoliopsida","Rosales","Rosaceae","Rubus","Plant",0,0,0,0,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,2,0,"Himalaya-berry, Armenian blackberry","Present"
 "Rubus parviflorus",18,12,"Plantae","Magnoliophyta","Magnoliopsida","Rosales","Rosaceae","Rubus","Plant",0,0,0,4,2,5,3,2,1,0,0,1,0,0,0,0,0,0,3,1,4,10,0,"Thimbleberry","Present"
-"Rubus spectabilis",18,14,"Plantae","Magnoliophyta","Magnoliopsida","Rosales","Rosaceae","Rubus","Plant",0,1,5,3,4,4,1,0,0,0,0,0,0,0,0,0,1,1,0,5,5,6,0,"Salmonberry","Present"
-"Rubus ursinus",16,9,"Plantae","Magnoliophyta","Magnoliopsida","Rosales","Rosaceae","Rubus","Plant",1,1,0,0,2,3,2,4,0,0,1,2,0,0,0,0,0,1,2,1,1,10,1,"California Blackberry","Present"
+"Rubus spectabilis",19,15,"Plantae","Magnoliophyta","Magnoliopsida","Rosales","Rosaceae","Rubus","Plant",0,1,6,3,4,4,1,0,0,0,0,0,0,0,0,0,1,1,0,5,5,6,1,"Salmonberry","Present"
+"Rubus ursinus",18,10,"Plantae","Magnoliophyta","Magnoliopsida","Rosales","Rosaceae","Rubus","Plant",1,1,2,0,2,3,2,4,0,0,1,2,0,0,0,0,0,1,2,1,1,10,3,"California Blackberry","Present"
 "Ruditapes philippinarum",1,1,"Animalia","Mollusca","Bivalvia","Veneroida","Veneridae","Ruditapes","Invertebrate",0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Rumex acetosella",19,12,"Plantae","Magnoliophyta","Magnoliopsida","Caryophyllales","Polygonaceae","Rumex","Plant",0,0,0,4,5,5,3,1,1,0,0,0,0,0,0,0,0,1,1,2,1,14,0,"common sheep sorrel, Sheep Sorrel","Present"
 "Rumex crassus",6,4,"Plantae","Magnoliophyta","Magnoliopsida","Caryophyllales","Polygonaceae","Rumex","Plant",0,0,1,0,0,4,0,1,0,0,0,0,0,0,0,0,0,0,3,1,1,1,0,"fleshy willow dock, seashore willow dock","Present"
@@ -803,15 +816,15 @@
 "Salix sitchensis",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Malpighiales","Salicaceae","Salix","Plant",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"Sitka Willow","Present"
 "Salpinctes obsoletus",2,2,"Animalia","Chordata","Aves","Passeriformes","Troglodytidae","Salpinctes","Bird",0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,"Rock Wren","Present"
 "Sambucus racemosa",8,8,"Plantae","Magnoliophyta","Magnoliopsida","Dipsacales","Adoxaceae","Sambucus","Plant",0,0,2,0,3,2,0,0,0,1,0,0,0,0,0,0,0,0,1,2,1,4,0,"red elderberry","Present"
-"Sanicula arctopoides",12,9,"Plantae","Magnoliophyta","Magnoliopsida","Apiales","Apiaceae","Sanicula","Plant",1,7,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,5,4,2,"Footsteps-of-Spring","Present"
+"Sanicula arctopoides",14,11,"Plantae","Magnoliophyta","Magnoliopsida","Apiales","Apiaceae","Sanicula","Plant",1,8,4,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,5,4,4,"Footsteps-of-Spring","Present"
 "Sanicula crassicaulis",4,3,"Plantae","Magnoliophyta","Magnoliopsida","Apiales","Apiaceae","Sanicula","Plant",1,0,0,2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,"Pacific Sanicle","Present"
-"Sarcoscypha coccinea",9,7,"Fungi","Ascomycota","Pezizomycetes","Pezizales","Sarcoscyphaceae","Sarcoscypha","Fungi",5,3,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,4,3,NA,NA
+"Sarcoscypha coccinea",10,8,"Fungi","Ascomycota","Pezizomycetes","Pezizales","Sarcoscyphaceae","Sarcoscypha","Fungi",5,3,1,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,4,4,NA,NA
 "Sayornis nigricans",15,11,"Animalia","Chordata","Aves","Passeriformes","Tyrannidae","Sayornis","Bird",3,0,1,1,1,0,1,0,2,2,2,2,0,0,0,1,0,1,2,4,5,2,0,"Black Phoebe","Present"
 "Sayornis phoebe",1,1,"Animalia","Chordata","Aves","Passeriformes","Tyrannidae","Sayornis","Bird",0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,"Eastern Phoebe","Unconfirmed"
-"Sayornis saya",5,5,"Animalia","Chordata","Aves","Passeriformes","Tyrannidae","Sayornis","Bird",0,0,0,0,0,0,0,0,2,2,1,0,0,0,0,0,0,0,0,0,3,2,0,"Say's Phoebe","Present"
-"Scapanus latimanus",1,1,"Animalia","Chordata","Mammalia","Soricomorpha","Talpidae","Scapanus","Mammal",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,"Broad-footed Mole","Present"
+"Sayornis saya",6,6,"Animalia","Chordata","Aves","Passeriformes","Tyrannidae","Sayornis","Bird",0,1,0,0,0,0,0,0,2,2,1,0,0,0,0,0,0,0,0,0,3,2,1,"Say's Phoebe","Present"
+"Scapanus latimanus",1,1,"Animalia","Chordata","Mammalia","Eulipotyphla","Talpidae","Scapanus","Mammal",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,"Broad-footed Mole","Present"
 "Scathophaga stercoraria",4,4,"Animalia","Arthropoda","Insecta","Diptera","Scathophagidae","Scathophaga","Invertebrate",0,1,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0,NA,NA
-"Sceloporus occidentalis",20,16,"Animalia","Chordata","Reptilia","Squamata","Phrynosomatidae","Sceloporus","Herp",0,0,0,3,3,0,7,4,0,2,1,0,0,0,0,0,0,1,0,7,3,9,0,"Western Fence Lizard","Present"
+"Sceloporus occidentalis",21,16,"Animalia","Chordata","Reptilia","Squamata","Phrynosomatidae","Sceloporus","Herp",0,0,1,3,3,0,7,4,0,2,1,0,0,0,0,0,0,1,0,7,3,9,1,"Western Fence Lizard","Present"
 "Sceptridium multifidum",1,1,"Plantae","Pteridophyta","","Ophioglossales","Ophioglossaceae","Sceptridium","Plant",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Schoenoplectus acutus",1,1,"Plantae","Magnoliophyta","Liliopsida","Poales","Cyperaceae","Schoenoplectus","Plant",0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"common tule, hard-stem bulrush","Present"
 "Schoenoplectus maritimus",1,1,"Plantae","Magnoliophyta","Liliopsida","Poales","Cyperaceae","Schoenoplectus","Plant",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,NA,NA
@@ -821,7 +834,7 @@
 "Scrophularia californica",18,11,"Plantae","Magnoliophyta","Magnoliopsida","Lamiales","Scrophulariaceae","Scrophularia","Plant",0,1,0,3,5,2,6,1,0,0,0,0,0,0,0,0,0,1,3,4,2,8,0,"California Figwort","Present"
 "Scutellinia scutellata",1,1,"Fungi","Ascomycota","Pezizomycetes","Pezizales","Pyronemataceae","Scutellinia","Fungi",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,NA,NA
 "Sedum spathulifolium",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Saxifragales","Crassulaceae","Sedum","Plant",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"broadleaf stonecrop, Pacific Stonecrop","Present"
-"Selasphorus sasin",5,5,"Animalia","Chordata","Aves","Caprimulgiformes","Trochilidae","Selasphorus","Bird",0,2,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,2,1,1,0,"Allen's Hummingbird","Present"
+"Selasphorus sasin",6,5,"Animalia","Chordata","Aves","Caprimulgiformes","Trochilidae","Selasphorus","Bird",0,2,2,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,2,1,1,1,"Allen's Hummingbird","Present"
 "Senecio glomeratus",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Senecio","Plant",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,"lobed-leaf Australian fireweed","Present"
 "Senecio vulgaris",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Senecio","Plant",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,"Common Groundsel","Present"
 "Sequoia sempervirens",1,1,"Plantae","Pinophyta","Pinopsida","Pinales","Cupressaceae","Sequoia","Plant",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,"Redwood","Present"
@@ -837,11 +850,11 @@
 "Setophaga townsendi",4,4,"Animalia","Chordata","Aves","Passeriformes","Parulidae","Setophaga","Bird",0,1,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0,2,0,1,1,0,0,NA,NA
 "Sialia currucoides",2,2,"Animalia","Chordata","Aves","Passeriformes","Turdidae","Sialia","Bird",0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,2,0,"Mountain Bluebird","Probably Present"
 "Sialia mexicana",10,7,"Animalia","Chordata","Aves","Passeriformes","Turdidae","Sialia","Bird",0,0,0,2,1,0,2,0,2,1,2,0,0,0,0,0,0,1,1,2,5,1,0,"Western Bluebird","Present"
-"Sidalcea malviflora",23,17,"Plantae","Magnoliophyta","Magnoliopsida","Malvales","Malvaceae","Sidalcea","Plant",0,2,6,6,9,0,0,0,0,0,0,0,0,0,0,0,0,1,0,5,11,6,0,"CHECKER-BLOOM","Present"
+"Sidalcea malviflora",25,19,"Plantae","Magnoliophyta","Magnoliopsida","Malvales","Malvaceae","Sidalcea","Plant",0,2,7,6,10,0,0,0,0,0,0,0,0,0,0,0,0,1,0,5,11,7,1,"CHECKER-BLOOM","Present"
 "Silene coronaria",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Caryophyllales","Caryophyllaceae","Silene","Plant",0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Silene gallica",9,9,"Plantae","Magnoliophyta","Magnoliopsida","Caryophyllales","Caryophyllaceae","Silene","Plant",0,0,0,2,6,1,0,0,0,0,0,0,0,0,0,0,0,1,0,2,1,5,0,"common catchfly, Windmill Pink","Present"
 "Silene scouleri",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Caryophyllales","Caryophyllaceae","Silene","Plant",0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,"Scouler's Large Campion","Present"
-"Siliqua patula",4,4,"Animalia","Mollusca","Bivalvia","Veneroida","Pharidae","Siliqua","Invertebrate",0,0,0,0,0,1,1,1,0,0,0,1,0,0,0,0,0,0,1,0,1,2,0,NA,NA
+"Siliqua patula",5,5,"Animalia","Mollusca","Bivalvia","Veneroida","Pharidae","Siliqua","Invertebrate",0,0,1,0,0,1,1,1,0,0,0,1,0,0,0,0,0,0,1,0,1,2,1,NA,NA
 "Silybum marianum",6,5,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Silybum","Plant",0,0,0,1,1,3,0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,2,0,"blessed milkthistle, Milk Thistle","Present"
 "Sisyrinchium bellum",22,17,"Plantae","Magnoliophyta","Liliopsida","Asparagales","Iridaceae","Sisyrinchium","Plant",0,0,4,7,5,3,3,0,0,0,0,0,0,0,0,0,1,1,2,1,3,14,0,"Blue-eyed-grass, western blue-eyed grass","Present"
 "Sisyrinchium californicum",9,8,"Plantae","Magnoliophyta","Liliopsida","Asparagales","Iridaceae","Sisyrinchium","Plant",0,0,0,0,4,1,4,0,0,0,0,0,0,0,0,0,0,2,2,0,1,4,0,"golden blue-eyed grass, Golden-eyed-grass","Present"
@@ -855,7 +868,7 @@
 "Solidago velutina",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Solidago","Plant",0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Sonchus asper",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Asterales","Asteraceae","Sonchus","Plant",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,"Prickly Sow Thistle, spiny sowthistle","Present"
 "Sparassis radicata",1,1,"Fungi","Basidiomycota","Agaricomycetes","Polyporales","Sparassidaceae","Sparassis","Fungi",0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,NA,NA
-"Sparaxis tricolor",4,4,"Plantae","Magnoliophyta","Liliopsida","Asparagales","Iridaceae","Sparaxis","Plant",0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,NA,NA
+"Sparaxis tricolor",6,6,"Plantae","Magnoliophyta","Liliopsida","Asparagales","Iridaceae","Sparaxis","Plant",0,0,4,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,2,NA,NA
 "Sparganium eurycarpum",4,4,"Plantae","Magnoliophyta","Liliopsida","Poales","Typhaceae","Sparganium","Plant",0,0,0,0,0,1,2,1,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0,"broadfruit bur-reed","Unconfirmed"
 "Spergularia macrotheca",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Caryophyllales","Caryophyllaceae","Spergularia","Plant",0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,"Large-flowered Sand-spurrey, sticky sandspurry","Present"
 "Spergularia rubra",2,2,"Plantae","Magnoliophyta","Magnoliopsida","Caryophyllales","Caryophyllaceae","Spergularia","Plant",0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,"Purple Sand-spurrey, red sandspurry","Present"
@@ -871,7 +884,7 @@
 "Stachys rigida",3,3,"Plantae","Magnoliophyta","Magnoliopsida","Lamiales","Lamiaceae","Stachys","Plant",0,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,NA,NA
 "Stelgidopteryx serripennis",1,1,"Animalia","Chordata","Aves","Passeriformes","Hirundinidae","Stelgidopteryx","Bird",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,"Northern Rough-winged Swallow","Present"
 "Stellaria littoralis",3,2,"Plantae","Magnoliophyta","Magnoliopsida","Caryophyllales","Caryophyllaceae","Stellaria","Plant",0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,"beach starwort, Shore Chickweed","Present"
-"Stellaria media",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Caryophyllales","Caryophyllaceae","Stellaria","Plant",0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"Common Chickweed","Present"
+"Stellaria media",2,2,"Plantae","Magnoliophyta","Magnoliopsida","Caryophyllales","Caryophyllaceae","Stellaria","Plant",0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,"Common Chickweed","Present"
 "Stereum hirsutum",5,5,"Fungi","Basidiomycota","Agaricomycetes","Russulales","Stereaceae","Stereum","Fungi",1,0,0,0,0,0,0,0,1,0,0,3,0,0,0,0,0,0,0,0,1,4,0,NA,NA
 "Sticta limbata",1,1,"Fungi","Ascomycota","Lecanoromycetes","Peltigerales","Lobariaceae","Sticta","Fungi",0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,"","Present"
 "Streptopelia decaocto",2,2,"Animalia","Chordata","Aves","Columbiformes","Columbidae","Streptopelia","Bird",0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,NA,NA
@@ -887,7 +900,7 @@
 "Sula nebouxii",2,2,"Animalia","Chordata","Aves","Suliformes","Sulidae","Sula","Bird",0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,2,0,0,0,0,NA,NA
 "Sylvilagus bachmani",11,9,"Animalia","Chordata","Mammalia","Lagomorpha","Leporidae","Sylvilagus","Mammal",0,0,2,0,3,2,1,0,2,0,1,0,0,0,0,0,0,0,2,3,5,1,0,"Brush Rabbit","Present"
 "Sympetrum corruptum",6,5,"Animalia","Arthropoda","Insecta","Odonata","Libellulidae","Sympetrum","Invertebrate",0,1,0,0,0,0,0,3,1,0,0,1,0,0,0,0,0,1,0,0,4,1,0,NA,NA
-"Sympetrum illotum",10,7,"Animalia","Arthropoda","Insecta","Odonata","Libellulidae","Sympetrum","Invertebrate",0,0,2,1,2,2,1,0,2,0,0,0,0,0,0,0,0,1,1,4,1,3,0,NA,NA
+"Sympetrum illotum",11,8,"Animalia","Arthropoda","Insecta","Odonata","Libellulidae","Sympetrum","Invertebrate",0,0,2,1,2,2,1,0,3,0,0,0,0,0,0,0,0,1,1,5,1,3,0,NA,NA
 "Sympetrum madidum",1,1,"Animalia","Arthropoda","Insecta","Odonata","Libellulidae","Sympetrum","Invertebrate",0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,NA,NA
 "Sympetrum pallipes",3,3,"Animalia","Arthropoda","Insecta","Odonata","Libellulidae","Sympetrum","Invertebrate",0,0,0,0,0,0,2,0,1,0,0,0,0,0,0,0,0,0,0,1,0,2,0,NA,NA
 "Symphoricarpos albus",3,3,"Plantae","Magnoliophyta","Magnoliopsida","Dipsacales","Caprifoliaceae","Symphoricarpos","Plant",0,0,0,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,"Bush Snowberry, common snowberry","Present"
@@ -895,7 +908,7 @@
 "Tachycineta bicolor",1,1,"Animalia","Chordata","Aves","Passeriformes","Hirundinidae","Tachycineta","Bird",0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"Tree Swallow","Present"
 "Tachycineta thalassina",2,2,"Animalia","Chordata","Aves","Passeriformes","Hirundinidae","Tachycineta","Bird",0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,"Violet-green Swallow","Present"
 "Tamias sonomae",6,6,"Animalia","Chordata","Mammalia","Rodentia","Sciuridae","Tamias","Mammal",0,0,1,0,2,1,2,0,0,0,0,0,0,0,0,0,0,0,0,2,3,1,0,"Sonoma Chipmunk","Present"
-"Taraxia ovata",7,7,"Plantae","Magnoliophyta","Magnoliopsida","Myrtales","Onagraceae","Taraxia","Plant",1,1,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,2,1,"goldeneggs","Present"
+"Taraxia ovata",8,8,"Plantae","Magnoliophyta","Magnoliopsida","Myrtales","Onagraceae","Taraxia","Plant",1,1,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,2,2,"goldeneggs","Present"
 "Taricha granulosa",6,6,"Animalia","Chordata","Amphibia","Caudata","Salamandridae","Taricha","Herp",2,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,2,1,1,1,0,1,"Rough-skinned Newt","Present"
 "Taricha torosa",1,1,"Animalia","Chordata","Amphibia","Caudata","Salamandridae","Taricha","Herp",0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,"California Newt","Present"
 "Taxidea taxus",4,3,"Animalia","Chordata","Mammalia","Carnivora","Mustelidae","Taxidea","Mammal",0,0,0,0,2,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,2,2,0,"American Badger, badger","Present"
@@ -908,11 +921,11 @@
 "Thallophaga hyperborea",1,1,"Animalia","Arthropoda","Insecta","Lepidoptera","Geometridae","Thallophaga","Invertebrate",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,NA,NA
 "Thamnophis atratus",2,2,"Animalia","Chordata","Reptilia","Squamata","Colubridae","Thamnophis","Herp",0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,"Pacific coast aquatic garter snake","Present"
 "Thamnophis elegans",23,17,"Animalia","Chordata","Reptilia","Squamata","Colubridae","Thamnophis","Herp",0,2,0,2,3,5,3,4,1,1,1,1,0,0,0,1,1,1,3,5,6,6,0,NA,NA
-"Thamnophis sirtalis",9,7,"Animalia","Chordata","Reptilia","Squamata","Colubridae","Thamnophis","Herp",0,5,0,0,1,1,0,1,0,0,0,1,0,0,0,1,1,1,0,0,4,2,0,"Common Garter Snake","Present"
+"Thamnophis sirtalis",11,8,"Animalia","Chordata","Reptilia","Squamata","Colubridae","Thamnophis","Herp",0,5,2,0,1,1,0,1,0,0,0,1,0,0,0,1,1,1,0,0,4,2,2,"Common Garter Snake","Present"
 "Thanatophilus lapponicus",1,1,"Animalia","Arthropoda","Insecta","Coleoptera","Silphidae","Thanatophilus","Invertebrate",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Thetys vagina",1,1,"Animalia","Chordata","Thaliacea","Salpida","Salpidae","Thetys",NA,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,NA,NA
 "Thinopinus pictus",3,3,"Animalia","Arthropoda","Insecta","Coleoptera","Staphylinidae","Thinopinus","Invertebrate",0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,1,1,0,0,NA,NA
-"Thomomys bottae",9,9,"Animalia","Chordata","Mammalia","Rodentia","Geomyidae","Thomomys","Mammal",1,1,1,2,1,0,1,1,0,1,0,0,0,0,3,0,0,1,0,1,4,0,0,"Botta's Pocket Gopher","Present"
+"Thomomys bottae",10,10,"Animalia","Chordata","Mammalia","Rodentia","Geomyidae","Thomomys","Mammal",1,1,1,2,1,1,1,1,0,1,0,0,0,0,3,0,0,1,1,1,4,0,0,"Botta's Pocket Gopher","Present"
 "Thryomanes bewickii",4,3,"Animalia","Chordata","Aves","Passeriformes","Troglodytidae","Thryomanes","Bird",1,0,0,2,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,2,0,0,"Bewick's Wren","Present"
 "Tillandsia usneoides",1,1,"Plantae","Magnoliophyta","Liliopsida","Poales","Bromeliaceae","Tillandsia","Plant",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,NA,NA
 "Toxicodendron diversilobum",10,8,"Plantae","Magnoliophyta","Magnoliopsida","Sapindales","Anacardiaceae","Toxicodendron","Plant",0,1,0,0,0,1,5,1,1,1,0,0,0,0,0,0,0,0,1,1,1,7,0,"Pacific poison oak, Poison Oak","Present"
@@ -927,7 +940,7 @@
 "Tricholoma equestre",1,1,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Tricholomataceae","Tricholoma","Fungi",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Tricholoma myomyces",1,1,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Tricholomataceae","Tricholoma","Fungi",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Tricholoma saponaceum",1,1,"Fungi","Basidiomycota","Agaricomycetes","Agaricales","Tricholomataceae","Tricholoma","Fungi",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,NA,NA
-"Trientalis latifolia",8,8,"Plantae","Magnoliophyta","Magnoliopsida","Ericales","Myrsinaceae","Trientalis","Plant",0,0,0,3,2,2,0,1,0,0,0,0,0,0,0,0,0,0,1,0,3,4,0,"Starflower","Present"
+"Trientalis latifolia",9,9,"Plantae","Magnoliophyta","Magnoliopsida","Ericales","Myrsinaceae","Trientalis","Plant",0,0,0,3,3,2,0,1,0,0,0,0,0,0,0,0,0,0,1,0,4,4,0,"Starflower","Present"
 "Trifolium campestre",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Fabales","Fabaceae","Trifolium","Plant",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,"Hop Clover","Present"
 "Trifolium fucatum",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Fabales","Fabaceae","Trifolium","Plant",0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,NA,NA
 "Trifolium grayi",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Fabales","Fabaceae","Trifolium","Plant",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
@@ -935,13 +948,14 @@
 "Trifolium wormskioldii",10,9,"Plantae","Magnoliophyta","Magnoliopsida","Fabales","Fabaceae","Trifolium","Plant",0,0,0,2,2,4,1,1,0,0,0,0,0,0,0,0,0,0,1,2,1,6,0,"Cow Clover, cows clover","Present"
 "Triglochin maritima",1,1,"Plantae","Magnoliophyta","Liliopsida","Alismatales","Juncaginaceae","Triglochin","Plant",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,"Seaside Arrow-grass, shore arrowgrass, seaside arrowgrass","Present"
 "Trillium chloropetalum",1,1,"Plantae","Magnoliophyta","Liliopsida","Liliales","Melanthiaceae","Trillium","Plant",0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,"giant wakerobin, Sessile-flowered Wakerobin","Present"
-"Trillium ovatum",2,2,"Plantae","Magnoliophyta","Liliopsida","Liliales","Melanthiaceae","Trillium","Plant",0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,"Pacific trillium","Probably Present"
+"Trillium ovatum",3,2,"Plantae","Magnoliophyta","Liliopsida","Liliales","Melanthiaceae","Trillium","Plant",0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,"Pacific trillium","Probably Present"
 "Tringa incana",2,2,"Animalia","Chordata","Aves","Charadriiformes","Scolopacidae","Tringa","Bird",0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,1,1,0,0,0,NA,NA
 "Tringa melanoleuca",3,2,"Animalia","Chordata","Aves","Charadriiformes","Scolopacidae","Tringa","Bird",1,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,2,0,1,0,0,"Greater Yellowlegs","Present"
-"Tringa semipalmata",3,3,"Animalia","Chordata","Aves","Charadriiformes","Scolopacidae","Tringa","Bird",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,0,NA,NA
+"Tringa semipalmata",4,4,"Animalia","Chordata","Aves","Charadriiformes","Scolopacidae","Tringa","Bird",1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,1,NA,NA
 "Triopha maculata",1,1,"Animalia","Mollusca","Gastropoda","Nudibranchia","Polyceratidae","Triopha","Invertebrate",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
-"Triphysaria eriantha",13,9,"Plantae","Magnoliophyta","Magnoliopsida","Lamiales","Orobanchaceae","Triphysaria","Plant",0,0,5,5,3,0,0,0,0,0,0,0,0,0,0,0,0,2,0,1,1,9,0,"Johnny-tuck","Present"
+"Triphysaria eriantha",14,9,"Plantae","Magnoliophyta","Magnoliopsida","Lamiales","Orobanchaceae","Triphysaria","Plant",0,0,5,6,3,0,0,0,0,0,0,0,0,0,0,0,0,2,0,1,1,10,0,"Johnny-tuck","Present"
 "Triphysaria pusilla",3,3,"Plantae","Magnoliophyta","Magnoliopsida","Lamiales","Orobanchaceae","Triphysaria","Plant",0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,"Dwarf Owl's-clover","Probably Present"
+"Triphysaria versicolor",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Lamiales","Orobanchaceae","Triphysaria","Plant",0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,"Yellow Johnny-tuck","Unconfirmed"
 "Trirhabda flavolimbata",4,3,"Animalia","Arthropoda","Insecta","Coleoptera","Chrysomelidae","Trirhabda","Invertebrate",0,0,0,0,0,1,2,1,0,0,0,0,0,0,0,0,0,0,0,2,0,2,0,NA,NA
 "Triteleia laxa",18,14,"Plantae","Magnoliophyta","Liliopsida","Asparagales","Themidaceae","Triteleia","Plant",0,0,0,1,5,10,2,0,0,0,0,0,0,0,1,0,0,0,2,1,3,11,0,"Ithuriel's Spear","Present"
 "Troglodytes pacificus",2,2,"Animalia","Chordata","Aves","Passeriformes","Troglodytidae","Troglodytes","Bird",0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,1,0,NA,NA
@@ -958,15 +972,15 @@
 "Ulex europaeus",1,1,"Plantae","Magnoliophyta","Magnoliopsida","Fabales","Fabaceae","Ulex","Plant",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,"Gorse","Unconfirmed"
 "Umbellularia californica",13,10,"Plantae","Magnoliophyta","Magnoliopsida","Laurales","Lauraceae","Umbellularia","Plant",0,1,0,1,0,0,5,1,0,2,2,1,0,0,0,0,0,0,0,1,3,9,0,"California Bay, California laurel","Present"
 "Uresiphita reversalis",1,1,"Animalia","Arthropoda","Insecta","Lepidoptera","Crambidae","Uresiphita","Invertebrate",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,NA,NA
-"Uria aalge",12,9,"Animalia","Chordata","Aves","Charadriiformes","Alcidae","Uria","Bird",0,1,0,0,0,2,2,2,3,0,2,0,0,0,0,0,0,1,0,0,8,3,0,"Common Murre","Present"
+"Uria aalge",13,10,"Animalia","Chordata","Aves","Charadriiformes","Alcidae","Uria","Bird",0,2,0,0,0,2,2,2,3,0,2,0,0,0,0,0,0,1,0,0,8,3,1,"Common Murre","Present"
 "Urocyon cinereoargenteus",13,12,"Animalia","Chordata","Mammalia","Carnivora","Canidae","Urocyon","Mammal",1,2,0,2,0,2,1,0,3,1,1,0,0,0,0,0,0,0,2,0,7,2,2,"Common Gray Fox, Gray Fox","Present"
 "Urosalpinx cinerea",1,1,"Animalia","Mollusca","Gastropoda","Neogastropoda","Muricidae","Urosalpinx","Invertebrate",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
 "Urtica dioica",10,8,"Plantae","Magnoliophyta","Magnoliopsida","Rosales","Urticaceae","Urtica","Plant",0,0,1,1,1,0,1,3,3,0,0,0,0,0,0,0,0,0,0,4,0,6,0,"California nettle, slender nettle, stinging nettle, tall nettle","Present"
 "Usnea intermedia",1,1,"Fungi","Ascomycota","Lecanoromycetes","Lecanorales","Parmeliaceae","Usnea","Fungi",0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,NA,NA
-"Usnea rubicunda",7,5,"Fungi","Ascomycota","Lecanoromycetes","Lecanorales","Parmeliaceae","Usnea","Fungi",0,0,1,0,1,0,2,0,1,0,1,1,0,0,0,0,0,0,0,0,0,7,0,NA,NA
-"Vaccinium ovatum",14,7,"Plantae","Magnoliophyta","Magnoliopsida","Ericales","Ericaceae","Vaccinium","Plant",0,1,0,3,1,0,3,2,1,1,2,0,0,0,0,0,0,0,3,3,1,7,0,"California Huckleberry","Present"
+"Usnea rubicunda",9,7,"Fungi","Ascomycota","Lecanoromycetes","Lecanorales","Parmeliaceae","Usnea","Fungi",0,1,2,0,1,0,2,0,1,0,1,1,0,0,0,0,0,0,0,0,0,7,2,NA,NA
+"Vaccinium ovatum",15,8,"Plantae","Magnoliophyta","Magnoliopsida","Ericales","Ericaceae","Vaccinium","Plant",0,1,0,3,1,0,3,2,1,1,2,1,0,0,0,0,0,0,3,3,2,7,0,"California Huckleberry","Present"
 "Vanessa annabella",5,4,"Animalia","Arthropoda","Insecta","Lepidoptera","Nymphalidae","Vanessa","Invertebrate",0,0,0,0,1,0,1,1,1,0,1,0,0,0,0,0,0,1,1,1,1,1,0,NA,NA
-"Vanessa atalanta",14,9,"Animalia","Arthropoda","Insecta","Lepidoptera","Nymphalidae","Vanessa","Invertebrate",2,0,0,2,0,1,2,0,5,0,2,0,0,0,1,0,0,1,1,4,0,7,0,NA,NA
+"Vanessa atalanta",15,9,"Animalia","Arthropoda","Insecta","Lepidoptera","Nymphalidae","Vanessa","Invertebrate",2,0,1,2,0,1,2,0,5,0,2,0,0,0,1,0,0,1,1,4,0,7,1,NA,NA
 "Vanessa cardui",6,5,"Animalia","Arthropoda","Insecta","Lepidoptera","Nymphalidae","Vanessa","Invertebrate",0,0,0,2,0,0,3,0,0,0,1,0,0,0,0,0,0,0,0,2,3,1,0,NA,NA
 "Vanessa virginiensis",9,9,"Animalia","Arthropoda","Insecta","Lepidoptera","Nymphalidae","Vanessa","Invertebrate",0,1,0,0,1,3,2,0,1,0,1,0,0,0,0,0,1,0,1,1,3,3,0,NA,NA
 "Velella velella",3,3,"Animalia","Cnidaria","Hydrozoa","Anthoathecata","Porpitidae","Velella","Invertebrate",0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,2,0,0,NA,NA
@@ -1469,7 +1483,7 @@
 "Vireo olivaceus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Red-eyed Vireo","Probably Present"
 "Bidens laevis",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Bur Marigold","Present"
 "Trifolium subterraneum",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Subterranean Clover","Present"
-"Calendula arvensis",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"field marigold, Field-marigold","Present"
+"Trifolium tomentosum",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Clover","Present"
 "Trifolium variegatum",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Virginia's Clover","Present"
 "Trifolium willdenowii",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"tomcat clover","Present"
 "Carduus tenuiflorus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Slender-Flowered Thistle, Thistle","Present"
@@ -1552,7 +1566,7 @@
 "Chelonia mydas",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"common green sea turtle, Green Sea Turtle","Probably Present"
 "Bolboschoenus maritimus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"saltmarsh bulrush","Present"
 "Dermochelys coriacea",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Leatherback, Leatherback Sea Turtle, leatherback turtle, tinglar","Present"
-"Triphysaria versicolor",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Yellow Johnny-tuck","Unconfirmed"
+"Spergularia maritima",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"media sandspurry","Unconfirmed"
 "Bufo boreas",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Western Toad","Present"
 "Pseudacris regilla",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Pacific chorus frog","Present"
 "Rana aurora draytonii",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"California Red-legged Frog","Present"
@@ -1611,7 +1625,7 @@
 "Ruppia cirrhosa",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Ditch-grass","Unconfirmed"
 "Brachyistius frenatus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"kelp perch","Present"
 "Cymatogaster aggregata",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"shiner perch","Present"
-"Erysimum franciscanum",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"San Francisco Wallflower","Unconfirmed"
+"Dichondra donnelliana",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Dichondra","Unconfirmed"
 "Embiotoca lateralis",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"striped seaperch","Present"
 "Hyperprosopon anale",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"spotfin surfperch","Present"
 "Agrostis microphylla",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Point Reyes bentgrass, Small-leaved Bent Grass","Present"
@@ -1670,7 +1684,7 @@
 "Spergularia bocconii",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Boccone's Sand-spurrey","Probably Present"
 "Hainardia cylindrica",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Barbgrass, Rat-tail, Thintail","Unconfirmed"
 "Spergularia marina",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Salt-marsh Sand-spurrey","Unconfirmed"
-"Spergularia maritima",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"media sandspurry","Unconfirmed"
+"Senecio sylvaticus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Wood Groundsel","Present"
 "Clinocottus globiceps",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"mosshead sculpin","Present"
 "Clinocottus recalvus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"bald sculpin","Present"
 "Cottus aleuticus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"coastrange sculpin","Present"
@@ -1789,7 +1803,7 @@
 "Iris laevigata",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"iris","Unconfirmed"
 "Duchesnea indica",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Mock Strawberry","Probably Present"
 "Senecio minimus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"toothed Australian fireweed","Present"
-"Senecio sylvaticus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Wood Groundsel","Present"
+"Carex amplifolia",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"bigleaf sedge","Unconfirmed"
 "Carex barbarae",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Santa Barbara sedge","Present"
 "Hordeum marinum",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Mediterranean barley","Present"
 "Solidago californica",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"California Goldenrod","Present"
@@ -1826,7 +1840,7 @@
 "Trifolium pratense",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Red Clover","Present"
 "Poa secunda",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"One-sided Bluegrass","Probably Present"
 "Poa trivialis",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Rough Bluegrass","Present"
-"Trifolium tomentosum",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Clover","Present"
+"Plagiobothrys diffusus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"San Francisco popcorn flower","Unconfirmed"
 "Polypogon australis",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Chilean rabbitsfoot grass, Chilean rabbit's-foot grass","Probably Present"
 "Polypogon interruptus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Ditch Beard Grass","Present"
 "Schoenoplectus californicus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"California tule, California bulrush","Present"
@@ -1907,7 +1921,7 @@
 "Senecio aronicoides",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Butterweed","Present"
 "Tapes japonica",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
 "Tresus nuttalli",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
-"Carex amplifolia",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"bigleaf sedge","Unconfirmed"
+"Triphysaria floribunda",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"San Francisco Owl's-clover","Present"
 "Haliotis cracherodii",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"black abalone","Present"
 "Carex bolanderi",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Bolander's sedge, Sedge","Unconfirmed"
 "Spergularia villosa",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"hairy sandspurry, Villous Sand-spurrey","Probably Present"
@@ -1932,7 +1946,7 @@
 "Phalaris arundinacea",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"reed canary grass, reed canarygrass","Present"
 "Carex praegracilis",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"sedge","Present"
 "Carex simulata",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Sedge","Probably Present"
-"Cryptantha leiocarpa",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Coast Cryptantha","Present"
+"Plantago ovata",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"desert Indianwheat","Present"
 "Plantago subnuda",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Coastal Largeleaf Plantain, tall coastal plantain","Probably Present"
 "Cryptantha torreyana",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Cryptantha","Unconfirmed"
 "Urtica urens",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Dwarf Nettle","Present"
@@ -1944,7 +1958,7 @@
 "Verbascum blattaria",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Moth Mullein","Unconfirmed"
 "Phyla nodiflora",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Creeping Verbena","Present"
 "Plagiobothrys chorisianus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"artist's popcornflower","Probably Present"
-"Plagiobothrys diffusus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"San Francisco popcorn flower","Unconfirmed"
+"Isoperla",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
 "Crassula connata",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Sand Pigmy-weed, sand pygmyweed","Present"
 "Dudleya cymosa",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"canyon liveforever, Rock Lettuce","Present"
 "Glossosoma",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"",""
@@ -1966,7 +1980,7 @@
 "Vulpia myuros",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
 "Agrostis blasdalei",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Blasdale bentgrass","Present"
 "Linum perenne",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"blue flax","Present"
-"Dichondra donnelliana",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Dichondra","Unconfirmed"
+"Dipsacus sativus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Fullers' Teasel","Present"
 "Populus alba",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"White Poplar","Unconfirmed"
 "Nephroma laevigatum",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
 "Nephroma resupinatum",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
@@ -2027,7 +2041,7 @@
 "Spergula arvensis",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"corn spurry, Stickwort","Present"
 "Lotus angustissimus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Narrowpod Lotus, slender bird's-foot trefoil","Probably Present"
 "Glyceria occidentalis",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"northwestern mannagrass, Water Mannagrass","Present"
-"Triphysaria floribunda",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"San Francisco Owl's-clover","Present"
+"Gilia clivorum",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Little Gilia","Present"
 "Hydropsyche",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"",""
 "Haliotis rufescens",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"red abalone","Present"
 "Rithrogena",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"",""
@@ -2061,10 +2075,10 @@
 "Hastaperla chilnualna",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
 "Isolepis carinata",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"keeled bulrush","Present"
 "Acroneuria",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
-"Isoperla",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
+"Avena fatua",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Wild Oat","Present"
 "Rumex conglomeratus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"clustered dock, Green Dock","Present"
 "Schoenoplectus americanus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"American tule, American three-square bulrush","Present"
-"Gilia clivorum",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Little Gilia","Present"
+"Drymocallis glandulosa",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"sticky cinquefoil","Present"
 "Platanus racemosa",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Western Sycamore","Present"
 "Oxyethira",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"",""
 "Rumex pulcher",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Fiddle Dock","Present"
@@ -2084,7 +2098,7 @@
 "Ranunculus lobbii",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Lobb's Aquatic Buttercup","Present"
 "Collema nigrescens",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
 "Pseudocyphellaria anthraspis",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
-"Dipsacus sativus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Fullers' Teasel","Present"
+"Apocynum cannabinum",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"common dogbane, dogbane, hemp dogbane, Indian hemp, Indian-hemp, prairie dogbane","Unconfirmed"
 "Sticta fuliginosa",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
 "Acmispon strigosus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"strigose lotus","Present"
 "Salix bicolor",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"willow","Unconfirmed"
@@ -2101,9 +2115,9 @@
 "Malva nicaeensis",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Bull Mallow","Present"
 "Arundo donax",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Giant Reed","Present"
 "Corallina chilensis",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
-"Avena fatua",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Wild Oat","Present"
+"Protothaca staminea",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
 "Brachypodium distachyon",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"purple false brome","Unconfirmed"
-"Drymocallis glandulosa",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"sticky cinquefoil","Present"
+"Agapetus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"",""
 "Tagelus californianus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
 "Gigartina papillata",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
 "Bromus carinatus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"California brome","Present"
@@ -2140,10 +2154,10 @@
 "Choisya ternata",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Mexican Orange","Probably Present"
 "Alaria nana",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"",""
 "Poa pratensis",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Kentucky Bluegrass","Probably Present"
-"Protothaca staminea",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
+"Acer negundo",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"California Box Elder, box elder","Present"
 "Parentucellia viscosa",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Yellow Parentucellia","Probably Present"
 "Pedicularis densiflora",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Indian warrior","Unconfirmed"
-"Agapetus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"",""
+"Geranium carolinianum",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Geranium","Unconfirmed"
 "Gigartina canaliculata",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
 "Delphinium nudicaule",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"red larkspur","Present"
 "Hydroptila",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"",""
@@ -2167,13 +2181,13 @@
 "Tipula",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"",""
 "Cryptolithodes sitchensis",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"umbrella crab",""
 "Pagurus hirsutiusculus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"hairy hermit","Present"
-"Acer negundo",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"California Box Elder, box elder","Present"
+"Laminaria andersoni",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
 "Heptagenia",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"",""
 "Crassula aquatica",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Water Pigmy-weed","Present"
 "Peltigera collina",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
 "Crataegus monogyna",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"European Hawthorn","Unconfirmed"
 "Poa annua",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Annual Bluegrass","Present"
-"Hesperocnide tenella",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Western Nettle","Present"
+"Mimulus foliatus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"foliate kelp crab","Present"
 "Cystoseria osmundacea",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
 "Fucus furcatus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
 "Gomphus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"",""
@@ -2182,23 +2196,23 @@
 "Cancer antennarius",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Pacific rock crab","Present"
 "Athyrium filix-femina var. cyclosorum",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Coastal Lady Fern, subarctic lady fern","Present"
 "Juncus lesueurii",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"salt rush, Saltmarsh Rush","Present"
-"Geranium carolinianum",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Geranium","Unconfirmed"
+"Taxus brevifolia",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Western Yew","Unconfirmed"
 "Paraleptophlebia debilis",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"",""
 "Corbicula fluminea",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Asian clam","Present"
-"Mimulus foliatus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"foliate kelp crab","Present"
+"Solanum ptychanthum",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Probably Present"
 "Parietaria judaica",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Pellitory","Present"
 "Rytidosperma penicillatum",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"purple-awned wallaby grass","Unconfirmed"
 "Setaria pumila",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Yellow Bristle Grass","Present"
 "Limnephilus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"",""
-"Apocynum cannabinum",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"common dogbane, dogbane, hemp dogbane, Indian hemp, Indian-hemp, prairie dogbane","Unconfirmed"
+"Oxalis articulata",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"red wood-sorrel","Unconfirmed"
 "Myriophyllum sibiricum",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"American watermilfoil, shortspike watermilfoil, Siberian water-milfoil","Probably Present"
 "Hapalogaster cavicauda",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"furry crab",""
 "Neophylax",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"",""
 "Nicotiana acuminata",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Sticky Indian Tobacco","Unconfirmed"
 "Polypodium",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"",""
-"Taxus brevifolia",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Western Yew","Unconfirmed"
+"Farlowia mollis",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
 "Salix lasiolepis",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Arroyo Willow","Present"
-"Solanum ptychanthum",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Probably Present"
+"Epilobium densiflorum",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Tall Boisduvalia","Present"
 "Pannaria rubiginosa",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
 "Heterodermia leucomelos",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
 "Meconella californica",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"California Meconella","Unconfirmed"
@@ -2206,12 +2220,12 @@
 "Azolla filiculoides",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Mosquito Fern, Pacific mosquitofern","Present"
 "Dicranota",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"",""
 "Isoetes nuttallii",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Seep Quillwort","Present"
-"Laminaria andersoni",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
+"Acer macrophyllum",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"bigleaf maple, Big-leaf Maple","Present"
 "Mytilus edulis",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
 "Schizothrix coriacea",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
 "Heuchera micrantha",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Alumroot","Present"
-"Farlowia mollis",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
-"Epilobium densiflorum",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Tall Boisduvalia","Present"
+"Pentaneura",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"",""
+"Hesperocnide tenella",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Western Nettle","Present"
 "Ulva taeniata",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
 "Paraleptophlebia helena",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"",""
 "Solanum physalifolium",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"ground-cherry nightshade, hairy nightshade, hoe nightshade","Present"
@@ -2220,32 +2234,28 @@
 "Isoetes howellii",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Quillwort","Unconfirmed"
 "Optioservus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"",""
 "Heptagyia",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"",""
-"Plantago ovata",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"desert Indianwheat","Present"
+"Ulva lactuca",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
 "Tendipes",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"",""
 "Cotoneaster pannosus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"firethorn, silverleaf cotoneaster","Present"
-"Pentaneura",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"",""
-"Ulva lactuca",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
-"Solanum xanti",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Purple Nightshade","Present"
-"Oxalis articulata",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"red wood-sorrel","Unconfirmed"
-"Lobaria pulmonaria",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
+"Sidalcea calycosa",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Point Reyes Checkerbloom, Pt. Reyes checkerbloom","Present"
 "Calopsectra",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"",""
-"Acer macrophyllum",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"bigleaf maple, Big-leaf Maple","Present"
+"Solanum xanti",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Purple Nightshade","Present"
+"Lobaria pulmonaria",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
+"Rosa chinensis",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"CHINA ROSE","Probably Present"
+"Adiantum jordanii",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"California Maiden-hair, California maidenhair fern","Present"
 "Echinochloa crus-galli",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"barnyard grass","Probably Present"
 "Farula",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"",""
-"Sidalcea calycosa",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Point Reyes Checkerbloom, Pt. Reyes checkerbloom","Present"
+"Prosartes smithii",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"large-flowered fairy bells","Present"
 "Ribes divaricatum",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Straggly Gooseberry","Present"
 "Scirpus robustus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Bulrush","Present"
 "Hydroporus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"",""
-"Prosartes smithii",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"large-flowered fairy bells","Present"
+"Cladophora trichotoma",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
 "Lepidostoma",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"",""
 "Juncus effusus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"rush","Present"
 "Nemoura californica",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
-"Cladophora trichotoma",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
-"Rosa chinensis",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"CHINA ROSE","Probably Present"
-"Clarkia amoena",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Godetia","Present"
 "Gumaga",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"",""
-"Malus pumila",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"paradise apple","Present"
 "Betaeus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"","Present"
-"Adiantum jordanii",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"California Maiden-hair, California maidenhair fern","Present"
+"Clarkia amoena",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Godetia","Present"
+"Malus pumila",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"paradise apple","Present"
 "Syncaris pacifica",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"California freshwater shrimp","Present"
 NA,0,0,NA,NA,NA,NA,NA,NA,NA,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NA,NA

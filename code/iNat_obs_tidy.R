@@ -1,15 +1,16 @@
 #Checking out the iNat data
+#First run data_download.R to get datasets used in this code
+
 # library(maps)
 library(rgdal)
 # library(dplyr)
 library(raster)
+library(lubridate)
 
-
-setwd("/Users/lauraalexander/Desktop/taxorama") 
-#First run data_download.R to get all the datasets used in this code
+setwd("/Users/lauraalexander/taxorama") 
 
 #### Read in data, select columns ####
-allObs <- read.csv("raw_data/observations.csv", header = TRUE) #read in complete iNat dataset
+allObs <- read.csv("raw_data/observations.csv", header = TRUE, stringsAsFactors = FALSE) #read in complete iNat dataset
 usObsRaw <- subset(allObs,countryCode == "US") #select only observations from inside US
 
 usObs <- usObsRaw #means that if we make an error while removing columns or other data, we don't have to read in all the data over again.
@@ -30,11 +31,13 @@ usObs <- usObs[,c( #selecting the columns of interest for us; if you want to see
   "kingdom", "phylum", "class","order","family","genus"
 )]
 
-#changes date from factor or whatever to be read as dates
+#changes date columns to be readable as dates; adds month and year columns for US data
 usObs$eventDate <- as.Date(usObs$eventDate)
 usObs$dateIdentified <- as.Date(usObs$dateIdentified)
+usObs$year <- year(usObs$eventDate)
+usObs$month <- month(usObs$eventDate)
 
-cleanObs <- usObs[-which(usObs$eventDate < "2007-01-01"),] #removes pre-2007 observations 
+cleanObs <- usObs[-which(usObs$eventDate < "2007-01-01"),];  cleanObs <- cleanObs[-which(is.na(usObs$eventDate)),]#removes pre-2007 observations, observations with no assocated event date.
 write.csv(cleanObs, "processed_data/clean_us_obs.csv", row.names = F) #writes out files 
 
 #### Add park info; for counties, see obs_by_county.R ####
@@ -100,9 +103,9 @@ for (i in 1:userLen){
   userData$phylum_observed[i]  <- length(unique(userObs$phylum))
   userData$kingdom_observed[i]  <- length(unique(userObs$kingdom))
 
-  userData$first_event_date[i]  <- as.Date(min(userObs$eventDate))
-  userData$first_id_date[i]  <- as.Date(min(userObs$dateIdentified))
-  userData$last_event_date[i]  <- as.Date(max(userObs$eventDate))
+  userData$first_event_date[i]  <- min(userObs$eventDate)
+  userData$first_id_date[i]  <- min(userObs$dateIdentified)
+  userData$last_event_date[i]  <- max(userObs$eventDate)
 
   if(i %% 100 == 0){print(paste(100 * i/userLen, "%")); print(summary(userData$total_observations))}
 }

@@ -2,13 +2,13 @@
         "name": "life",
         "level": "root",
         "hex": "#050505",
-        "nspp": 977,
+        "nspp": 991,
         "children": [
             {
                 "name": "Animalia",
                 "level": "kingdom",
                 "hex": "#0D0B08",
-                "nspp": 433,
+                "nspp": 436,
                 "children": [
                     {
                         "name": "Chordata",
@@ -96,8 +96,8 @@
                                                                 "common_name": "Red-tailed Hawk",
                                                                 "hex": "#DD9B57",
                                                                 "nspp": 1,
-                                                                "n_records": 38,
-                                                                "n_users": 26,
+                                                                "n_records": 39,
+                                                                "n_users": 27,
                                                                 "n_species": 1
                                                             },
                                                             {
@@ -194,8 +194,8 @@
                                                                 "common_name": "Turkey Vulture",
                                                                 "hex": "#D37E57",
                                                                 "nspp": 1,
-                                                                "n_records": 41,
-                                                                "n_users": 32,
+                                                                "n_records": 42,
+                                                                "n_users": 33,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -239,8 +239,8 @@
                                                                 "common_name": "Osprey",
                                                                 "hex": "#D78259",
                                                                 "nspp": 1,
-                                                                "n_records": 9,
-                                                                "n_users": 7,
+                                                                "n_records": 10,
+                                                                "n_users": 8,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -412,7 +412,7 @@
                                                                 "common_name": "Western scrub jay",
                                                                 "hex": "#D1A435",
                                                                 "nspp": 1,
-                                                                "n_records": 12,
+                                                                "n_records": 13,
                                                                 "n_users": 8,
                                                                 "n_species": 1
                                                             }
@@ -536,7 +536,7 @@
                                                                 "common_name": "Song Sparrow",
                                                                 "hex": "#C79A33",
                                                                 "nspp": 1,
-                                                                "n_records": 22,
+                                                                "n_records": 23,
                                                                 "n_users": 15,
                                                                 "n_species": 1
                                                             }
@@ -935,7 +935,7 @@
                                                                 "common_name": "Brewer's Blackbird",
                                                                 "hex": "#BCA734",
                                                                 "nspp": 1,
-                                                                "n_records": 9,
+                                                                "n_records": 10,
                                                                 "n_users": 6,
                                                                 "n_species": 1
                                                             }
@@ -1449,8 +1449,8 @@
                                                                 "common_name": "Varied Thrush",
                                                                 "hex": "#C48C48",
                                                                 "nspp": 1,
-                                                                "n_records": 7,
-                                                                "n_users": 7,
+                                                                "n_records": 8,
+                                                                "n_users": 8,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -1596,8 +1596,8 @@
                                                                 "common_name": "Say's Phoebe",
                                                                 "hex": "#B6A539",
                                                                 "nspp": 1,
-                                                                "n_records": 5,
-                                                                "n_users": 5,
+                                                                "n_records": 6,
+                                                                "n_users": 6,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -1741,8 +1741,8 @@
                                                                 "common_name": "Common Murre",
                                                                 "hex": "#E73E5C",
                                                                 "nspp": 1,
-                                                                "n_records": 12,
-                                                                "n_users": 9,
+                                                                "n_records": 13,
+                                                                "n_users": 10,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -1768,8 +1768,8 @@
                                                                 "common_name": "Lesser Sand Plover, Lesser Sand-Plover, Mongolian Plover",
                                                                 "hex": "#EC3F65",
                                                                 "nspp": 1,
-                                                                "n_records": 1,
-                                                                "n_users": 1,
+                                                                "n_records": 2,
+                                                                "n_users": 2,
                                                                 "n_species": 1
                                                             },
                                                             {
@@ -1964,8 +1964,8 @@
                                                                 "common_name": "Glaucous-winged Gull",
                                                                 "hex": "#E45F62",
                                                                 "nspp": 1,
-                                                                "n_records": 3,
-                                                                "n_users": 3,
+                                                                "n_records": 4,
+                                                                "n_users": 4,
                                                                 "n_species": 1
                                                             },
                                                             {
@@ -1975,8 +1975,8 @@
                                                                 "common_name": "Heermann's Gull",
                                                                 "hex": "#E95A64",
                                                                 "nspp": 1,
-                                                                "n_records": 16,
-                                                                "n_users": 12,
+                                                                "n_records": 18,
+                                                                "n_users": 13,
                                                                 "n_species": 1
                                                             },
                                                             {
@@ -1986,8 +1986,8 @@
                                                                 "common_name": "Western Gull",
                                                                 "hex": "#E25F62",
                                                                 "nspp": 1,
-                                                                "n_records": 26,
-                                                                "n_users": 17,
+                                                                "n_records": 27,
+                                                                "n_users": 18,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -2145,8 +2145,8 @@
                                                                 "common_name": "Marbled Godwit",
                                                                 "hex": "#DC525A",
                                                                 "nspp": 1,
-                                                                "n_records": 8,
-                                                                "n_users": 8,
+                                                                "n_records": 9,
+                                                                "n_users": 9,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -2243,8 +2243,8 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#E9535A",
                                                                 "nspp": 1,
-                                                                "n_records": 3,
-                                                                "n_users": 3,
+                                                                "n_records": 4,
+                                                                "n_users": 4,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -2308,8 +2308,8 @@
                                                                 "common_name": "American Wigeon",
                                                                 "hex": "#DC6E4F",
                                                                 "nspp": 1,
-                                                                "n_records": 6,
-                                                                "n_users": 6,
+                                                                "n_records": 7,
+                                                                "n_users": 7,
                                                                 "n_species": 1
                                                             },
                                                             {
@@ -2415,8 +2415,8 @@
                                                                 "common_name": "Greater Scaup",
                                                                 "hex": "#E1784E",
                                                                 "nspp": 1,
-                                                                "n_records": 1,
-                                                                "n_users": 1,
+                                                                "n_records": 2,
+                                                                "n_users": 2,
                                                                 "n_species": 1
                                                             },
                                                             {
@@ -2486,8 +2486,8 @@
                                                                 "common_name": "Common Goldeneye",
                                                                 "hex": "#D6764A",
                                                                 "nspp": 1,
-                                                                "n_records": 3,
-                                                                "n_users": 3,
+                                                                "n_records": 4,
+                                                                "n_users": 4,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -2561,8 +2561,8 @@
                                                                 "common_name": "Hooded Merganser",
                                                                 "hex": "#E06C47",
                                                                 "nspp": 1,
-                                                                "n_records": 1,
-                                                                "n_users": 1,
+                                                                "n_records": 2,
+                                                                "n_users": 2,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -2770,8 +2770,8 @@
                                                                 "common_name": "Brown Pelican",
                                                                 "hex": "#D56028",
                                                                 "nspp": 1,
-                                                                "n_records": 30,
-                                                                "n_users": 20,
+                                                                "n_records": 31,
+                                                                "n_users": 21,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -2870,7 +2870,7 @@
                                                                 "common_name": "Allen's Hummingbird",
                                                                 "hex": "#EE6951",
                                                                 "nspp": 1,
-                                                                "n_records": 5,
+                                                                "n_records": 6,
                                                                 "n_users": 5,
                                                                 "n_species": 1
                                                             }
@@ -3090,7 +3090,7 @@
                                                                 "common_name": "California Quail",
                                                                 "hex": "#D26266",
                                                                 "nspp": 1,
-                                                                "n_records": 70,
+                                                                "n_records": 71,
                                                                 "n_users": 44,
                                                                 "n_species": 1
                                                             }
@@ -4100,7 +4100,7 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#B3A2B3",
                                                                 "nspp": 1,
-                                                                "n_records": 10,
+                                                                "n_records": 12,
                                                                 "n_users": 7,
                                                                 "n_species": 1
                                                             }
@@ -4180,8 +4180,8 @@
                                                                 "common_name": "Northern Alligator Lizard",
                                                                 "hex": "#B131AF",
                                                                 "nspp": 1,
-                                                                "n_records": 14,
-                                                                "n_users": 12,
+                                                                "n_records": 16,
+                                                                "n_users": 14,
                                                                 "n_species": 1
                                                             },
                                                             {
@@ -4285,8 +4285,8 @@
                                                                 "common_name": "Common Garter Snake",
                                                                 "hex": "#B230B2",
                                                                 "nspp": 1,
-                                                                "n_records": 9,
-                                                                "n_users": 7,
+                                                                "n_records": 11,
+                                                                "n_users": 8,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -4312,7 +4312,7 @@
                                                                 "common_name": "Western Fence Lizard",
                                                                 "hex": "#B131A2",
                                                                 "nspp": 1,
-                                                                "n_records": 20,
+                                                                "n_records": 21,
                                                                 "n_users": 16,
                                                                 "n_species": 1
                                                             }
@@ -4347,8 +4347,8 @@
                                                                 "common_name": "Northern Western Pond Turtle, Pacific Pond Turtle, Western Pond Turtle",
                                                                 "hex": "#B22F50",
                                                                 "nspp": 1,
-                                                                "n_records": 1,
-                                                                "n_users": 1,
+                                                                "n_records": 2,
+                                                                "n_users": 2,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -4600,8 +4600,8 @@
                                                                 "common_name": "Northern Elephant Seal, northern sea elephant",
                                                                 "hex": "#BD28E0",
                                                                 "nspp": 1,
-                                                                "n_records": 90,
-                                                                "n_users": 46,
+                                                                "n_records": 92,
+                                                                "n_users": 48,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -4679,7 +4679,7 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#C32BF7",
                                                                 "nspp": 1,
-                                                                "n_records": 80,
+                                                                "n_records": 81,
                                                                 "n_users": 61,
                                                                 "n_species": 1
                                                             }
@@ -4698,8 +4698,8 @@
                                                                 "common_name": "fallow deer, Fallow Deer",
                                                                 "hex": "#CA2BF3",
                                                                 "nspp": 1,
-                                                                "n_records": 1,
-                                                                "n_users": 1,
+                                                                "n_records": 2,
+                                                                "n_users": 2,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -4716,8 +4716,8 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#B52AF5",
                                                                 "nspp": 1,
-                                                                "n_records": 83,
-                                                                "n_users": 55,
+                                                                "n_records": 84,
+                                                                "n_users": 56,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -4835,8 +4835,8 @@
                                                                 "common_name": "Botta's Pocket Gopher",
                                                                 "hex": "#ED2DF8",
                                                                 "nspp": 1,
-                                                                "n_records": 9,
-                                                                "n_users": 9,
+                                                                "n_records": 10,
+                                                                "n_users": 10,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -4981,7 +4981,7 @@
                                         ]
                                     },
                                     {
-                                        "name": "Soricomorpha",
+                                        "name": "Eulipotyphla",
                                         "level": "order",
                                         "hex": "#360A34",
                                         "nspp": 2,
@@ -5042,13 +5042,13 @@
                         "name": "Arthropoda",
                         "level": "phylum",
                         "hex": "#111910",
-                        "nspp": 128,
+                        "nspp": 129,
                         "children": [
                             {
                                 "name": "Insecta",
                                 "level": "class",
                                 "hex": "#1B271C",
-                                "nspp": 103,
+                                "nspp": 104,
                                 "children": [
                                     {
                                         "name": "Orthoptera",
@@ -5340,8 +5340,8 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#A5E1A6",
                                                                 "nspp": 1,
-                                                                "n_records": 10,
-                                                                "n_users": 7,
+                                                                "n_records": 11,
+                                                                "n_users": 8,
                                                                 "n_species": 1
                                                             },
                                                             {
@@ -5872,7 +5872,7 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#96E585",
                                                                 "nspp": 1,
-                                                                "n_records": 9,
+                                                                "n_records": 10,
                                                                 "n_users": 6,
                                                                 "n_species": 1
                                                             }
@@ -6077,8 +6077,8 @@
                                     {
                                         "name": "Lepidoptera",
                                         "level": "order",
-                                        "hex": "#2A3F2F",
-                                        "nspp": 52,
+                                        "hex": "#2A3E2E",
+                                        "nspp": 53,
                                         "children": [
                                             {
                                                 "name": "Crambidae",
@@ -6196,8 +6196,8 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#A5F9A7",
                                                                 "nspp": 1,
-                                                                "n_records": 4,
-                                                                "n_users": 4,
+                                                                "n_records": 5,
+                                                                "n_users": 5,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -6467,9 +6467,27 @@
                                             {
                                                 "name": "Lycaenidae",
                                                 "level": "family",
-                                                "hex": "#426345",
-                                                "nspp": 6,
+                                                "hex": "#38553B",
+                                                "nspp": 7,
                                                 "children": [
+                                                    {
+                                                        "name": "Callophrys",
+                                                        "level": "genus",
+                                                        "hex": "#000000",
+                                                        "nspp": 1,
+                                                        "children": [
+                                                            {
+                                                                "level": "species",
+                                                                "binomial": "Callophrys eryphon",
+                                                                "common_name": "[common name unknown]",
+                                                                "hex": "#000000",
+                                                                "nspp": 1,
+                                                                "n_records": 1,
+                                                                "n_users": 1,
+                                                                "n_species": 1
+                                                            }
+                                                        ]
+                                                    },
                                                     {
                                                         "name": "Celastrina",
                                                         "level": "genus",
@@ -6482,7 +6500,7 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#A8F6B1",
                                                                 "nspp": 1,
-                                                                "n_records": 6,
+                                                                "n_records": 7,
                                                                 "n_users": 4,
                                                                 "n_species": 1
                                                             }
@@ -6770,8 +6788,8 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#A2F9B3",
                                                                 "nspp": 1,
-                                                                "n_records": 8,
-                                                                "n_users": 4,
+                                                                "n_records": 12,
+                                                                "n_users": 5,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -6816,7 +6834,7 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#A2F6BA",
                                                                 "nspp": 1,
-                                                                "n_records": 14,
+                                                                "n_records": 15,
                                                                 "n_users": 9,
                                                                 "n_species": 1
                                                             },
@@ -6936,8 +6954,8 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#ACF0C6",
                                                                 "nspp": 1,
-                                                                "n_records": 2,
-                                                                "n_users": 2,
+                                                                "n_records": 3,
+                                                                "n_users": 3,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -7417,8 +7435,8 @@
                                                                 "common_name": "striped shore crab",
                                                                 "hex": "#93E332",
                                                                 "nspp": 1,
-                                                                "n_records": 15,
-                                                                "n_users": 13,
+                                                                "n_records": 16,
+                                                                "n_users": 14,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -7723,8 +7741,8 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#AFE048",
                                                                 "nspp": 1,
-                                                                "n_records": 1,
-                                                                "n_users": 1,
+                                                                "n_records": 2,
+                                                                "n_users": 2,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -7765,8 +7783,8 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#99DC0E",
                                                                 "nspp": 1,
-                                                                "n_records": 2,
-                                                                "n_users": 2,
+                                                                "n_records": 3,
+                                                                "n_users": 3,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -7782,8 +7800,8 @@
                     {
                         "name": "Cnidaria",
                         "level": "phylum",
-                        "hex": "#1A1801",
-                        "nspp": 5,
+                        "hex": "#151401",
+                        "nspp": 6,
                         "children": [
                             {
                                 "name": "Anthozoa",
@@ -7892,15 +7910,41 @@
                             {
                                 "name": "Hydrozoa",
                                 "level": "class",
-                                "hex": "#2A2801",
-                                "nspp": 1,
+                                "hex": "#151401",
+                                "nspp": 2,
                                 "children": [
                                     {
                                         "name": "Anthoathecata",
                                         "level": "order",
-                                        "hex": "#423E02",
-                                        "nspp": 1,
+                                        "hex": "#211F01",
+                                        "nspp": 2,
                                         "children": [
+                                            {
+                                                "name": "Polyorchidae",
+                                                "level": "family",
+                                                "hex": "#000000",
+                                                "nspp": 1,
+                                                "children": [
+                                                    {
+                                                        "name": "Polyorchis",
+                                                        "level": "genus",
+                                                        "hex": "#000000",
+                                                        "nspp": 1,
+                                                        "children": [
+                                                            {
+                                                                "level": "species",
+                                                                "binomial": "Polyorchis penicillatus",
+                                                                "common_name": "[common name unknown]",
+                                                                "hex": "#000000",
+                                                                "nspp": 1,
+                                                                "n_records": 1,
+                                                                "n_users": 1,
+                                                                "n_species": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
                                             {
                                                 "name": "Porpitidae",
                                                 "level": "family",
@@ -7937,13 +7981,13 @@
                         "name": "Mollusca",
                         "level": "phylum",
                         "hex": "#1A160A",
-                        "nspp": 41,
+                        "nspp": 42,
                         "children": [
                             {
                                 "name": "Gastropoda",
                                 "level": "class",
-                                "hex": "#29230A",
-                                "nspp": 32,
+                                "hex": "#28220A",
+                                "nspp": 33,
                                 "children": [
                                     {
                                         "name": "Nudibranchia",
@@ -8309,8 +8353,8 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#FCCD5D",
                                                                 "nspp": 1,
-                                                                "n_records": 3,
-                                                                "n_users": 3,
+                                                                "n_records": 4,
+                                                                "n_users": 4,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -8395,8 +8439,8 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#F8D75B",
                                                                 "nspp": 1,
-                                                                "n_records": 1,
-                                                                "n_users": 1,
+                                                                "n_records": 2,
+                                                                "n_users": 2,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -8421,7 +8465,7 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#F6D65F",
                                                                 "nspp": 1,
-                                                                "n_records": 7,
+                                                                "n_records": 8,
                                                                 "n_users": 1,
                                                                 "n_species": 1
                                                             }
@@ -8470,8 +8514,8 @@
                                     {
                                         "name": "Neotaenioglossa",
                                         "level": "order",
-                                        "hex": "#40360A",
-                                        "nspp": 2,
+                                        "hex": "#2B2407",
+                                        "nspp": 3,
                                         "children": [
                                             {
                                                 "name": "Batillariidae",
@@ -8516,6 +8560,32 @@
                                                                 "binomial": "Epitonium tinctum",
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#FBCF29",
+                                                                "nspp": 1,
+                                                                "n_records": 1,
+                                                                "n_users": 1,
+                                                                "n_species": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "Naticidae",
+                                                "level": "family",
+                                                "hex": "#000000",
+                                                "nspp": 1,
+                                                "children": [
+                                                    {
+                                                        "name": "Neverita",
+                                                        "level": "genus",
+                                                        "hex": "#000000",
+                                                        "nspp": 1,
+                                                        "children": [
+                                                            {
+                                                                "level": "species",
+                                                                "binomial": "Neverita reclusiana",
+                                                                "common_name": "[common name unknown]",
+                                                                "hex": "#000000",
                                                                 "nspp": 1,
                                                                 "n_records": 1,
                                                                 "n_users": 1,
@@ -8647,8 +8717,8 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#FBD05E",
                                                                 "nspp": 1,
-                                                                "n_records": 1,
-                                                                "n_users": 1,
+                                                                "n_records": 2,
+                                                                "n_users": 2,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -8827,8 +8897,8 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#F3D1F9",
                                                                 "nspp": 1,
-                                                                "n_records": 4,
-                                                                "n_users": 4,
+                                                                "n_records": 5,
+                                                                "n_users": 5,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -9196,8 +9266,8 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#F22421",
                                                                 "nspp": 1,
-                                                                "n_records": 9,
-                                                                "n_users": 7,
+                                                                "n_records": 10,
+                                                                "n_users": 8,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -9392,25 +9462,25 @@
                 "name": "Fungi",
                 "level": "kingdom",
                 "hex": "#080202",
-                "nspp": 132,
+                "nspp": 137,
                 "children": [
                     {
                         "name": "Basidiomycota",
                         "level": "phylum",
-                        "hex": "#0D0303",
-                        "nspp": 94,
+                        "hex": "#0C0303",
+                        "nspp": 99,
                         "children": [
                             {
                                 "name": "Agaricomycetes",
                                 "level": "class",
-                                "hex": "#140404",
-                                "nspp": 90,
+                                "hex": "#130404",
+                                "nspp": 95,
                                 "children": [
                                     {
                                         "name": "Agaricales",
                                         "level": "order",
-                                        "hex": "#200506",
-                                        "nspp": 48,
+                                        "hex": "#1E0505",
+                                        "nspp": 51,
                                         "children": [
                                             {
                                                 "name": "Agaricaceae",
@@ -9502,7 +9572,7 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#761817",
                                                                 "nspp": 1,
-                                                                "n_records": 11,
+                                                                "n_records": 12,
                                                                 "n_users": 6,
                                                                 "n_species": 1
                                                             },
@@ -9512,8 +9582,8 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#791415",
                                                                 "nspp": 1,
-                                                                "n_records": 2,
-                                                                "n_users": 2,
+                                                                "n_records": 3,
+                                                                "n_users": 3,
                                                                 "n_species": 1
                                                             },
                                                             {
@@ -9645,14 +9715,14 @@
                                             {
                                                 "name": "Hydnangiaceae",
                                                 "level": "family",
-                                                "hex": "#320B08",
-                                                "nspp": 1,
+                                                "hex": "#190604",
+                                                "nspp": 2,
                                                 "children": [
                                                     {
                                                         "name": "Laccaria",
                                                         "level": "genus",
-                                                        "hex": "#4E120C",
-                                                        "nspp": 1,
+                                                        "hex": "#270906",
+                                                        "nspp": 2,
                                                         "children": [
                                                             {
                                                                 "level": "species",
@@ -9662,6 +9732,16 @@
                                                                 "nspp": 1,
                                                                 "n_records": 2,
                                                                 "n_users": 2,
+                                                                "n_species": 1
+                                                            },
+                                                            {
+                                                                "level": "species",
+                                                                "binomial": "Laccaria bicolor",
+                                                                "common_name": "[common name unknown]",
+                                                                "hex": "#000000",
+                                                                "nspp": 1,
+                                                                "n_records": 1,
+                                                                "n_users": 1,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -9714,8 +9794,8 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#7C101D",
                                                                 "nspp": 1,
-                                                                "n_records": 5,
-                                                                "n_users": 4,
+                                                                "n_records": 6,
+                                                                "n_users": 5,
                                                                 "n_species": 1
                                                             },
                                                             {
@@ -9835,14 +9915,14 @@
                                             {
                                                 "name": "Mycenaceae",
                                                 "level": "family",
-                                                "hex": "#2F0709",
-                                                "nspp": 2,
+                                                "hex": "#1F0406",
+                                                "nspp": 3,
                                                 "children": [
                                                     {
                                                         "name": "Mycena",
                                                         "level": "genus",
-                                                        "hex": "#490B0E",
-                                                        "nspp": 2,
+                                                        "hex": "#30070A",
+                                                        "nspp": 3,
                                                         "children": [
                                                             {
                                                                 "level": "species",
@@ -9859,6 +9939,16 @@
                                                                 "binomial": "Mycena capillaripes",
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#721313",
+                                                                "nspp": 1,
+                                                                "n_records": 1,
+                                                                "n_users": 1,
+                                                                "n_species": 1
+                                                            },
+                                                            {
+                                                                "level": "species",
+                                                                "binomial": "Mycena pura",
+                                                                "common_name": "[common name unknown]",
+                                                                "hex": "#000000",
                                                                 "nspp": 1,
                                                                 "n_records": 1,
                                                                 "n_users": 1,
@@ -9948,8 +10038,8 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#801019",
                                                                 "nspp": 1,
-                                                                "n_records": 1,
-                                                                "n_users": 1,
+                                                                "n_records": 2,
+                                                                "n_users": 2,
                                                                 "n_species": 1
                                                             },
                                                             {
@@ -10074,8 +10164,8 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#7C1910",
                                                                 "nspp": 1,
-                                                                "n_records": 6,
-                                                                "n_users": 6,
+                                                                "n_records": 7,
+                                                                "n_users": 7,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -10092,7 +10182,7 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#7C0F11",
                                                                 "nspp": 1,
-                                                                "n_records": 4,
+                                                                "n_records": 5,
                                                                 "n_users": 3,
                                                                 "n_species": 1
                                                             }
@@ -10131,9 +10221,27 @@
                                             {
                                                 "name": "Tricholomataceae",
                                                 "level": "family",
-                                                "hex": "#33080A",
-                                                "nspp": 5,
+                                                "hex": "#2B0608",
+                                                "nspp": 6,
                                                 "children": [
+                                                    {
+                                                        "name": "Callistosporium",
+                                                        "level": "genus",
+                                                        "hex": "#000000",
+                                                        "nspp": 1,
+                                                        "children": [
+                                                            {
+                                                                "level": "species",
+                                                                "binomial": "Callistosporium luteo-olivaceum",
+                                                                "common_name": "[common name unknown]",
+                                                                "hex": "#000000",
+                                                                "nspp": 1,
+                                                                "n_records": 2,
+                                                                "n_users": 2,
+                                                                "n_species": 1
+                                                            }
+                                                        ]
+                                                    },
                                                     {
                                                         "name": "Clitocybe",
                                                         "level": "genus",
@@ -10275,8 +10383,8 @@
                                     {
                                         "name": "Russulales",
                                         "level": "order",
-                                        "hex": "#1F0807",
-                                        "nspp": 13,
+                                        "hex": "#1D0807",
+                                        "nspp": 14,
                                         "children": [
                                             {
                                                 "name": "Auriscalpiaceae",
@@ -10296,7 +10404,7 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#7E1F24",
                                                                 "nspp": 1,
-                                                                "n_records": 1,
+                                                                "n_records": 2,
                                                                 "n_users": 1,
                                                                 "n_species": 1
                                                             }
@@ -10307,20 +10415,30 @@
                                             {
                                                 "name": "Russulaceae",
                                                 "level": "family",
-                                                "hex": "#300D0B",
-                                                "nspp": 11,
+                                                "hex": "#2C0C0A",
+                                                "nspp": 12,
                                                 "children": [
                                                     {
                                                         "name": "Lactarius",
                                                         "level": "genus",
-                                                        "hex": "#4B1411",
-                                                        "nspp": 6,
+                                                        "hex": "#40110F",
+                                                        "nspp": 7,
                                                         "children": [
                                                             {
                                                                 "level": "species",
                                                                 "binomial": "Lactarius alnicola",
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#762019",
+                                                                "nspp": 1,
+                                                                "n_records": 1,
+                                                                "n_users": 1,
+                                                                "n_species": 1
+                                                            },
+                                                            {
+                                                                "level": "species",
+                                                                "binomial": "Lactarius atrobadius",
+                                                                "common_name": "[common name unknown]",
+                                                                "hex": "#000000",
                                                                 "nspp": 1,
                                                                 "n_records": 1,
                                                                 "n_users": 1,
@@ -10342,8 +10460,8 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#76201B",
                                                                 "nspp": 1,
-                                                                "n_records": 3,
-                                                                "n_users": 3,
+                                                                "n_records": 4,
+                                                                "n_users": 4,
                                                                 "n_species": 1
                                                             },
                                                             {
@@ -10362,8 +10480,8 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#77201B",
                                                                 "nspp": 1,
-                                                                "n_records": 1,
-                                                                "n_users": 1,
+                                                                "n_records": 6,
+                                                                "n_users": 2,
                                                                 "n_species": 1
                                                             },
                                                             {
@@ -10745,8 +10863,8 @@
                                     {
                                         "name": "Cantharellales",
                                         "level": "order",
-                                        "hex": "#1C0609",
-                                        "nspp": 3,
+                                        "hex": "#150507",
+                                        "nspp": 4,
                                         "children": [
                                             {
                                                 "name": "Cantharellaceae",
@@ -10795,15 +10913,25 @@
                                             {
                                                 "name": "Clavulinaceae",
                                                 "level": "family",
-                                                "hex": "#2B0A0F",
-                                                "nspp": 1,
+                                                "hex": "#160508",
+                                                "nspp": 2,
                                                 "children": [
                                                     {
                                                         "name": "Clavulina",
                                                         "level": "genus",
-                                                        "hex": "#441018",
-                                                        "nspp": 1,
+                                                        "hex": "#22080C",
+                                                        "nspp": 2,
                                                         "children": [
+                                                            {
+                                                                "level": "species",
+                                                                "binomial": "Clavulina coralloides",
+                                                                "common_name": "[common name unknown]",
+                                                                "hex": "#000000",
+                                                                "nspp": 1,
+                                                                "n_records": 1,
+                                                                "n_users": 1,
+                                                                "n_species": 1
+                                                            },
                                                             {
                                                                 "level": "species",
                                                                 "binomial": "Clavulina rugosa",
@@ -11177,7 +11305,7 @@
                     {
                         "name": "Ascomycota",
                         "level": "phylum",
-                        "hex": "#0E0102",
+                        "hex": "#0E0101",
                         "nspp": 37,
                         "children": [
                             {
@@ -11285,13 +11413,13 @@
                             {
                                 "name": "Lecanoromycetes",
                                 "level": "class",
-                                "hex": "#170102",
+                                "hex": "#160101",
                                 "nspp": 23,
                                 "children": [
                                     {
                                         "name": "Lecanorales",
                                         "level": "order",
-                                        "hex": "#240103",
+                                        "hex": "#220102",
                                         "nspp": 18,
                                         "children": [
                                             {
@@ -11323,7 +11451,7 @@
                                             {
                                                 "name": "Lecanoraceae",
                                                 "level": "family",
-                                                "hex": "#380304",
+                                                "hex": "#1C0202",
                                                 "nspp": 2,
                                                 "children": [
                                                     {
@@ -11345,16 +11473,16 @@
                                                         ]
                                                     },
                                                     {
-                                                        "name": "Lecanora",
+                                                        "name": "Protoparmeliopsis",
                                                         "level": "genus",
-                                                        "hex": "#570408",
+                                                        "hex": "#000000",
                                                         "nspp": 1,
                                                         "children": [
                                                             {
                                                                 "level": "species",
-                                                                "binomial": "Lecanora pinguis",
+                                                                "binomial": "Protoparmeliopsis pinguis",
                                                                 "common_name": "[common name unknown]",
-                                                                "hex": "#89070C",
+                                                                "hex": "#000000",
                                                                 "nspp": 1,
                                                                 "n_records": 2,
                                                                 "n_users": 2,
@@ -11464,8 +11592,8 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#8C0608",
                                                                 "nspp": 1,
-                                                                "n_records": 7,
-                                                                "n_users": 5,
+                                                                "n_records": 9,
+                                                                "n_users": 7,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -11754,8 +11882,8 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#840A04",
                                                                 "nspp": 1,
-                                                                "n_records": 1,
-                                                                "n_users": 1,
+                                                                "n_records": 2,
+                                                                "n_users": 2,
                                                                 "n_species": 1
                                                             },
                                                             {
@@ -11764,8 +11892,8 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#850904",
                                                                 "nspp": 1,
-                                                                "n_records": 4,
-                                                                "n_users": 3,
+                                                                "n_records": 6,
+                                                                "n_users": 4,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -11860,8 +11988,8 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#850904",
                                                                 "nspp": 1,
-                                                                "n_records": 9,
-                                                                "n_users": 7,
+                                                                "n_records": 10,
+                                                                "n_users": 8,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -11902,8 +12030,8 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#850203",
                                                                 "nspp": 1,
-                                                                "n_records": 1,
-                                                                "n_users": 1,
+                                                                "n_records": 2,
+                                                                "n_users": 2,
                                                                 "n_species": 1
                                                             },
                                                             {
@@ -12076,19 +12204,19 @@
                 "name": "Plantae",
                 "level": "kingdom",
                 "hex": "#04080B",
-                "nspp": 412,
+                "nspp": 418,
                 "children": [
                     {
                         "name": "Magnoliophyta",
                         "level": "phylum",
                         "hex": "#060D12",
-                        "nspp": 388,
+                        "nspp": 394,
                         "children": [
                             {
                                 "name": "Magnoliopsida",
                                 "level": "class",
-                                "hex": "#0B121F",
-                                "nspp": 317,
+                                "hex": "#0A121F",
+                                "nspp": 322,
                                 "children": [
                                     {
                                         "name": "Dipsacales",
@@ -12495,8 +12623,8 @@
                                                                 "common_name": "Common Chickweed",
                                                                 "hex": "#66A8B6",
                                                                 "nspp": 1,
-                                                                "n_records": 1,
-                                                                "n_users": 1,
+                                                                "n_records": 2,
+                                                                "n_users": 2,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -12578,7 +12706,7 @@
                                                                 "common_name": "miner's lettuce",
                                                                 "hex": "#629A8B",
                                                                 "nspp": 1,
-                                                                "n_records": 16,
+                                                                "n_records": 20,
                                                                 "n_users": 13,
                                                                 "n_species": 1
                                                             },
@@ -13026,7 +13154,7 @@
                                                                 "common_name": "cow parsnip",
                                                                 "hex": "#5A3AD0",
                                                                 "nspp": 1,
-                                                                "n_records": 36,
+                                                                "n_records": 37,
                                                                 "n_users": 23,
                                                                 "n_species": 1
                                                             }
@@ -13102,8 +13230,8 @@
                                                                 "common_name": "Footsteps-of-Spring",
                                                                 "hex": "#563ACF",
                                                                 "nspp": 1,
-                                                                "n_records": 12,
-                                                                "n_users": 9,
+                                                                "n_records": 14,
+                                                                "n_users": 11,
                                                                 "n_species": 1
                                                             },
                                                             {
@@ -13399,14 +13527,14 @@
                                     {
                                         "name": "Asterales",
                                         "level": "order",
-                                        "hex": "#132439",
-                                        "nspp": 58,
+                                        "hex": "#132338",
+                                        "nspp": 59,
                                         "children": [
                                             {
                                                 "name": "Asteraceae",
                                                 "level": "family",
-                                                "hex": "#1E385A",
-                                                "nspp": 57,
+                                                "hex": "#1E3758",
+                                                "nspp": 58,
                                                 "children": [
                                                     {
                                                         "name": "Achillea",
@@ -13421,7 +13549,7 @@
                                                                 "common_name": "common yarrow, Yarrow",
                                                                 "hex": "#4983E8",
                                                                 "nspp": 1,
-                                                                "n_records": 25,
+                                                                "n_records": 26,
                                                                 "n_users": 17,
                                                                 "n_species": 1
                                                             }
@@ -13534,7 +13662,7 @@
                                                                 "common_name": "California Sagebrush, coastal sagebrush",
                                                                 "hex": "#4795DB",
                                                                 "nspp": 1,
-                                                                "n_records": 5,
+                                                                "n_records": 6,
                                                                 "n_users": 3,
                                                                 "n_species": 1
                                                             },
@@ -13556,7 +13684,7 @@
                                                                 "common_name": "beach wormwood, Coastal Sagewort",
                                                                 "hex": "#4389E6",
                                                                 "nspp": 1,
-                                                                "n_records": 10,
+                                                                "n_records": 11,
                                                                 "n_users": 9,
                                                                 "n_species": 1
                                                             }
@@ -13575,7 +13703,7 @@
                                                                 "common_name": "Coyote Brush, coyotebrush",
                                                                 "hex": "#5280DD",
                                                                 "nspp": 1,
-                                                                "n_records": 30,
+                                                                "n_records": 31,
                                                                 "n_users": 12,
                                                                 "n_species": 1
                                                             }
@@ -13612,6 +13740,25 @@
                                                                 "binomial": "Blennosperma nanum",
                                                                 "common_name": "Point Reyes Blennosperma",
                                                                 "hex": "#448DD4",
+                                                                "nspp": 1,
+                                                                "n_records": 1,
+                                                                "n_users": 1,
+                                                                "n_species": 1
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Calendula",
+                                                        "level": "genus",
+                                                        "hex": "#000000",
+                                                        "nspp": 1,
+                                                        "children": [
+                                                            {
+                                                                "level": "species",
+                                                                "name": "field marigold, Field-marigold",
+                                                                "binomial": "Calendula arvensis",
+                                                                "common_name": "field marigold, Field-marigold",
+                                                                "hex": "#000000",
                                                                 "nspp": 1,
                                                                 "n_records": 1,
                                                                 "n_users": 1,
@@ -13741,7 +13888,7 @@
                                                                 "common_name": "Brass Buttons, common brassbuttons",
                                                                 "hex": "#4383E5",
                                                                 "nspp": 1,
-                                                                "n_records": 12,
+                                                                "n_records": 13,
                                                                 "n_users": 7,
                                                                 "n_species": 1
                                                             },
@@ -13808,7 +13955,7 @@
                                                                 "common_name": "Seaside Daisy, seaside fleabane",
                                                                 "hex": "#548CE0",
                                                                 "nspp": 1,
-                                                                "n_records": 26,
+                                                                "n_records": 27,
                                                                 "n_users": 21,
                                                                 "n_species": 1
                                                             }
@@ -13848,7 +13995,7 @@
                                                                 "common_name": "Lizard-tail, seaside woolly sunflower",
                                                                 "hex": "#428FE2",
                                                                 "nspp": 1,
-                                                                "n_records": 17,
+                                                                "n_records": 18,
                                                                 "n_users": 13,
                                                                 "n_species": 1
                                                             }
@@ -14041,8 +14188,8 @@
                                                                 "common_name": "Tidy-tips",
                                                                 "hex": "#498AE9",
                                                                 "nspp": 1,
-                                                                "n_records": 7,
-                                                                "n_users": 7,
+                                                                "n_records": 8,
+                                                                "n_users": 8,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -14411,8 +14558,8 @@
                                                                 "common_name": "Darwin's Barberry",
                                                                 "hex": "#665BA4",
                                                                 "nspp": 1,
-                                                                "n_records": 1,
-                                                                "n_users": 1,
+                                                                "n_records": 2,
+                                                                "n_users": 2,
                                                                 "n_species": 1
                                                             },
                                                             {
@@ -14468,8 +14615,8 @@
                                                                 "common_name": "California Poppy",
                                                                 "hex": "#5E6381",
                                                                 "nspp": 1,
-                                                                "n_records": 41,
-                                                                "n_users": 27,
+                                                                "n_records": 43,
+                                                                "n_users": 28,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -14633,8 +14780,8 @@
                                                                 "common_name": "creeping buttercup",
                                                                 "hex": "#59668B",
                                                                 "nspp": 1,
-                                                                "n_records": 2,
-                                                                "n_users": 1,
+                                                                "n_records": 3,
+                                                                "n_users": 2,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -14687,7 +14834,7 @@
                                                                 "common_name": "Red Alder",
                                                                 "hex": "#3D479C",
                                                                 "nspp": 1,
-                                                                "n_records": 5,
+                                                                "n_records": 6,
                                                                 "n_users": 5,
                                                                 "n_species": 1
                                                             }
@@ -14706,8 +14853,8 @@
                                                                 "common_name": "California hazelnut",
                                                                 "hex": "#523C82",
                                                                 "nspp": 1,
-                                                                "n_records": 10,
-                                                                "n_users": 7,
+                                                                "n_records": 11,
+                                                                "n_users": 8,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -14752,8 +14899,8 @@
                                                                 "common_name": "Tanoak",
                                                                 "hex": "#3B437D",
                                                                 "nspp": 1,
-                                                                "n_records": 16,
-                                                                "n_users": 9,
+                                                                "n_records": 17,
+                                                                "n_users": 10,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -14771,7 +14918,7 @@
                                                                 "common_name": "California live oak, Coast Live Oak",
                                                                 "hex": "#413D7D",
                                                                 "nspp": 1,
-                                                                "n_records": 12,
+                                                                "n_records": 13,
                                                                 "n_users": 10,
                                                                 "n_species": 1
                                                             },
@@ -14822,14 +14969,14 @@
                                     {
                                         "name": "Boraginales",
                                         "level": "order",
-                                        "hex": "#112229",
-                                        "nspp": 11,
+                                        "hex": "#101F26",
+                                        "nspp": 12,
                                         "children": [
                                             {
                                                 "name": "Boraginaceae",
                                                 "level": "family",
-                                                "hex": "#1B3540",
-                                                "nspp": 11,
+                                                "hex": "#19313B",
+                                                "nspp": 12,
                                                 "children": [
                                                     {
                                                         "name": "Amsinckia",
@@ -14862,6 +15009,25 @@
                                                         ]
                                                     },
                                                     {
+                                                        "name": "Cryptantha",
+                                                        "level": "genus",
+                                                        "hex": "#000000",
+                                                        "nspp": 1,
+                                                        "children": [
+                                                            {
+                                                                "level": "species",
+                                                                "name": "Coast Cryptantha",
+                                                                "binomial": "Cryptantha leiocarpa",
+                                                                "common_name": "Coast Cryptantha",
+                                                                "hex": "#000000",
+                                                                "nspp": 1,
+                                                                "n_records": 1,
+                                                                "n_users": 1,
+                                                                "n_species": 1
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
                                                         "name": "Cynoglossum",
                                                         "level": "genus",
                                                         "hex": "#285260",
@@ -14874,8 +15040,8 @@
                                                                 "common_name": "Hound's Tongue",
                                                                 "hex": "#3E8196",
                                                                 "nspp": 1,
-                                                                "n_records": 2,
-                                                                "n_users": 2,
+                                                                "n_records": 3,
+                                                                "n_users": 3,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -14942,8 +15108,8 @@
                                                                 "common_name": "broadleaf forget-me-not, Forget-me-not",
                                                                 "hex": "#4885A6",
                                                                 "nspp": 1,
-                                                                "n_records": 5,
-                                                                "n_users": 5,
+                                                                "n_records": 6,
+                                                                "n_users": 6,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -14961,8 +15127,8 @@
                                                                 "common_name": "baby blue eyes, BABY-BLUE-EYES",
                                                                 "hex": "#428C95",
                                                                 "nspp": 1,
-                                                                "n_records": 13,
-                                                                "n_users": 12,
+                                                                "n_records": 15,
+                                                                "n_users": 14,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -15014,14 +15180,14 @@
                                     {
                                         "name": "Brassicales",
                                         "level": "order",
-                                        "hex": "#090E34",
-                                        "nspp": 14,
+                                        "hex": "#080D30",
+                                        "nspp": 15,
                                         "children": [
                                             {
                                                 "name": "Brassicaceae",
                                                 "level": "family",
-                                                "hex": "#0E1651",
-                                                "nspp": 12,
+                                                "hex": "#0D144A",
+                                                "nspp": 13,
                                                 "children": [
                                                     {
                                                         "name": "Alliaria",
@@ -15121,8 +15287,8 @@
                                                                 "common_name": "milkmaids",
                                                                 "hex": "#2239C7",
                                                                 "nspp": 1,
-                                                                "n_records": 15,
-                                                                "n_users": 12,
+                                                                "n_records": 17,
+                                                                "n_users": 13,
                                                                 "n_species": 1
                                                             },
                                                             {
@@ -15141,8 +15307,8 @@
                                                     {
                                                         "name": "Erysimum",
                                                         "level": "genus",
-                                                        "hex": "#15247F",
-                                                        "nspp": 1,
+                                                        "hex": "#0B123F",
+                                                        "nspp": 2,
                                                         "children": [
                                                             {
                                                                 "level": "species",
@@ -15153,6 +15319,17 @@
                                                                 "nspp": 1,
                                                                 "n_records": 5,
                                                                 "n_users": 5,
+                                                                "n_species": 1
+                                                            },
+                                                            {
+                                                                "level": "species",
+                                                                "name": "San Francisco Wallflower",
+                                                                "binomial": "Erysimum franciscanum",
+                                                                "common_name": "San Francisco Wallflower",
+                                                                "hex": "#000000",
+                                                                "nspp": 1,
+                                                                "n_records": 1,
+                                                                "n_users": 1,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -15208,7 +15385,7 @@
                                                                 "common_name": "cultivated radish, Radish",
                                                                 "hex": "#1F39C5",
                                                                 "nspp": 1,
-                                                                "n_records": 10,
+                                                                "n_records": 12,
                                                                 "n_users": 8,
                                                                 "n_species": 1
                                                             }
@@ -15513,8 +15690,8 @@
                                                                 "common_name": "Pink Flowering Currant",
                                                                 "hex": "#46676F",
                                                                 "nspp": 1,
-                                                                "n_records": 10,
-                                                                "n_users": 8,
+                                                                "n_records": 11,
+                                                                "n_users": 9,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -15621,7 +15798,7 @@
                                                                 "common_name": "wild cucumber",
                                                                 "hex": "#1945BE",
                                                                 "nspp": 1,
-                                                                "n_records": 14,
+                                                                "n_records": 16,
                                                                 "n_users": 10,
                                                                 "n_species": 1
                                                             },
@@ -15645,8 +15822,8 @@
                                     {
                                         "name": "Ericales",
                                         "level": "order",
-                                        "hex": "#0E1731",
-                                        "nspp": 17,
+                                        "hex": "#0D162E",
+                                        "nspp": 18,
                                         "children": [
                                             {
                                                 "name": "Ericaceae",
@@ -15764,8 +15941,8 @@
                                                                 "common_name": "California Huckleberry",
                                                                 "hex": "#3466B9",
                                                                 "nspp": 1,
-                                                                "n_records": 14,
-                                                                "n_users": 7,
+                                                                "n_records": 15,
+                                                                "n_users": 8,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -15775,14 +15952,14 @@
                                             {
                                                 "name": "Myrsinaceae",
                                                 "level": "family",
-                                                "hex": "#172146",
-                                                "nspp": 2,
+                                                "hex": "#0F162F",
+                                                "nspp": 3,
                                                 "children": [
                                                     {
                                                         "name": "Anagallis",
                                                         "level": "genus",
-                                                        "hex": "#244069",
-                                                        "nspp": 1,
+                                                        "hex": "#122034",
+                                                        "nspp": 2,
                                                         "children": [
                                                             {
                                                                 "level": "species",
@@ -15791,8 +15968,18 @@
                                                                 "common_name": "pimpernel, Scarlet (or Blue) Pimpernel",
                                                                 "hex": "#3965A4",
                                                                 "nspp": 1,
-                                                                "n_records": 17,
+                                                                "n_records": 16,
                                                                 "n_users": 13,
+                                                                "n_species": 1
+                                                            },
+                                                            {
+                                                                "level": "species",
+                                                                "binomial": "Anagallis foemina",
+                                                                "common_name": "[common name unknown]",
+                                                                "hex": "#000000",
+                                                                "nspp": 1,
+                                                                "n_records": 1,
+                                                                "n_users": 1,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -15810,8 +15997,8 @@
                                                                 "common_name": "Starflower",
                                                                 "hex": "#383EB5",
                                                                 "nspp": 1,
-                                                                "n_records": 8,
-                                                                "n_users": 8,
+                                                                "n_records": 9,
+                                                                "n_users": 9,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -16285,7 +16472,7 @@
                                                                 "common_name": "birdfoot deervetch, BIRD'S FOOT TREFOIL, BIRD'S TREFOIL",
                                                                 "hex": "#294B8D",
                                                                 "nspp": 1,
-                                                                "n_records": 16,
+                                                                "n_records": 17,
                                                                 "n_users": 8,
                                                                 "n_species": 1
                                                             }
@@ -16649,8 +16836,8 @@
                                     {
                                         "name": "Lamiales",
                                         "level": "order",
-                                        "hex": "#0C153E",
-                                        "nspp": 39,
+                                        "hex": "#0C153D",
+                                        "nspp": 40,
                                         "children": [
                                             {
                                                 "name": "Lamiaceae",
@@ -16820,8 +17007,8 @@
                                             {
                                                 "name": "Orobanchaceae",
                                                 "level": "family",
-                                                "hex": "#142062",
-                                                "nspp": 9,
+                                                "hex": "#121D58",
+                                                "nspp": 10,
                                                 "children": [
                                                     {
                                                         "name": "Castilleja",
@@ -16880,8 +17067,8 @@
                                                                 "common_name": "Franciscan Paintbrush",
                                                                 "hex": "#3848F0",
                                                                 "nspp": 1,
-                                                                "n_records": 1,
-                                                                "n_users": 1,
+                                                                "n_records": 2,
+                                                                "n_users": 2,
                                                                 "n_species": 1
                                                             },
                                                             {
@@ -16919,8 +17106,8 @@
                                                     {
                                                         "name": "Triphysaria",
                                                         "level": "genus",
-                                                        "hex": "#1F349D",
-                                                        "nspp": 2,
+                                                        "hex": "#152369",
+                                                        "nspp": 3,
                                                         "children": [
                                                             {
                                                                 "level": "species",
@@ -16929,7 +17116,7 @@
                                                                 "common_name": "Johnny-tuck",
                                                                 "hex": "#3152F6",
                                                                 "nspp": 1,
-                                                                "n_records": 13,
+                                                                "n_records": 14,
                                                                 "n_users": 9,
                                                                 "n_species": 1
                                                             },
@@ -16942,6 +17129,17 @@
                                                                 "nspp": 1,
                                                                 "n_records": 3,
                                                                 "n_users": 3,
+                                                                "n_species": 1
+                                                            },
+                                                            {
+                                                                "level": "species",
+                                                                "name": "Yellow Johnny-tuck",
+                                                                "binomial": "Triphysaria versicolor",
+                                                                "common_name": "Yellow Johnny-tuck",
+                                                                "hex": "#000000",
+                                                                "nspp": 1,
+                                                                "n_records": 1,
+                                                                "n_users": 1,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -16985,8 +17183,8 @@
                                                                 "common_name": "Bush Monkeyflower",
                                                                 "hex": "#2943EF",
                                                                 "nspp": 1,
-                                                                "n_records": 34,
-                                                                "n_users": 23,
+                                                                "n_records": 35,
+                                                                "n_users": 24,
                                                                 "n_species": 1
                                                             },
                                                             {
@@ -17128,8 +17326,8 @@
                                                                 "common_name": "Texas toadflax",
                                                                 "hex": "#3644F3",
                                                                 "nspp": 1,
-                                                                "n_records": 1,
-                                                                "n_users": 1,
+                                                                "n_records": 2,
+                                                                "n_users": 2,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -17336,8 +17534,8 @@
                                                                 "common_name": "CHECKER-BLOOM",
                                                                 "hex": "#5E98E9",
                                                                 "nspp": 1,
-                                                                "n_records": 23,
-                                                                "n_users": 17,
+                                                                "n_records": 25,
+                                                                "n_users": 19,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -17522,8 +17720,8 @@
                                                                 "common_name": "goldeneggs",
                                                                 "hex": "#4A567A",
                                                                 "nspp": 1,
-                                                                "n_records": 7,
-                                                                "n_users": 7,
+                                                                "n_records": 8,
+                                                                "n_users": 8,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -17601,8 +17799,8 @@
                                                                 "common_name": "Bermuda Buttercup",
                                                                 "hex": "#38B2ED",
                                                                 "nspp": 1,
-                                                                "n_records": 1,
-                                                                "n_users": 1,
+                                                                "n_records": 2,
+                                                                "n_users": 2,
                                                                 "n_species": 1
                                                             },
                                                             {
@@ -17723,8 +17921,8 @@
                                                                 "common_name": "Beach Strawberry",
                                                                 "hex": "#187CDB",
                                                                 "nspp": 1,
-                                                                "n_records": 20,
-                                                                "n_users": 16,
+                                                                "n_records": 22,
+                                                                "n_users": 17,
                                                                 "n_species": 1
                                                             },
                                                             {
@@ -17909,8 +18107,8 @@
                                                                 "common_name": "Salmonberry",
                                                                 "hex": "#1A70E2",
                                                                 "nspp": 1,
-                                                                "n_records": 18,
-                                                                "n_users": 14,
+                                                                "n_records": 19,
+                                                                "n_users": 15,
                                                                 "n_species": 1
                                                             },
                                                             {
@@ -17920,8 +18118,8 @@
                                                                 "common_name": "California Blackberry",
                                                                 "hex": "#1C7BE3",
                                                                 "nspp": 1,
-                                                                "n_records": 16,
-                                                                "n_users": 9,
+                                                                "n_records": 18,
+                                                                "n_users": 10,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -17962,8 +18160,8 @@
                             {
                                 "name": "Liliopsida",
                                 "level": "class",
-                                "hex": "#022014",
-                                "nspp": 71,
+                                "hex": "#032013",
+                                "nspp": 72,
                                 "children": [
                                     {
                                         "name": "Asparagales",
@@ -18168,8 +18366,8 @@
                                                                 "common_name": "Douglas Iris",
                                                                 "hex": "#08C56B",
                                                                 "nspp": 1,
-                                                                "n_records": 33,
-                                                                "n_users": 25,
+                                                                "n_records": 36,
+                                                                "n_users": 28,
                                                                 "n_species": 1
                                                             },
                                                             {
@@ -18209,8 +18407,8 @@
                                                                 "common_name": "Romulea",
                                                                 "hex": "#0CC569",
                                                                 "nspp": 1,
-                                                                "n_records": 8,
-                                                                "n_users": 8,
+                                                                "n_records": 11,
+                                                                "n_users": 11,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -18257,8 +18455,8 @@
                                                                 "common_name": "[common name unknown]",
                                                                 "hex": "#08C36C",
                                                                 "nspp": 1,
-                                                                "n_records": 4,
-                                                                "n_users": 4,
+                                                                "n_records": 6,
+                                                                "n_users": 6,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -18755,8 +18953,8 @@
                                                                 "common_name": "European Beachgrass",
                                                                 "hex": "#0EC180",
                                                                 "nspp": 1,
-                                                                "n_records": 1,
-                                                                "n_users": 1,
+                                                                "n_records": 2,
+                                                                "n_users": 2,
                                                                 "n_species": 1
                                                             }
                                                         ]
@@ -18928,7 +19126,7 @@
                                                                 "common_name": "inland saltgrass, Saltgrass",
                                                                 "hex": "#11BC7C",
                                                                 "nspp": 1,
-                                                                "n_records": 4,
+                                                                "n_records": 5,
                                                                 "n_users": 3,
                                                                 "n_species": 1
                                                             }
@@ -19169,14 +19367,14 @@
                                     {
                                         "name": "Liliales",
                                         "level": "order",
-                                        "hex": "#07341D",
-                                        "nspp": 10,
+                                        "hex": "#072F1B",
+                                        "nspp": 11,
                                         "children": [
                                             {
                                                 "name": "Liliaceae",
                                                 "level": "family",
-                                                "hex": "#0B522E",
-                                                "nspp": 7,
+                                                "hex": "#0A4829",
+                                                "nspp": 8,
                                                 "children": [
                                                     {
                                                         "name": "Calochortus",
@@ -19220,8 +19418,8 @@
                                                                 "common_name": "Checker Lily",
                                                                 "hex": "#1BC76F",
                                                                 "nspp": 1,
-                                                                "n_records": 11,
-                                                                "n_users": 8,
+                                                                "n_records": 13,
+                                                                "n_users": 10,
                                                                 "n_species": 1
                                                             },
                                                             {
@@ -19260,6 +19458,24 @@
                                                                 "binomial": "Lilium pardalinum",
                                                                 "common_name": "Leopard Lily",
                                                                 "hex": "#19CD70",
+                                                                "nspp": 1,
+                                                                "n_records": 1,
+                                                                "n_users": 1,
+                                                                "n_species": 1
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "Prosartes",
+                                                        "level": "genus",
+                                                        "hex": "#000000",
+                                                        "nspp": 1,
+                                                        "children": [
+                                                            {
+                                                                "level": "species",
+                                                                "binomial": "Prosartes hookeri",
+                                                                "common_name": "[common name unknown]",
+                                                                "hex": "#000000",
                                                                 "nspp": 1,
                                                                 "n_records": 1,
                                                                 "n_users": 1,
@@ -19335,7 +19551,7 @@
                                                                 "common_name": "Pacific trillium",
                                                                 "hex": "#1ACA73",
                                                                 "nspp": 1,
-                                                                "n_records": 2,
+                                                                "n_records": 3,
                                                                 "n_users": 2,
                                                                 "n_species": 1
                                                             }

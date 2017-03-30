@@ -1,5 +1,5 @@
 #Aquiring datasets/where datasets were found
-setwd("/Users/lauraalexander/Desktop/taxorama")
+setwd("/Users/lauraalexander/taxorama")
 
 #### Download complete iNat dataset####
   # Data suggested by Ken-ichi, found at http://www.inaturalist.org/observations/gbif-observations-dwca.zip

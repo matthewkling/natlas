@@ -1,4 +1,4 @@
-setwd("~/Desktop/taxorama")
+setwd("~/taxorama")
 library(lubridate)
 library(dplyr)
 library(jsonlite)
@@ -7,11 +7,10 @@ library(rgdal)
 park_id = "PORE" #Point Reyes is park of interest
 
 #### Shapefile ####
-
-allParkShape <- readOGR("raw_data/park_boundaries","nps_boundary")
-parkShape <- allParkShape[which(allParkShape$UNIT_CODE == park_id),]
-shapePath <- paste0("processed_data/",park_id,"_data/",park_id,"_shape")
-writeOGR(obj = parkShape,dsn = shapePath, layer = park_id ,driver = "ESRI Shapefile") #there's a carto driver that wasn't working for me, unsure what makes a carto shapefile different.
+# allParkShape <- readOGR("raw_data/park_boundaries","nps_boundary")
+# parkShape <- allParkShape[which(allParkShape$UNIT_CODE == park_id),]
+# shapePath <- paste0("processed_data/",park_id,"_data/",park_id,"_shape")
+# writeOGR(obj = parkShape,dsn = shapePath, layer = park_id ,driver = "ESRI Shapefile") #there's a carto driver that wasn't working for me, unsure what makes a carto shapefile different.
 
 #### Park Observations ####
 parkObservations = function(park_id,allParkObs){
@@ -20,8 +19,6 @@ parkObs <- allParkObs[which(allParkObs$PARK_CODE == park_id),]
 #add dates
 parkObs$eventDate <- as.Date(parkObs$eventDate)
 parkObs$dateIdentified <- as.Date(parkObs$dateIdentified)
-parkObs$year <- year(parkObs$eventDate)
-parkObs$month <- month(parkObs$eventDate)
 
 #correct species names
 parkObs$speciesFixed <- parkObs$scientificName
@@ -133,109 +130,3 @@ return(writeSpecies)
 }
 
 speciesList <- NPSinatSpecies(inatSpecies,park_id = park_id)
-
-##### Convert species list to JSON ####
-#pulls from file if skipping higher up functions
-if (exists("speciesList") == F) speciesList <- read.csv(paste0("processed_data/",park_id,"_data/",park_id,"_species.csv"), header = T)
-
-toCharacter <- function(data,colums)
-{
-  for (i in colums)
-  {
-    data[,which(names(data)==i)] <- as.character(data[,which(names(data)==i)])
-  }
-  return(data)
-}
-
-columns_defactor <- c("kingdom","phylum","class","order","family","genus","category","speciesFixed")
-testing <- speciesList[1:10,]
-
-
-
-f <- toCharacter(testing,columns_defactor)
-
-f <- f %>%
-  mutate(species=regexpr(" ", speciesFixed),
-         species=substr(speciesFixed, species+1, nchar(speciesFixed))) %>%
-  group_by(category, order, family, genus, species) %>%
-  arrange(category, order, family, genus, species) %>%
-  as.data.frame() 
-
-d = f
-p <- lapply(1:nrow(d), function(i) data.frame(name=d$speciesFixed[i],
-                                              level="speciesFixed",
-                                              species=d$species[i],
-                                              total_obs=d$total_obs[i],
-                                              user_obs=d$user_obs[i],
-                                              # m1=d$m1[i],
-                                              # m2=d$m2[i],
-                                              # m3=d$m3[i],
-                                              # m4=d$m4[i],
-                                              # m5=d$m5[i],
-                                              # m6=d$m6[i],
-                                              # m7=d$m7[i],
-                                              # m8=d$m8[i],
-                                              # m9=d$m9[i],
-                                              # m10=d$m10[i],
-                                              # m11=d$m11[i],
-                                              # m12=d$m12[i],
-                                              # y2007=d$y2007[i],
-                                              # y2008=d$y2008[i],
-                                              # y2009=d$y2009[i],
-                                              # y2010=d$y2010[i],
-                                              # y2011=d$y2011[i],
-                                              # y2012=d$y2012[i],
-                                              # y2013=d$y2013[i],
-                                              # y2014=d$y2014[i],
-                                              # y2015=d$y2015[i],
-                                              # y2016=d$y2016[i],
-                                              # y2017=d$y2017[i],
-                                              # npsOccurence = d$Occurrence[i],
-                                              commonName = d$Common.Names[i],
-                                              n_species=1))
-
-
-group_taxa <- function(data, groupings, level){
-  parents <- unique(groupings[,1])
-  lapply(parents, function(x){
-    print(x)
-    children <- which(parents==x)
-    list(name=x, level=level, children=data[children])
-  })
-}
-
-# apply over all taxonomic levels, generating tree-like list
-levels <- c("category","class", "family", "genus", "speciesFixed")
-levels <- c("family","genus", "speciesFixed")
-levels <- c("family","genus", "speciesFixed")
-for(level in rev(levels)[2:length(levels)]){
-  if(level=="speciesFixed") next()
-  child_level <- levels[match(level, levels)+1]
-  p <- group_taxa(p, d[,c(level, child_level)], level)
-}
-
-### convert to JSON format
-
-# serialize to json
-json <- toJSON(p)
-jsonn <- json
-
-jsonn <- gsub(',\\{\\}', '', jsonn)
-
-# remove brackets from taxon names to match target format
-jsonn <- gsub('name":\\[', 'name":', jsonn)
-jsonn <- gsub('\\],"level', ',"level', jsonn)
-jsonn <- gsub('level":\\[', 'level":', jsonn)
-jsonn <- gsub('\\],"children', ',"children', jsonn)
-
-jsonn <- gsub('\\[\\[', '[', jsonn)
-jsonn <- gsub('\\]\\]', '\\]', jsonn)
-jsonn <- gsub('\\],\\[', ',', jsonn)
-
-# remove outermost brackets to match target format
-jsonn <- substr(jsonn, 2, nchar(jsonn)-1)
-
-# format and export
-jsonn <- prettify(jsonn)
-jsonPath <- paste0("processed_data/",park_id,"_data/",park_id,"_taxonomy.json")
-write(jsonn, jsonPath)

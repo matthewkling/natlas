@@ -6,8 +6,101 @@ PORE <- read.csv("processed_data/PORE_data/PORE_species.csv",header=T)
 library(tm)
 library(stringi)
 library(proxy)
+library(gsubfn)
 
-####Wikispecies####
+####ITIS Data####
+download.file("https://www.itis.gov/FilesToBeDownloaded/1109.csv", "raw_data/ITIS/Animalia.csv") #Animalia to genus level
+download.file("https://www.itis.gov/FilesToBeDownloaded/7694.csv", "raw_data/ITIS/Plantae.csv") #plants to genus level
+download.file("https://www.itis.gov/FilesToBeDownloaded/8336.csv", "raw_data/ITIS/Fungi.csv") #Fungi to genus level
+
+#download.file("https://www.itis.gov/FilesToBeDownloaded/3608.csv", "raw_data/ITIS/example.csv") #smaller test file
+
+forITIS <- function(fileName)
+{
+all.lines <- readLines(paste0("raw_data/ITIS/",fileName,".csv"))
+tax.lines <- NULL
+ver.lines <- NULL
+for (i in 1:length(all.lines)){
+  if (gregexpr("\\[TU\\]",all.lines[i])[[1]][1] != -1) {tax.lines = c(tax.lines, i)}
+  if (gregexpr("\\[VR\\].*?English",all.lines[i])[[1]][1] != -1) {ver.lines = c(ver.lines, i)}
+}
+
+tax.csv <- gsub("\\|",",", all.lines[tax.lines])
+tax.table <- read.csv(text = tax.csv, header = FALSE)
+tax.table <- tax.table[which(tax.table$V25 %in% c(10, 30, 60, 100, 140, 180, 220)),]#the taxon ids for the major levels (removes subclasses/superfamilies etc), documentation at https://www.itis.gov/pdf/ITIS_ConceptualModelEntityDefinition.pdf starting p 11
+
+ver.csv <- gsub("\\|",",", all.lines[ver.lines])
+ver.table <- read.csv(text = ver.csv, header = FALSE, stringsAsFactors = FALSE)
+
+common.scientific.list <- data.frame(tax.id = tax.table$V2, scientific = character(length(tax.table$V2)), common = character(length(tax.table$V2)), source = character(length(tax.table$V2)), tax.level = tax.table$V25, stringsAsFactors = FALSE)
+
+for (i in 1:length(common.scientific.list$tax.id)){
+  common.scientific.list$scientific[i] <- as.character(tax.table$V4[which(tax.table$V2 == common.scientific.list$tax.id[i])])
+  loc <- which(ver.table$V5 == common.scientific.list$tax.id[i]) 
+  if(length(loc) > 0){
+  common.scientific.list$common[i] <- as.character(ver.table$V4[which(ver.table$V5 == common.scientific.list$tax.id[i])])
+  common.scientific.list$source[i] <- "ITIS"
+  }
+  else common.scientific.list$common[i] <- ""
+  print(paste0(100*i/length(common.scientific.list$tax.id),"% complete"))
+}
+tax.id.num <- c(10, 30, 60, 100, 140, 180, 220)
+tax.id.word <- c("kingdom", "phylum", "class", "order", "family", "genus","species")
+for (k in 1:length(tax.id.num))
+{
+  common.scientific.list$tax.level[which(common.scientific.list$tax.level == tax.id.num[k])] <- tax.id.word[k]
+}
+return(common.scientific.list)
+}
+
+fungi <- forITIS("Fungi") #there were next to no common names for fungi in this database
+safe.fungi <- fungi
+animals <- forITIS("Animalia")
+safe.animals <- animals
+plants <- forITIS("Plantae")
+safe.plants <- plants
+
+####USDA plants####
+usda.names <- read.csv('raw_data/USDA_plant_fungi_families.csv', header = T, stringsAsFactors = FALSE)
+usda.families <- usda.names[!duplicated(usda.names$Family), c("Family","Family.Common.Name")]
+usda.families.clean <- usda.families[which(usda.families$Family.Common.Name != ""),]
+
+for (n in 1:length(usda.families.clean$Family))
+{
+  count <- NULL
+  idx <- which(plants$scientific == usda.families.clean$Family[n])
+  if (length(idx) > 0){
+  count <- count + 1
+  plants$common[idx] <- usda.families.clean$Family.Common.Name[n]
+  plants$source[idx] <- "USDA"
+  }
+}
+
+
+####Wikispecies to ITIS####
+forWikispecies <- function(taxonDF){
+  for (j in which(taxonDF$common == ""))  
+  {
+    lines <- readLines(paste0("https://species.wikimedia.org/wiki/", taxonDF$scientific[j]))
+    nameline <- NULL
+    for (i in 1:length(lines)){
+      if (gregexpr("English:",lines[i])[[1]][1] != -1) {nameline = rbind(nameline, lines[i])}
+    }
+    if(is.null(nameline) == FALSE){
+      name <- strsplit(nameline,"English:.*?;")[[1]][2]
+      name <- strsplit(name,"<")[[1]][1]
+      taxonDF$common[j] <- name
+      taxonDF$source[j] <- "Wikispecies"
+    }
+    print(paste0(100*j/length(taxonDF$common),"% complete"))
+  }
+  return(taxonDF)
+}
+
+plants.fam.up <- plants[-which(plants$tax.level == "genus"),]
+
+
+####Wikispecies for a park####
 forWikispecies <- function(taxonList, taxonLevel){
   taxaNames <- data.frame(scientific = character(length(taxonList)), common = character(length(taxonList)), stringsAsFactors = FALSE)
   for (j in 1:length(taxonList))  

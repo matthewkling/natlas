@@ -165,7 +165,7 @@ NPSinatSpecies <- function(inatSpecies,park_id){
     if (length(all.matches) > 0){
       totalSpecies[s, c("kingdom","phylum","class","order","family","genus", "inat.taxonID")] <- allObsSpecies[all.matches[1],c("kingdom","phylum","class","order","family","genus", "taxonID")]
     }  else {(still.need.tax <- c(still.need.tax, s))} 
-    print(paste0(100*which(need.tax == s)/length(need.tax), "% through"))
+    print(paste0(100*which(need.tax == s)/length(need.tax), "% through iNat"))
   }
   
   #totalSpecies[still.need.tax, c("speciesFixed","total_obs","user_obs","kingdom","phylum","class","order","family","genus","category","inat.taxonID","Taxon.Record.Status","Scientific.Name","Common.Names","Synonyms","Park.Accepted")]
@@ -184,7 +184,7 @@ NPSinatSpecies <- function(inatSpecies,park_id){
       }
       #if (totalSpecies$kingdom[s] == "Plantae") {totalSpecies$phylum[s] <- all.tax[[sp.name]]$name[which(all.tax[[sp.name]]$rank == "division")]} else {totalSpecies$phylum[s] <- all.tax[[sp.name]]$name[which(all.tax[[sp.name]]$rank == "phylum")]} # needed if you use itis as the source
     }
-    print(paste0(100*which(need.tax == s)/length(need.tax), "% through"))
+    print(paste0(100*which(need.tax == s)/length(need.tax), "% through taxize"))
   }
   
   #remove unwanted columns and rows
@@ -200,3 +200,129 @@ NPSinatSpecies <- function(inatSpecies,park_id){
 }
 
 speciesList <- NPSinatSpecies(inatSpecies,park_id = park_id)
+
+#### Common names for the taxonomic groups####
+
+id.species <- speciesList[,c("speciesFixed", "kingdom","phylum","class","order","family","genus","inat.taxonID", "Common.Names")]
+ranks <- c("kingdom","phylum", "class","order","family","genus", "species")
+
+for (r in ranks){
+  id.species[paste0(r,".common")] <- ""
+  id.species[paste0(r,".science")] <- ""
+}
+id.species$species.ID <- ""
+id.species$inat.iconic <- ""
+
+#id.species <- id.species[1:50,] #testing
+
+have.iNat.ID <- which(id.species$inat.taxonID != "")
+
+for (s in have.iNat.ID)
+{
+  #inat_url <- paste0("https://www.inaturalist.org/taxa/", id.species$inat.taxonID[s], "#taxonomy-tab")
+  inat_url <- paste0("https://www.inaturalist.org/taxa/", id.species$inat.taxonID[s])
+  
+  all.lines <- readLines(inat_url)
+  #all.lines <- readLines("http://www.inaturalist.org/taxa/1-Animalia") #useful for testing
+  
+  tax.idx <- NULL
+  for (i in 1:length(all.lines)){
+    if (gregexpr("preferred_common_name",all.lines[i])[[1]][1] != -1) {tax.idx = c(tax.idx, i)}
+  }
+  
+  tax.lines <- all.lines[tax.idx]
+  n <- strsplit(tax.lines, "\\}\\,\\{\\\"observations_count")
+  #retreived.names <- data.frame(scientificName = character(length(n[[1]])), commonName = character(length(n[[1]])), rank = character(length(n[[1]])), stringsAsFactors = FALSE)
+  for (k in 1:length(n[[1]]))
+  {
+    taxon.line.dirty <- n[[1]][k]
+    taxon.line <- gsub("\"","",taxon.line.dirty)
+    rank <- sub(".*,rank:(.*?),.*", "\\1", taxon.line) ; rank
+    if (rank %in% ranks){ #this way names are only retrieved for major groupings
+    
+      sci.name.clean <- sub(".*,name:(.*?),.*", "\\1", taxon.line)
+      
+      if (gregexpr("preferred_common_name",taxon.line)[[1]][1] != -1) {
+        common.name <- sub(".*,preferred_common_name:(.*?)", "\\2", taxon.line)
+        if (gregexpr("\\}|\\]",common.name)[[1]][1] != -1) {
+          common.name <- gsub(".*,preferred_common_name:(.*?)\\}.*", "\\1", taxon.line)
+        }
+        if (gregexpr(",conservation_status:",common.name)[[1]][1] != -1) {
+          common.name <- sub(".*,preferred_common_name:(.*?),conservation_status:.*", "\\1", taxon.line)
+        }
+      } else common.name <- ""
+      
+    if (rank == "species")
+    {
+      id.species[s, "species.ID"] <- sub(".*,id:(.*?),.*", "\\1", taxon.line)
+      id.species[s, "inat.iconic"] <- sub(".*,iconic_taxon_name:(.*?),.*", "\\1", taxon.line)
+    }
+    
+    id.species[s, paste0(rank, ".common")] <- common.name
+    id.species[s, paste0(rank, ".science")] <- sci.name.clean
+    } 
+  }
+  print(paste0(100*which(have.iNat.ID == s)/length(have.iNat.ID), "% done"))
+}
+save.id.species <- id.species
+
+
+####try again####
+
+id.species <- speciesList[,c("speciesFixed", "kingdom","phylum","class","order","family","genus","inat.taxonID", "Common.Names")]
+ranks <- c("kingdom","phylum", "class","order","family","genus", "species")
+
+for (r in ranks){
+  id.species[paste0(r,".common")] <- ""
+  id.species[paste0(r,".science")] <- ""
+}
+id.species$species.ID <- ""
+id.species$inat.iconic <- ""
+
+id.species <- id.species[1:50,] #testing
+
+have.iNat.ID <- which(id.species$inat.taxonID != "")
+check.iNat.ID <- NULL
+for (s in have.iNat.ID)
+{
+  #inat_url <- paste0("https://www.inaturalist.org/taxa/", id.species$inat.taxonID[s], "#taxonomy-tab")
+  inat_url <- paste0("https://www.inaturalist.org/taxa/", id.species$inat.taxonID[s])
+  
+  all.lines <- readLines(inat_url)
+  #all.lines <- readLines("http://www.inaturalist.org/taxa/1-Animalia") #useful for testing
+  
+  tax.idx <- NULL
+  for (i in 1:length(all.lines)){
+    if (gregexpr("preferred_common_name",all.lines[i])[[1]][1] != -1) {tax.idx = c(tax.idx, i)}
+  }
+  
+  tax.lines <- all.lines[tax.idx]
+  n <- strsplit(tax.lines, "\\}\\,\\{\\\"observations_count")
+  #retreived.names <- data.frame(scientificName = character(length(n[[1]])), commonName = character(length(n[[1]])), rank = character(length(n[[1]])), stringsAsFactors = FALSE)
+  for (k in 1:length(n[[1]]))
+  {
+    taxon.line <- n[[1]][k]
+    rank <- sub(".*\"rank\":\"(.*?)\".*", "\\1", taxon.line) ; rank
+    if (rank %in% ranks){ #this way names are only retrieved for major groupings
+      
+      if (gregexpr("preferred_common_name",taxon.line)[[1]][1] != -1) {
+        common.name <- sub(".*\"preferred_common_name\":\"(.*?)\".*", "\\1", taxon.line)
+      } else {common.name <- ""}
+      
+      sci.name <- sub(".*\"name\":\"(.*?)\".*", "\\1", taxon.line)
+      
+      id.species[s, paste0(rank, ".common")] <- common.name
+      id.species[s, paste0(rank, ".science")] <- sci.name
+      
+      if (rank == "species")
+      {
+        id.species[s, "species.ID"] <- sub(".*\"id\":(.*?),.*", "\\1", taxon.line)
+        id.species[s, "inat.iconic"] <- sub(".*\"iconic_taxon_name\":\"(.*?)\".*", "\\1", taxon.line)
+      }
+    } 
+  }
+  print(paste0(100*which(have.iNat.ID == s)/length(have.iNat.ID), "% done"))
+}
+
+
+

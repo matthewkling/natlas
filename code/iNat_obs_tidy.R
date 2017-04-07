@@ -11,6 +11,13 @@ setwd("/Users/lauraalexander/taxorama")
 
 #### Read in data, select columns ####
 allObs <- read.csv("raw_data/observations.csv", header = TRUE, stringsAsFactors = FALSE) #read in complete iNat dataset
+
+#create list of all unique species/genera in the dataset
+allObsSpecies <- allObs[which(allObs$taxonRank == "species" |allObs$taxonRank == "genus"),c("taxonID","scientificName","taxonRank","kingdom","phylum","class","order","family","genus")]
+allObsSpecies <- distinct(allObsSpecies)
+write.csv(allObsSpecies, "processed_data/iNatSpecies.csv", row.names = FALSE)
+
+#
 usObsRaw <- subset(allObs,countryCode == "US") #select only observations from inside US
 
 usObs <- usObsRaw #means that if we make an error while removing columns or other data, we don't have to read in all the data over again.

@@ -115,7 +115,7 @@ inatStats <- function(parkObs)
       inatSpecies[i,paste("y",k,sep="")] <- length(which(spObs$year == k))
     }
     
-    print(paste("percent done =", 100*i/numSp) )
+    print(paste0(100*i/numSp, "% species stats calculated") )
   }
   return(inatSpecies)
 }
@@ -125,7 +125,7 @@ inatSpecies <- inatStats(parkObs)
 #### comparing to NPS species list ####
   # species list downloaded from NPSpecies, converted to .csv by excel
 
-NPSinatSpecies <- function(inatSpecies,park_id){
+NPSinatSpeciesMerge <- function(inatSpecies,park_id){
   parkSpeciesFilepath <- paste0("raw_data/NPSpecies_",park_id,".csv")
   parkSpeciesData <- read.csv(parkSpeciesFilepath,header =T, stringsAsFactors = FALSE)
   
@@ -152,11 +152,21 @@ NPSinatSpecies <- function(inatSpecies,park_id){
   totalSpecies$speciesFixed <- as.character(totalSpecies$speciesFixed)
   totalSpecies <- totalSpecies[order(totalSpecies$speciesFixed),]  #makes alphabetical by species name
   
-  #fix missing information
   category.idx <- which(is.na(totalSpecies$category))
   totalSpecies$category[category.idx] <- totalSpecies$Category[category.idx] #puts park species categories into same column as iNat
   
-  #allObsSpecies <- read.csv("processed_data/iNatSpecies.csv", header = TRUE, stringsAsFactors = FALSE)
+  return(totalSpecies)
+}
+
+rawSpeciesList <- NPSinatSpeciesMerge(inatSpecies,park_id = park_id)
+
+
+####Information finding functions####
+compareWithObservations <- function(workingSpeciesList){
+  totalSpecies <- workingSpeciesList
+  
+  #Use scientific name to find matches in iNat observed species
+  allObsSpecies <- read.csv("processed_data/iNatSpecies.csv", header = TRUE, stringsAsFactors = FALSE)
   need.tax <- which(is.na(totalSpecies$kingdom)); still.need.tax <- NULL; multiple.tax <- NULL
   for (s in need.tax){
     sp.name <- totalSpecies$speciesFixed[s]
@@ -165,164 +175,173 @@ NPSinatSpecies <- function(inatSpecies,park_id){
     if (length(all.matches) > 0){
       totalSpecies[s, c("kingdom","phylum","class","order","family","genus", "inat.taxonID")] <- allObsSpecies[all.matches[1],c("kingdom","phylum","class","order","family","genus", "taxonID")]
     }  else {(still.need.tax <- c(still.need.tax, s))} 
-    print(paste0(100*which(need.tax == s)/length(need.tax), "% through iNat"))
+    print(paste0(100*which(need.tax == s)/length(need.tax), "% through matching iNat observations"))
   }
-  
-  #totalSpecies[still.need.tax, c("speciesFixed","total_obs","user_obs","kingdom","phylum","class","order","family","genus","category","inat.taxonID","Taxon.Record.Status","Scientific.Name","Common.Names","Synonyms","Park.Accepted")]
-  
-  #Using taxize
-  ranks <- c("kingdom","phylum", "class","order","family","genus") #if you use itis as your db, they list plant divisions instead of phyla (in loop there's a line that's commented out if using gif)
+  print(paste0((length(need.tax)-length(still.need.tax)), " records matched, ", length(still.need.tax), " records still needed"))
+  return(totalSpecies)
+}
+
+taxizeFindTaxonomy <- function(workingSpeciesList){
+  totalSpecies <- workingSpeciesList
+  #Using taxize to find taxonomic heirarchy for species not in the iNat observations
+  ranks <- c("kingdom","phylum", "class","order","family","genus", "species") #if you use itis as your db, they list plant divisions instead of phyla (in loop there's a line that's commented out if using gif)
+  totalSpecies$species <- ""
   need.tax <- which(is.na(totalSpecies$kingdom)); still.need.tax <- NULL
   all.tax <- classification(totalSpecies$speciesFixed[need.tax],'gbif', rows = 1) #will always choose first result, that way it doesn't have to be babysat. On the other hand this could compeletly fuck up if there are conflicts with genus names.
   for (s in need.tax){
     sp.name <- totalSpecies$speciesFixed[s]
-    
-    if(dim(all.tax[[sp.name]])[1] < 5){still.need.tax <- c(still.need.tax, s)} else{ #if gbif didn't find the taxonomic information, it skips instead of throwing an error
+    if(is.null(all.tax[[sp.name]])[1]){still.need.tax <- c(still.need.tax, s)} else{ #if gbif didn't find the taxonomic information, it skips instead of throwing an error
       
       for (r in ranks){
-        totalSpecies[[r]][s] <-  all.tax[[sp.name]]$name[which(all.tax[[sp.name]]$rank == r)]
+        if (length(which(all.tax[[sp.name]]$rank == r)) > 0)
+        {totalSpecies[[r]][s] <-  all.tax[[sp.name]]$name[which(all.tax[[sp.name]]$rank == r)]}
       }
       #if (totalSpecies$kingdom[s] == "Plantae") {totalSpecies$phylum[s] <- all.tax[[sp.name]]$name[which(all.tax[[sp.name]]$rank == "division")]} else {totalSpecies$phylum[s] <- all.tax[[sp.name]]$name[which(all.tax[[sp.name]]$rank == "phylum")]} # needed if you use itis as the source
     }
-    print(paste0(100*which(need.tax == s)/length(need.tax), "% through taxize"))
+    print(paste0(100*which(need.tax == s)/length(need.tax), "% through taxize taxonomy"))
   }
+  print(paste0((length(need.tax)-length(still.need.tax)), " taxonomys matched using taxize, ", length(still.need.tax), " records not found"))
+  return(totalSpecies)
+}
+
+scrapeiNatIDs <- function(workingSpeciesList)
+{
+  speciesList <- workingSpeciesList
+  need.id.idx <- which(is.na(speciesList$inat.taxonID)); still.need.id <- NULL
+  for (i in need.id.idx){
+    tax.name <- speciesList$speciesFixed[i]
+    search.term <- gsub(" ", "+", tax.name)
+    search.results <- readLines(paste0("https://www.inaturalist.org/taxa/search?utf8=%E2%9C%93&q=",search.term))
+    found.term <- gsub(" ", "-", tax.name)
+    search.to.find <- paste0("<a href=\"/taxa/([0-9]*)-", found.term, "\">")
+    
+    
+    alternative.name <- speciesList$species[i]
+    alternative.find <- gsub(" ", "-", alternative.name)
+    alternative.search.find <- paste0("<a href=\"/taxa/([0-9]*)-", alternative.find, "\">")
+    
+    results.idx = NULL
+    for (l in 1:length(search.results)){
+      if(gregexpr(search.to.find,search.results[l])[[1]][1] != -1 | gregexpr(alternative.search.find,search.results[l])[[1]][1] != -1) {results.idx = c(results.idx, l)}
+    }
+    results.idx
+    
+    if (is.null(results.idx) == FALSE){
+      results <- search.results[results.idx]
+      id.number <- gsub(".*<a href=\"/taxa/([0-9]*)-.*", "\\1", results)
+      speciesList$inat.taxonID[i] <- id.number
+    } else still.need.id <- c(still.need.id, i)
+    print(paste0(100*which(need.id.idx == i)/length(need.id.idx), "% through retreiving iNat ID numbers"))
+  }
+  print(paste0((length(need.id.idx)-length(still.need.id)), " iNat IDs matched, ", length(still.need.id), " not found"))
+  return(speciesList)
+}
+
+
+
+####Complete find information loop####
+findMissingInformation <- function(rawSpeciesList)
+{
+  workingSpeciesList <- rawSpeciesList
+  
+  workingSpeciesList <- compareWithObservations(workingSpeciesList)
+  workingSpeciesList <- taxizeFindTaxonomy(workingSpeciesList)
+  
+  workingSpeciesList <- scrapeiNatIDs(workingSpeciesList)
   
   #remove unwanted columns and rows
-  writeSpecies <- totalSpecies[-which(totalSpecies$Occurrence == "Not In Park" & is.na(totalSpecies$total_obs)),] #removes species everyone agrees are not present
-  writeSpecies <- writeSpecies[,-which(names(totalSpecies) %in% c("Scientific.Name","Taxon.Record.Status","Synonyms","Park.Accepted","Record.Status"))]
+  writeSpecies <- workingSpeciesList[-which(workingSpeciesList$Occurrence == "Not In Park" & is.na(workingSpeciesList$total_obs)),] #removes species everyone agrees are not present
+  writeSpecies <- writeSpecies[,-which(names(workingSpeciesList) %in% c("Scientific.Name","Taxon.Record.Status","Synonyms","Park.Accepted","Record.Status"))]
   
-  if (length(still.need.tax) > 0) {print(paste0(length(still.need.tax), " taxa still unaccounted for."))}
+  #if (length(still.need.tax) > 0) {print(paste0(length(still.need.tax), " taxa still unaccounted for."))}
   
   speciesListPath <- paste0("processed_data/",park_id,"_data/",park_id,"_species.csv")
-  write.csv(writeSpecies,speciesListPath,row.names = F)
+  #write.csv(writeSpecies,speciesListPath,row.names = F)
   
   return(writeSpecies)
 }
 
-speciesList <- NPSinatSpecies(inatSpecies,park_id = park_id)
+workingSpeciesList <- findMissingInformation(rawSpeciesList)
 
-#### Common names for the taxonomic groups####
-
-id.species <- speciesList[,c("speciesFixed", "kingdom","phylum","class","order","family","genus","inat.taxonID", "Common.Names")]
-ranks <- c("kingdom","phylum", "class","order","family","genus", "species")
-
-for (r in ranks){
-  id.species[paste0(r,".common")] <- ""
-  id.species[paste0(r,".science")] <- ""
-}
-id.species$species.ID <- ""
-id.species$inat.iconic <- ""
-
-#id.species <- id.species[1:50,] #testing
-
-have.iNat.ID <- which(id.species$inat.taxonID != "")
-
-for (s in have.iNat.ID)
+####Find common names functions####
+findUsingiNat <- function(id.species, ranks)
 {
-  #inat_url <- paste0("https://www.inaturalist.org/taxa/", id.species$inat.taxonID[s], "#taxonomy-tab")
-  inat_url <- paste0("https://www.inaturalist.org/taxa/", id.species$inat.taxonID[s])
+  have.iNat.ID <- which(id.species$inat.taxonID != "")
   
-  all.lines <- readLines(inat_url)
-  #all.lines <- readLines("http://www.inaturalist.org/taxa/1-Animalia") #useful for testing
-  
-  tax.idx <- NULL
-  for (i in 1:length(all.lines)){
-    if (gregexpr("preferred_common_name",all.lines[i])[[1]][1] != -1) {tax.idx = c(tax.idx, i)}
-  }
-  
-  tax.lines <- all.lines[tax.idx]
-  n <- strsplit(tax.lines, "\\}\\,\\{\\\"observations_count")
-  #retreived.names <- data.frame(scientificName = character(length(n[[1]])), commonName = character(length(n[[1]])), rank = character(length(n[[1]])), stringsAsFactors = FALSE)
-  for (k in 1:length(n[[1]]))
+  for (s in have.iNat.ID)
   {
-    taxon.line.dirty <- n[[1]][k]
-    taxon.line <- gsub("\"","",taxon.line.dirty)
-    rank <- sub(".*,rank:(.*?),.*", "\\1", taxon.line) ; rank
-    if (rank %in% ranks){ #this way names are only retrieved for major groupings
+    inat_url <- paste0("https://www.inaturalist.org/taxa/", id.species$inat.taxonID[s])
+    all.lines <- readLines(inat_url)
     
-      sci.name.clean <- sub(".*,name:(.*?),.*", "\\1", taxon.line)
-      
-      if (gregexpr("preferred_common_name",taxon.line)[[1]][1] != -1) {
-        common.name <- sub(".*,preferred_common_name:(.*?)", "\\2", taxon.line)
-        if (gregexpr("\\}|\\]",common.name)[[1]][1] != -1) {
-          common.name <- gsub(".*,preferred_common_name:(.*?)\\}.*", "\\1", taxon.line)
-        }
-        if (gregexpr(",conservation_status:",common.name)[[1]][1] != -1) {
-          common.name <- sub(".*,preferred_common_name:(.*?),conservation_status:.*", "\\1", taxon.line)
-        }
-      } else common.name <- ""
-      
-    if (rank == "species")
-    {
-      id.species[s, "species.ID"] <- sub(".*,id:(.*?),.*", "\\1", taxon.line)
-      id.species[s, "inat.iconic"] <- sub(".*,iconic_taxon_name:(.*?),.*", "\\1", taxon.line)
+    tax.idx <- NULL
+    for (i in 1:length(all.lines)){ #checks that there is a preferred common name
+      if (gregexpr("preferred_common_name",all.lines[i])[[1]][1] != -1) {tax.idx = c(tax.idx, i)}
     }
     
-    id.species[s, paste0(rank, ".common")] <- common.name
-    id.species[s, paste0(rank, ".science")] <- sci.name.clean
-    } 
+    tax.lines <- all.lines[tax.idx]
+    n <- strsplit(tax.lines, "\\}\\,\\{\\\"observations_count") #breaks up taxonomy into components
+    for (k in 1:length(n[[1]]))
+    {
+      taxon.line.dirty <- n[[1]][k]
+      taxon.line <- gsub("\"","",taxon.line.dirty)
+      rank <- sub(".*,rank:(.*?),.*", "\\1", taxon.line) ; rank
+      if (rank %in% ranks){ #this way names are only retrieved for major groupings
+        
+        sci.name.clean <- sub(".*,name:(.*?),.*", "\\1", taxon.line)
+        
+        if (gregexpr("preferred_common_name",taxon.line)[[1]][1] != -1) {
+          common.name <- sub(".*,preferred_common_name:(.*?)", "\\2", taxon.line)
+          if (gregexpr("\\}|\\]",common.name)[[1]][1] != -1) {
+            common.name <- gsub(".*,preferred_common_name:(.*?)\\}.*", "\\1", taxon.line)
+          }
+          if (gregexpr(",([A-z]*):",common.name)[[1]][1] != -1) {
+            common.name <- sub(".*,preferred_common_name:(.*?),([A-z]*):.*", "\\1", taxon.line)
+          }
+          # if (gregexpr(",conservation_status:",common.name)[[1]][1] != -1) {
+          #   common.name <- sub(".*,preferred_common_name:(.*?),conservation_status:.*", "\\1", taxon.line)
+          # }
+          # if (gregexpr(",ancestors:",common.name)[[1]][1] != -1) {
+          #   common.name <- sub(".*,ancestors:(.*?),conservation_status:.*", "\\1", taxon.line)
+          # }
+        }
+        
+        if (rank == "species")
+        {
+          id.species[s, "species.ID"] <- sub(".*,id:(.*?),.*", "\\1", taxon.line)
+          id.species[s, "inat.iconic"] <- sub(".*,iconic_taxon_name:(.*?),.*", "\\1", taxon.line)
+          id.species[s, "source"] <- "iNat"
+        }
+        
+        id.species[s, paste0(rank, ".common")] <- common.name
+        id.species[s, paste0(rank, ".science")] <- sci.name.clean
+      } 
+    }
+    print(paste0(100*which(have.iNat.ID == s)/length(have.iNat.ID), "% done finding common names with iNat IDs"))
   }
-  print(paste0(100*which(have.iNat.ID == s)/length(have.iNat.ID), "% done"))
-}
-save.id.species <- id.species
-
-
-####try again####
-
-id.species <- speciesList[,c("speciesFixed", "kingdom","phylum","class","order","family","genus","inat.taxonID", "Common.Names")]
-ranks <- c("kingdom","phylum", "class","order","family","genus", "species")
-
-for (r in ranks){
-  id.species[paste0(r,".common")] <- ""
-  id.species[paste0(r,".science")] <- ""
-}
-id.species$species.ID <- ""
-id.species$inat.iconic <- ""
-
-id.species <- id.species[1:50,] #testing
-
-have.iNat.ID <- which(id.species$inat.taxonID != "")
-check.iNat.ID <- NULL
-for (s in have.iNat.ID)
-{
-  #inat_url <- paste0("https://www.inaturalist.org/taxa/", id.species$inat.taxonID[s], "#taxonomy-tab")
-  inat_url <- paste0("https://www.inaturalist.org/taxa/", id.species$inat.taxonID[s])
-  
-  all.lines <- readLines(inat_url)
-  #all.lines <- readLines("http://www.inaturalist.org/taxa/1-Animalia") #useful for testing
-  
-  tax.idx <- NULL
-  for (i in 1:length(all.lines)){
-    if (gregexpr("preferred_common_name",all.lines[i])[[1]][1] != -1) {tax.idx = c(tax.idx, i)}
-  }
-  
-  tax.lines <- all.lines[tax.idx]
-  n <- strsplit(tax.lines, "\\}\\,\\{\\\"observations_count")
-  #retreived.names <- data.frame(scientificName = character(length(n[[1]])), commonName = character(length(n[[1]])), rank = character(length(n[[1]])), stringsAsFactors = FALSE)
-  for (k in 1:length(n[[1]]))
-  {
-    taxon.line <- n[[1]][k]
-    rank <- sub(".*\"rank\":\"(.*?)\".*", "\\1", taxon.line) ; rank
-    if (rank %in% ranks){ #this way names are only retrieved for major groupings
-      
-      if (gregexpr("preferred_common_name",taxon.line)[[1]][1] != -1) {
-        common.name <- sub(".*\"preferred_common_name\":\"(.*?)\".*", "\\1", taxon.line)
-      } else {common.name <- ""}
-      
-      sci.name <- sub(".*\"name\":\"(.*?)\".*", "\\1", taxon.line)
-      
-      id.species[s, paste0(rank, ".common")] <- common.name
-      id.species[s, paste0(rank, ".science")] <- sci.name
-      
-      if (rank == "species")
-      {
-        id.species[s, "species.ID"] <- sub(".*\"id\":(.*?),.*", "\\1", taxon.line)
-        id.species[s, "inat.iconic"] <- sub(".*\"iconic_taxon_name\":\"(.*?)\".*", "\\1", taxon.line)
-      }
-    } 
-  }
-  print(paste0(100*which(have.iNat.ID == s)/length(have.iNat.ID), "% done"))
+  return(id.species)
 }
 
+
+
+####Find common names loop####
+
+findCommonNames <- function(compiledSpeciesList, ranks = c("kingdom","phylum", "class","order","family","genus", "species")){
+  id.species <- compiledSpeciesList[,c("speciesFixed", "kingdom","phylum","class","order","family","genus","species","inat.taxonID", "Common.Names")]
+
+  for (r in ranks){
+    id.species[paste0(r,".common")] <- ""
+    id.species[paste0(r,".science")] <- ""
+  }
+  id.species$species.ID <- ""
+  id.species$inat.iconic <- ""
+  id.species$name.source <- ""
+
+  
+  id.species.working <- findUsingiNat(id.species = id.species, ranks = ranks)
+  
+  return(id.species.working)
+}
+
+speciesNamed <- findCommonNames(compiledSpeciesList = workingSpeciesList)
 
 

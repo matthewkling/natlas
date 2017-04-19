@@ -13,7 +13,7 @@
 
   #map {
     height: 100%;
-    width: 100%;
+    width: 50%;
     position: absolute;
   }
 
@@ -25,10 +25,18 @@
 
 </style>
 <script>
-      function makeSomeMaps() {
+
+y = 2015
+selection = function(d) {
+  beans = 12
+  return d.year > y
+}
+    
+function makeSomeMaps() {
     map = d3.carto.map();
 
     d3.select("#map").call(map);
+    
     
     tileLayer = d3.carto.layer();
     tileLayer
@@ -44,17 +52,17 @@
     map.centerOn([-122.86,38.07 ],"latlong").setScale(11);
     
     function loadXYArray() {
-      d3.csv("observations.csv", observations);
+      d3.csv("PORE_obs_tidy.csv", observations);
       
       function observations(data) {
         data.forEach(function(d) {
-          d.xcoord = +d.xcoord;
-          d.ycoord = +d.ycoord;
+          d.xcoord = +d.decimalLongitude;
+          d.ycoord = +d.decimalLatitude;
           d.year = +d.year;
           d.month = +d.month;
         });
 
-        obs = data.filter(function(d) {return d.year > 2016});
+        obs = data.filter(selection);
                 
         observations = d3.carto.layer.xyArray()
           .features(obs)
@@ -68,15 +76,18 @@
           .clickableFeatures(true);
     
         //console.log(obs[0]);
-    
+
         map.addCartoLayer(observations);
       } 
     }
      
-  }
+}
+
+
 </script>
 <body onload="makeSomeMaps()">
 <div id="map"></div>
+<div id="sunburst"></div>
 <footer>
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8" type="text/javascript"></script>
 <script src="http://d3js.org/topojson.v1.min.js" type="text/javascript">

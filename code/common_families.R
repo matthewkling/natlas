@@ -3,6 +3,8 @@ allParkObs <- read.csv("processed_data/park_obs.csv",header = T)
 PORE <- read.csv("processed_data/PORE_data/PORE_species.csv",header=T)
 
 
+
+
 library(tm)
 library(stringi)
 library(proxy)
@@ -10,7 +12,8 @@ library(gsubfn)
 
 ####ITIS Data####
 download.file("https://www.itis.gov/FilesToBeDownloaded/1109.csv", "raw_data/ITIS/Animalia.csv") #Animalia to genus level
-download.file("https://www.itis.gov/FilesToBeDownloaded/7694.csv", "raw_data/ITIS/Plantae.csv") #plants to genus level
+#download.file("https://www.itis.gov/FilesToBeDownloaded/7694.csv", "raw_data/ITIS/Plantae.csv") #all Plantae to genus level
+download.file("https://www.itis.gov/FilesToBeDownloaded/9298.csv", "raw_data/ITIS/Embryophyta.csv") #land plants to genus level
 download.file("https://www.itis.gov/FilesToBeDownloaded/8336.csv", "raw_data/ITIS/Fungi.csv") #Fungi to genus level
 
 #download.file("https://www.itis.gov/FilesToBeDownloaded/3608.csv", "raw_data/ITIS/example.csv") #smaller test file
@@ -57,8 +60,11 @@ fungi <- forITIS("Fungi") #there were next to no common names for fungi in this 
 safe.fungi <- fungi
 animals <- forITIS("Animalia")
 safe.animals <- animals
-plants <- forITIS("Plantae")
-safe.plants <- plants
+# plants <- forITIS("Plantae")
+# safe.plants <- plants
+land.plants <- forITIS("Embryophyta")
+safe.land.plants <- land.plants
+plants <- land.plants
 
 ####USDA plants####
 usda.names <- read.csv('raw_data/USDA_plant_fungi_families.csv', header = T, stringsAsFactors = FALSE)
@@ -75,7 +81,6 @@ for (n in 1:length(usda.families.clean$Family))
   plants$source[idx] <- "USDA"
   }
 }
-
 
 ####Wikispecies to ITIS####
 forWikispecies <- function(taxonDF){
@@ -99,6 +104,10 @@ forWikispecies <- function(taxonDF){
 
 plants.fam.up <- plants[-which(plants$tax.level == "genus"),]
 
+wiki.plants <- forWikispecies(plants)
+
+animal.fam.up <- animals[-which(animals$tax.level == "genus"),]
+wiki.animals <- forWikispecies(animal.fam.up)
 
 ####Wikispecies for a park####
 forWikispecies <- function(taxonList, taxonLevel){

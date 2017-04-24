@@ -63,7 +63,10 @@ cleanParkObservations = function(park_id,allParkObs){
   filePathFull = paste0("processed_data/",park_id,"_data/",park_id,"_obs_FULL.csv")
   write.csv(allObs,filePathFull,row.names = F)
   
-  cleanObs <- parkObs[,c("decimalLongitude","decimalLatitude","category","kingdom","phylum","class","order","family","genus","speciesFixed","year","month","original.inat.taxonID")]
+  cleanObs <- parkObs[,c("decimalLongitude","decimalLatitude",
+                         "category","kingdom","phylum","class","order","family","genus","speciesFixed",
+                         "year","month",
+                         "userNumber", "original.inat.taxonID")]
   filePathClean = paste0("processed_data/",park_id,"_data/",park_id,"_obs_tidy.csv")
   write.csv(cleanObs,filePathClean,row.names = F)
   
@@ -154,7 +157,7 @@ taxizeFindTaxonomy <- function(workingSpeciesList, column_to_match, column_to_cr
   all.tax <- classification(totalSpecies[need.tax, column_to_match],db = taxize_database, rows = 1) #will always choose first result, that way it doesn't have to be babysat. On the other hand this could compeletly fuck up if there are conflicts with genus names or something.
   for (s in need.tax){
     sp.name <- totalSpecies[s, column_to_match]
-    if(is.null(all.tax[[sp.name]])[1]){still.need.tax <- c(still.need.tax, s)} else{ #if gbif didn't find the taxonomic information, it skips instead of throwing an error
+    if(is.null(all.tax[[sp.name]])[1]|is.na(all.tax[[sp.name]])[1]){still.need.tax <- c(still.need.tax, s)} else{ #if gbif didn't find the taxonomic information, it skips instead of throwing an error
       for (r in ranks_to_species){
         if (length(which(all.tax[[sp.name]]$rank == r)) > 0) #if taxonomy is matched, fills in the names
         {totalSpecies[[r]][s] <-  all.tax[[sp.name]]$name[which(all.tax[[sp.name]]$rank == r)]}
@@ -170,9 +173,11 @@ taxizeFindTaxonomy <- function(workingSpeciesList, column_to_match, column_to_cr
   }
   print(paste0((length(need.tax)-length(still.need.tax)), " taxonomies found using taxize database ",taxize_database,", ", length(still.need.tax), " records not found"))
   
-  names(totalSpecies)[which(names(totalSpecies)=="species")] <- "taxizeName"
   
-  
+  named.idx <- which(totalSpecies$species !="")
+  totalSpecies$taxizeName[named.idx] <- totalSpecies$species[named.idx]
+  totalSpecies <- totalSpecies[, -which(names(totalSpecies) == "species")]
+
   return(totalSpecies)
 }
 
@@ -313,6 +318,10 @@ NPScleanup <- function(park_id){
   parkSpeciesFixed <- compareWithObservations(parkSpeciesFixed, "taxizeName", column_to_create_index = "matched.inat.ID")
   parkSpeciesFixed <- scrapeiNat(parkSpeciesFixed, primary_column_to_match = "speciesTidy", secondary_column_to_match = "taxizeName", column_to_create_index = "matched.inat.ID", column_for_retreived_IDs = "matched.inat.ID", consensus_name_column = "resolvedNames")
   parkSpeciesFixed <- taxizeFindTaxonomy(parkSpeciesFixed, column_to_match =  "speciesTidy", column_to_create_index = "matched.inat.ID", taxize_database = "ncbi")
+  parkSpeciesFixed <- scrapeiNat(parkSpeciesFixed, primary_column_to_match = "speciesTidy", secondary_column_to_match = "taxizeName", column_to_create_index = "matched.inat.ID", column_for_retreived_IDs = "matched.inat.ID", consensus_name_column = "resolvedNames")
+  
+  parkSpeciesFixed <- taxizeFindTaxonomy(parkSpeciesFixed, column_to_match =  "speciesTidy", column_to_create_index = "matched.inat.ID", taxize_database = "itis")
+  parkSpeciesFixed <- scrapeiNat(parkSpeciesFixed, primary_column_to_match = "speciesTidy", secondary_column_to_match = "taxizeName", column_to_create_index = "matched.inat.ID", column_for_retreived_IDs = "matched.inat.ID", consensus_name_column = "resolvedNames")
   
   
   parkSpeciesFixed$resolvedNames <- parkSpeciesFixed$speciesTidy

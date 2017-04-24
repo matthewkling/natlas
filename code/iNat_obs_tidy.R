@@ -3,7 +3,7 @@
 
 # library(maps)
 library(rgdal)
-# library(dplyr)
+library(dplyr)
 library(raster)
 library(lubridate)
 
@@ -28,8 +28,11 @@ usObs <- usObs[-which(usObs$informationWithheld == "Coordinates hidden at the re
 #usObs <- usObs[-which(usObs$informationWithheld == "Coordinate uncertainty increased by 10000m at the request of the observer"),] #6 miles uncertainty added; between threatened taxa and observer requests, ~8% of points are altered that way. Remove?
 #usObs <- usObs[-which(usObs$informationWithheld == "Coordinate uncertainty increased by 10000m to protect threatened taxon"),]
 
+usObs$userNumber <- as.numeric(factor(usObs$recordedBy,levels=unique(usObs$recordedBy)))
+
+
 usObs <- usObs[,c( #selecting the columns of interest for us; if you want to see complete column options, run names(usObsRaw) in console
-  "id", "recordedBy", 
+  "id", "recordedBy", "userNumber",
   "eventDate", "eventTime", "dateIdentified",             
   "decimalLatitude", "decimalLongitude", "verbatimLocality", "coordinateUncertaintyInMeters", 
   "informationWithheld", 

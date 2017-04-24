@@ -1,0 +1,107 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>taxorama v2: PRNS</title>
+  <meta charset="utf-8" />
+    <link type="text/css" rel="stylesheet" href="d3map.css" />
+</head>
+<style>
+  html,body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+  #map {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+  }
+
+  .observation {
+    fill: red;
+    stroke: black;
+    stroke-width: 2px;
+  }
+
+</style>
+<script>
+
+y = 2015
+selection = function(d) {
+  beans = 12
+  return d.year > y
+}
+    
+function makeSomeMaps() {
+    map = d3.carto.map();
+
+    d3.select("#map").call(map);
+    
+    
+    tileLayer = d3.carto.layer();
+    tileLayer
+      .type("tile")
+      .path("elijahmeeks.map-azn21pbi")
+      .label("Base");
+    
+    csvLayer = d3.carto.layer.csv()
+      .on("load", loadXYArray);
+      
+
+    map.addCartoLayer(tileLayer).addCartoLayer(csvLayer);
+    map.centerOn([-122.86,38.07 ],"latlong").setScale(11);
+    
+    function loadXYArray() {
+      d3.csv("PORE_obs_tidy.csv", observations);
+      
+      function observations(data) {
+        data.forEach(function(d) {
+          d.xcoord = +d.decimalLongitude;
+          d.ycoord = +d.decimalLatitude;
+          d.year = +d.year;
+          d.month = +d.month;
+        });
+
+        obs = data.filter(selection);
+                
+        observations = d3.carto.layer.xyArray()
+          .features(obs)
+          .label("Observations")
+          .cssClass("observation")
+          .renderMode("canvas") // was "svg" but couldn't get points to appear
+          .markerSize(5)
+          .markerColor("red")
+          .x("xcoord")
+          .y("ycoord")
+          .clickableFeatures(true);
+    
+        //console.log(obs[0]);
+
+        map.addCartoLayer(observations);
+      } 
+    }
+     
+}
+
+
+</script>
+<body onload="makeSomeMaps()">
+<div id="map"></div>
+<div id="sunburst"></div>
+<footer>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8" type="text/javascript"></script>
+<script src="http://d3js.org/topojson.v1.min.js" type="text/javascript">
+</script>
+<script src="http://d3js.org/d3.geo.projection.v0.min.js" type="text/javascript">
+</script>
+<script src="http://bl.ocks.org/emeeks/raw/f3105fda25ff785dc5ed/tile.js" type="text/javascript">
+</script>
+<script src="http://bl.ocks.org/emeeks/raw/f3105fda25ff785dc5ed/d3.quadtiles.js" type="text/javascript">
+</script>
+<script src="http://bl.ocks.org/emeeks/raw/f3105fda25ff785dc5ed/d3.geo.raster.js" type="text/javascript">
+</script>
+<script src="https://rawgit.com/emeeks/d3-carto-map/master/d3.carto.map.js" type="text/javascript">
+</script>
+</footer>
+</body>
+</html>

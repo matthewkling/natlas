@@ -6,22 +6,16 @@ setwd("~/documents/inviz/taxorama")
 
 # load data
 park_id = "PORE" #Point Reyes is park of interest
-spp <- read.csv(paste0("processed_data/",park_id,"_data/",park_id,"_species.csv"), header=T, stringsAsFactors=F)
-
+spp <- read.csv(paste0("processed_data/",park_id,"_data/",park_id,"_species_list.csv"), header=T, stringsAsFactors=F)
 
 f <- spp %>%
       mutate(species=speciesFixed,
              category=tolower(category),
              root="life") %>%
       distinct() %>%
-      #group_by(category, family, species) %>%
       arrange(category, family, species) %>%
       as.data.frame() 
 
-# add species-level common names from our dictionary
-
-
-# TODO: add family-level common names
 
 
 # add colors
@@ -32,23 +26,14 @@ f$hex <- f$hex_ecdf # hex_fit or hex_ecdf
 f$hex[is.na(f$hex)] <- "#000000"
 
 d <- f
-#d <- ungroup(f) %>% group_by(category) %>% sample_n(5) %>% as.data.frame()
 d <- filter(d, 
             total_obs>0, 
             !is.na(category),
             nchar(class)>0)
 #d$Common.Names <- gsub("'", "", d$Common.Names)
 
-# generate list of leaf-level species datasets
-leaves <- lapply(1:nrow(d), function(i) data.frame(level="species",
-                                                   name=d$Common.Names[i],
-                                                   binomial=d$speciesFixed[i],
-                                                   common_name=ifelse(!is.na(d$Common.Names[i]), d$Common.Names[i], "[common name unknown]"),
-                                                   hex=d$hex[i],
-                                                   nspp=1,
-                                                   n_records=d$total_obs[i],
-                                                   n_users=d$user_obs[i],
-                                                   n_species=1))
+
+
 
 # m1=d$m1[i],
 # m2=d$m2[i],
@@ -76,6 +61,18 @@ leaves <- lapply(1:nrow(d), function(i) data.frame(level="species",
 # npsOccurence = d$Occurrence[i]))
 
 
+# generate list of leaf-level species datasets
+leaves <- lapply(1:nrow(d), function(i) data.frame(level="species",
+                                                   #name=d$Common.Names[i],
+                                                   name=d$speciesFixed[i],
+                                                   common=ifelse(!is.na(d$genus.common[i]), 
+                                                                 d$species.common[i], 
+                                                                 "Common name unknown"),
+                                                   hex=d$hex[i],
+                                                   nspp=1,
+                                                   n_records=d$total_obs[i],
+                                                   n_users=d$user_obs[i],
+                                                   n_species=1))
 
 # function aggregates taxa list into parent clades
 group_taxa <- function(data, groupings, level, max_col){
@@ -86,15 +83,22 @@ group_taxa <- function(data, groupings, level, max_col){
             kids <- data[kids]
             kids <- kids[!sapply(kids, is.null)]
             
-            weights <- sapply(kids, function(x) x$nspp)
+            weights_spp <- sapply(kids, function(x) x$nspp)
+            weights_obs <- sapply(kids, function(x) x$nspp)
             
             color <- sapply(kids, function(x) x$hex) %>% col2rgb()
-            color <- sapply(1:3, function(x) weighted.mean(color[x,], weights))
+            color <- sapply(1:3, function(x) weighted.mean(color[x,], weights_spp))
             
-            list(name=x, 
+            #if(x=="plant") browser()
+            common <- d[d[,level] == x, paste0(level, ".common")][1]
+            if(is.null(common)) common <- x
+            
+            list(name=x,
+                 common=common,
                  level=level, 
                  hex=rgb(color[1], color[2], color[3], maxColorValue=max_col), # mcv/255 ratio controls fade to black
-                 nspp=sum(weights),
+                 nspp=sum(weights_spp),
+                 nobs=sum(weights_obs),
                  children=kids)
       })
 }
@@ -135,7 +139,7 @@ for(hierarchy in names(hierarchies)){
       jsonn <- substr(jsonn, 2, nchar(jsonn)-1)
       jsonn <- stringr::str_trim(jsonn)
       
-      write(jsonn, paste0("processed_data/",park_id,"_data/",park_id,"_taxonomy_", hierarchy, ".json"))
-      write(jsonn, paste0("d3_sandbox/taxonomy/taxonomy_pore_", hierarchy, ".json"))
+      #write(jsonn, paste0("processed_data/",park_id,"_data/",park_id,"_taxonomy_", hierarchy, ".json"))
+      write(jsonn, paste0("d3_master/taxonomy_pore_", hierarchy, ".json"))
 }
 

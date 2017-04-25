@@ -172,10 +172,11 @@ var arc = d3.svg.arc()
 
 
 //var active_level = "root";
-//var active_level_name = "life";
+//var active_latin = "life";
 var active_level = "family";
-var active_level_name = "Laridae";
-function selected(d) {return d[active_level] == active_level_name};
+var active_latin = "Laridae";
+var active_common = "Gulls";
+function selected(d) {return d[active_level] == active_latin};
 
 var stat = "observations";
 //var summary_statistic = "species"
@@ -190,7 +191,7 @@ var stat_title = timeline_panel.append("text")
 var filter_title_y = taxonomy_height * .57
 
 var filter_title = taxonomy_panel.append("text")
-            .text(active_level_name)
+            .text(active_latin)
             .attr("x", taxonomy_width/2)
             .attr("y", filter_title_y)
             .attr("class", "filter_title");
@@ -227,9 +228,9 @@ function makeMap(){
 
       
       data = data.filter(function(d){
-        return d[active_level] == active_level_name;
+        return d[active_level] == active_latin;
       });
-      console.log(active_level_name);
+      console.log(active_latin);
       console.log(data)
 
       map_panel.selectAll("circle").remove();
@@ -342,12 +343,11 @@ d3.json("taxonomy_pore_simple.json", function(error, root) {
     .style("fill", function(d){ return d.hex })
     .on("click", taxonomyClick)
     .on("mouseover", function(d) {
-        //d3.select(this).style("fill", "rgb(200,200,200)"); 
         d3.select(this).style("fill", function(z){ return d3.rgb(z.hex).brighter(3) }); 
         taxonomy_panel.selectAll("text.filter_title").remove();
         filter_title = taxonomy_panel.append("text")
-            .text(d.name)
-            .attr("x", taxonomy_width/2)
+            .text(d.common + " (" + d.name + ")")
+        .attr("x", taxonomy_width/2)
             .attr("y", filter_title_y)
             .attr("class", "filter_title")
             .style("fill", "rgb(100,100,100)");})
@@ -355,8 +355,8 @@ d3.json("taxonomy_pore_simple.json", function(error, root) {
         d3.select(this).style("fill", function(z){ return z.hex }); 
         taxonomy_panel.selectAll("text.filter_title").remove();
         filter_title = taxonomy_panel.append("text")
-          .text(active_level_name)
-          .attr("x", taxonomy_width/2)
+          .text(active_common + " (" + active_latin + ")")
+        .attr("x", taxonomy_width/2)
           .attr("y", filter_title_y)
           .attr("class", "filter_title");})  ;
   //.append("title")
@@ -364,7 +364,7 @@ d3.json("taxonomy_pore_simple.json", function(error, root) {
 
 
   filter_title = taxonomy_panel.append("text")
-      .text(active_level_name)
+      .text(active_latin)
       .attr("x", taxonomy_width/2)
       .attr("y", filter_title_y)
       .attr("class", "filter_title");
@@ -385,24 +385,20 @@ function taxonomyClick(d) {
       .selectAll("path")
         .attrTween("d", function(d) { return function() { return arc(d); }; });
 
-    s = d;
-    active_level = s["level"];
-    active_level_name = s["name"];
+    console.log(d);
+    active_level = d["level"];
+    active_latin = d["name"];
+    active_common = d["common"];
 
     taxonomy_panel.selectAll("text.filter_title").remove()
     filter_title = taxonomy_panel.append("text")
-        .text(active_level_name)
+        .text(active_common + " (" + active_latin + ")")
         .attr("x", taxonomy_width/2)
-        .attr("y", taxonomy_height*.6)
+        .attr("y", filter_title_y)
         .attr("class", "filter_title");
 
-
-
-    //selected = function(d){return d[] == s["name"]};
-    //console.log(selected);
     makeMap();
-    //hexUpdate(); hexScale(); hexStat();
-
+    
 };
 
 //d3.select(self.frameElement).style("height", taxonomy_height + "px");

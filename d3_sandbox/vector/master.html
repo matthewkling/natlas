@@ -182,6 +182,8 @@ function makeMap(error, observations) {
 
     //console.log(taxonomy);
     //console.log(observations)
+    var s;
+    console.log(selected);
     observations = observations.filter(selected);
 
     // boundary shapefile
@@ -283,7 +285,7 @@ function makeMap(error, observations) {
       
       taxonomy_panel.append("g")
         .attr("transform", "translate(" + taxonomy_width / 2 + "," + taxonomy_height / 2 + ")");
-      console.log(taxonomy_panel);
+      //console.log(taxonomy_panel);
 
       taxonomy_panel.selectAll("path")
         .data(partition.nodes(root))
@@ -297,7 +299,7 @@ function makeMap(error, observations) {
     });
 
     function taxonomyClick(d) {
-        console.log(d)
+        //console.log(d)
         taxonomy_panel.transition()
             .duration(4000)
             .tween("scale", function() {
@@ -309,9 +311,14 @@ function makeMap(error, observations) {
           .selectAll("path")
             .attrTween("d", function(d) { return function() { return arc(d); }; });
 
-        selected = function(d){return d.family == "Laridae"};
+        s = d;
+        active_level = s["level"];
+        active_level_name = s["name"];
         
-        hexUpdate(); hexScale(); hexStat();
+        //selected = function(d){return d[] == s["name"]};
+        //console.log(selected);
+        //makeMap();
+        //hexUpdate(); hexScale(); hexStat();
 
     };
 
@@ -353,11 +360,15 @@ function formatObservations(d) {
 
  
 
-function selected(d) {return d.family == "Laridae"};
+//function selected(d) {return d.family == "Laridae"};
 //function selected(d) {return d.category == "Plant"};
 //function selected(d) {return d.category == "Bird" & d.year > 2016};
 //function selected(d) {return d.species == "Bubo virginianus"};
-//function selected(d) {return d};
+
+var active_level = "species";
+var active_level_name = "Bubo virginianus";
+function selected(d) {return d[active_level] == active_level_name};
+
 
 var stat = "observations";
 //var summary_statistic = "species"

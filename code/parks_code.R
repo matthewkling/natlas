@@ -281,7 +281,7 @@ scrapeiNat <- function(workingSpeciesList, primary_column_to_match, secondary_co
 
 #### comparing to NPS species list ####
   # species list downloaded from NPSpecies, converted to .csv by excel
-ranks_to_genus <- ranks <- c("kingdom","phylum", "class","order","family","genus")
+ranks_to_genus <- c("kingdom","phylum", "class","order","family","genus")
 ranks_to_species <- c("kingdom","phylum", "class","order","family","genus", "species")
 
 NPScleanup <- function(park_id){
@@ -351,7 +351,7 @@ mergedList <- NPSinatSpeciesMerge(inatSpecies, parkSpeciesFixed)
 
 
 ####Find common names functions####
-findUsingiNat <- function(id.species, ranks)
+findUsingiNat <- function(id.species, ranks = ranks_to_species)
 {
   not_found <- NULL
   for (s in 1:length(id.species$speciesFixed))
@@ -418,125 +418,128 @@ findUsingiNat <- function(id.species, ranks)
   clean.id.species <- id.species[, -which(names(id.species) %in% c("Taxon.Record.Status","Scientific.Name","Common.Names","Synonyms","Park.Accepted","Record.Status","original.inat.taxonID","speciesTidy", "matched.inat.ID","taxizeName","scrapediNatName"))]
   
   filePathFull = paste0("processed_data/",park_id,"_data/",park_id,"_species_list.csv")
-  write.csv(clean.id.species, filePathFull, row.names = FALSE)
+  #write.csv(clean.id.species, filePathFull, row.names = FALSE)
   
   return(clean.id.species)
 }
 
+new_dataset <- findCommonNames(clean.id.species, ranks = )
 
-
+safedat <- 
 
 
 ####Find common names loop####
-
-findCommonNames <- function(compiledSpeciesList, ranks = c("kingdom","phylum", "class","order","family","genus", "species")){
-  id.species <- compiledSpeciesList[,c("speciesFixed", "kingdom","phylum","class","order","family","genus","species","inat.taxonID", "Common.Names")]
-
-  for (r in ranks){
-    id.species[paste0(r,".common")] <- ""
-    id.species[paste0(r,".science")] <- ""
-  }
-  id.species$species.ID <- ""
-  id.species$inat.iconic <- ""
-  id.species$name.source <- ""
-
-  
-  id.species.working <- findUsingiNat(id.species = id.species, ranks = ranks)
-  
-  return(id.species.working)
-}
-
-speciesNamed <- findCommonNames(compiledSpeciesList = workingSpeciesList)
-
-# ####Stats by level above species####
-# inatStats <- function(observationData, rankToFindStats, ranks = c("kingdom","phylum","class","order","family","genus", "species"))
-# {
-#   unique.taxa <- unique(observationData[rankToFindStats])
-#   inatTaxa <- data.frame(unique.taxa, stringsAsFactors = FALSE)
-#   
-#   ranks.to.use <- ranks[1:which(ranks == rankToFindStats)]
-#   
-#   inatTaxa$total_obs <- NA
-#   inatTaxa$user_obs <- NA
-#   
-#   inatTaxa[c(ranks.to.use,"category","inat.taxonID")] <- NA
-#   inatTaxa[rankToFindStats] <- unique.taxa #gets messed up by above line
-#   inatTaxa[c(paste("m",1:12,sep=""))]<- NA
-#   inatTaxa[c(paste("y",2007:max(observationData$year),sep=""))] <- NA
-#   numTaxa <- length(inatTaxa[,rankToFindStats])
-#   
-#   
-#   for (i in 1:numTaxa){
-#     obs.of.taxon <- observationData[which(observationData[rankToFindStats] == inatTaxa[i,rankToFindStats]),]
-#     
-#     #total/user observations
-#     inatTaxa$total_obs[i] = length(obs.of.taxon$speciesFixed)
-#     inatTaxa$user_obs[i] = length(unique(obs.of.taxon$recordedBy))
-#     
-#     #build hierarchy
-#     for (r in ranks.to.use)
-#     {
-#       inatTaxa[i,r] <- obs.of.taxon[1,r]
-#     }
-#     inatTaxa[i,"category"] <- obs.of.taxon[1,"category"]
-#     
-#     #Find the iNat taxon id and common name: better done in a different loop?
-#     
-#     #stats for times
-#     for (j in 1:12)
-#     {
-#       inatTaxa[i,paste("m",j,sep="")] <- length(which(obs.of.taxon$month == j))
-#     }
-#     
-#     for (k in 2007:max(observationData$year))
-#     {
-#       inatTaxa[i,paste("y",k,sep="")] <- length(which(obs.of.taxon$year == k))
-#     }
-#     
-#     print(paste0(100*i/numTaxa, "% ", rankToFindStats," stats calculated") )
+# 
+# findCommonNames <- function(compiledSpeciesList, ranks = c("kingdom","phylum", "class","order","family","genus", "species")){
+#   id.species <- compiledSpeciesList[,c("speciesFixed", "kingdom","phylum","class","order","family","genus","species","inat.taxonID", "Common.Names")]
+# 
+#   for (r in ranks){
+#     id.species[paste0(r,".common")] <- ""
+#     id.species[paste0(r,".science")] <- ""
 #   }
-#   return(inatTaxa)
+#   id.species$species.ID <- ""
+#   id.species$inat.iconic <- ""
+#   id.species$name.source <- ""
+# 
+#   
+#   id.species.working <- findUsingiNat(id.species = id.species, ranks = ranks)
+#   
+#   return(id.species.working)
 # }
 # 
-# # for (taxon.level in (ranksAboveSpecies = ranks = c("kingdom","phylum","class","order","family","genus"))){
-# # paste0(taxon.level,"iNatStats") <- inatStats(observationData, rankToFindStats = taxon.level) #paste0 doesn't work here for naming the output- maybe I'll have to make then fill a list of data frames
+# speciesNamed <- findCommonNames(compiledSpeciesList = workingSpeciesList)
+# 
+# 
+# 
+# # ####Stats by level above species####
+# # inatStats <- function(observationData, rankToFindStats, ranks = c("kingdom","phylum","class","order","family","genus", "species"))
+# # {
+# #   unique.taxa <- unique(observationData[rankToFindStats])
+# #   inatTaxa <- data.frame(unique.taxa, stringsAsFactors = FALSE)
 # #   
+# #   ranks.to.use <- ranks[1:which(ranks == rankToFindStats)]
+# #   
+# #   inatTaxa$total_obs <- NA
+# #   inatTaxa$user_obs <- NA
+# #   
+# #   inatTaxa[c(ranks.to.use,"category","inat.taxonID")] <- NA
+# #   inatTaxa[rankToFindStats] <- unique.taxa #gets messed up by above line
+# #   inatTaxa[c(paste("m",1:12,sep=""))]<- NA
+# #   inatTaxa[c(paste("y",2007:max(observationData$year),sep=""))] <- NA
+# #   numTaxa <- length(inatTaxa[,rankToFindStats])
+# #   
+# #   
+# #   for (i in 1:numTaxa){
+# #     obs.of.taxon <- observationData[which(observationData[rankToFindStats] == inatTaxa[i,rankToFindStats]),]
+# #     
+# #     #total/user observations
+# #     inatTaxa$total_obs[i] = length(obs.of.taxon$speciesFixed)
+# #     inatTaxa$user_obs[i] = length(unique(obs.of.taxon$recordedBy))
+# #     
+# #     #build hierarchy
+# #     for (r in ranks.to.use)
+# #     {
+# #       inatTaxa[i,r] <- obs.of.taxon[1,r]
+# #     }
+# #     inatTaxa[i,"category"] <- obs.of.taxon[1,"category"]
+# #     
+# #     #Find the iNat taxon id and common name: better done in a different loop?
+# #     
+# #     #stats for times
+# #     for (j in 1:12)
+# #     {
+# #       inatTaxa[i,paste("m",j,sep="")] <- length(which(obs.of.taxon$month == j))
+# #     }
+# #     
+# #     for (k in 2007:max(observationData$year))
+# #     {
+# #       inatTaxa[i,paste("y",k,sep="")] <- length(which(obs.of.taxon$year == k))
+# #     }
+# #     
+# #     print(paste0(100*i/numTaxa, "% ", rankToFindStats," stats calculated") )
+# #   }
+# #   return(inatTaxa)
 # # }
-
-
-#####Mergeing clean lists###
-# #original function
-# NPSinatSpeciesMerge <- function(inatSpecies,park_id, cleanParkSpecies){
-#   parkSpeciesFilepath <- paste0("raw_data/NPSpecies_",park_id,".csv")
-#   parkSpeciesData <- read.csv(parkSpeciesFilepath,header =T, stringsAsFactors = FALSE)
-#   
-#   #select columns
-#   parkSpeciesFixed <- parkSpeciesData[,c("Taxon.Record.Status","Scientific.Name","Common.Names","Synonyms","Park.Accepted", "Record.Status","Occurrence","Category")]
-#   
-#   #fix names, remove hybrids and duplicates
-#   parkSpeciesFixed <- parkSpeciesFixed[-(grep("([A-z]+) X ([A-z]+)",parkSpeciesFixed$Scientific.Name)),] #removing hybrids
-#   parkSpeciesFixed$speciesFixed <- parkSpeciesFixed$Scientific.Name
-#   parkSpeciesFixed$speciesFixed <- gsub("([A-z]+) ([A-z]+) var.*",'\\1 \\2', parkSpeciesFixed$speciesFixed)
-#   parkSpeciesFixed$speciesFixed <- gsub("([A-z]+) ([A-z]+)-([A-z]+) var.*",'\\1 \\2-\\3', parkSpeciesFixed$speciesFixed) #hyphenated species names that are also hybrids (WHO PUTS HYPHENS IN SPECIES NAMES??? Too many people it turns out.)
-#   parkSpeciesFixed$speciesFixed <- gsub("([A-z]+) ([A-z]+) ssp.*",'\\1 \\2', parkSpeciesFixed$speciesFixed)
-#   parkSpeciesFixed$speciesFixed <- gsub("([A-z]+) ([A-z]+) ([A-z]+).*",'\\1 \\2', parkSpeciesFixed$speciesFixed)
-#   parkSpeciesFixed <- parkSpeciesFixed[!duplicated(parkSpeciesFixed$speciesFixed),] #removes duplicates due to subspecies/varieties
-#   
-#   #Change NPS categories
-#   parkSpeciesFixed$Category[which(parkSpeciesFixed$Category %in% c("Slug/Snail","Insect","Other Non-vertebrates","Crab/Lobster/Shrimp"))] <- "Invertebrate"
-#   parkSpeciesFixed$Category[which(parkSpeciesFixed$Category %in% c("Reptile","Amphibian"))] <- "Herp"
-#   parkSpeciesFixed$Category[which(parkSpeciesFixed$Category %in% c("Vascular Plant","Non-vascular Plant"))] <- "Plant"
-#   parkSpeciesFixed$Category[which(parkSpeciesFixed$Category %in% c("Chromista","Bacteria","Protozoa","Archaea"))] <- "Microbe"
-#   
-#   # #merge dataframes
-#   # totalSpecies <- merge(inatSpecies,parkSpeciesFixed,by = "speciesFixed", all = T)
-#   # totalSpecies$speciesFixed <- as.character(totalSpecies$speciesFixed)
-#   # totalSpecies <- totalSpecies[order(totalSpecies$speciesFixed),]  #makes alphabetical by species name
-#   # 
-#   # category.idx <- which(is.na(totalSpecies$category))
-#   # totalSpecies$category[category.idx] <- totalSpecies$Category[category.idx] #puts park species categories into same column as iNat
-#   # 
-#   # return(totalSpecies)
-# }
+# # 
+# # # for (taxon.level in (ranksAboveSpecies = ranks = c("kingdom","phylum","class","order","family","genus"))){
+# # # paste0(taxon.level,"iNatStats") <- inatStats(observationData, rankToFindStats = taxon.level) #paste0 doesn't work here for naming the output- maybe I'll have to make then fill a list of data frames
+# # #   
+# # # }
 # 
-# rawSpeciesList <- NPSinatSpeciesMerge(inatSpecies,park_id = park_id)
+# 
+# #####Mergeing clean lists###
+# # #original function
+# # NPSinatSpeciesMerge <- function(inatSpecies,park_id, cleanParkSpecies){
+# #   parkSpeciesFilepath <- paste0("raw_data/NPSpecies_",park_id,".csv")
+# #   parkSpeciesData <- read.csv(parkSpeciesFilepath,header =T, stringsAsFactors = FALSE)
+# #   
+# #   #select columns
+# #   parkSpeciesFixed <- parkSpeciesData[,c("Taxon.Record.Status","Scientific.Name","Common.Names","Synonyms","Park.Accepted", "Record.Status","Occurrence","Category")]
+# #   
+# #   #fix names, remove hybrids and duplicates
+# #   parkSpeciesFixed <- parkSpeciesFixed[-(grep("([A-z]+) X ([A-z]+)",parkSpeciesFixed$Scientific.Name)),] #removing hybrids
+# #   parkSpeciesFixed$speciesFixed <- parkSpeciesFixed$Scientific.Name
+# #   parkSpeciesFixed$speciesFixed <- gsub("([A-z]+) ([A-z]+) var.*",'\\1 \\2', parkSpeciesFixed$speciesFixed)
+# #   parkSpeciesFixed$speciesFixed <- gsub("([A-z]+) ([A-z]+)-([A-z]+) var.*",'\\1 \\2-\\3', parkSpeciesFixed$speciesFixed) #hyphenated species names that are also hybrids (WHO PUTS HYPHENS IN SPECIES NAMES??? Too many people it turns out.)
+# #   parkSpeciesFixed$speciesFixed <- gsub("([A-z]+) ([A-z]+) ssp.*",'\\1 \\2', parkSpeciesFixed$speciesFixed)
+# #   parkSpeciesFixed$speciesFixed <- gsub("([A-z]+) ([A-z]+) ([A-z]+).*",'\\1 \\2', parkSpeciesFixed$speciesFixed)
+# #   parkSpeciesFixed <- parkSpeciesFixed[!duplicated(parkSpeciesFixed$speciesFixed),] #removes duplicates due to subspecies/varieties
+# #   
+# #   #Change NPS categories
+# #   parkSpeciesFixed$Category[which(parkSpeciesFixed$Category %in% c("Slug/Snail","Insect","Other Non-vertebrates","Crab/Lobster/Shrimp"))] <- "Invertebrate"
+# #   parkSpeciesFixed$Category[which(parkSpeciesFixed$Category %in% c("Reptile","Amphibian"))] <- "Herp"
+# #   parkSpeciesFixed$Category[which(parkSpeciesFixed$Category %in% c("Vascular Plant","Non-vascular Plant"))] <- "Plant"
+# #   parkSpeciesFixed$Category[which(parkSpeciesFixed$Category %in% c("Chromista","Bacteria","Protozoa","Archaea"))] <- "Microbe"
+# #   
+# #   # #merge dataframes
+# #   # totalSpecies <- merge(inatSpecies,parkSpeciesFixed,by = "speciesFixed", all = T)
+# #   # totalSpecies$speciesFixed <- as.character(totalSpecies$speciesFixed)
+# #   # totalSpecies <- totalSpecies[order(totalSpecies$speciesFixed),]  #makes alphabetical by species name
+# #   # 
+# #   # category.idx <- which(is.na(totalSpecies$category))
+# #   # totalSpecies$category[category.idx] <- totalSpecies$Category[category.idx] #puts park species categories into same column as iNat
+# #   # 
+# #   # return(totalSpecies)
+# # }
+# # 
+# # rawSpeciesList <- NPSinatSpeciesMerge(inatSpecies,park_id = park_id)

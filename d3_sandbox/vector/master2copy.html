@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>PRNS</title>
+
+<style>
+
+.park {
+  fill: white;
+  stroke: black;
+}
+
+.states {
+  fill: none;
+  stroke: #fff;
+  stroke-linejoin: round;
+}
+
+.hexagon {
+  stroke: none;
+  fill-opacity: .75;
+}
+
+.big_title {
+  font-size: 80px;
+  fill: darkgreen;
+  text-anchor: middle;
+}
+
+.stat_title {
+  font-size: 40px;
+  fill: darkblue;
+  text-anchor: middle;
+}
+
+.filter_title {
+  font-size: 40px;
+  fill: darkblue;
+  text-anchor: middle;
+}
+
+</style>
+
+<!-- <svg width="600" height="600"></svg> -->
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/d3-hexbin.v0.2.min.js"></script>
+<script src="https://d3js.org/topojson.v2.min.js"></script>
+<script src="pore_json.js"></script>
+
+
+  </head>
+  <body>
+<script>
+
+//Width and height
+var m = 80; // top margin
+var pad = 5;
+var w = document.body.clientWidth - pad*2;
+var hf = document.body.scrollHeight - pad*4 - m;
+
+var header = d3.select("body")
+    .append("svg")
+    .attr("width", w)
+    .attr("height", m);
+
+
+// map containers
+var map_width = w / 3.01;
+    map_height = w / 3
+var map_panel = d3.select("body")
+    .append("svg")
+    .attr("width", map_width)
+    .attr("height", map_height);
+var map_title = header.append("text")
+    .text("WHERE?")
+    .attr("x", w/6)
+    .attr("y", m)
+    .attr("class", "big_title");
+
+// taxonomy containers
+var taxonomy_width = w / 3.01;
+    taxonomy_height = w / 3
+var taxonomy_panel = d3.select("body")
+    .append("svg")
+    .attr("width", taxonomy_width)
+    .attr("height", taxonomy_height);
+var taxonomy_title = header.append("text")
+    .text("WHAT?")
+    .attr("x", w/2)
+    .attr("y", m)
+    .attr("class", "big_title");
+
+// timeline containers
+var timeline_width = w / 3.01;
+    timeline_height = w / 3
+var timeline_panel = d3.select("body")
+    .append("svg")
+    .attr("width", timeline_width)
+    .attr("height", timeline_height);
+var timeline_title = header.append("text")
+    .text("WHEN?")
+    .attr("x", w/6*5)
+    .attr("y", m)
+    .attr("class", "big_title");
+
+
+// stat toggle button
+var stat_button = timeline_panel.append("ellipse")
+    .attr("cx", timeline_width/2)
+    .attr("cy", timeline_height * .66)
+    .attr("rx", 30)
+    .attr("ry", 30)
+    .attr("fill", "black");
+
+
+
+//////////////////////////////////////////////////////
+
+
+// hexbin layer properties
+var hexbin = d3.hexbin()
+    .extent([[0, 0], [map_width, map_height]])
+    .radius(25)
+    .x(function(d) { return d.x; })
+    .y(function(d) { return d.y; });
+
+
+// geospatial properties
+var projection = d3.geoMercator();
+var lattop = 38.25;
+var lonleft = -123.09;
+var lonright = -122.64;
+var scale = 55 * map_width/(lonright-lonleft);
+projection.scale(scale);
+projection.translate([0,0]);
+var trans = projection([lonleft,lattop]);
+projection.translate([-1*trans[0],-1*trans[1]]);
+var path = d3.geoPath().projection(projection);
+
+
+
+//////////////////////////////////////////////////////
+
+
+var radius = (Math.min(taxonomy_width, taxonomy_height) / 2.25) - 10;
+
+var formatNumber = d3.format(",d");
+
+var x = d3.scale.linear()
+    .range([0, 2 * Math.PI]);
+
+var y = d3.scale.sqrt()
+    .range([0, radius]);
+
+var color = d3.scale.category20c();
+
+var partition = d3.layout.partition()
+    .value(function(d) { return d.n_records; });
+
+var arc = d3.svg.arc()
+    .startAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x))); })
+    .endAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x + d.dx))); })
+    .innerRadius(function(d) { return Math.max(0, y(d.y)); })
+    .outerRadius(function(d) { return Math.max(0, y(d.y + d.dy)); });
+
+
+
+
+//////////////////////////////
+
+
+function formatTaxonomy(d) {
+    //console.log(d);
+    return d;
+};
+
+
+//function selected(d) {return d.family == "Laridae"};
+//function selected(d) {return d.category == "Plant"};
+//function selected(d) {return d.category == "Bird" & d.year > 2016};
+//function selected(d) {return d.species == "Bubo virginianus"};
+
+var active_level = "root";
+var active_level_name = "life";
+function selected(d) {return d[active_level] == active_level_name};
+
+var stat = "observations";
+//var summary_statistic = "species"
+//var summary_statistic = "users"
+
+var stat_title = timeline_panel.append("text")
+            .text(stat)
+            .attr("x", timeline_width/2)
+            .attr("y", timeline_height * .75)
+            .attr("class", "stat_title");
+
+var filter_title = timeline_panel.append("text")
+            .text(active_level + ": " + active_level_name)
+            .attr("x", timeline_width/2)
+            .attr("y", timeline_height * .95)
+            .attr("class", "filter_title");
+
+
+//////////////////////////////////////////////////////
+
+
+var points = map_panel.selectAll("circle");
+
+function makeMap(taxon_filter){
+
+  d3.csv("PORE_obs_tidy.csv", function(error, data) {
+
+      // boundary shapefile
+      var park_boundary = map_panel.selectAll("path")
+        .data(pore_json.features)
+        .enter()
+        .append("path")
+        .attr("class", "park")
+        .attr("d", path);
+
+      data.forEach(function(d) {
+        d.x = projection([+d.decimalLongitude, 0])[0];
+        d.y = projection([0, +d.decimalLatitude])[1];
+        d.category = d.category;
+        d.family = d.family;
+        d.species = d.speciesFixed;
+        d.year = +d.year;
+        d.month = +d.month;
+        d.user = +d.userNumber;
+      });
+
+      data.filter(taxon_filter);
+      console.log(data);
+
+      points.data(data).enter()
+        .append("circle")
+        .attr("cx", function (d) { return d.x; })
+        .attr("cy", function (d) { return d.y; })
+        .attr("r", "2")
+        .attr("fill", "darkgreen")
+        .attr("opacity", .5);
+
+      // hex heatmap
+      var hex
+      function hexUpdate(){hex = map_panel.append("g")
+          .attr("class", "hexagon")
+        .selectAll("path")
+        .data(hexbin(data))
+        .enter().append("path")
+        .attr("d", hexbin.hexagon())
+        .attr("fill", "darkgreen")
+        .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+      }
+      hexUpdate();
+
+      // hexbin color ramp
+
+      var trans = Math.log10;
+      var maxObservations = trans(d3.max(hex.data(), function(d){return(d.length)}));
+      var maxSpecies = trans(d3.max(hex.data(), function(d){return(d3.map(d, function(d){return d.species;}).size() )}));
+      var maxUsers = trans(d3.max(hex.data(), function(d){return(d3.map(d, function(d){return d.user;}).size() )}));
+
+      var scale_opacity;
+      function maxDensity(){};
+      function hexScale(){
+        if(stat == "observations"){maxDensity = maxObservations};
+        if(stat == "species"){maxDensity = maxSpecies};
+        if(stat == "users"){maxDensity = maxUsers};
+        scale_opacity = d3.scaleLinear()
+          .domain([0, maxDensity])
+          .range([0.05,1]);
+      };
+
+      hexScale();
+
+
+      // hexbin summary statistics
+
+      function byObservations(d){return scale_opacity(trans(d.length)); };
+      function bySpecies(d){
+        //console.log(d3.map(d, function(d){return d.species;}).size());
+        return scale_opacity(trans(d3.map(d, function(d){return d.species;}).size())); };
+      function byUsers(d){
+        return scale_opacity(trans(d3.map(d, function(d){return d.user;}).size())); };
+
+      function bySummary(){};
+      function hexStat(){
+        if(stat == "species"){bySummary = bySpecies};
+        if(stat == "observations"){bySummary = byObservations};
+        if(stat == "users"){bySummary = byUsers};
+        hex.attr("opacity", bySummary);
+      }
+
+      hexStat();
+
+
+      function statChange(){
+
+        var stat0 = stat;
+        if(stat0 == "observations"){stat = "species"};
+        if(stat0 == "species"){stat = "users"};
+        if(stat0 == "users"){stat = "observations"};
+
+        timeline_panel.selectAll("text.stat_title").remove()
+        stat_title = timeline_panel.append("text")
+            .text(stat)
+            .attr("x", timeline_width/2)
+            .attr("y", timeline_height * .75)
+            .attr("class", "stat_title");
+
+        hexScale();
+        hexStat();
+      };
+
+      stat_button.on("click", statChange);
+  });
+};
+
+makeMap(selected);
+
+
+
+////////////////////////////////////////
+
+
+d3.json("taxonomy_pore_simple.json", function(error, root) {
+  if (error) throw error;
+
+  taxonomy_panel.append("g")
+    .attr("transform", "translate(" + taxonomy_width / 2 + "," + taxonomy_height / 2 + ")");
+
+  taxonomy_panel.selectAll("path")
+    .data(partition.nodes(root))
+  .enter().append("path")
+    .attr("d", arc)
+    .attr("transform", "translate(" + taxonomy_width / 2 + "," + taxonomy_height / 2 + ")")
+    .style("fill", function(d){ return d.hex })
+    .on("click", taxonomyClick)
+    .on("mouseover", function(d) {
+        d3.select(this).style("fill", "rgb(200,200,200)");
+        timeline_panel.selectAll("text.filter_title").remove();
+        filter_title = timeline_panel.append("text")
+            .text(d.level + ": " + d.name)
+            .attr("x", timeline_width/2)
+            .attr("y", timeline_height*.95)
+            .attr("class", "filter_title")
+            .style("fill", "rgb(200,200,200)");})
+    .on("mouseout", function(d) {
+        d3.select(this).style("fill", function(z){ return z.hex });
+        timeline_panel.selectAll("text.filter_title").remove();
+        filter_title = timeline_panel.append("text")
+          .text(active_level + ": " + active_level_name)
+          .attr("x", timeline_width/2)
+          .attr("y", timeline_height * .95)
+          .attr("class", "filter_title");})
+  .append("title")
+    .text(function(d) { return d.level + ": " + d.name + "\n" + formatNumber(d.value) + " observations"; });
+});
+
+
+
+function taxonomyClick(d) {
+    taxonomy_panel.transition()
+        .duration(4000)
+        .tween("scale", function() {
+          var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
+              yd = d3.interpolate(y.domain(), [d.y, 1]),
+              yr = d3.interpolate(y.range(), [d.y ? 20 : 0, radius]);
+          return function(t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); };
+        })
+      .selectAll("path")
+        .attrTween("d", function(d) { return function() { return arc(d); }; });
+
+    s = d;
+    active_level = s["level"];
+    active_level_name = s["name"];
+
+    timeline_panel.selectAll("text.filter_title").remove()
+    filter_title = timeline_panel.append("text")
+        .text(active_level + ": " + active_level_name)
+        .attr("x", timeline_width/2)
+        .attr("y", timeline_height*.95)
+        .attr("class", "filter_title");
+
+
+
+    //selected = function(d){return d[] == s["name"]};
+    //console.log(selected);
+    makeMap(selected);
+    //hexUpdate(); hexScale(); hexStat();
+
+};
+
+d3.select(self.frameElement).style("height", taxonomy_height + "px");
+
+
+
+
+</script>

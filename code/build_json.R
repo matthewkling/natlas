@@ -104,7 +104,7 @@ group_taxa <- function(data, groupings, level, max_col){
 }
 
 hierarchies <- list(linnean=c("root", "kingdom", "phylum", "class", "order", "family", "genus", "species"),
-                    simple=c("root", "category", "family", "species"))
+                    simple=c("root", "category", "order", "family", "species"))
 
 for(hierarchy in names(hierarchies)){
       

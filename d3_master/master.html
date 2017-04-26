@@ -55,12 +55,43 @@
 <script>
 
 //Width and height
-var m = 80; // top margin
+var m0 = 150; // header
+var m = 150; // title strip
 var pad = 5;
 var w = document.body.clientWidth - pad*2;
 var hf = document.body.scrollHeight - pad*4 - m;
 
-var header = d3.select("body")
+
+
+// header
+
+var nameplate = d3.select("body")
+    .append("svg")
+    .attr("width", w)
+    .attr("height", m0);
+
+nameplate.append("rect")
+    .attr("x", 0).attr("y", 0).attr("width", w).attr("height", m0)
+    .attr("fill", "black")
+var title = nameplate.append("text")
+    .text("NATLAS  ")
+    .attr("x", m0/4*3)
+    .attr("y", m0/4*3)
+    .attr("font-size", "80px")
+    .attr("fill", "white")
+    .attr("font-weight", 900)
+    .attr("text-anchor", "start")
+    .attr("dominant-baseline", "alphabetical")
+title.append("tspan")
+    .text("an atlas of citizen naturalist observations")
+    .attr("font-size", "30px")
+    .attr("fill", "gray")
+    .attr("dominant-baseline", "alphabetical")
+    .attr("font-weight", 100)
+
+
+
+var title_bar = d3.select("body")
     .append("svg")
     .attr("width", w)
     .attr("height", m);
@@ -73,10 +104,10 @@ var map_panel = d3.select("body")
     .append("svg")
     .attr("width", map_width)
     .attr("height", map_height);
-var map_title = header.append("text")
-    .text("WHERE?")
+var map_title = title_bar.append("text")
+    .text("where?")
     .attr("x", w/6)
-    .attr("y", m)
+    .attr("y", m*.9)
     .attr("class", "big_title");
 
 // taxonomy containers
@@ -86,10 +117,10 @@ var taxonomy_panel = d3.select("body")
     .append("svg")
     .attr("width", taxonomy_width)
     .attr("height", taxonomy_height);
-var taxonomy_title = header.append("text")
-    .text("WHAT?")
+var taxonomy_title = title_bar.append("text")
+    .text("what?")
     .attr("x", w/2)
-    .attr("y", m)
+    .attr("y", m*.9)
     .attr("class", "big_title");
 
 // timeline containers
@@ -99,10 +130,10 @@ var timeline_panel = d3.select("body")
     .append("svg")
     .attr("width", timeline_width)
     .attr("height", timeline_height);
-var timeline_title = header.append("text")
-    .text("WHEN?")
+var timeline_title = title_bar.append("text")
+    .text("when?")
     .attr("x", w/6*5)
-    .attr("y", m)
+    .attr("y", m*.9)
     .attr("class", "big_title");
 
 
@@ -171,11 +202,9 @@ var arc = d3.svg.arc()
 //////////////////////////////
 
 
-//var active_level = "root";
-//var active_latin = "life";
-var active_level = "family";
-var active_latin = "Laridae";
-var active_common = "Gulls";
+var active_level = "root";
+var active_latin = "life";
+var active_common = "life";
 function selected(d) {return d[active_level] == active_latin};
 
 var stat = "observations";
@@ -190,11 +219,11 @@ var stat_title = timeline_panel.append("text")
 
 var filter_title_y = taxonomy_height * .57
 
-var filter_title = taxonomy_panel.append("text")
-            .text(active_latin)
-            .attr("x", taxonomy_width/2)
-            .attr("y", filter_title_y)
-            .attr("class", "filter_title");
+var filter_title = taxonomy_panel
+      .append("text").text(active_common)
+          .attr("x", taxonomy_width/2).attr("y", filter_title_y).attr("class", "filter_title")
+      .append("tspan").text("(" + active_latin + ")")
+          .attr("x", taxonomy_width/2).attr("y", filter_title_y).attr("dy", 30);
 
 
 //////////////////////////////////////////////////////
@@ -346,28 +375,28 @@ d3.json("taxonomy_pore_linnean.json", function(error, root) {
         d3.select(this).style("fill", function(z){ return d3.rgb(z.hex).brighter(3) }); 
         taxonomy_panel.selectAll("text.filter_title").remove();
         filter_title = taxonomy_panel.append("text")
-            .text(d.common + " (" + d.name + ")")
-        .attr("x", taxonomy_width/2)
-            .attr("y", filter_title_y)
-            .attr("class", "filter_title")
-            .style("fill", "rgb(100,100,100)");})
+            .text(d.common)
+                .attr("x", taxonomy_width/2).attr("y", filter_title_y)
+                .attr("class", "filter_title").style("fill", "rgb(100,100,100)")
+            .append("tspan").text("(" + d.name + ")")
+              .attr("x", taxonomy_width/2).attr("y", filter_title_y).attr("dy", 30);})
     .on("mouseout", function(d) {
         d3.select(this).style("fill", function(z){ return z.hex }); 
         taxonomy_panel.selectAll("text.filter_title").remove();
-        filter_title = taxonomy_panel.append("text")
-          .text(active_common + " (" + active_latin + ")")
-        .attr("x", taxonomy_width/2)
-          .attr("y", filter_title_y)
-          .attr("class", "filter_title");})  ;
+        filter_title = taxonomy_panel
+          .append("text").text(active_common)
+              .attr("x", taxonomy_width/2).attr("y", filter_title_y).attr("class", "filter_title")
+          .append("tspan").text("(" + active_latin + ")")
+              .attr("x", taxonomy_width/2).attr("y", filter_title_y).attr("dy", 30);})  ;
   //.append("title")
   //  .text(function(d) { return d.level + ": " + d.name + "\n" + formatNumber(d.value) + " observations"; });
 
 
-  filter_title = taxonomy_panel.append("text")
-      .text(active_latin)
-      .attr("x", taxonomy_width/2)
-      .attr("y", filter_title_y)
-      .attr("class", "filter_title");
+  filter_title = taxonomy_panel
+      .append("text").text(active_common)
+          .attr("x", taxonomy_width/2).attr("y", filter_title_y).attr("class", "filter_title")
+      .append("tspan").text("(" + active_latin + ")")
+          .attr("x", taxonomy_width/2).attr("y", filter_title_y).attr("dy", 30);
 
 });
 
@@ -375,7 +404,7 @@ d3.json("taxonomy_pore_linnean.json", function(error, root) {
 
 function taxonomyClick(d) {
     taxonomy_panel.transition()
-        .duration(4000)
+        .duration(3000)
         .tween("scale", function() {
           var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
               yd = d3.interpolate(y.domain(), [d.y, 1]),
@@ -391,11 +420,18 @@ function taxonomyClick(d) {
     active_common = d["common"];
 
     taxonomy_panel.selectAll("text.filter_title").remove()
-    filter_title = taxonomy_panel.append("text")
-        .text(active_common + " (" + active_latin + ")")
-        .attr("x", taxonomy_width/2)
-        .attr("y", filter_title_y)
-        .attr("class", "filter_title");
+    //filter_title = taxonomy_panel.append("text")
+    //    .text(active_common + " (" + active_latin + ")")
+    //    .attr("x", taxonomy_width/2)
+    //    .attr("y", filter_title_y)
+    //    .attr("class", "filter_title");
+
+    filter_title = taxonomy_panel
+      .append("text").text(active_common)
+          .attr("x", taxonomy_width/2).attr("y", filter_title_y).attr("class", "filter_title")
+      .append("tspan").text("(" + active_latin + ")")
+          .attr("x", taxonomy_width/2).attr("y", filter_title_y).attr("dy", 30);
+
 
     makeMap();
     

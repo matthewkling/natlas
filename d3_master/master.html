@@ -147,7 +147,7 @@ var user_panel = d3.select("body")
     .attr("width", user_width)
     .attr("height", user_height);
 var user_title = title_bar.append("text")
-    .text("whom?")
+    .text("who?")
     .attr("x", w/6*5)
     .attr("y", m*.9)
     .attr("class", "big_title");
@@ -385,15 +385,19 @@ function makeMap(){
       //var user_data = data.map(function(d){return [d.user_visits, d.user_obs];});
       //var user_data = data.map(data, function(d){return d.user;});
       
-      var user_data = data.map(function(d){return [d.user_visits, d.user_obs];});
+
+      var n_obs = data.length;
+      
+      
       var max_users = 350;
       var n_users = d3.map(data, function(d){return d.user;}).size();
       
-      //console.log(max_users);
-      console.log(n_users);
-      //console.log(user_data);
-      //console.log(user_data.length);
 
+      // this gets the format right, but isn't filtered by unique user -- FIX ////////////////////////////
+      var user_data = data.map(function(d){return [d.user_visits, d.user_obs];});
+      
+
+      
       var user_scale_opacity = d3.scaleLinear()
           .domain([0, trans(max_users)])
           .range([.5, .05]);
@@ -404,16 +408,12 @@ function makeMap(){
           .range([30,5]);
       var user_size = user_scale_size(trans(n_users));
 
-
       user_panel.selectAll("circle").remove();
       user_panel.selectAll("circle")
         .data(user_data).enter()
         .append("circle")
-        //.attr("cx", function (d) { return user_scale_x(d.user_visits); })
-        //.attr("cy", function (d) { return user_scale_y(d.user_obs); })
         .attr("cx", function (d) { return user_scale_x(d[0]); })
         .attr("cy", function (d) { return user_scale_y(d[1]); })
-        //.attr("r", "10")
         .attr("r", user_size)
         .attr("fill", "darkgreen")
         .attr("opacity", user_opacity);
@@ -448,8 +448,9 @@ function makeMap(){
         .text(n_users + " citizen naturalists")
         .attr("x", user_width / 2)
         .attr("y", inset/2)
-        .attr("font-size", "50px")
+        .attr("font-size", "40px")
         .attr("fill", "darkgreen")
+        .attr("opacity", .5)
         .attr("font-weight", 100)
         .attr("text-anchor", "middle")
         .attr("dominant-baseline", "alphabetical");
@@ -545,7 +546,7 @@ d3.json("taxonomy_pore_simple.json", function(error, root) {
 
 function taxonomyClick(d) {
     taxonomy_panel.transition()
-        .delay(100) // avoid bog
+        .delay(100) // to avoid bog
         .duration(3000)
         .tween("scale", function() {
           var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),

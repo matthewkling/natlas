@@ -5,8 +5,11 @@ library(jsonlite)
 library(rgdal)
 library(spocc)
 library(taxize)
+library(beepr) #optional- good for running in background. CTRL-F delete all "beep(sound = 2)" and you won't need
 
-park_id = "PORE" #Point Reyes is park of interest
+#park_id = "PORE" #Point Reyes is park of interest
+park_id = "GOGA" #Golden Gate National Recreation Area (GOGA)
+
 
 #### Shapefile ####
 # allParkShape <- readOGR("raw_data/park_boundaries","nps_boundary")
@@ -77,7 +80,7 @@ cleanParkObservations = function(park_id,allParkObs){
 #only runs function if the park data hasn't been processed (park_obs.csv is in gitignore)
 if (file.exists(paste0("processed_data/",park_id,"_data/",park_id,"_obs_tidy.csv"))  == F | file.exists(paste0("processed_data/",park_id,"_data/",park_id,"_obs_FULL.csv"))  == F) {
   allParkObs <- read.csv("processed_data/park_obs.csv",header = T, stringsAsFactors = FALSE)
-  parkObs <- cleanParkObservations(park_id, allParkObs)
+  parkObs <- cleanParkObservations(park_id, allParkObs); beep(sound = 2)
 }
 
 #### species stats #####
@@ -125,7 +128,7 @@ inatStats <- function(parkObs)
   return(inatSpecies)
 }
 
-inatSpecies <- inatStats(parkObs)
+inatSpecies <- inatStats(parkObs); beep(sound = 2)
 
 
 ####Functions for finding information####
@@ -157,7 +160,7 @@ taxizeFindTaxonomy <- function(workingSpeciesList, column_to_match, column_to_cr
   all.tax <- classification(totalSpecies[need.tax, column_to_match],db = taxize_database, rows = 1) #will always choose first result, that way it doesn't have to be babysat. On the other hand this could compeletly fuck up if there are conflicts with genus names or something.
   for (s in need.tax){
     sp.name <- totalSpecies[s, column_to_match]
-    if(is.null(all.tax[[sp.name]])[1]|is.na(all.tax[[sp.name]])[1]){still.need.tax <- c(still.need.tax, s)} else{ #if gbif didn't find the taxonomic information, it skips instead of throwing an error
+    if(is.null(all.tax[[sp.name]])[1]|is.na(all.tax[[sp.name]])[1]|length(all.tax[[sp.name]][[1]]) == 0){still.need.tax <- c(still.need.tax, s)} else{ #if gbif didn't find the taxonomic information, it skips instead of throwing an error
       for (r in ranks_to_species){
         if (length(which(all.tax[[sp.name]]$rank == r)) > 0) #if taxonomy is matched, fills in the names
         {totalSpecies[[r]][s] <-  all.tax[[sp.name]]$name[which(all.tax[[sp.name]]$rank == r)]}
@@ -315,7 +318,6 @@ NPScleanup <- function(park_id){
   parkSpeciesFixed$taxizeName <- NA
   parkSpeciesFixed$scrapediNatName <- NA
   
-  
   parkSpeciesFixed <- compareWithObservations(parkSpeciesFixed, "speciesTidy", column_to_create_index = "kingdom")
   parkSpeciesFixed <- taxizeFindTaxonomy(parkSpeciesFixed,column_to_match =  "speciesTidy", column_to_create_index = "kingdom")
   parkSpeciesFixed <- compareWithObservations(parkSpeciesFixed, "taxizeName", column_to_create_index = "matched.inat.ID")
@@ -334,7 +336,7 @@ NPScleanup <- function(park_id){
   return(parkSpeciesFixed)
 }
 
-parkList <- NPScleanup(park_id = park_id)
+parkList <- NPScleanup(park_id = park_id); beep(sound = 2)
 
 
 NPSinatSpeciesMerge <- function(inatSpecies, cleanParkSpecies){
@@ -344,9 +346,14 @@ NPSinatSpeciesMerge <- function(inatSpecies, cleanParkSpecies){
   
   cleanSpecies <- totalSpecies[-which(totalSpecies$Occurrence == "Not In Park" & is.na(totalSpecies$total_obs)),]
   cleanSpecies <- cleanSpecies[,-which(names(cleanSpecies) %in% c("Scientific.Name","Taxon.Record.Status","Synonyms","Park.Accepted","Record.Status"))]
+  
+  filePathFull = paste0("processed_data/",park_id,"_data/",park_id,"merged_unmatched_species_list.csv")
+  write.csv(cleanSpecies,filePathFull, row.names = FALSE)
+  
+  return(cleanSpecies)
 }
 
-mergedList <- NPSinatSpeciesMerge(inatSpecies, parkSpeciesFixed)
+mergedList <- NPSinatSpeciesMerge(inatSpecies, cleanParkSpecies = parkList); beep(sound = 2)
 #View(mergedList)
 
 
@@ -423,7 +430,7 @@ findUsingiNat <- function(id.species, ranks = ranks_to_species)
   return(clean.id.species)
 }
 
-new_dataset <- findUsingiNat(mergedList, ranks = ranks_to_species)
+new_dataset <- findUsingiNat(mergedList[1:20,], ranks = ranks_to_species)
 
 
 

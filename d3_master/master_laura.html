@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>NATLAS: Point Reyes</title>
+
+<style>
+
+.park {
+  fill: white;
+  stroke: black;
+}
+
+.states {
+  fill: none;
+  stroke: #fff;
+  stroke-linejoin: round;
+}
+
+.hexagon {
+  stroke: none;
+  fill-opacity: .75;
+}
+
+.big_title {
+  font-size: 80px;
+  fill: darkgreen;
+  text-anchor: middle;
+}
+
+.park_title {
+  font-size: 30px;
+  fill: black;
+  text-anchor: start;
+  dominant-baseline: middle;
+}
+
+.stat_title {
+  font-size: 30px;
+  fill: black;
+  text-anchor: start;
+  dominant-baseline: middle;
+}
+
+.filter_title {
+  font-size: 30px;
+  fill: white;
+  text-anchor: middle;
+}
+
+</style>
+
+
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/d3-hexbin.v0.2.min.js"></script>
+  <script src="https://d3js.org/topojson.v2.min.js"></script>
+  <script src="https://cdn.rawgit.com/fabid/d3-rectbin/master/rectbin.js"></script>
+  <script src="pore_json.js"></script>
+
+
+  </head>
+  <body>
+<script>
+
+//Width and height
+var m0 = 150; // header
+var m1 = 80; // control strip
+var m = 150; // title strip
+var pad = 5;
+var w = document.body.clientWidth - pad*2;
+var hf = document.body.scrollHeight - pad*4 - m;
+
+
+
+// header
+
+var nameplate = d3.select("body")
+    .append("svg")
+    .attr("width", w)
+    .attr("height", m0);
+
+nameplate.append("rect")
+    .attr("x", 0).attr("y", 0).attr("width", w).attr("height", m0)
+    .attr("fill", "black")
+var title = nameplate.append("text")
+    .text("NATLAS  ")
+    .attr("x", m0/4*3)
+    .attr("y", m0/4*3)
+    .attr("font-size", "80px")
+    .attr("fill", "white")
+    .attr("font-weight", 900)
+    .attr("text-anchor", "start")
+    .attr("dominant-baseline", "alphabetical")
+title.append("tspan")
+    .text("an atlas of citizen naturalist observations")
+    .attr("font-size", "30px")
+    .attr("fill", "gray")
+    .attr("dominant-baseline", "alphabetical")
+    .attr("font-weight", 100)
+
+var control_panel = d3.select("body")
+    .append("svg")
+    .attr("width", w)
+    .attr("height", m1);
+control_panel.append("rect")
+    .attr("x", 0).attr("y", 0).attr("width", w).attr("height", m0)
+    .attr("fill", "rgb(200,200,200)")
+
+var title_bar = d3.select("body")
+    .append("svg")
+    .attr("width", w)
+    .attr("height", m);
+
+
+// map containers
+var map_width = w / 3.01;
+    map_height = w / 3
+var map_panel = d3.select("body")
+    .append("svg")
+    .attr("width", map_width)
+    .attr("height", map_height);
+var map_title = title_bar.append("text")
+    .text("where?")
+    .attr("x", w/6)
+    .attr("y", m*.9)
+    .attr("class", "big_title");
+
+// taxonomy containers
+var taxonomy_width = w / 3.01;
+    taxonomy_height = w / 3
+var taxonomy_panel = d3.select("body")
+    .append("svg")
+    .attr("width", taxonomy_width)
+    .attr("height", taxonomy_height);
+var taxonomy_title = title_bar.append("text")
+    .text("what?")
+    .attr("x", w/2)
+    .attr("y", m*.9)
+    .attr("class", "big_title");
+
+// user containers
+var user_width = w / 3.01;
+    user_height = w / 3
+var user_panel = d3.select("body")
+    .append("svg")
+    .attr("width", user_width)
+    .attr("height", user_height);
+var user_title = title_bar.append("text")
+    .text("who?")
+    .attr("x", w/6*5)
+    .attr("y", m*.9)
+    .attr("class", "big_title");
+
+
+// park toggle button
+var r = 20;
+var park_button = control_panel.append("ellipse")
+    .attr("cx", m0/4*3 + r)
+    .attr("cy", m1/2)
+    .attr("rx", r)
+    .attr("ry", r)
+    .attr("fill", "black");
+var park = "Park:  Point Reyes";
+var park_title = control_panel.append("text")
+            .text(park)
+            .attr("x", m0/4*3 + r*2 + 25)
+            .attr("y", m1/2)
+            .attr("class", "park_title");
+
+// stat toggle button
+var r = 20;
+var stat_button = control_panel.append("ellipse")
+    .attr("cx", m0/4*3 + w/3)
+    .attr("cy", m1/2)
+    .attr("rx", r)
+    .attr("ry", r)
+    .attr("fill", "black");
+var stat = "observations";
+var stat_title = control_panel.append("text")
+            .text("Stat:  " + stat)
+            .attr("x", m0/4*3 + w/3 + r + 25)
+            .attr("y", m1/2)
+            .attr("class", "stat_title");
+
+// taxonomy toggle button
+var r = 20;
+var tree_button = control_panel.append("ellipse")
+    .attr("cx", m0/4*3 + w/3*2 - r)
+    .attr("cy", m1/2)
+    .attr("rx", r)
+    .attr("ry", r)
+    .attr("fill", "black");
+var tree = "Tree: simple";
+var tree_title = control_panel.append("text")
+            .text(tree)
+            .attr("x", m0/4*3 + w/3*2 + 25)
+            .attr("y", m1/2)
+            .attr("class", "park_title");
+
+
+//////////////////////////////////////////////////////
+
+
+// hexbin layer properties
+var hexbin = d3.hexbin()
+    .extent([[0, 0], [map_width, map_height]])
+    .radius(25)
+    .x(function(d) { return d.x; })
+    .y(function(d) { return d.y; });
+
+
+// geospatial properties
+var projection = d3.geoMercator();
+var lattop = 38.25;
+var lonleft = -123.09;
+var lonright = -122.64;
+var scale = 55 * map_width/(lonright-lonleft);
+projection.scale(scale);
+projection.translate([0,0]);
+var trans = projection([lonleft,lattop]);
+projection.translate([-1*trans[0],-1*trans[1]]);
+var path = d3.geoPath().projection(projection);
+
+
+
+//////////////////////////////////////////////////////
+
+
+var radius = (Math.min(taxonomy_width, taxonomy_height) / 2.25) - 10;
+
+var formatNumber = d3.format(",d");
+
+var x = d3.scale.linear()
+    .range([0, 2 * Math.PI]);
+
+var y = d3.scale.sqrt()
+    .range([0, radius]);
+
+var color = d3.scale.category20c();
+
+var partition = d3.layout.partition()
+    .value(function(d) { return d.n_records; });
+
+var arc = d3.svg.arc()
+    .startAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x))); })
+    .endAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x + d.dx))); })
+    .innerRadius(function(d) { return Math.max(0, y(d.y)); })
+    .outerRadius(function(d) { return Math.max(0, y(d.y + d.dy)); });
+
+
+
+
+//////////////////////////////
+
+
+var active_level = "root";
+var active_latin = "life";
+var active_common = "life";
+function selected(d) {return d[active_level] == active_latin};
+
+var filter_title_y = taxonomy_height * .57
+
+var filter_title = taxonomy_panel
+      .append("text").text(active_common)
+          .attr("x", taxonomy_width/2).attr("y", filter_title_y).attr("class", "filter_title")
+      .append("tspan").text("(" + active_latin + ")")
+          .attr("x", taxonomy_width/2).attr("y", filter_title_y).attr("dy", 30);
+
+
+//////////////////////////////////////////////////////
+
+
+
+
+function makeMap(){
+
+  d3.csv("PORE_obs_tidy.csv", function(error, data) {
+
+      // boundary shapefile
+      var park_boundary = map_panel.selectAll("path")
+        .data(pore_json.features)
+        .enter()
+        .append("path")
+        .attr("class", "park")
+        .attr("d", path);
+
+      data.forEach(function(d) {
+        d.x = projection([+d.decimalLongitude, 0])[0];
+        d.y = projection([0, +d.decimalLatitude])[1];
+        d.category = d.category.toLowerCase();
+        d.family = d.family;
+        d.species = d.speciesFixed;
+        //d.year = +d.year;
+        //d.month = +d.month;
+        d.user = +d.userNumber;
+        d.root = "life";
+        d.user_obs = +d.user_obs;
+        d.user_visits = +d.user_visits;
+        //d.user_spp = +d.user_spp;
+      });
+
+      data = data.filter(function(d){
+        return d[active_level] == active_latin;
+      });
+
+      map_panel.selectAll("circle").remove();
+      map_panel.selectAll("circle")
+        .data(data).enter()
+        .append("circle")
+        .attr("cx", function (d) { return d.x; })
+        .attr("cy", function (d) { return d.y; })
+        .attr("r", "2")
+        .attr("fill", "darkgreen")
+        .attr("opacity", .5);
+
+      // hex heatmap
+      var hex
+      function hexUpdate(){
+        map_panel.selectAll("g").remove()
+        hex = map_panel.append("g")
+          .attr("class", "hexagon")
+        .selectAll("path")
+        .data(hexbin(data))
+        .enter().append("path")
+        .attr("d", hexbin.hexagon())
+        .attr("fill", "darkgreen")
+        .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+      }
+      hexUpdate();
+
+      // hexbin color ramp
+
+      var trans = Math.log10;
+      var maxObservations = trans(d3.max(hex.data(), function(d){return(d.length)}));
+      var maxSpecies = trans(d3.max(hex.data(), function(d){return(d3.map(d, function(d){return d.species;}).size() )}));
+      var maxUsers = trans(d3.max(hex.data(), function(d){return(d3.map(d, function(d){return d.user;}).size() )}));
+
+      var scale_opacity;
+      function maxDensity(){};
+      function hexScale(){
+        if(stat == "observations"){maxDensity = maxObservations};
+        if(stat == "species"){maxDensity = maxSpecies};
+        if(stat == "users"){maxDensity = maxUsers};
+        scale_opacity = d3.scaleLinear()
+          .domain([0, maxDensity])
+          .range([0.05,1]);
+      };
+
+      hexScale();
+
+
+      // hexbin summary statistics
+
+      function byObservations(d){return scale_opacity(trans(d.length)); };
+      function bySpecies(d){
+        //console.log(d3.map(d, function(d){return d.species;}).size());
+        return scale_opacity(trans(d3.map(d, function(d){return d.species;}).size())); };
+      function byUsers(d){
+        return scale_opacity(trans(d3.map(d, function(d){return d.user;}).size())); };
+
+      function bySummary(){};
+      function hexStat(){
+        if(stat == "species"){bySummary = bySpecies};
+        if(stat == "observations"){bySummary = byObservations};
+        if(stat == "users"){bySummary = byUsers};
+        hex.attr("opacity", bySummary);
+      }
+
+      hexStat();
+
+
+      //////////////////////////////////////////////////////
+
+
+      var inset = user_width / 4
+      var user_scale_x = d3.scaleLinear()
+          .domain([0, 1])
+          .range([inset, user_width - inset]);
+      var user_scale_y = d3.scaleLinear()
+          .domain([0, 1])
+          .range([user_width - inset, inset]);
+
+      //var max_users = d3.map(data, function(d){return d.user;}).size();
+      //var user_data = data.map(function(d){return [d.user_visits, d.user_obs];});
+      //var user_data = data.map(data, function(d){return d.user;});
+
+
+      var n_obs = data.length;
+
+      var max_users = 350;
+      var n_users = d3.map(data, function(d){return d.user;}).size();
+
+
+      // this gets the format right, but isn't filtered by unique user -- FIX ////////////////////////////
+      var user_data = data.map(function(d){return [d.user_visits, d.user_spp]; });
+
+
+
+      var user_scale_opacity = d3.scaleLinear()
+          .domain([0, trans(max_users)])
+          .range([.5, .05]);
+      var user_opacity = user_scale_opacity(trans(n_users));
+
+      var user_scale_size = d3.scaleLinear()
+          .domain([0, trans(max_users)])
+          .range([30,5]);
+      var user_size = user_scale_size(trans(n_users));
+
+      user_panel.selectAll("circle").remove();
+      user_panel.selectAll("circle")
+        .data(user_data).enter()
+        .append("circle")
+        .attr("cx", function (d) { return user_scale_x(d[0]); })
+        .attr("cy", function (d) { return user_scale_y(d[1]); })
+        .attr("r", user_size)
+        .attr("fill", "darkgreen")
+        .attr("opacity", user_opacity);
+
+      user_panel.selectAll("text").remove();
+
+      var blitzer = user_panel.append("text")
+        .text("blitzers")
+          .attr("x", inset)
+          .attr("y", inset * .8)
+      var dabbler = user_panel.append("text")
+        .text("dabblers")
+          .attr("x", inset)
+          .attr("y", user_width - inset * .7)
+      var pro = user_panel.append("text")
+        .text("pros")
+          .attr("x", user_width - inset)
+          .attr("y", inset * .8)
+      var specialist = user_panel.append("text")
+        .text("specialists")
+          .attr("x", user_width - inset)
+          .attr("y", user_width - inset * .7)
+
+      user_panel.selectAll("text")
+        .attr("font-size", "30px")
+        .attr("fill", "darkgreen")
+        .attr("font-weight", 900)
+        .attr("text-anchor", "middle")
+        .attr("dominant-baseline", "alphabetical");
+
+      var user_count = user_panel.append("text")
+        .text(n_users + " citizen naturalists")
+        .attr("x", user_width / 2)
+        .attr("y", inset/2)
+        .attr("font-size", "40px")
+        .attr("fill", "darkgreen")
+        .attr("opacity", .5)
+        .attr("font-weight", 100)
+        .attr("text-anchor", "middle")
+        .attr("dominant-baseline", "alphabetical");
+
+
+
+      //////////////////////////////////////////////////////
+
+
+
+
+
+
+      function statChange(){
+
+        // toggle stat
+        var stat0 = stat;
+        if(stat0 == "observations"){stat = "species"};
+        if(stat0 == "species"){stat = "users"};
+        if(stat0 == "users"){stat = "observations"};
+
+        // toggle stat title
+        control_panel.selectAll("text.stat_title").remove()
+        stat_title = control_panel.append("text")
+            .text("Stat:  " + stat)
+            .attr("x", m0/4*3 + w/3 + r + 25)
+            .attr("y", m1/2)
+            .attr("class", "stat_title");
+
+        // toggle map
+        hexUpdate();
+        hexScale();
+        hexStat();
+
+        // toggle user
+
+        // toggle taxonomy
+F
+
+      };
+
+      stat_button.on("click", statChange);
+      stat_button .on("mouseover", function(){d3.select(this).style("fill", "darkgreen");})
+                  .on("mouseout", function(){d3.select(this).style("fill", "black");});
+  });
+};
+
+makeMap();
+
+
+
+////////////////////////////////////////
+
+
+d3.json("taxonomy_pore_simple.json", function(error, root) {
+  if (error) throw error;
+
+  taxonomy_panel.append("g")
+    .attr("transform", "translate(" + taxonomy_width / 2 + "," + taxonomy_height / 2 + ")");
+
+  taxonomy_panel.selectAll("path")
+    .data(partition.nodes(root))
+  .enter().append("path")
+    .attr("d", arc)
+    .attr("transform", "translate(" + taxonomy_width / 2 + "," + taxonomy_height / 2 + ")")
+    .style("fill", function(d){ return d.hex })
+    .on("click", taxonomyClick)
+    .on("mouseover", function(d) {
+        d3.select(this).style("fill", function(z){ return d3.rgb(z.hex).brighter(3) });
+        taxonomy_panel.selectAll("text.filter_title").remove();
+        filter_title = taxonomy_panel.append("text")
+            .text(d.common)
+                .attr("x", taxonomy_width/2).attr("y", filter_title_y)
+                .attr("class", "filter_title").style("fill", "rgb(100,100,100)")
+            .append("tspan").text("(" + d.name + ")")
+              .attr("x", taxonomy_width/2).attr("y", filter_title_y).attr("dy", 30);})
+    .on("mouseout", function(d) {
+        d3.select(this).style("fill", function(z){ return z.hex });
+        taxonomy_panel.selectAll("text.filter_title").remove();
+        filter_title = taxonomy_panel
+          .append("text").text(active_common)
+              .attr("x", taxonomy_width/2).attr("y", filter_title_y).attr("class", "filter_title")
+          .append("tspan").text("(" + active_latin + ")")
+              .attr("x", taxonomy_width/2).attr("y", filter_title_y).attr("dy", 30);})  ;
+  //.append("title") // tooltip text formatting -- omitting for now
+  //  .text(function(d) { return d.level + ": " + d.name + "\n" + formatNumber(d.value) + " observations"; });
+
+  filter_title = taxonomy_panel
+      .append("text").text(active_common)
+          .attr("x", taxonomy_width/2).attr("y", filter_title_y).attr("class", "filter_title")
+      .append("tspan").text("(" + active_latin + ")")
+          .attr("x", taxonomy_width/2).attr("y", filter_title_y).attr("dy", 30);
+
+});
+
+
+
+function taxonomyClick(d) {
+    taxonomy_panel.transition()
+        .delay(100) // to avoid bog
+        .duration(3000)
+        .tween("scale", function() {
+          var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
+              yd = d3.interpolate(y.domain(), [d.y, 1]),
+              yr = d3.interpolate(y.range(), [d.y ? 20 : 0, radius]);
+          return function(t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); };
+        })
+      .selectAll("path")
+        .attrTween("d", function(d) { return function() { return arc(d); }; });
+
+    //console.log(d);
+    active_level = d["level"];
+    active_latin = d["name"];
+    active_common = d["common"];
+
+    taxonomy_panel.selectAll("text.filter_title").remove()
+    filter_title = taxonomy_panel
+      .append("text").text(active_common)
+          .attr("x", taxonomy_width/2).attr("y", filter_title_y).attr("class", "filter_title")
+      .append("tspan").text("(" + active_latin + ")")
+          .attr("x", taxonomy_width/2).attr("y", filter_title_y).attr("dy", 30);
+
+    makeMap();
+
+};
+
+//d3.select(self.frameElement).style("height", taxonomy_height + "px");
+
+
+
+
+///////////////////////////////////
+
+function makeTime(){
+
+
+};
+
+makeTime();
+
+</script>

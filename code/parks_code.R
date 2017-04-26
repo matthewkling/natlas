@@ -7,8 +7,8 @@ library(spocc)
 library(taxize)
 library(beepr) #optional- good for running in background. CTRL-F delete all "beep(sound = 2)" and you won't need
 
-#park_id = "PORE" #Point Reyes is park of interest
-park_id = "GOGA" #Golden Gate National Recreation Area (GOGA)
+park_id = "PORE" #Point Reyes is park of interest
+#park_id = "GOGA" #Golden Gate National Recreation Area (GOGA)
 
 
 #### Shapefile ####
@@ -421,7 +421,7 @@ findUsingiNat <- function(id.species, ranks = ranks_to_species)
     print(paste0(100*s/length(id.species$speciesFixed), "% done finding common names with iNat IDs"))
   }
   
-  need.id = which(is.na(id.species$inat.ID)| id.species$inat.ID == "")
+  #need.id = which(is.na(id.species$inat.ID)| id.species$inat.ID == "")
   
   clean.id.species <- id.species[, -which(names(id.species) %in% c("Taxon.Record.Status","Scientific.Name","Common.Names","Synonyms","Park.Accepted","Record.Status","original.inat.taxonID","speciesTidy", "matched.inat.ID","taxizeName","scrapediNatName"))]
   
@@ -431,7 +431,7 @@ findUsingiNat <- function(id.species, ranks = ranks_to_species)
   return(clean.id.species)
 }
 
-new_dataset <- findUsingiNat(mergedList, ranks = ranks_to_species)
+new_dataset <- findUsingiNat(mergedList, ranks = ranks_to_species); beep(sound = 2)
 
 
 

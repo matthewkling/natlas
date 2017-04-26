@@ -65,7 +65,7 @@
 
 //Width and height
 var m0 = 150; // header
-var m1 = 150; // control strip
+var m1 = 80; // control strip
 var m = 150; // title strip
 var pad = 5;
 var w = document.body.clientWidth - pad*2;
@@ -161,7 +161,7 @@ var park_button = control_panel.append("ellipse")
     .attr("rx", r)
     .attr("ry", r)
     .attr("fill", "black");
-var park = "Park:  Point Reyes National Seashore";
+var park = "Park:  Point Reyes";
 var park_title = control_panel.append("text")
             .text(park)
             .attr("x", m0/4*3 + r*2 + 25)
@@ -171,7 +171,7 @@ var park_title = control_panel.append("text")
 // stat toggle button
 var r = 20;
 var stat_button = control_panel.append("ellipse")
-    .attr("cx", m0/4*3 + w/4)
+    .attr("cx", m0/4*3 + w/3)
     .attr("cy", m1/2)
     .attr("rx", r)
     .attr("ry", r)
@@ -179,14 +179,14 @@ var stat_button = control_panel.append("ellipse")
 var stat = "observations";
 var stat_title = control_panel.append("text")
             .text("Stat:  " + stat)
-            .attr("x", m0/4*3 + w/4 + r + 25)
+            .attr("x", m0/4*3 + w/3 + r + 25)
             .attr("y", m1/2)
             .attr("class", "stat_title");
 
 // taxonomy toggle button
 var r = 20;
 var tree_button = control_panel.append("ellipse")
-    .attr("cx", m0/4*3 + w/2 - r)
+    .attr("cx", m0/4*3 + w/3*2 - r)
     .attr("cy", m1/2)
     .attr("rx", r)
     .attr("ry", r)
@@ -194,7 +194,7 @@ var tree_button = control_panel.append("ellipse")
 var tree = "Tree: simple";
 var tree_title = control_panel.append("text")
             .text(tree)
-            .attr("x", m0/4*3 + w/2 + 25)
+            .attr("x", m0/4*3 + w/3*2 + 25)
             .attr("y", m1/2)
             .attr("class", "park_title");
 
@@ -388,13 +388,12 @@ function makeMap(){
 
       var n_obs = data.length;
       
-      
       var max_users = 350;
       var n_users = d3.map(data, function(d){return d.user;}).size();
       
 
       // this gets the format right, but isn't filtered by unique user -- FIX ////////////////////////////
-      var user_data = data.map(function(d){return [d.user_visits, d.user_obs];});
+      var user_data = data.map(function(d){return [d.user_visits, d.user_spp]; });
       
 
       
@@ -476,7 +475,7 @@ function makeMap(){
         control_panel.selectAll("text.stat_title").remove()
         stat_title = control_panel.append("text")
             .text("Stat:  " + stat)
-            .attr("x", m0/4*3 + w/4 + r + 25)
+            .attr("x", m0/4*3 + w/3 + r + 25)
             .attr("y", m1/2)
             .attr("class", "stat_title");
 

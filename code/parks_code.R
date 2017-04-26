@@ -418,14 +418,14 @@ findUsingiNat <- function(id.species, ranks = ranks_to_species)
   clean.id.species <- id.species[, -which(names(id.species) %in% c("Taxon.Record.Status","Scientific.Name","Common.Names","Synonyms","Park.Accepted","Record.Status","original.inat.taxonID","speciesTidy", "matched.inat.ID","taxizeName","scrapediNatName"))]
   
   filePathFull = paste0("processed_data/",park_id,"_data/",park_id,"_species_list.csv")
-  #write.csv(clean.id.species, filePathFull, row.names = FALSE)
+  write.csv(clean.id.species, filePathFull, row.names = FALSE)
   
   return(clean.id.species)
 }
 
-new_dataset <- findCommonNames(clean.id.species, ranks = )
+new_dataset <- findUsingiNat(mergedList, ranks = ranks_to_species)
 
-safedat <- 
+
 
 
 ####Find common names loop####

@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Citizen naturalists: Point Reyes</title>
+        <title>NATLAS: Point Reyes</title>
 
 <style>
 
@@ -28,10 +28,18 @@
   text-anchor: middle;
 }
 
-.stat_title {
-  font-size: 40px;
+.park_title {
+  font-size: 30px;
   fill: black;
-  text-anchor: middle;
+  text-anchor: start;
+  dominant-baseline: middle;
+}
+
+.stat_title {
+  font-size: 30px;
+  fill: black;
+  text-anchor: start;
+  dominant-baseline: middle;
 }
 
 .filter_title {
@@ -42,12 +50,12 @@
 
 </style>
 
-<!-- <svg width="600" height="600"></svg> -->
-<script src="https://d3js.org/d3.v3.min.js"></script>
-<script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="https://d3js.org/d3-hexbin.v0.2.min.js"></script>
-<script src="https://d3js.org/topojson.v2.min.js"></script>
-<script src="pore_json.js"></script>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/d3-hexbin.v0.2.min.js"></script>
+  <script src="https://d3js.org/topojson.v2.min.js"></script>
+  <script src="https://cdn.rawgit.com/fabid/d3-rectbin/master/rectbin.js"></script>
+  <script src="pore_json.js"></script>
 
 
   </head>
@@ -56,6 +64,7 @@
 
 //Width and height
 var m0 = 150; // header
+var m1 = 150; // control strip
 var m = 150; // title strip
 var pad = 5;
 var w = document.body.clientWidth - pad*2;
@@ -89,7 +98,13 @@ title.append("tspan")
     .attr("dominant-baseline", "alphabetical")
     .attr("font-weight", 100)
 
-
+var control_panel = d3.select("body")
+    .append("svg")
+    .attr("width", w)
+    .attr("height", m1);
+control_panel.append("rect")
+    .attr("x", 0).attr("y", 0).attr("width", w).attr("height", m0)
+    .attr("fill", "rgb(200,200,200)")
 
 var title_bar = d3.select("body")
     .append("svg")
@@ -137,14 +152,50 @@ var timeline_title = title_bar.append("text")
     .attr("class", "big_title");
 
 
-// stat toggle button
-var stat_button = timeline_panel.append("ellipse")
-    .attr("cx", timeline_width/2)
-    .attr("cy", timeline_height * .66)
-    .attr("rx", 30)
-    .attr("ry", 30)
+// park toggle button
+var r = 20;
+var park_button = control_panel.append("ellipse")
+    .attr("cx", m0/4*3 + r)
+    .attr("cy", m1/2)
+    .attr("rx", r)
+    .attr("ry", r)
     .attr("fill", "black");
+var park = "Park:  Point Reyes National Seashore";
+var park_title = control_panel.append("text")
+            .text(park)
+            .attr("x", m0/4*3 + r*2 + 25)
+            .attr("y", m1/2)
+            .attr("class", "park_title");
 
+// stat toggle button
+var r = 20;
+var stat_button = control_panel.append("ellipse")
+    .attr("cx", m0/4*3 + w/4)
+    .attr("cy", m1/2)
+    .attr("rx", r)
+    .attr("ry", r)
+    .attr("fill", "black");
+var stat = "observations";
+var stat_title = control_panel.append("text")
+            .text("Stat:  " + stat)
+            .attr("x", m0/4*3 + w/4 + r + 25)
+            .attr("y", m1/2)
+            .attr("class", "stat_title");
+
+// taxonomy toggle button
+var r = 20;
+var tree_button = control_panel.append("ellipse")
+    .attr("cx", m0/4*3 + w/2 - r)
+    .attr("cy", m1/2)
+    .attr("rx", r)
+    .attr("ry", r)
+    .attr("fill", "black");
+var tree = "Tree: Linnean";
+var tree_title = control_panel.append("text")
+            .text(tree)
+            .attr("x", m0/4*3 + w/2 + 25)
+            .attr("y", m1/2)
+            .attr("class", "park_title");
 
 
 //////////////////////////////////////////////////////
@@ -207,16 +258,6 @@ var active_latin = "life";
 var active_common = "life";
 function selected(d) {return d[active_level] == active_latin};
 
-var stat = "observations";
-//var summary_statistic = "species"
-//var summary_statistic = "users"
-
-var stat_title = timeline_panel.append("text")
-            .text(stat)
-            .attr("x", timeline_width/2)
-            .attr("y", timeline_height * .75)
-            .attr("class", "stat_title");
-
 var filter_title_y = taxonomy_height * .57
 
 var filter_title = taxonomy_panel
@@ -259,9 +300,7 @@ function makeMap(){
       data = data.filter(function(d){
         return d[active_level] == active_latin;
       });
-      console.log(active_latin);
-      console.log(data)
-
+      
       map_panel.selectAll("circle").remove();
       map_panel.selectAll("circle")
         .data(data).enter()
@@ -328,23 +367,88 @@ function makeMap(){
       hexStat();
 
 
+      ///////////////////////////
+
+
+      var randomX = d3.random.normal(timeline_width / 2, 80),
+        randomY = d3.random.normal(timeline_height / 2, 80),
+        timeline_points = d3.range(1000).map(function() {
+          return [randomX(), randomY()];
+        });
+      console.log(timeline_points);
+      console.log(data)
+
+      var size = 20;
+      var rectbin = d3.rectbin()
+        .dx(size)
+        .dy(size);
+
+      // the result of the rectbin layout
+      var rectbinData = rectbin(timeline_points);
+
+      var color = d3.scale.linear()
+        .domain([0, d3.max(rectbinData, function(d) {
+          return d.length;
+        })])
+        .range(["white", "darkgreen"])
+        .interpolate(d3.interpolateLab);
+
+      var x = d3.scale.identity()
+        .domain([0, timeline_width]);
+      var y = d3.scale.linear()
+        .domain([0, timeline_height])
+        .range([timeline_height, 0]);
+      var yinv = d3.scale.linear()
+        .domain([timeline_height, 0])
+        .range([timeline_height, 0]);
+
+      timeline_panel.append("g")
+        .selectAll(".square")
+        .data(rectbinData)
+        .enter().append("rect")
+         .attr("class", "square")
+        .attr("x", function(d) { return x(d.x); })
+        .attr("y", function(d) { return y(d.y) - yinv(size); })    
+        .attr("width", x(size))
+        .attr("height", yinv(size))
+        .style("fill", function(d) {
+          return color(d.length)
+        })
+        .style("stroke", "none");
+
+
+
+      ///////////////////////////
+
+
+
+
+
+
       function statChange(){
 
+        // toggle stat
         var stat0 = stat;
         if(stat0 == "observations"){stat = "species"};
         if(stat0 == "species"){stat = "users"};
         if(stat0 == "users"){stat = "observations"};
         
-        timeline_panel.selectAll("text.stat_title").remove()
-        stat_title = timeline_panel.append("text")
-            .text(stat)
-            .attr("x", timeline_width/2)
-            .attr("y", timeline_height * .75)
+        // toggle stat title
+        control_panel.selectAll("text.stat_title").remove()
+        stat_title = control_panel.append("text")
+            .text("Stat:  " + stat)
+            .attr("x", m0/4*3 + w/4 + r + 25)
+            .attr("y", m1/2)
             .attr("class", "stat_title");
 
+        // toggle map      
         hexUpdate();
         hexScale();
         hexStat();
+
+        // toggle timeline
+
+        // toggle taxonomy
       };
 
       stat_button.on("click", statChange);
@@ -388,9 +492,8 @@ d3.json("taxonomy_pore_linnean.json", function(error, root) {
               .attr("x", taxonomy_width/2).attr("y", filter_title_y).attr("class", "filter_title")
           .append("tspan").text("(" + active_latin + ")")
               .attr("x", taxonomy_width/2).attr("y", filter_title_y).attr("dy", 30);})  ;
-  //.append("title")
+  //.append("title") // tooltip text formatting -- omitting for now
   //  .text(function(d) { return d.level + ": " + d.name + "\n" + formatNumber(d.value) + " observations"; });
-
 
   filter_title = taxonomy_panel
       .append("text").text(active_common)
@@ -414,24 +517,17 @@ function taxonomyClick(d) {
       .selectAll("path")
         .attrTween("d", function(d) { return function() { return arc(d); }; });
 
-    console.log(d);
+    //console.log(d);
     active_level = d["level"];
     active_latin = d["name"];
     active_common = d["common"];
 
     taxonomy_panel.selectAll("text.filter_title").remove()
-    //filter_title = taxonomy_panel.append("text")
-    //    .text(active_common + " (" + active_latin + ")")
-    //    .attr("x", taxonomy_width/2)
-    //    .attr("y", filter_title_y)
-    //    .attr("class", "filter_title");
-
     filter_title = taxonomy_panel
       .append("text").text(active_common)
           .attr("x", taxonomy_width/2).attr("y", filter_title_y).attr("class", "filter_title")
       .append("tspan").text("(" + active_latin + ")")
           .attr("x", taxonomy_width/2).attr("y", filter_title_y).attr("dy", 30);
-
 
     makeMap();
     
@@ -441,5 +537,14 @@ function taxonomyClick(d) {
 
 
 
+
+///////////////////////////////////
+
+function makeTime(){
+
+    
+};
+
+makeTime();
 
 </script>

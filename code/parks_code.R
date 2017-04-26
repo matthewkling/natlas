@@ -381,20 +381,22 @@ findUsingiNat <- function(id.species, ranks = ranks_to_species)
       for (k in 1:length(n[[1]]))
       {
         taxon.line.dirty <- n[[1]][k]
-        taxon.line <- gsub("\"","",taxon.line.dirty)
-        rank <- sub(".*,rank:(.*?),.*", "\\1", taxon.line) ; rank
+        taxon.line <- taxon.line.dirty #gsub("\"","",taxon.line.dirty)
+        rank <- sub(".*,\"rank\":\"([A-z].*?)\",.*", "\\1", taxon.line) ; rank
         if (rank %in% ranks){ #this way names are only retrieved for major groupings
           
-          sci.name.clean <- sub(".*,name:(.*?),.*", "\\1", taxon.line)
+          sci.name.clean <- sub(".*,\"name\":\"(.*?)\",.*", "\\1", taxon.line)
+          inat.ID <- sub(".*,\"id\":([0-9].*?),.*", "\\1", taxon.line)
           
           if (gregexpr("preferred_common_name",taxon.line)[[1]][1] != -1) {
-            common.name <- sub(".*,preferred_common_name:(.*?)", "\\2", taxon.line)
-            if (gregexpr("\\}|\\]",common.name)[[1]][1] != -1) {
-              common.name <- gsub(".*,preferred_common_name:(.*?)\\}.*", "\\1", taxon.line)
-            }
-            if (gregexpr(",([A-z]*):",common.name)[[1]][1] != -1) {
-              common.name <- sub(".*,preferred_common_name:(.*?),([A-z]*):.*", "\\1", taxon.line)
-            }
+            common.name <- gsub(".*,\"preferred_common_name\":\"([A-z| |-].*?)\".*", "\\1", taxon.line) #fixed this function to work with quotes- shouldn't need more corrections
+            
+            # if (gregexpr("\\}|\\]",common.name)[[1]][1] != -1) {    
+            #   common.name <- gsub(".*,preferred_common_name:(.*?)\\}.*", "\\1", taxon.line)
+            # }
+            # if (gregexpr(",([A-z]*):",common.name)[[1]][1] != -1) {
+            #   common.name <- sub(".*,preferred_common_name:(.*?),([A-z]*):.*", "\\1", taxon.line)
+            # }
             # if (gregexpr(",conservation_status:",common.name)[[1]][1] != -1) {
             #   common.name <- sub(".*,preferred_common_name:(.*?),conservation_status:.*", "\\1", taxon.line)
             # }
@@ -403,13 +405,14 @@ findUsingiNat <- function(id.species, ranks = ranks_to_species)
             # }
           }
           
-          if (rank == "species")
+          if (rank == "species") #don't need any more but don't want to mess up matt
           {
-            id.species[s, "species.ID"] <- sub(".*,id:(.*?),.*", "\\1", taxon.line)
-            id.species[s, "inat.iconic"] <- sub(".*,iconic_taxon_name:(.*?),.*", "\\1", taxon.line)
-            id.species[s, "source"] <- "iNat"
+            id.species[s, "species.ID"] <- sub(".*,\"id\":([0-9].*?),.*", "\\1", taxon.line)
+            # id.species[s, "inat.iconic"] <- sub(".*,\"iconic_taxon_name\":\"([A-z| |-].*?)\".*", "\\1", taxon.line)
+            # id.species[s, "source"] <- "iNat" #all are now inat sourced
           }
           
+          id.species[s, paste0(rank, ".inat.ID")] <- inat.ID 
           id.species[s, paste0(rank, ".common")] <- common.name
           id.species[s, paste0(rank, ".science")] <- sci.name.clean
         } 
@@ -418,9 +421,7 @@ findUsingiNat <- function(id.species, ranks = ranks_to_species)
     print(paste0(100*s/length(id.species$speciesFixed), "% done finding common names with iNat IDs"))
   }
   
-  id.species$inat.ID <- id.species$matched.inat.ID
-  need.id = which(is.na(id.species$inat.ID))
-  id.species$inat.ID[need.id] <- id.species$original.inat.taxonID[need.id]
+  need.id = which(is.na(id.species$inat.ID)| id.species$inat.ID == "")
   
   clean.id.species <- id.species[, -which(names(id.species) %in% c("Taxon.Record.Status","Scientific.Name","Common.Names","Synonyms","Park.Accepted","Record.Status","original.inat.taxonID","speciesTidy", "matched.inat.ID","taxizeName","scrapediNatName"))]
   
@@ -430,7 +431,7 @@ findUsingiNat <- function(id.species, ranks = ranks_to_species)
   return(clean.id.species)
 }
 
-new_dataset <- findUsingiNat(mergedList[1:20,], ranks = ranks_to_species)
+new_dataset <- findUsingiNat(mergedList, ranks = ranks_to_species)
 
 
 

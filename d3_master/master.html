@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>NATLAS: Point Reyes</title>
+        <title>NATLAS</title>
 
 <style>
 
@@ -24,28 +24,42 @@
 
 .big_title {
   font-size: 80px;
+  font-weight: 100;
   fill: darkgreen;
+  fill-opacity: .5;
   text-anchor: middle;
 }
 
 .park_title {
-  font-size: 30px;
+  font-size: 20px;
   fill: black;
   text-anchor: start;
   dominant-baseline: middle;
 }
 
 .stat_title {
-  font-size: 30px;
+  font-size: 20px;
   fill: black;
   text-anchor: start;
   dominant-baseline: middle;
 }
 
 .filter_title {
-  font-size: 30px;
+  font-size: 20px;
   fill: white;
   text-anchor: middle;
+}
+
+.stat_label {
+  font-size: 20px;
+  fill: darkgreen;
+  fill-opacity: .5;
+  text-anchor: middle;
+  font-weight: 100;
+}
+
+html * {
+   font-family: Helvetica !important;
 }
 
 </style>
@@ -64,11 +78,10 @@
 <script>
 
 //Width and height
-var m0 = 150; // header
-var m1 = 80; // control strip
-var m = 150; // title strip
+var m0 = 200; // header
+var m = 100; // title strip
 var pad = 5;
-var w = document.body.clientWidth - pad*2;
+var w = document.body.clientWidth *.99 - pad*2;
 var hf = document.body.scrollHeight - pad*4 - m;
 
 
@@ -77,34 +90,33 @@ var hf = document.body.scrollHeight - pad*4 - m;
 
 var nameplate = d3.select("body")
     .append("svg")
-    .attr("width", w)
+    .attr("width", w/2)
     .attr("height", m0);
 
 nameplate.append("rect")
-    .attr("x", 0).attr("y", 0).attr("width", w).attr("height", m0)
+    .attr("x", 0).attr("y", 0).attr("width", w/2).attr("height", m0)
     .attr("fill", "black")
 var title = nameplate.append("text")
-    .text("NATLAS  ")
-    .attr("x", m0/4*3)
-    .attr("y", m0/4*3)
-    .attr("font-size", "80px")
+    .text("NATLAS")
+    .attr("x", w/2 - m0/4)
+    .attr("y", m0/3*2)
+    .attr("font-size", "100px")
     .attr("fill", "white")
     .attr("font-weight", 900)
-    .attr("text-anchor", "start")
+    .attr("text-anchor", "end")
     .attr("dominant-baseline", "alphabetical")
 title.append("tspan")
     .text("an atlas of citizen naturalist observations")
-    .attr("font-size", "30px")
-    .attr("fill", "gray")
-    .attr("dominant-baseline", "alphabetical")
+    .attr("x", w/2 - m0/4).attr("dy", 30)
+    .attr("font-size", "22px")
     .attr("font-weight", 100)
 
 var control_panel = d3.select("body")
     .append("svg")
-    .attr("width", w)
-    .attr("height", m1);
+    .attr("width", w/2)
+    .attr("height", m0);
 control_panel.append("rect")
-    .attr("x", 0).attr("y", 0).attr("width", w).attr("height", m0)
+    .attr("x", 0).attr("y", 0).attr("width", w/2).attr("height", m0)
     .attr("fill", "rgb(200,200,200)")
 
 var title_bar = d3.select("body")
@@ -112,9 +124,13 @@ var title_bar = d3.select("body")
     .attr("width", w)
     .attr("height", m);
 
+var stats_bar = d3.select("body")
+    .append("svg")
+    .attr("width", w)
+    .attr("height", m/2);
 
 // map containers
-var map_width = w / 3.01;
+var map_width = w / 3.1;
     map_height = w / 3
 var map_panel = d3.select("body")
     .append("svg")
@@ -127,7 +143,7 @@ var map_title = title_bar.append("text")
     .attr("class", "big_title");
 
 // taxonomy containers
-var taxonomy_width = w / 3.01;
+var taxonomy_width = w / 3.1;
     taxonomy_height = w / 3
 var taxonomy_panel = d3.select("body")
     .append("svg")
@@ -140,7 +156,7 @@ var taxonomy_title = title_bar.append("text")
     .attr("class", "big_title");
 
 // user containers
-var user_width = w / 3.01;
+var user_width = w / 3.1;
     user_height = w / 3
 var user_panel = d3.select("body")
     .append("svg")
@@ -153,49 +169,53 @@ var user_title = title_bar.append("text")
     .attr("class", "big_title");
 
 
+
+///////////////////////////
+
+
+
+
 // park toggle button
-var r = 20;
+var r = 10;
 var park_button = control_panel.append("ellipse")
-    .attr("cx", m0/4*3 + r)
-    .attr("cy", m1/2)
+    .attr("cx", m0/4 + r)
+    .attr("cy", m0/2)
     .attr("rx", r)
     .attr("ry", r)
     .attr("fill", "black");
 var park = "Park:  Point Reyes";
 var park_title = control_panel.append("text")
             .text(park)
-            .attr("x", m0/4*3 + r*2 + 25)
-            .attr("y", m1/2)
+            .attr("x", m0/4 + r*3)
+            .attr("y", m0/2)
             .attr("class", "park_title");
 
 // stat toggle button
-var r = 20;
 var stat_button = control_panel.append("ellipse")
-    .attr("cx", m0/4*3 + w/3)
-    .attr("cy", m1/2)
+    .attr("cx", m0/4 + r)
+    .attr("cy", m0 * .65)
     .attr("rx", r)
     .attr("ry", r)
     .attr("fill", "black");
 var stat = "observations";
 var stat_title = control_panel.append("text")
             .text("Stat:  " + stat)
-            .attr("x", m0/4*3 + w/3 + r + 25)
-            .attr("y", m1/2)
+            .attr("x", m0/4 + r*3)
+            .attr("y", m0 * .65)
             .attr("class", "stat_title");
 
 // taxonomy toggle button
-var r = 20;
 var tree_button = control_panel.append("ellipse")
-    .attr("cx", m0/4*3 + w/3*2 - r)
-    .attr("cy", m1/2)
+    .attr("cx", m0/4 + r)
+    .attr("cy", m0 * .8)
     .attr("rx", r)
     .attr("ry", r)
     .attr("fill", "black");
 var tree = "Tree: simple";
 var tree_title = control_panel.append("text")
             .text(tree)
-            .attr("x", m0/4*3 + w/3*2 + 25)
-            .attr("y", m1/2)
+            .attr("x", m0/4 + r*3)
+            .attr("y", m0 * .8)
             .attr("class", "park_title");
 
 
@@ -381,16 +401,29 @@ function makeMap(){
           .domain([0, 1])
           .range([user_width - inset, inset]);
 
-      //var max_users = d3.map(data, function(d){return d.user;}).size();
-      //var user_data = data.map(function(d){return [d.user_visits, d.user_obs];});
-      //var user_data = data.map(data, function(d){return d.user;});
-      
-
       var n_obs = data.length;
-      
-      var max_users = 350;
+      var n_spp = d3.map(data, function(d){return d.species;}).size();
       var n_users = d3.map(data, function(d){return d.user;}).size();
+      var max_users = 350;
       
+      stats_bar.selectAll("text").remove();
+      var stats_value_obs = stats_bar.append("text")
+        .text(n_obs + " biodiversity geolocations")
+        .attr("x", w/6)
+        .attr("y", m/4)
+        .attr("class", "stat_label");
+      var stats_value_spp = stats_bar.append("text")
+        .text(n_spp + " species of " + active_common)
+        .attr("x", w/2)
+        .attr("y", m/4)
+        .attr("class", "stat_label");
+      var stats_value_users = stats_bar.append("text")
+        .text(n_users + " citizen scientists")
+        .attr("x", w/6*5)
+        .attr("y", m/4)
+        .attr("class", "stat_label");
+
+
 
       // this gets the format right, but isn't filtered by unique user -- FIX ////////////////////////////
       var user_data = data.map(function(d){return [d.user_visits, d.user_spp]; });
@@ -421,40 +454,68 @@ function makeMap(){
       
       var blitzer = user_panel.append("text")
         .text("blitzers")
-          .attr("x", inset)
+          .attr("x", inset * .8)
           .attr("y", inset * .8)
+          .attr("text-anchor", "start")
       var dabbler = user_panel.append("text")
         .text("dabblers")
-          .attr("x", inset)
-          .attr("y", user_width - inset * .7)
+          .attr("x", inset * .8)
+          .attr("y", user_width - inset * .8)
+          .attr("text-anchor", "start")
       var pro = user_panel.append("text")
         .text("pros")
-          .attr("x", user_width - inset)
+          .attr("x", user_width - inset * .8)
           .attr("y", inset * .8)
+          .attr("text-anchor", "end")
       var specialist = user_panel.append("text")
         .text("specialists")
-          .attr("x", user_width - inset)
-          .attr("y", user_width - inset * .7)
+          .attr("x", user_width - inset * .8)
+          .attr("y", user_width - inset * .8)
+          .attr("text-anchor", "end")
 
       user_panel.selectAll("text")
         .attr("font-size", "30px")
         .attr("fill", "darkgreen")
         .attr("font-weight", 900)
-        .attr("text-anchor", "middle")
         .attr("dominant-baseline", "alphabetical");
 
-      var user_count = user_panel.append("text")
-        .text(n_users + " citizen naturalists")
-        .attr("x", user_width / 2)
-        .attr("y", inset/2)
-        .attr("font-size", "40px")
+      // axes
+      var y_axis = user_panel.append("line")
+         .attr("x1", inset*.5)
+         .attr("y1", inset*.5)
+         .attr("x2", inset*.5)
+         .attr("y2", user_width - inset*.5)
+         .attr("stroke-width", 1)
+         .attr("stroke", "darkgreen")
+        .attr("opacity", .5);
+      var x_axis = user_panel.append("line")
+         .attr("x1", inset*.5)
+         .attr("y1", user_width - inset*.5)
+         .attr("x2", user_width - inset*.5)
+         .attr("y2", user_width - inset*.5)
+         .attr("stroke-width", 1)
+         .attr("stroke", "darkgreen")
+        .attr("opacity", .5);
+      var x_axis_title = user_panel.append("text")
+        .text("number of visits to park")
+        .attr("x", user_width /2)
+        .attr("y", user_width - inset*.4)
+        .attr("font-size", "20px")
         .attr("fill", "darkgreen")
-        .attr("opacity", .5)
-        .attr("font-weight", 100)
+        .attr("fill-opacity", .5)
         .attr("text-anchor", "middle")
-        .attr("dominant-baseline", "alphabetical");
-
-
+        .attr("dominant-baseline", "middle");
+      var y_axis_title = user_panel.append("text")
+        .text("number of species recorded")
+        .attr("x", -user_width/2)
+        .attr("y", inset*.4)
+        .attr("font-size", "20px")
+        .attr("transform", "rotate(-90)")
+        .attr("fill", "darkgreen")
+        .attr("fill-opacity", .5)
+        .style("text-anchor", "middle")
+        ///.attr("dx", "-.8em")
+        //.attr("dy", ".15em");
 
       //////////////////////////////////////////////////////
 
@@ -475,8 +536,8 @@ function makeMap(){
         control_panel.selectAll("text.stat_title").remove()
         stat_title = control_panel.append("text")
             .text("Stat:  " + stat)
-            .attr("x", m0/4*3 + w/3 + r + 25)
-            .attr("y", m1/2)
+            .attr("x", m0/4 + r*3)
+            .attr("y", m0*.65)
             .attr("class", "stat_title");
 
         // toggle map      

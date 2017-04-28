@@ -389,6 +389,7 @@ function makeMap(obs_file){
       data = data.filter(function(d){
         return d[active_level] == active_latin;
       });
+      console.log(data)
       
       map_panel.selectAll("circle").remove();
       map_panel.selectAll("circle")
@@ -710,7 +711,7 @@ function taxonomyClick(d) {
       .selectAll("path")
         .attrTween("d", function(d) { return function() { return arc(d); }; });
 
-    console.log(d);
+    //console.log(d);
     active_level = d["level"];
     active_latin = d["name"];
     active_common = d["common"];
@@ -730,9 +731,10 @@ function taxonomyClick(d) {
 
 // TODO:
 // Fix buggy tree-switching behavior when shallow nodes are active
-// Switch tree label
 // Display hyperlink to iNat page
 // Park swapping
+// Hexbin species richness currently absolute; normalize by number of points or by total richness.
+
 
 ///////////////////////////////////
 

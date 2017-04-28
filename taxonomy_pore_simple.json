@@ -2943,7 +2943,7 @@
                                     {
                                         "level": "species",
                                         "name": "Coprinus comatus",
-                                        "common": "Shaggy Mane",
+                                        "common": "Shaggy mane",
                                         "hex": "#791111",
                                         "nspp": 1,
                                         "n_records": 2,
@@ -5583,7 +5583,7 @@
                                     {
                                         "level": "species",
                                         "name": "Dendronotus subramosus",
-                                        "common": "Animals",
+                                        "common": "Stubby Frond-aeolis",
                                         "hex": "#000000",
                                         "nspp": 1,
                                         "n_records": 1,
@@ -9758,7 +9758,7 @@
                         "name": "Dipsacales",
                         "common": "Dicots",
                         "level": "order",
-                        "hex": "#090C13",
+                        "hex": "#080D13",
                         "nspp": 6,
                         "nobs": 6,
                         "children": [
@@ -9786,10 +9786,20 @@
                                 "name": "Caprifoliaceae",
                                 "common": "Honeysuckles and allies",
                                 "level": "family",
-                                "hex": "#1B263D",
+                                "hex": "#1A293D",
                                 "nspp": 5,
                                 "nobs": 5,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Campanula californica",
+                                        "common": "Swamp harebell",
+                                        "hex": "#479DCC",
+                                        "nspp": 1,
+                                        "n_records": 2,
+                                        "n_users": 2,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Dipsacus fullonum",
@@ -9829,16 +9839,6 @@
                                         "n_records": 1,
                                         "n_users": 1,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Symphoricarpos albus",
-                                        "common": "Common Snowberry",
-                                        "hex": "#5774C6",
-                                        "nspp": 1,
-                                        "n_records": 3,
-                                        "n_users": 3,
-                                        "n_species": 1
                                     }
                                 ]
                             }
@@ -9848,7 +9848,7 @@
                         "name": "Caryophyllales",
                         "common": "Dicots",
                         "level": "order",
-                        "hex": "#0A1011",
+                        "hex": "#090F10",
                         "nspp": 37,
                         "nobs": 37,
                         "children": [
@@ -9936,10 +9936,20 @@
                                 "name": "Caryophyllaceae",
                                 "common": "Pinks",
                                 "level": "family",
-                                "hex": "#203238",
+                                "hex": "#1F3139",
                                 "nspp": 10,
                                 "nobs": 10,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Symphoricarpos albus",
+                                        "common": "Common Snowberry",
+                                        "hex": "#5774C6",
+                                        "nspp": 1,
+                                        "n_records": 3,
+                                        "n_users": 3,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Cardionema ramosissimum",
@@ -10029,16 +10039,6 @@
                                         "n_records": 3,
                                         "n_users": 2,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Stellaria media",
-                                        "common": "Common chickweed",
-                                        "hex": "#66A8B6",
-                                        "nspp": 1,
-                                        "n_records": 3,
-                                        "n_users": 2,
-                                        "n_species": 1
                                     }
                                 ]
                             },
@@ -10046,18 +10046,18 @@
                                 "name": "Frankeniaceae",
                                 "common": "Dicots",
                                 "level": "family",
-                                "hex": "#1F373C",
+                                "hex": "#121429",
                                 "nspp": 1,
                                 "nobs": 1,
                                 "children": [
                                     {
                                         "level": "species",
-                                        "name": "Frankenia salina",
-                                        "common": "Alkali Heath",
-                                        "hex": "#61AEBC",
+                                        "name": "Quercus chrysolepis",
+                                        "common": "Canyon Live Oak",
+                                        "hex": "#3A4081",
                                         "nspp": 1,
-                                        "n_records": 4,
-                                        "n_users": 4,
+                                        "n_records": 1,
+                                        "n_users": 1,
                                         "n_species": 1
                                     }
                                 ]
@@ -10066,10 +10066,20 @@
                                 "name": "Montiaceae",
                                 "common": "Dicots",
                                 "level": "family",
-                                "hex": "#202E30",
+                                "hex": "#1A332D",
                                 "nspp": 4,
                                 "nobs": 4,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Trillium ovatum",
+                                        "common": "Pacific trillium",
+                                        "hex": "#1ACA73",
+                                        "nspp": 1,
+                                        "n_records": 4,
+                                        "n_users": 3,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Calandrinia ciliata",
@@ -10099,16 +10109,6 @@
                                         "n_records": 24,
                                         "n_users": 14,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Claytonia sibirica",
-                                        "common": "Candy Flower",
-                                        "hex": "#678897",
-                                        "nspp": 1,
-                                        "n_records": 41,
-                                        "n_users": 24,
-                                        "n_species": 1
                                     }
                                 ]
                             },
@@ -10116,10 +10116,20 @@
                                 "name": "Nyctaginaceae",
                                 "common": "Four O'Clocks",
                                 "level": "family",
-                                "hex": "#203232",
+                                "hex": "#1B252D",
                                 "nspp": 2,
                                 "nobs": 2,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Eucalyptus globulus",
+                                        "common": "Tasmanian Blue Gum",
+                                        "hex": "#464273",
+                                        "nspp": 1,
+                                        "n_records": 1,
+                                        "n_users": 1,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Abronia latifolia",
@@ -10129,16 +10139,6 @@
                                         "n_records": 20,
                                         "n_users": 15,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Abronia umbellata",
-                                        "common": "Pink Sand Verbena",
-                                        "hex": "#649292",
-                                        "nspp": 1,
-                                        "n_records": 3,
-                                        "n_users": 3,
-                                        "n_species": 1
                                     }
                                 ]
                             },
@@ -10146,10 +10146,20 @@
                                 "name": "Plumbaginaceae",
                                 "common": "Dicots",
                                 "level": "family",
-                                "hex": "#1F3338",
+                                "hex": "#10171E",
                                 "nspp": 2,
                                 "nobs": 2,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Plocamium cartilagineum",
+                                        "common": "Sea Comb",
+                                        "hex": "#000000",
+                                        "nspp": 1,
+                                        "n_records": 1,
+                                        "n_users": 1,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Armeria maritima",
@@ -10159,16 +10169,6 @@
                                         "n_records": 16,
                                         "n_users": 13,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Limonium californicum",
-                                        "common": "Western Marsh Rosemary",
-                                        "hex": "#5DB1A2",
-                                        "nspp": 1,
-                                        "n_records": 1,
-                                        "n_users": 1,
-                                        "n_species": 1
                                     }
                                 ]
                             },
@@ -10176,10 +10176,20 @@
                                 "name": "Polygonaceae",
                                 "common": "Knotweeds and allies",
                                 "level": "family",
-                                "hex": "#1F3434",
+                                "hex": "#1E3234",
                                 "nspp": 12,
                                 "nobs": 12,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Polygala californica",
+                                        "common": "California milkwort",
+                                        "hex": "#2D5788",
+                                        "nspp": 1,
+                                        "n_records": 4,
+                                        "n_users": 4,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Chorizanthe cuspidata",
@@ -10289,16 +10299,6 @@
                                         "n_records": 1,
                                         "n_users": 1,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Rumex salicifolius",
-                                        "common": "Willow dock",
-                                        "hex": "#62A2A1",
-                                        "nspp": 1,
-                                        "n_records": 2,
-                                        "n_users": 2,
-                                        "n_species": 1
                                     }
                                 ]
                             }
@@ -10308,7 +10308,7 @@
                         "name": "Asparagales",
                         "common": "Agaves and allies",
                         "level": "order",
-                        "hex": "#01130B",
+                        "hex": "#02120C",
                         "nspp": 24,
                         "nobs": 24,
                         "children": [
@@ -10446,10 +10446,20 @@
                                 "name": "Iridaceae",
                                 "common": "Iris family",
                                 "level": "family",
-                                "hex": "#02371E",
+                                "hex": "#03331F",
                                 "nspp": 8,
                                 "nobs": 8,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Hypericum anagalloides",
+                                        "common": "Bog St. John's-wort",
+                                        "hex": "#156D97",
+                                        "nspp": 1,
+                                        "n_records": 3,
+                                        "n_users": 3,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Chasmanthe floribunda",
@@ -10519,16 +10529,6 @@
                                         "n_records": 9,
                                         "n_users": 8,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Sparaxis tricolor",
-                                        "common": "Harlequin Flower",
-                                        "hex": "#08C36C",
-                                        "nspp": 1,
-                                        "n_records": 14,
-                                        "n_users": 13,
-                                        "n_species": 1
                                     }
                                 ]
                             },
@@ -10536,10 +10536,20 @@
                                 "name": "Orchidaceae",
                                 "common": "Orchids",
                                 "level": "family",
-                                "hex": "#024023",
+                                "hex": "#093425",
                                 "nspp": 3,
                                 "nobs": 3,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Taraxia ovata",
+                                        "common": "Sun Cup",
+                                        "hex": "#4A567A",
+                                        "nspp": 1,
+                                        "n_records": 8,
+                                        "n_users": 8,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Epipactis helleborine",
@@ -10559,16 +10569,6 @@
                                         "n_records": 3,
                                         "n_users": 3,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Platanthera dilatata",
-                                        "common": "White Bog-orchid",
-                                        "hex": "#09C569",
-                                        "nspp": 1,
-                                        "n_records": 4,
-                                        "n_users": 4,
-                                        "n_species": 1
                                     }
                                 ]
                             },
@@ -10576,10 +10576,40 @@
                                 "name": "Themidaceae",
                                 "common": "Agaves and allies",
                                 "level": "family",
-                                "hex": "#033F23",
+                                "hex": "#103B39",
                                 "nspp": 4,
                                 "nobs": 4,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Datura stramonium",
+                                        "common": "Jimson Weed",
+                                        "hex": "#45B8C9",
+                                        "nspp": 1,
+                                        "n_records": 1,
+                                        "n_users": 1,
+                                        "n_species": 1
+                                    },
+                                    {
+                                        "level": "species",
+                                        "name": "Solanum americanum",
+                                        "common": "American Nightshade",
+                                        "hex": "#3CB4CE",
+                                        "nspp": 1,
+                                        "n_records": 1,
+                                        "n_users": 1,
+                                        "n_species": 1
+                                    },
+                                    {
+                                        "level": "species",
+                                        "name": "Solanum douglasii",
+                                        "common": "Greenspot nightshade",
+                                        "hex": "#3EB7CD",
+                                        "nspp": 1,
+                                        "n_records": 1,
+                                        "n_users": 1,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Brodiaea elegans",
@@ -10588,36 +10618,6 @@
                                         "nspp": 1,
                                         "n_records": 1,
                                         "n_users": 1,
-                                        "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Brodiaea terrestris",
-                                        "common": "Dwarf Brodiaea",
-                                        "hex": "#05C870",
-                                        "nspp": 1,
-                                        "n_records": 4,
-                                        "n_users": 4,
-                                        "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Dichelostemma capitatum",
-                                        "common": "Bluedicks",
-                                        "hex": "#0BCC6F",
-                                        "nspp": 1,
-                                        "n_records": 4,
-                                        "n_users": 3,
-                                        "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Triteleia laxa",
-                                        "common": "Ithuriel's Spear",
-                                        "hex": "#06C26E",
-                                        "nspp": 1,
-                                        "n_records": 18,
-                                        "n_users": 14,
                                         "n_species": 1
                                     }
                                 ]
@@ -10628,7 +10628,7 @@
                         "name": "Sapindales",
                         "common": "Maples, mangos, mahogany, citrus, and allies",
                         "level": "order",
-                        "hex": "#040D17",
+                        "hex": "#050914",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -10656,18 +10656,18 @@
                                 "name": "Sapindaceae",
                                 "common": "Soapberry family",
                                 "level": "family",
-                                "hex": "#072441",
+                                "hex": "#13102F",
                                 "nspp": 1,
                                 "nobs": 1,
                                 "children": [
                                     {
                                         "level": "species",
-                                        "name": "Aesculus californica",
-                                        "common": "California Buckeye",
-                                        "hex": "#1572CB",
+                                        "name": "Galium californicum",
+                                        "common": "California bedstraw",
+                                        "hex": "#3B3393",
                                         "nspp": 1,
-                                        "n_records": 5,
-                                        "n_users": 5,
+                                        "n_records": 1,
+                                        "n_users": 1,
                                         "n_species": 1
                                     }
                                 ]
@@ -10678,7 +10678,7 @@
                         "name": "Apiales",
                         "common": "Carrots and allies",
                         "level": "order",
-                        "hex": "#090615",
+                        "hex": "#080515",
                         "nspp": 14,
                         "nobs": 14,
                         "children": [
@@ -10836,18 +10836,18 @@
                                 "name": "Pittosporaceae",
                                 "common": "Pittosporums and allies",
                                 "level": "family",
-                                "hex": "#1C1348",
+                                "hex": "#020C50",
                                 "nspp": 1,
                                 "nobs": 1,
                                 "children": [
                                     {
                                         "level": "species",
-                                        "name": "Pittosporum undulatum",
-                                        "common": "Victorian Box",
-                                        "hex": "#583CE2",
+                                        "name": "Pseudotsuga menziesii",
+                                        "common": "Common Douglas-fir",
+                                        "hex": "#0627FB",
                                         "nspp": 1,
-                                        "n_records": 2,
-                                        "n_users": 2,
+                                        "n_records": 7,
+                                        "n_users": 7,
                                         "n_species": 1
                                     }
                                 ]
@@ -10858,7 +10858,7 @@
                         "name": "Gentianales",
                         "common": "Dicots",
                         "level": "order",
-                        "hex": "#05050B",
+                        "hex": "#030A10",
                         "nspp": 6,
                         "nobs": 6,
                         "children": [
@@ -10886,10 +10886,20 @@
                                 "name": "Gentianaceae",
                                 "common": "Gentians and allies",
                                 "level": "family",
-                                "hex": "#090E14",
+                                "hex": "#0A1712",
                                 "nspp": 2,
                                 "nobs": 2,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Garrya elliptica",
+                                        "common": "Coast silk tassel",
+                                        "hex": "#3D9174",
+                                        "nspp": 1,
+                                        "n_records": 2,
+                                        "n_users": 2,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Cicendia quadrangularis",
@@ -10899,16 +10909,6 @@
                                         "n_records": 2,
                                         "n_users": 2,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Gentiana affinis",
-                                        "common": "Pleated Gentian",
-                                        "hex": "#3B5780",
-                                        "nspp": 1,
-                                        "n_records": 6,
-                                        "n_users": 6,
-                                        "n_species": 1
                                     }
                                 ]
                             },
@@ -10916,38 +10916,38 @@
                                 "name": "Rubiaceae",
                                 "common": "Coffees, bedstraws, and allies",
                                 "level": "family",
-                                "hex": "#12112D",
+                                "hex": "#092649",
                                 "nspp": 3,
                                 "nobs": 3,
                                 "children": [
                                     {
                                         "level": "species",
-                                        "name": "Galium aparine",
-                                        "common": "Catchweed bedstraw",
-                                        "hex": "#333580",
+                                        "name": "Rubus parviflorus",
+                                        "common": "Thimbleberry",
+                                        "hex": "#1D79E8",
                                         "nspp": 1,
-                                        "n_records": 1,
-                                        "n_users": 1,
+                                        "n_records": 22,
+                                        "n_users": 12,
                                         "n_species": 1
                                     },
                                     {
                                         "level": "species",
-                                        "name": "Galium californicum",
-                                        "common": "California bedstraw",
-                                        "hex": "#3B3393",
+                                        "name": "Rubus spectabilis",
+                                        "common": "Salmonberry",
+                                        "hex": "#1A70E2",
                                         "nspp": 1,
-                                        "n_records": 1,
-                                        "n_users": 1,
+                                        "n_records": 24,
+                                        "n_users": 17,
                                         "n_species": 1
                                     },
                                     {
                                         "level": "species",
-                                        "name": "Galium trifidum",
-                                        "common": "Three-petal Bedstraw",
-                                        "hex": "#3A3491",
+                                        "name": "Rubus ursinus",
+                                        "common": "Trailing blackberry",
+                                        "hex": "#1C7BE3",
                                         "nspp": 1,
-                                        "n_records": 1,
-                                        "n_users": 1,
+                                        "n_records": 21,
+                                        "n_users": 11,
                                         "n_species": 1
                                     }
                                 ]
@@ -10988,7 +10988,7 @@
                         "name": "Alismatales",
                         "common": "Water plantain and allies",
                         "level": "order",
-                        "hex": "#020F08",
+                        "hex": "#021110",
                         "nspp": 4,
                         "nobs": 4,
                         "children": [
@@ -11016,15 +11016,15 @@
                                 "name": "Juncaginaceae",
                                 "common": "Water plantain and allies",
                                 "level": "family",
-                                "hex": "#0C4021",
+                                "hex": "#033E2B",
                                 "nspp": 1,
                                 "nobs": 1,
                                 "children": [
                                     {
                                         "level": "species",
-                                        "name": "Triglochin maritima",
-                                        "common": "Common Arrowgrass",
-                                        "hex": "#27C968",
+                                        "name": "Luzula comosa",
+                                        "common": "Pacific Woodrush",
+                                        "hex": "#09C186",
                                         "nspp": 1,
                                         "n_records": 1,
                                         "n_users": 1,
@@ -11036,28 +11036,28 @@
                                 "name": "Zosteraceae",
                                 "common": "Water plantain and allies",
                                 "level": "family",
-                                "hex": "#052010",
+                                "hex": "#092939",
                                 "nspp": 2,
                                 "nobs": 2,
                                 "children": [
                                     {
                                         "level": "species",
-                                        "name": "Phyllospadix torreyi",
-                                        "common": "Surf Grass",
-                                        "hex": "#000000",
+                                        "name": "Urtica dioica",
+                                        "common": "Stinging nettle",
+                                        "hex": "#1F92DD",
                                         "nspp": 1,
-                                        "n_records": 1,
-                                        "n_users": 1,
+                                        "n_records": 13,
+                                        "n_users": 9,
                                         "n_species": 1
                                     },
                                     {
                                         "level": "species",
-                                        "name": "Zostera marina",
-                                        "common": "Eelgrass",
-                                        "hex": "#20C767",
+                                        "name": "Viola adunca",
+                                        "common": "Hookedspur violet",
+                                        "hex": "#176D89",
                                         "nspp": 1,
-                                        "n_records": 2,
-                                        "n_users": 2,
+                                        "n_records": 11,
+                                        "n_users": 11,
                                         "n_species": 1
                                     }
                                 ]
@@ -11104,7 +11104,7 @@
                         "children": [
                             {
                                 "name": "Asteraceae",
-                                "common": "Aster family",
+                                "common": "Sunflowers, daisies, asters and allies",
                                 "level": "family",
                                 "hex": "#172B45",
                                 "nspp": 58,
@@ -11482,6 +11482,16 @@
                                     },
                                     {
                                         "level": "species",
+                                        "name": "Lasthenia minor",
+                                        "common": "Coastal goldfields",
+                                        "hex": "#538BD4",
+                                        "nspp": 1,
+                                        "n_records": 1,
+                                        "n_users": 1,
+                                        "n_species": 1
+                                    },
+                                    {
+                                        "level": "species",
                                         "name": "Layia carnosa",
                                         "common": "Beach tidytips",
                                         "hex": "#4F8FD3",
@@ -11679,7 +11689,47 @@
                                         "n_records": 2,
                                         "n_users": 2,
                                         "n_species": 1
-                                    },
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Campanulaceae",
+                                "common": "Bellflower Family",
+                                "level": "family",
+                                "hex": "#033C28",
+                                "nspp": 1,
+                                "nobs": 1,
+                                "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Tillandsia usneoides",
+                                        "common": "Spanish Moss",
+                                        "hex": "#08BB7E",
+                                        "nspp": 1,
+                                        "n_records": 1,
+                                        "n_users": 1,
+                                        "n_species": 1
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Polypodiales",
+                        "common": "Leptosporangiate ferns",
+                        "level": "order",
+                        "hex": "#04120B",
+                        "nspp": 9,
+                        "nobs": 9,
+                        "children": [
+                            {
+                                "name": "Athyriaceae",
+                                "common": "Leptosporangiate ferns",
+                                "level": "family",
+                                "hex": "#182847",
+                                "nspp": 1,
+                                "nobs": 1,
+                                "children": [
                                     {
                                         "level": "species",
                                         "name": "Wyethia angustifolia",
@@ -11693,63 +11743,23 @@
                                 ]
                             },
                             {
-                                "name": "Campanulaceae",
-                                "common": "Bellflower Family",
-                                "level": "family",
-                                "hex": "#173241",
-                                "nspp": 1,
-                                "nobs": 1,
-                                "children": [
-                                    {
-                                        "level": "species",
-                                        "name": "Campanula californica",
-                                        "common": "Swamp harebell",
-                                        "hex": "#479DCC",
-                                        "nspp": 1,
-                                        "n_records": 2,
-                                        "n_users": 2,
-                                        "n_species": 1
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Polypodiales",
-                        "common": "Leptosporangiate ferns",
-                        "level": "order",
-                        "hex": "#001603",
-                        "nspp": 9,
-                        "nobs": 9,
-                        "children": [
-                            {
-                                "name": "Athyriaceae",
-                                "common": "Leptosporangiate ferns",
-                                "level": "family",
-                                "hex": "#00450B",
-                                "nspp": 1,
-                                "nobs": 1,
-                                "children": [
-                                    {
-                                        "level": "species",
-                                        "name": "Athyrium filix-femina",
-                                        "common": "Lady Fern",
-                                        "hex": "#01D923",
-                                        "nspp": 1,
-                                        "n_records": 4,
-                                        "n_users": 4,
-                                        "n_species": 1
-                                    }
-                                ]
-                            },
-                            {
                                 "name": "Blechnaceae",
                                 "common": "Leptosporangiate ferns",
                                 "level": "family",
-                                "hex": "#01450B",
+                                "hex": "#0D2C1A",
                                 "nspp": 2,
                                 "nobs": 2,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Corylus cornuta",
+                                        "common": "Beaked Hazelnut",
+                                        "hex": "#523C82",
+                                        "nspp": 1,
+                                        "n_records": 12,
+                                        "n_users": 8,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Blechnum spicant",
@@ -11759,16 +11769,6 @@
                                         "n_records": 5,
                                         "n_users": 3,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Woodwardia fimbriata",
-                                        "common": "Giant Chain Fern",
-                                        "hex": "#02D922",
-                                        "nspp": 1,
-                                        "n_records": 5,
-                                        "n_users": 4,
-                                        "n_species": 1
                                     }
                                 ]
                             },
@@ -11776,18 +11776,18 @@
                                 "name": "Dennstaedtiaceae",
                                 "common": "Brackens and allies",
                                 "level": "family",
-                                "hex": "#00450A",
+                                "hex": "#063E2A",
                                 "nspp": 1,
                                 "nobs": 1,
                                 "children": [
                                     {
                                         "level": "species",
-                                        "name": "Pteridium aquilinum",
-                                        "common": "Common bracken",
-                                        "hex": "#01D820",
+                                        "name": "Scirpus microcarpus",
+                                        "common": "Panicled Bulrush",
+                                        "hex": "#12C384",
                                         "nspp": 1,
-                                        "n_records": 15,
-                                        "n_users": 9,
+                                        "n_records": 2,
+                                        "n_users": 2,
                                         "n_species": 1
                                     }
                                 ]
@@ -11802,22 +11802,22 @@
                                 "children": [
                                     {
                                         "level": "species",
+                                        "name": "Pteridium aquilinum",
+                                        "common": "Common bracken",
+                                        "hex": "#01D820",
+                                        "nspp": 1,
+                                        "n_records": 15,
+                                        "n_users": 9,
+                                        "n_species": 1
+                                    },
+                                    {
+                                        "level": "species",
                                         "name": "Dryopteris arguta",
                                         "common": "Coastal Woodfern",
                                         "hex": "#03DA22",
                                         "nspp": 1,
                                         "n_records": 2,
                                         "n_users": 2,
-                                        "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Polystichum munitum",
-                                        "common": "Western Sword Fern",
-                                        "hex": "#02DA21",
-                                        "nspp": 1,
-                                        "n_records": 22,
-                                        "n_users": 17,
                                         "n_species": 1
                                     }
                                 ]
@@ -11826,10 +11826,40 @@
                                 "name": "Polypodiaceae",
                                 "common": "Polypody Family",
                                 "level": "family",
-                                "hex": "#01460B",
+                                "hex": "#1F3433",
                                 "nspp": 1,
                                 "nobs": 1,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Rumex salicifolius",
+                                        "common": "Willow dock",
+                                        "hex": "#62A2A1",
+                                        "nspp": 1,
+                                        "n_records": 2,
+                                        "n_users": 2,
+                                        "n_species": 1
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Pteridaceae",
+                                "common": "Brake Family",
+                                "level": "family",
+                                "hex": "#103D1F",
+                                "nspp": 2,
+                                "nobs": 2,
+                                "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Rumex salicifolius",
+                                        "common": "Willow dock",
+                                        "hex": "#62A2A1",
+                                        "nspp": 1,
+                                        "n_records": 2,
+                                        "n_users": 2,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Polypodium scouleri",
@@ -11841,14 +11871,94 @@
                                         "n_species": 1
                                     }
                                 ]
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Ranunculales",
+                        "common": "Dicots",
+                        "level": "order",
+                        "hex": "#070E0C",
+                        "nspp": 15,
+                        "nobs": 15,
+                        "children": [
                             {
-                                "name": "Pteridaceae",
-                                "common": "Brake Family",
+                                "name": "Berberidaceae",
+                                "common": "Barberries and allies",
                                 "level": "family",
-                                "hex": "#01450B",
+                                "hex": "#103120",
                                 "nspp": 2,
                                 "nobs": 2,
+                                "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Athyrium filix-femina",
+                                        "common": "Lady Fern",
+                                        "hex": "#01D923",
+                                        "nspp": 1,
+                                        "n_records": 4,
+                                        "n_users": 4,
+                                        "n_species": 1
+                                    },
+                                    {
+                                        "level": "species",
+                                        "name": "Berberis darwinii",
+                                        "common": "Darwin's Barberry",
+                                        "hex": "#665BA4",
+                                        "nspp": 1,
+                                        "n_records": 2,
+                                        "n_users": 2,
+                                        "n_species": 1
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Papaveraceae",
+                                "common": "Poppies",
+                                "level": "family",
+                                "hex": "#1A2735",
+                                "nspp": 3,
+                                "nobs": 3,
+                                "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Oxalis pilosa",
+                                        "common": "Hairy Wood Sorrel",
+                                        "hex": "#3BB3EE",
+                                        "nspp": 1,
+                                        "n_records": 1,
+                                        "n_users": 1,
+                                        "n_species": 1
+                                    },
+                                    {
+                                        "level": "species",
+                                        "name": "Dicentra formosa",
+                                        "common": "Pacific Bleeding Heart",
+                                        "hex": "#595C85",
+                                        "nspp": 1,
+                                        "n_records": 6,
+                                        "n_users": 5,
+                                        "n_species": 1
+                                    },
+                                    {
+                                        "level": "species",
+                                        "name": "Eschscholzia californica",
+                                        "common": "California Poppy",
+                                        "hex": "#5E6381",
+                                        "nspp": 1,
+                                        "n_records": 52,
+                                        "n_users": 31,
+                                        "n_species": 1
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Ranunculaceae",
+                                "common": "Buttercup family",
+                                "level": "family",
+                                "hex": "#152B22",
+                                "nspp": 10,
+                                "nobs": 10,
                                 "children": [
                                     {
                                         "level": "species",
@@ -11869,97 +11979,17 @@
                                         "n_records": 1,
                                         "n_users": 1,
                                         "n_species": 1
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Ranunculales",
-                        "common": "Dicots",
-                        "level": "order",
-                        "hex": "#090A0E",
-                        "nspp": 15,
-                        "nobs": 15,
-                        "children": [
-                            {
-                                "name": "Berberidaceae",
-                                "common": "Barberries and allies",
-                                "level": "family",
-                                "hex": "#201C2F",
-                                "nspp": 2,
-                                "nobs": 2,
-                                "children": [
-                                    {
-                                        "level": "species",
-                                        "name": "Berberis darwinii",
-                                        "common": "Darwin's Barberry",
-                                        "hex": "#665BA4",
-                                        "nspp": 1,
-                                        "n_records": 2,
-                                        "n_users": 2,
-                                        "n_species": 1
                                     },
                                     {
                                         "level": "species",
-                                        "name": "Berberis pinnata",
-                                        "common": "California barberry",
-                                        "hex": "#605385",
+                                        "name": "Pentagramma triangularis",
+                                        "common": "Goldback Fern",
+                                        "hex": "#02DA23",
                                         "nspp": 1,
-                                        "n_records": 2,
-                                        "n_users": 2,
-                                        "n_species": 1
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "Papaveraceae",
-                                "common": "Poppies",
-                                "level": "family",
-                                "hex": "#1C1F2B",
-                                "nspp": 3,
-                                "nobs": 3,
-                                "children": [
-                                    {
-                                        "level": "species",
-                                        "name": "Dicentra formosa",
-                                        "common": "Pacific Bleeding Heart",
-                                        "hex": "#595C85",
-                                        "nspp": 1,
-                                        "n_records": 6,
-                                        "n_users": 5,
+                                        "n_records": 1,
+                                        "n_users": 1,
                                         "n_species": 1
                                     },
-                                    {
-                                        "level": "species",
-                                        "name": "Eschscholzia californica",
-                                        "common": "California Poppy",
-                                        "hex": "#5E6381",
-                                        "nspp": 1,
-                                        "n_records": 52,
-                                        "n_users": 31,
-                                        "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Platystemon californicus",
-                                        "common": "Creamcups",
-                                        "hex": "#55618C",
-                                        "nspp": 1,
-                                        "n_records": 7,
-                                        "n_users": 7,
-                                        "n_species": 1
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "Ranunculaceae",
-                                "common": "Buttercup family",
-                                "level": "family",
-                                "hex": "#1D202C",
-                                "nspp": 10,
-                                "nobs": 10,
-                                "children": [
                                     {
                                         "level": "species",
                                         "name": "Aquilegia formosa",
@@ -12029,36 +12059,6 @@
                                         "n_records": 2,
                                         "n_users": 2,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Ranunculus orthorhynchus",
-                                        "common": "Straightbeak buttercup",
-                                        "hex": "#5C6888",
-                                        "nspp": 1,
-                                        "n_records": 5,
-                                        "n_users": 4,
-                                        "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Ranunculus repens",
-                                        "common": "Creeping buttercup",
-                                        "hex": "#59668B",
-                                        "nspp": 1,
-                                        "n_records": 3,
-                                        "n_users": 2,
-                                        "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Thalictrum fendleri",
-                                        "common": "Fendler's meadow-rue",
-                                        "hex": "#59638F",
-                                        "nspp": 1,
-                                        "n_records": 2,
-                                        "n_users": 2,
-                                        "n_species": 1
                                     }
                                 ]
                             }
@@ -12068,7 +12068,7 @@
                         "name": "Fagales",
                         "common": "Dicots",
                         "level": "order",
-                        "hex": "#06070D",
+                        "hex": "#07080E",
                         "nspp": 7,
                         "nobs": 7,
                         "children": [
@@ -12076,10 +12076,20 @@
                                 "name": "Betulaceae",
                                 "common": "Birches and Allies",
                                 "level": "family",
-                                "hex": "#17152E",
+                                "hex": "#19192E",
                                 "nspp": 2,
                                 "nobs": 2,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Berberis pinnata",
+                                        "common": "California barberry",
+                                        "hex": "#605385",
+                                        "nspp": 1,
+                                        "n_records": 2,
+                                        "n_users": 2,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Alnus rubra",
@@ -12089,16 +12099,6 @@
                                         "n_records": 7,
                                         "n_users": 6,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Corylus cornuta",
-                                        "common": "Beaked Hazelnut",
-                                        "hex": "#523C82",
-                                        "nspp": 1,
-                                        "n_records": 12,
-                                        "n_users": 8,
-                                        "n_species": 1
                                     }
                                 ]
                             },
@@ -12106,10 +12106,20 @@
                                 "name": "Fagaceae",
                                 "common": "Beech family",
                                 "level": "family",
-                                "hex": "#131429",
+                                "hex": "#12142A",
                                 "nspp": 4,
                                 "nobs": 4,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Vicia villosa",
+                                        "common": "Hairy Vetch",
+                                        "hex": "#2B4191",
+                                        "nspp": 1,
+                                        "n_records": 1,
+                                        "n_users": 1,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Chrysolepis chrysophylla",
@@ -12139,16 +12149,6 @@
                                         "n_records": 13,
                                         "n_users": 10,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Quercus chrysolepis",
-                                        "common": "Canyon Live Oak",
-                                        "hex": "#3A4081",
-                                        "nspp": 1,
-                                        "n_records": 1,
-                                        "n_users": 1,
-                                        "n_species": 1
                                     }
                                 ]
                             },
@@ -12156,18 +12156,18 @@
                                 "name": "Myricaceae",
                                 "common": "Wax trees and shrubs",
                                 "level": "family",
-                                "hex": "#121C28",
+                                "hex": "#212B30",
                                 "nspp": 1,
                                 "nobs": 1,
                                 "children": [
                                     {
                                         "level": "species",
-                                        "name": "Morella californica",
-                                        "common": "Pacific Wax myrtle",
-                                        "hex": "#39587C",
+                                        "name": "Claytonia sibirica",
+                                        "common": "Candy Flower",
+                                        "hex": "#678897",
                                         "nspp": 1,
-                                        "n_records": 3,
-                                        "n_users": 3,
+                                        "n_records": 41,
+                                        "n_users": 24,
                                         "n_species": 1
                                     }
                                 ]
@@ -12178,7 +12178,7 @@
                         "name": "Boraginales",
                         "common": "Dicots",
                         "level": "order",
-                        "hex": "#060C0F",
+                        "hex": "#060D0E",
                         "nspp": 12,
                         "nobs": 12,
                         "children": [
@@ -12186,10 +12186,20 @@
                                 "name": "Boraginaceae",
                                 "common": "Borage family",
                                 "level": "family",
-                                "hex": "#13262E",
+                                "hex": "#12282B",
                                 "nspp": 12,
                                 "nobs": 12,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Woodwardia fimbriata",
+                                        "common": "Giant Chain Fern",
+                                        "hex": "#02D922",
+                                        "nspp": 1,
+                                        "n_records": 5,
+                                        "n_users": 4,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Amsinckia intermedia",
@@ -12299,7 +12309,27 @@
                                         "n_records": 5,
                                         "n_users": 3,
                                         "n_species": 1
-                                    },
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Hypnales",
+                        "common": "True mosses",
+                        "level": "order",
+                        "hex": "#070D11",
+                        "nspp": 1,
+                        "nobs": 1,
+                        "children": [
+                            {
+                                "name": "Brachytheciaceae",
+                                "common": "True mosses",
+                                "level": "family",
+                                "hex": "#162935",
+                                "nspp": 1,
+                                "nobs": 1,
+                                "children": [
                                     {
                                         "level": "species",
                                         "name": "Phacelia ramosissima",
@@ -12315,20 +12345,20 @@
                         ]
                     },
                     {
-                        "name": "Hypnales",
-                        "common": "True mosses",
+                        "name": "Brassicales",
+                        "common": "Mustards and allies",
                         "level": "order",
-                        "hex": "#011A00",
-                        "nspp": 1,
-                        "nobs": 1,
+                        "hex": "#030910",
+                        "nspp": 15,
+                        "nobs": 15,
                         "children": [
                             {
-                                "name": "Brachytheciaceae",
-                                "common": "True mosses",
+                                "name": "Brassicaceae",
+                                "common": "Mustards",
                                 "level": "family",
-                                "hex": "#035101",
-                                "nspp": 1,
-                                "nobs": 1,
+                                "hex": "#091536",
+                                "nspp": 13,
+                                "nobs": 13,
                                 "children": [
                                     {
                                         "level": "species",
@@ -12339,27 +12369,7 @@
                                         "n_records": 1,
                                         "n_users": 1,
                                         "n_species": 1
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Brassicales",
-                        "common": "Mustards and allies",
-                        "level": "order",
-                        "hex": "#030513",
-                        "nspp": 15,
-                        "nobs": 15,
-                        "children": [
-                            {
-                                "name": "Brassicaceae",
-                                "common": "Mustards",
-                                "level": "family",
-                                "hex": "#0A103A",
-                                "nspp": 13,
-                                "nobs": 13,
-                                "children": [
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Alliaria petiolata",
@@ -12479,7 +12489,67 @@
                                         "n_records": 13,
                                         "n_users": 8,
                                         "n_species": 1
-                                    },
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Limnanthaceae",
+                                "common": "Mustards and allies",
+                                "level": "family",
+                                "hex": "#094126",
+                                "nspp": 1,
+                                "nobs": 1,
+                                "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Scoliopus bigelovii",
+                                        "common": "California fetid adderstongue",
+                                        "hex": "#1DCB78",
+                                        "nspp": 1,
+                                        "n_records": 1,
+                                        "n_users": 1,
+                                        "n_species": 1
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Tropaeolaceae",
+                                "common": "Mustards and allies",
+                                "level": "family",
+                                "hex": "#023E23",
+                                "nspp": 1,
+                                "nobs": 1,
+                                "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Triteleia laxa",
+                                        "common": "Ithuriel's Spear",
+                                        "hex": "#06C26E",
+                                        "nspp": 1,
+                                        "n_records": 18,
+                                        "n_users": 14,
+                                        "n_species": 1
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Poales",
+                        "common": "Grasses and allies",
+                        "level": "order",
+                        "hex": "#02110D",
+                        "nspp": 36,
+                        "nobs": 36,
+                        "children": [
+                            {
+                                "name": "Bromeliaceae",
+                                "common": "Bromeliads",
+                                "level": "family",
+                                "hex": "#0C113E",
+                                "nspp": 1,
+                                "nobs": 1,
+                                "children": [
                                     {
                                         "level": "species",
                                         "name": "Rorippa curvisiliqua",
@@ -12493,83 +12563,23 @@
                                 ]
                             },
                             {
-                                "name": "Limnanthaceae",
-                                "common": "Mustards and allies",
-                                "level": "family",
-                                "hex": "#0E1041",
-                                "nspp": 1,
-                                "nobs": 1,
-                                "children": [
-                                    {
-                                        "level": "species",
-                                        "name": "Limnanthes douglasii",
-                                        "common": "Douglas' meadowfoam",
-                                        "hex": "#2D32CB",
-                                        "nspp": 1,
-                                        "n_records": 1,
-                                        "n_users": 1,
-                                        "n_species": 1
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "Tropaeolaceae",
-                                "common": "Mustards and allies",
-                                "level": "family",
-                                "hex": "#0A1341",
-                                "nspp": 1,
-                                "nobs": 1,
-                                "children": [
-                                    {
-                                        "level": "species",
-                                        "name": "Tropaeolum majus",
-                                        "common": "Nasturtium",
-                                        "hex": "#1E3DCC",
-                                        "nspp": 1,
-                                        "n_records": 2,
-                                        "n_users": 2,
-                                        "n_species": 1
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Poales",
-                        "common": "Grasses and allies",
-                        "level": "order",
-                        "hex": "#02130C",
-                        "nspp": 36,
-                        "nobs": 36,
-                        "children": [
-                            {
-                                "name": "Bromeliaceae",
-                                "common": "Bromeliads",
-                                "level": "family",
-                                "hex": "#033C28",
-                                "nspp": 1,
-                                "nobs": 1,
-                                "children": [
-                                    {
-                                        "level": "species",
-                                        "name": "Tillandsia usneoides",
-                                        "common": "Spanish Moss",
-                                        "hex": "#08BB7E",
-                                        "nspp": 1,
-                                        "n_records": 1,
-                                        "n_users": 1,
-                                        "n_species": 1
-                                    }
-                                ]
-                            },
-                            {
                                 "name": "Cyperaceae",
                                 "common": "Sedges",
                                 "level": "family",
-                                "hex": "#063E2A",
+                                "hex": "#053630",
                                 "nspp": 6,
                                 "nobs": 6,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Sequoia sempervirens",
+                                        "common": "Coast Redwood",
+                                        "hex": "#042BFB",
+                                        "nspp": 1,
+                                        "n_records": 1,
+                                        "n_users": 1,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Carex obnupta",
@@ -12619,16 +12629,6 @@
                                         "n_records": 1,
                                         "n_users": 1,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Scirpus microcarpus",
-                                        "common": "Panicled Bulrush",
-                                        "hex": "#12C384",
-                                        "nspp": 1,
-                                        "n_records": 2,
-                                        "n_users": 2,
-                                        "n_species": 1
                                     }
                                 ]
                             },
@@ -12636,10 +12636,20 @@
                                 "name": "Juncaceae",
                                 "common": "Rushes",
                                 "level": "family",
-                                "hex": "#043E2B",
+                                "hex": "#043E28",
                                 "nspp": 3,
                                 "nobs": 3,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Sparaxis tricolor",
+                                        "common": "Harlequin Flower",
+                                        "hex": "#08C36C",
+                                        "nspp": 1,
+                                        "n_records": 14,
+                                        "n_users": 13,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Juncus patens",
@@ -12659,16 +12669,6 @@
                                         "n_records": 2,
                                         "n_users": 2,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Luzula comosa",
-                                        "common": "Pacific Woodrush",
-                                        "hex": "#09C186",
-                                        "nspp": 1,
-                                        "n_records": 1,
-                                        "n_users": 1,
-                                        "n_species": 1
                                     }
                                 ]
                             },
@@ -12676,10 +12676,20 @@
                                 "name": "Poaceae",
                                 "common": "Grasses",
                                 "level": "family",
-                                "hex": "#053A25",
+                                "hex": "#063A26",
                                 "nspp": 24,
                                 "nobs": 24,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Limonium californicum",
+                                        "common": "Western Marsh Rosemary",
+                                        "hex": "#5DB1A2",
+                                        "nspp": 1,
+                                        "n_records": 1,
+                                        "n_users": 1,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Agrostis densiflora",
@@ -12909,16 +12919,6 @@
                                         "n_records": 1,
                                         "n_users": 1,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Polypogon monspeliensis",
-                                        "common": "Rabbitfoot grass",
-                                        "hex": "#13C17B",
-                                        "nspp": 1,
-                                        "n_records": 2,
-                                        "n_users": 2,
-                                        "n_species": 1
                                     }
                                 ]
                             },
@@ -12926,28 +12926,28 @@
                                 "name": "Typhaceae",
                                 "common": "Cattail family",
                                 "level": "family",
-                                "hex": "#033D2A",
+                                "hex": "#0E173A",
                                 "nspp": 2,
                                 "nobs": 2,
                                 "children": [
                                     {
                                         "level": "species",
-                                        "name": "Sparganium eurycarpum",
-                                        "common": "Big Bur-reed",
-                                        "hex": "#0CBF8C",
+                                        "name": "Dirca occidentalis",
+                                        "common": "Western Leatherwood",
+                                        "hex": "#526AF4",
                                         "nspp": 1,
-                                        "n_records": 4,
-                                        "n_users": 4,
+                                        "n_records": 1,
+                                        "n_users": 1,
                                         "n_species": 1
                                     },
                                     {
                                         "level": "species",
-                                        "name": "Typha latifolia",
-                                        "common": "Common cattail",
-                                        "hex": "#09BD7E",
+                                        "name": "Trentepohlia iolithus",
+                                        "common": "Plants",
+                                        "hex": "#03247B",
                                         "nspp": 1,
-                                        "n_records": 3,
-                                        "n_users": 2,
+                                        "n_records": 1,
+                                        "n_users": 1,
                                         "n_species": 1
                                     }
                                 ]
@@ -12958,7 +12958,7 @@
                         "name": "Cladophorales",
                         "common": "Sea Lettuces and Single-celled Algae",
                         "level": "order",
-                        "hex": "#000000",
+                        "hex": "#0B1112",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -12966,18 +12966,18 @@
                                 "name": "Cladophoraceae",
                                 "common": "Sea Lettuces and Single-celled Algae",
                                 "level": "family",
-                                "hex": "#000000",
+                                "hex": "#21363A",
                                 "nspp": 1,
                                 "nobs": 1,
                                 "children": [
                                     {
                                         "level": "species",
-                                        "name": "Cladophora columbiana",
-                                        "common": "Green pin-cushion alga",
-                                        "hex": "#000000",
+                                        "name": "Stellaria media",
+                                        "common": "Common chickweed",
+                                        "hex": "#66A8B6",
                                         "nspp": 1,
-                                        "n_records": 1,
-                                        "n_users": 1,
+                                        "n_records": 3,
+                                        "n_users": 2,
                                         "n_species": 1
                                     }
                                 ]
@@ -12988,7 +12988,7 @@
                         "name": "Bryopsidales",
                         "common": "Green Algae",
                         "level": "order",
-                        "hex": "#00041A",
+                        "hex": "#00020D",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -12996,15 +12996,15 @@
                                 "name": "Codiaceae",
                                 "common": "Green Algae",
                                 "level": "family",
-                                "hex": "#010B50",
+                                "hex": "#010628",
                                 "nspp": 2,
                                 "nobs": 2,
                                 "children": [
                                     {
                                         "level": "species",
-                                        "name": "Codium fragile",
-                                        "common": "Dead Man's Fingers",
-                                        "hex": "#0424FC",
+                                        "name": "Cladophora columbiana",
+                                        "common": "Green pin-cushion alga",
+                                        "hex": "#000000",
                                         "nspp": 1,
                                         "n_records": 1,
                                         "n_users": 1,
@@ -13012,9 +13012,9 @@
                                     },
                                     {
                                         "level": "species",
-                                        "name": "Codium setchellii",
-                                        "common": "Green spongy cushion",
-                                        "hex": "#0123FC",
+                                        "name": "Codium fragile",
+                                        "common": "Dead Man's Fingers",
+                                        "hex": "#0424FC",
                                         "nspp": 1,
                                         "n_records": 1,
                                         "n_users": 1,
@@ -13028,7 +13028,7 @@
                         "name": "Solanales",
                         "common": "Nightshades and allies",
                         "level": "order",
-                        "hex": "#061213",
+                        "hex": "#060C14",
                         "nspp": 8,
                         "nobs": 8,
                         "children": [
@@ -13036,10 +13036,20 @@
                                 "name": "Convolvulaceae",
                                 "common": "Morning glories and bindweeds",
                                 "level": "family",
-                                "hex": "#14373A",
+                                "hex": "#102E3F",
                                 "nspp": 5,
                                 "nobs": 5,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Codium setchellii",
+                                        "common": "Green spongy cushion",
+                                        "hex": "#0123FC",
+                                        "nspp": 1,
+                                        "n_records": 1,
+                                        "n_users": 1,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Calystegia purpurata",
@@ -13079,16 +13089,6 @@
                                         "n_records": 1,
                                         "n_users": 1,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Cuscuta salina",
-                                        "common": "Salt Marsh Dodder",
-                                        "hex": "#42B1B8",
-                                        "nspp": 1,
-                                        "n_records": 3,
-                                        "n_users": 3,
-                                        "n_species": 1
                                     }
                                 ]
                             },
@@ -13096,35 +13096,35 @@
                                 "name": "Solanaceae",
                                 "common": "Nightshades",
                                 "level": "family",
-                                "hex": "#143A41",
+                                "hex": "#14193E",
                                 "nspp": 3,
                                 "nobs": 3,
                                 "children": [
                                     {
                                         "level": "species",
-                                        "name": "Datura stramonium",
-                                        "common": "Jimson Weed",
-                                        "hex": "#45B8C9",
+                                        "name": "Tellima grandiflora",
+                                        "common": "Fringe cups",
+                                        "hex": "#656B83",
                                         "nspp": 1,
-                                        "n_records": 1,
-                                        "n_users": 1,
+                                        "n_records": 13,
+                                        "n_users": 12,
                                         "n_species": 1
                                     },
                                     {
                                         "level": "species",
-                                        "name": "Solanum americanum",
-                                        "common": "American Nightshade",
-                                        "hex": "#3CB4CE",
+                                        "name": "Scrophularia californica",
+                                        "common": "California Bee Plant",
+                                        "hex": "#2C42E4",
                                         "nspp": 1,
-                                        "n_records": 1,
-                                        "n_users": 1,
+                                        "n_records": 20,
+                                        "n_users": 11,
                                         "n_species": 1
                                     },
                                     {
                                         "level": "species",
-                                        "name": "Solanum douglasii",
-                                        "common": "Greenspot nightshade",
-                                        "hex": "#3EB7CD",
+                                        "name": "Verbascum thapsus",
+                                        "common": "Great mullein",
+                                        "hex": "#2E3FE5",
                                         "nspp": 1,
                                         "n_records": 1,
                                         "n_users": 1,
@@ -13138,18 +13138,28 @@
                         "name": "Saxifragales",
                         "common": "Saxifrages and allies",
                         "level": "order",
-                        "hex": "#080B0C",
+                        "hex": "#070D11",
                         "nspp": 6,
                         "nobs": 6,
                         "children": [
                             {
                                 "name": "Crassulaceae",
-                                "common": "Stonecrops",
+                                "common": "Stonecrops and allies",
                                 "level": "family",
-                                "hex": "#1B2826",
+                                "hex": "#183130",
                                 "nspp": 2,
                                 "nobs": 2,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Cuscuta salina",
+                                        "common": "Salt Marsh Dodder",
+                                        "hex": "#42B1B8",
+                                        "nspp": 1,
+                                        "n_records": 3,
+                                        "n_users": 3,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Dudleya farinosa",
@@ -13159,12 +13169,22 @@
                                         "n_records": 24,
                                         "n_users": 19,
                                         "n_species": 1
-                                    },
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Grossulariaceae",
+                                "common": "Saxifrages and allies",
+                                "level": "family",
+                                "hex": "#213B51",
+                                "nspp": 1,
+                                "nobs": 1,
+                                "children": [
                                     {
                                         "level": "species",
-                                        "name": "Sedum spathulifolium",
-                                        "common": "Broad-leaved Stonecrop",
-                                        "hex": "#557C77",
+                                        "name": "Chondracanthus exasperatus",
+                                        "common": "Turkish Towel",
+                                        "hex": "#69B9FD",
                                         "nspp": 1,
                                         "n_records": 1,
                                         "n_users": 1,
@@ -13173,8 +13193,8 @@
                                 ]
                             },
                             {
-                                "name": "Grossulariaceae",
-                                "common": "Saxifrages and allies",
+                                "name": "Haloragaceae",
+                                "common": "Water Milfoil",
                                 "level": "family",
                                 "hex": "#162123",
                                 "nspp": 1,
@@ -13193,38 +13213,18 @@
                                 ]
                             },
                             {
-                                "name": "Haloragaceae",
-                                "common": "Water Milfoil",
-                                "level": "family",
-                                "hex": "#142625",
-                                "nspp": 1,
-                                "nobs": 1,
-                                "children": [
-                                    {
-                                        "level": "species",
-                                        "name": "Myriophyllum aquaticum",
-                                        "common": "Parrot's feather",
-                                        "hex": "#3F7774",
-                                        "nspp": 1,
-                                        "n_records": 3,
-                                        "n_users": 2,
-                                        "n_species": 1
-                                    }
-                                ]
-                            },
-                            {
                                 "name": "Saxifragaceae",
                                 "common": "Saxifrages",
                                 "level": "family",
-                                "hex": "#1E1F27",
+                                "hex": "#0D1833",
                                 "nspp": 2,
                                 "nobs": 2,
                                 "children": [
                                     {
                                         "level": "species",
-                                        "name": "Boykinia occidentalis",
-                                        "common": "Coastal brookfoam",
-                                        "hex": "#575574",
+                                        "name": "Galium trifidum",
+                                        "common": "Three-petal Bedstraw",
+                                        "hex": "#3A3491",
                                         "nspp": 1,
                                         "n_records": 1,
                                         "n_users": 1,
@@ -13232,12 +13232,12 @@
                                     },
                                     {
                                         "level": "species",
-                                        "name": "Tellima grandiflora",
-                                        "common": "Fringe cups",
-                                        "hex": "#656B83",
+                                        "name": "Salix sitchensis",
+                                        "common": "Sitka willow",
+                                        "hex": "#1564AD",
                                         "nspp": 1,
-                                        "n_records": 13,
-                                        "n_users": 12,
+                                        "n_records": 1,
+                                        "n_users": 1,
                                         "n_species": 1
                                     }
                                 ]
@@ -13248,7 +13248,7 @@
                         "name": "Cucurbitales",
                         "common": "Dicots",
                         "level": "order",
-                        "hex": "#040615",
+                        "hex": "#060A10",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -13256,10 +13256,20 @@
                                 "name": "Cucurbitaceae",
                                 "common": "Gourd family",
                                 "level": "family",
-                                "hex": "#0B1341",
+                                "hex": "#121F31",
                                 "nspp": 2,
                                 "nobs": 2,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Sedum spathulifolium",
+                                        "common": "Broad-leaved Stonecrop",
+                                        "hex": "#557C77",
+                                        "nspp": 1,
+                                        "n_records": 1,
+                                        "n_users": 1,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Marah fabacea",
@@ -13268,16 +13278,6 @@
                                         "nspp": 1,
                                         "n_records": 16,
                                         "n_users": 10,
-                                        "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Marah oregana",
-                                        "common": "Coastal manroot",
-                                        "hex": "#2E32D9",
-                                        "nspp": 1,
-                                        "n_records": 2,
-                                        "n_users": 2,
                                         "n_species": 1
                                     }
                                 ]
@@ -13288,7 +13288,7 @@
                         "name": "Pinales",
                         "common": "Conifers",
                         "level": "order",
-                        "hex": "#01041A",
+                        "hex": "#030619",
                         "nspp": 5,
                         "nobs": 5,
                         "children": [
@@ -13296,10 +13296,20 @@
                                 "name": "Cupressaceae",
                                 "common": "Cypresses",
                                 "level": "family",
-                                "hex": "#010D50",
+                                "hex": "#080E4A",
                                 "nspp": 2,
                                 "nobs": 2,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Marah oregana",
+                                        "common": "Coastal manroot",
+                                        "hex": "#2E32D9",
+                                        "nspp": 1,
+                                        "n_records": 2,
+                                        "n_users": 2,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Cupressus macrocarpa",
@@ -13309,16 +13319,6 @@
                                         "n_records": 7,
                                         "n_users": 5,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Sequoia sempervirens",
-                                        "common": "Coast Redwood",
-                                        "hex": "#042BFB",
-                                        "nspp": 1,
-                                        "n_records": 1,
-                                        "n_users": 1,
-                                        "n_species": 1
                                     }
                                 ]
                             },
@@ -13326,10 +13326,20 @@
                                 "name": "Pinaceae",
                                 "common": "Pine family",
                                 "level": "family",
-                                "hex": "#020D50",
+                                "hex": "#0B1850",
                                 "nspp": 3,
                                 "nobs": 3,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Mastocarpus papillatus",
+                                        "common": "Turkish Washcloth",
+                                        "hex": "#5F97FE",
+                                        "nspp": 1,
+                                        "n_records": 1,
+                                        "n_users": 1,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Pinus muricata",
@@ -13349,16 +13359,6 @@
                                         "n_records": 1,
                                         "n_users": 1,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Pseudotsuga menziesii",
-                                        "common": "Common Douglas-fir",
-                                        "hex": "#0627FB",
-                                        "nspp": 1,
-                                        "n_records": 7,
-                                        "n_users": 7,
-                                        "n_species": 1
                                     }
                                 ]
                             }
@@ -13368,13 +13368,93 @@
                         "name": "Gigartinales",
                         "common": "Red Algae",
                         "level": "order",
-                        "hex": "#0A111A",
+                        "hex": "#040B0D",
                         "nspp": 4,
                         "nobs": 4,
                         "children": [
                             {
                                 "name": "Endocladiaceae",
                                 "common": "Red Algae",
+                                "level": "family",
+                                "hex": "#01450B",
+                                "nspp": 1,
+                                "nobs": 1,
+                                "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Polystichum munitum",
+                                        "common": "Western Sword Fern",
+                                        "hex": "#02DA21",
+                                        "nspp": 1,
+                                        "n_records": 22,
+                                        "n_users": 17,
+                                        "n_species": 1
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Gigartinaceae",
+                                "common": "Red Algae",
+                                "level": "family",
+                                "hex": "#000000",
+                                "nspp": 1,
+                                "nobs": 1,
+                                "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Geranium molle",
+                                        "common": "Dove's-foot crane's-bill",
+                                        "hex": "#000000",
+                                        "nspp": 1,
+                                        "n_records": 2,
+                                        "n_users": 1,
+                                        "n_species": 1
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Phyllophoraceae",
+                                "common": "Red Algae",
+                                "level": "family",
+                                "hex": "#17204E",
+                                "nspp": 2,
+                                "nobs": 2,
+                                "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Mimulus moschatus",
+                                        "common": "Muskflower",
+                                        "hex": "#2A44EF",
+                                        "nspp": 1,
+                                        "n_records": 1,
+                                        "n_users": 1,
+                                        "n_species": 1
+                                    },
+                                    {
+                                        "level": "species",
+                                        "name": "Ahnfeltiopsis linearis",
+                                        "common": "Plants",
+                                        "hex": "#6887FD",
+                                        "nspp": 1,
+                                        "n_records": 1,
+                                        "n_users": 1,
+                                        "n_species": 1
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Equisetales",
+                        "common": "Horsetails",
+                        "level": "order",
+                        "hex": "#0B121A",
+                        "nspp": 1,
+                        "nobs": 1,
+                        "children": [
+                            {
+                                "name": "Equisetaceae",
+                                "common": "Horsetails",
                                 "level": "family",
                                 "hex": "#213951",
                                 "nspp": 1,
@@ -13391,74 +13471,24 @@
                                         "n_species": 1
                                     }
                                 ]
-                            },
-                            {
-                                "name": "Gigartinaceae",
-                                "common": "Red Algae",
-                                "level": "family",
-                                "hex": "#213B51",
-                                "nspp": 1,
-                                "nobs": 1,
-                                "children": [
-                                    {
-                                        "level": "species",
-                                        "name": "Chondracanthus exasperatus",
-                                        "common": "Turkish Towel",
-                                        "hex": "#69B9FD",
-                                        "nspp": 1,
-                                        "n_records": 1,
-                                        "n_users": 1,
-                                        "n_species": 1
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "Phyllophoraceae",
-                                "common": "Red Algae",
-                                "level": "family",
-                                "hex": "#202E51",
-                                "nspp": 2,
-                                "nobs": 2,
-                                "children": [
-                                    {
-                                        "level": "species",
-                                        "name": "Ahnfeltiopsis linearis",
-                                        "common": "Plants",
-                                        "hex": "#6887FD",
-                                        "nspp": 1,
-                                        "n_records": 1,
-                                        "n_users": 1,
-                                        "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Mastocarpus papillatus",
-                                        "common": "Turkish Washcloth",
-                                        "hex": "#5F97FE",
-                                        "nspp": 1,
-                                        "n_records": 1,
-                                        "n_users": 1,
-                                        "n_species": 1
-                                    }
-                                ]
                             }
                         ]
                     },
                     {
-                        "name": "Equisetales",
-                        "common": "Horsetails",
+                        "name": "Ericales",
+                        "common": "Heathers and allies",
                         "level": "order",
-                        "hex": "#00051A",
-                        "nspp": 1,
-                        "nobs": 1,
+                        "hex": "#040911",
+                        "nspp": 19,
+                        "nobs": 19,
                         "children": [
                             {
-                                "name": "Equisetaceae",
-                                "common": "Horsetails",
+                                "name": "Ericaceae",
+                                "common": "Heathers",
                                 "level": "family",
-                                "hex": "#000F51",
-                                "nspp": 1,
-                                "nobs": 1,
+                                "hex": "#0E1B41",
+                                "nspp": 7,
+                                "nobs": 7,
                                 "children": [
                                     {
                                         "level": "species",
@@ -13469,27 +13499,7 @@
                                         "n_records": 4,
                                         "n_users": 4,
                                         "n_species": 1
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Ericales",
-                        "common": "Heathers and allies",
-                        "level": "order",
-                        "hex": "#050811",
-                        "nspp": 19,
-                        "nobs": 19,
-                        "children": [
-                            {
-                                "name": "Ericaceae",
-                                "common": "Heathers",
-                                "level": "family",
-                                "hex": "#111E3E",
-                                "nspp": 7,
-                                "nobs": 7,
-                                "children": [
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Arbutus menziesii",
@@ -13549,16 +13559,6 @@
                                         "n_records": 3,
                                         "n_users": 2,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Vaccinium ovatum",
-                                        "common": "Evergreen Huckleberry",
-                                        "hex": "#3466B9",
-                                        "nspp": 1,
-                                        "n_records": 16,
-                                        "n_users": 9,
-                                        "n_species": 1
                                     }
                                 ]
                             },
@@ -13566,10 +13566,20 @@
                                 "name": "Myrsinaceae",
                                 "common": "Myrsine family",
                                 "level": "family",
-                                "hex": "#0C1125",
+                                "hex": "#0C141F",
                                 "nspp": 3,
                                 "nobs": 3,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Morella californica",
+                                        "common": "Pacific Wax myrtle",
+                                        "hex": "#39587C",
+                                        "nspp": 1,
+                                        "n_records": 3,
+                                        "n_users": 3,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Anagallis arvensis",
@@ -13589,16 +13599,6 @@
                                         "n_records": 1,
                                         "n_users": 1,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Trientalis latifolia",
-                                        "common": "Western Star Flower",
-                                        "hex": "#383EB5",
-                                        "nspp": 1,
-                                        "n_records": 9,
-                                        "n_users": 9,
-                                        "n_species": 1
                                     }
                                 ]
                             },
@@ -13606,10 +13606,20 @@
                                 "name": "Polemoniaceae",
                                 "common": "Phlox family",
                                 "level": "family",
-                                "hex": "#0F1936",
+                                "hex": "#0E1D33",
                                 "nspp": 9,
                                 "nobs": 9,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Polypogon monspeliensis",
+                                        "common": "Rabbitfoot grass",
+                                        "hex": "#13C17B",
+                                        "nspp": 1,
+                                        "n_records": 2,
+                                        "n_users": 2,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Collomia heterophylla",
@@ -13689,16 +13699,6 @@
                                         "n_records": 2,
                                         "n_users": 1,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Navarretia squarrosa",
-                                        "common": "Skunkweed",
-                                        "hex": "#325EBE",
-                                        "nspp": 1,
-                                        "n_records": 12,
-                                        "n_users": 10,
-                                        "n_species": 1
                                     }
                                 ]
                             }
@@ -13708,7 +13708,7 @@
                         "name": "Malpighiales",
                         "common": "Dicots",
                         "level": "order",
-                        "hex": "#020B10",
+                        "hex": "#030C0F",
                         "nspp": 9,
                         "nobs": 9,
                         "children": [
@@ -13716,10 +13716,20 @@
                                 "name": "Euphorbiaceae",
                                 "common": "Spurges",
                                 "level": "family",
-                                "hex": "#07222F",
+                                "hex": "#0C2133",
                                 "nspp": 2,
                                 "nobs": 2,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Vaccinium ovatum",
+                                        "common": "Evergreen Huckleberry",
+                                        "hex": "#3466B9",
+                                        "nspp": 1,
+                                        "n_records": 16,
+                                        "n_users": 9,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Euphorbia lathyris",
@@ -13729,16 +13739,6 @@
                                         "n_records": 2,
                                         "n_users": 2,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Euphorbia oblongata",
-                                        "common": "Eggleaf spurge",
-                                        "hex": "#146A9E",
-                                        "nspp": 1,
-                                        "n_records": 1,
-                                        "n_users": 1,
-                                        "n_species": 1
                                     }
                                 ]
                             },
@@ -13746,18 +13746,18 @@
                                 "name": "Hypericaceae",
                                 "common": "St. John's-wort",
                                 "level": "family",
-                                "hex": "#072330",
+                                "hex": "#142625",
                                 "nspp": 1,
                                 "nobs": 1,
                                 "children": [
                                     {
                                         "level": "species",
-                                        "name": "Hypericum anagalloides",
-                                        "common": "Bog St. John's-wort",
-                                        "hex": "#156D97",
+                                        "name": "Myriophyllum aquaticum",
+                                        "common": "Parrot's feather",
+                                        "hex": "#3F7774",
                                         "nspp": 1,
                                         "n_records": 3,
-                                        "n_users": 3,
+                                        "n_users": 2,
                                         "n_species": 1
                                     }
                                 ]
@@ -13766,10 +13766,20 @@
                                 "name": "Linaceae",
                                 "common": "Flax Family",
                                 "level": "family",
-                                "hex": "#082433",
+                                "hex": "#0A1D37",
                                 "nspp": 3,
                                 "nobs": 3,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Limnanthes douglasii",
+                                        "common": "Douglas' meadowfoam",
+                                        "hex": "#2D32CB",
+                                        "nspp": 1,
+                                        "n_records": 1,
+                                        "n_users": 1,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Hesperolinon congestum",
@@ -13789,16 +13799,6 @@
                                         "n_records": 15,
                                         "n_users": 11,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Linum usitatissimum",
-                                        "common": "Common flax",
-                                        "hex": "#1674A9",
-                                        "nspp": 1,
-                                        "n_records": 1,
-                                        "n_users": 1,
-                                        "n_species": 1
                                     }
                                 ]
                             },
@@ -13806,15 +13806,15 @@
                                 "name": "Salicaceae",
                                 "common": "Willows and poplars",
                                 "level": "family",
-                                "hex": "#072037",
+                                "hex": "#101129",
                                 "nspp": 1,
                                 "nobs": 1,
                                 "children": [
                                     {
                                         "level": "species",
-                                        "name": "Salix sitchensis",
-                                        "common": "Sitka willow",
-                                        "hex": "#1564AD",
+                                        "name": "Galium aparine",
+                                        "common": "Catchweed bedstraw",
+                                        "hex": "#333580",
                                         "nspp": 1,
                                         "n_records": 1,
                                         "n_users": 1,
@@ -13824,30 +13824,30 @@
                             },
                             {
                                 "name": "Violaceae",
-                                "common": "Violets & allies",
+                                "common": "Violets and allies",
                                 "level": "family",
-                                "hex": "#07222F",
+                                "hex": "#033D2A",
                                 "nspp": 2,
                                 "nobs": 2,
                                 "children": [
                                     {
                                         "level": "species",
-                                        "name": "Viola adunca",
-                                        "common": "Hookedspur violet",
-                                        "hex": "#176D89",
+                                        "name": "Sparganium eurycarpum",
+                                        "common": "Big Bur-reed",
+                                        "hex": "#0CBF8C",
                                         "nspp": 1,
-                                        "n_records": 11,
-                                        "n_users": 11,
+                                        "n_records": 4,
+                                        "n_users": 4,
                                         "n_species": 1
                                     },
                                     {
                                         "level": "species",
-                                        "name": "Viola sempervirens",
-                                        "common": "Redwood Violet",
-                                        "hex": "#16689C",
+                                        "name": "Typha latifolia",
+                                        "common": "Common cattail",
+                                        "hex": "#09BD7E",
                                         "nspp": 1,
-                                        "n_records": 6,
-                                        "n_users": 4,
+                                        "n_records": 3,
+                                        "n_users": 2,
                                         "n_species": 1
                                     }
                                 ]
@@ -13858,7 +13858,7 @@
                         "name": "Fabales",
                         "common": "Legumes and allies",
                         "level": "order",
-                        "hex": "#04070F",
+                        "hex": "#04080F",
                         "nspp": 26,
                         "nobs": 26,
                         "children": [
@@ -13866,10 +13866,20 @@
                                 "name": "Fabaceae",
                                 "common": "Legumes",
                                 "level": "family",
-                                "hex": "#0C1730",
+                                "hex": "#0C1830",
                                 "nspp": 25,
                                 "nobs": 25,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Euphorbia oblongata",
+                                        "common": "Eggleaf spurge",
+                                        "hex": "#146A9E",
+                                        "nspp": 1,
+                                        "n_records": 1,
+                                        "n_users": 1,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Acmispon americanus",
@@ -14109,16 +14119,6 @@
                                         "n_records": 4,
                                         "n_users": 4,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Vicia villosa",
-                                        "common": "Hairy Vetch",
-                                        "hex": "#2B4191",
-                                        "nspp": 1,
-                                        "n_records": 1,
-                                        "n_users": 1,
-                                        "n_species": 1
                                     }
                                 ]
                             },
@@ -14126,18 +14126,18 @@
                                 "name": "Polygalaceae",
                                 "common": "Milkworts",
                                 "level": "family",
-                                "hex": "#0E1C2B",
+                                "hex": "#101E3D",
                                 "nspp": 1,
                                 "nobs": 1,
                                 "children": [
                                     {
                                         "level": "species",
-                                        "name": "Polygala californica",
-                                        "common": "California milkwort",
-                                        "hex": "#2D5788",
+                                        "name": "Navarretia squarrosa",
+                                        "common": "Skunkweed",
+                                        "hex": "#325EBE",
                                         "nspp": 1,
-                                        "n_records": 4,
-                                        "n_users": 4,
+                                        "n_records": 12,
+                                        "n_users": 10,
                                         "n_species": 1
                                     }
                                 ]
@@ -14148,7 +14148,7 @@
                         "name": "Garryales",
                         "common": "Dicots",
                         "level": "order",
-                        "hex": "#060F0C",
+                        "hex": "#0A1213",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -14156,18 +14156,18 @@
                                 "name": "Garryaceae",
                                 "common": "Dicots",
                                 "level": "family",
-                                "hex": "#132E25",
+                                "hex": "#1F373C",
                                 "nspp": 1,
                                 "nobs": 1,
                                 "children": [
                                     {
                                         "level": "species",
-                                        "name": "Garrya elliptica",
-                                        "common": "Coast silk tassel",
-                                        "hex": "#3D9174",
+                                        "name": "Frankenia salina",
+                                        "common": "Alkali Heath",
+                                        "hex": "#61AEBC",
                                         "nspp": 1,
-                                        "n_records": 2,
-                                        "n_users": 2,
+                                        "n_records": 4,
+                                        "n_users": 4,
                                         "n_species": 1
                                     }
                                 ]
@@ -14178,7 +14178,7 @@
                         "name": "Geraniales",
                         "common": "Dicots",
                         "level": "order",
-                        "hex": "#07040C",
+                        "hex": "#08060E",
                         "nspp": 5,
                         "nobs": 5,
                         "children": [
@@ -14186,10 +14186,20 @@
                                 "name": "Geraniaceae",
                                 "common": "Geranium family",
                                 "level": "family",
-                                "hex": "#160E25",
+                                "hex": "#1A132D",
                                 "nspp": 5,
                                 "nobs": 5,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Gentiana affinis",
+                                        "common": "Pleated Gentian",
+                                        "hex": "#3B5780",
+                                        "nspp": 1,
+                                        "n_records": 6,
+                                        "n_users": 6,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Erodium botrys",
@@ -14229,16 +14239,6 @@
                                         "n_records": 1,
                                         "n_users": 1,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Geranium molle",
-                                        "common": "Dove's-foot crane's-bill",
-                                        "hex": "#000000",
-                                        "nspp": 1,
-                                        "n_records": 2,
-                                        "n_users": 1,
-                                        "n_species": 1
                                     }
                                 ]
                             }
@@ -14248,7 +14248,7 @@
                         "name": "Lamiales",
                         "common": "Dicots",
                         "level": "order",
-                        "hex": "#050817",
+                        "hex": "#050917",
                         "nspp": 41,
                         "nobs": 41,
                         "children": [
@@ -14256,10 +14256,20 @@
                                 "name": "Lamiaceae",
                                 "common": "Mint family",
                                 "level": "family",
-                                "hex": "#0D1B45",
+                                "hex": "#0D1D42",
                                 "nspp": 12,
                                 "nobs": 12,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Triglochin maritima",
+                                        "common": "Common Arrowgrass",
+                                        "hex": "#27C968",
+                                        "nspp": 1,
+                                        "n_records": 1,
+                                        "n_users": 1,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Clinopodium douglasii",
@@ -14369,16 +14379,6 @@
                                         "n_records": 18,
                                         "n_users": 18,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Stachys rigida",
-                                        "common": "Rough Hedgenettle",
-                                        "hex": "#3061EC",
-                                        "nspp": 1,
-                                        "n_records": 3,
-                                        "n_users": 3,
-                                        "n_species": 1
                                     }
                                 ]
                             },
@@ -14386,10 +14386,20 @@
                                 "name": "Orobanchaceae",
                                 "common": "Broomrape family",
                                 "level": "family",
-                                "hex": "#0E1645",
+                                "hex": "#0E1D49",
                                 "nspp": 10,
                                 "nobs": 10,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Platanthera dilatata",
+                                        "common": "White Bog-orchid",
+                                        "hex": "#09C569",
+                                        "nspp": 1,
+                                        "n_records": 4,
+                                        "n_users": 4,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Castilleja affinis",
@@ -14479,16 +14489,6 @@
                                         "n_records": 4,
                                         "n_users": 4,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Triphysaria versicolor",
-                                        "common": "Yellow-beak False Owl's-clover",
-                                        "hex": "#000000",
-                                        "nspp": 1,
-                                        "n_records": 1,
-                                        "n_users": 1,
-                                        "n_species": 1
                                     }
                                 ]
                             },
@@ -14496,10 +14496,20 @@
                                 "name": "Phrymaceae",
                                 "common": "Dicots",
                                 "level": "family",
-                                "hex": "#0E194D",
+                                "hex": "#121B45",
                                 "nspp": 4,
                                 "nobs": 4,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Platystemon californicus",
+                                        "common": "Creamcups",
+                                        "hex": "#55618C",
+                                        "nspp": 1,
+                                        "n_records": 7,
+                                        "n_users": 7,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Erythranthe moschata",
@@ -14529,16 +14539,6 @@
                                         "n_records": 29,
                                         "n_users": 23,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Mimulus moschatus",
-                                        "common": "Muskflower",
-                                        "hex": "#2A44EF",
-                                        "nspp": 1,
-                                        "n_records": 1,
-                                        "n_users": 1,
-                                        "n_species": 1
                                     }
                                 ]
                             },
@@ -14546,10 +14546,20 @@
                                 "name": "Plantaginaceae",
                                 "common": "Plantain family",
                                 "level": "family",
-                                "hex": "#10194E",
+                                "hex": "#11184D",
                                 "nspp": 13,
                                 "nobs": 13,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Pittosporum undulatum",
+                                        "common": "Victorian Box",
+                                        "hex": "#583CE2",
+                                        "nspp": 1,
+                                        "n_records": 2,
+                                        "n_users": 2,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Collinsia heterophylla",
@@ -14669,16 +14679,6 @@
                                         "n_records": 1,
                                         "n_users": 1,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Veronica anagallis-aquatica",
-                                        "common": "Blue Water-speedwell",
-                                        "hex": "#345BF7",
-                                        "nspp": 1,
-                                        "n_records": 1,
-                                        "n_users": 1,
-                                        "n_species": 1
                                     }
                                 ]
                             },
@@ -14686,25 +14686,25 @@
                                 "name": "Scrophulariaceae",
                                 "common": "Figworts",
                                 "level": "family",
-                                "hex": "#0E1549",
+                                "hex": "#112033",
                                 "nspp": 2,
                                 "nobs": 2,
                                 "children": [
                                     {
                                         "level": "species",
-                                        "name": "Scrophularia californica",
-                                        "common": "California Bee Plant",
-                                        "hex": "#2C42E4",
+                                        "name": "Aesculus californica",
+                                        "common": "California Buckeye",
+                                        "hex": "#1572CB",
                                         "nspp": 1,
-                                        "n_records": 20,
-                                        "n_users": 11,
+                                        "n_records": 5,
+                                        "n_users": 5,
                                         "n_species": 1
                                     },
                                     {
                                         "level": "species",
-                                        "name": "Verbascum thapsus",
-                                        "common": "Common Mullein",
-                                        "hex": "#2E3FE5",
+                                        "name": "Boykinia occidentalis",
+                                        "common": "Coastal brookfoam",
+                                        "hex": "#575574",
                                         "nspp": 1,
                                         "n_records": 1,
                                         "n_users": 1,
@@ -14718,7 +14718,7 @@
                         "name": "Laurales",
                         "common": "Dicots",
                         "level": "order",
-                        "hex": "#050C0B",
+                        "hex": "#050A18",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -14726,18 +14726,18 @@
                                 "name": "Lauraceae",
                                 "common": "Laurels",
                                 "level": "family",
-                                "hex": "#0F2524",
+                                "hex": "#0F1F4B",
                                 "nspp": 1,
                                 "nobs": 1,
                                 "children": [
                                     {
                                         "level": "species",
-                                        "name": "Umbellularia californica",
-                                        "common": "California Bay",
-                                        "hex": "#2F7571",
+                                        "name": "Stachys rigida",
+                                        "common": "Rough Hedgenettle",
+                                        "hex": "#3061EC",
                                         "nspp": 1,
-                                        "n_records": 13,
-                                        "n_users": 10,
+                                        "n_records": 3,
+                                        "n_users": 3,
                                         "n_species": 1
                                     }
                                 ]
@@ -14748,7 +14748,7 @@
                         "name": "Liliales",
                         "common": "Lilies and allies",
                         "level": "order",
-                        "hex": "#03120A",
+                        "hex": "#021209",
                         "nspp": 11,
                         "nobs": 11,
                         "children": [
@@ -14756,10 +14756,20 @@
                                 "name": "Liliaceae",
                                 "common": "Lilies",
                                 "level": "family",
-                                "hex": "#083820",
+                                "hex": "#08351F",
                                 "nspp": 8,
                                 "nobs": 8,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Umbellularia californica",
+                                        "common": "California Bay",
+                                        "hex": "#2F7571",
+                                        "nspp": 1,
+                                        "n_records": 13,
+                                        "n_users": 10,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Calochortus tolmiei",
@@ -14829,16 +14839,6 @@
                                         "n_records": 1,
                                         "n_users": 1,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Scoliopus bigelovii",
-                                        "common": "California fetid adderstongue",
-                                        "hex": "#1DCB78",
-                                        "nspp": 1,
-                                        "n_records": 1,
-                                        "n_users": 1,
-                                        "n_species": 1
                                     }
                                 ]
                             },
@@ -14846,10 +14846,20 @@
                                 "name": "Melanthiaceae",
                                 "common": "Trilliums and allies",
                                 "level": "family",
-                                "hex": "#093F23",
+                                "hex": "#064117",
                                 "nspp": 3,
                                 "nobs": 3,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Marchantia polymorpha",
+                                        "common": "Umbrella Liverwort",
+                                        "hex": "#01DB02",
+                                        "nspp": 1,
+                                        "n_records": 1,
+                                        "n_users": 1,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Toxicoscordion fremontii",
@@ -14869,16 +14879,6 @@
                                         "n_records": 2,
                                         "n_users": 2,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Trillium ovatum",
-                                        "common": "Pacific trillium",
-                                        "hex": "#1ACA73",
-                                        "nspp": 1,
-                                        "n_records": 4,
-                                        "n_users": 3,
-                                        "n_species": 1
                                     }
                                 ]
                             }
@@ -14888,13 +14888,63 @@
                         "name": "Malvales",
                         "common": "Mallows and allies",
                         "level": "order",
-                        "hex": "#090D18",
+                        "hex": "#01100E",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
                             {
                                 "name": "Malvaceae",
                                 "common": "Mallows",
+                                "level": "family",
+                                "hex": "#072536",
+                                "nspp": 1,
+                                "nobs": 1,
+                                "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Linum usitatissimum",
+                                        "common": "Common flax",
+                                        "hex": "#1674A9",
+                                        "nspp": 1,
+                                        "n_records": 1,
+                                        "n_users": 1,
+                                        "n_species": 1
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Thymelaeaceae",
+                                "common": "Mallows and allies",
+                                "level": "family",
+                                "hex": "#024024",
+                                "nspp": 1,
+                                "nobs": 1,
+                                "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Brodiaea terrestris",
+                                        "common": "Dwarf Brodiaea",
+                                        "hex": "#05C870",
+                                        "nspp": 1,
+                                        "n_records": 4,
+                                        "n_users": 4,
+                                        "n_species": 1
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Marchantiales",
+                        "common": "Liverworts",
+                        "level": "order",
+                        "hex": "#0A0F18",
+                        "nspp": 1,
+                        "nobs": 1,
+                        "children": [
+                            {
+                                "name": "Marchantiaceae",
+                                "common": "Liverworts",
                                 "level": "family",
                                 "hex": "#1E304A",
                                 "nspp": 1,
@@ -14911,56 +14961,6 @@
                                         "n_species": 1
                                     }
                                 ]
-                            },
-                            {
-                                "name": "Thymelaeaceae",
-                                "common": "Mallows and allies",
-                                "level": "family",
-                                "hex": "#1A224E",
-                                "nspp": 1,
-                                "nobs": 1,
-                                "children": [
-                                    {
-                                        "level": "species",
-                                        "name": "Dirca occidentalis",
-                                        "common": "Western Leatherwood",
-                                        "hex": "#526AF4",
-                                        "nspp": 1,
-                                        "n_records": 1,
-                                        "n_users": 1,
-                                        "n_species": 1
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Marchantiales",
-                        "common": "Liverworts",
-                        "level": "order",
-                        "hex": "#001600",
-                        "nspp": 1,
-                        "nobs": 1,
-                        "children": [
-                            {
-                                "name": "Marchantiaceae",
-                                "common": "Liverworts",
-                                "level": "family",
-                                "hex": "#004601",
-                                "nspp": 1,
-                                "nobs": 1,
-                                "children": [
-                                    {
-                                        "level": "species",
-                                        "name": "Marchantia polymorpha",
-                                        "common": "Umbrella Liverwort",
-                                        "hex": "#01DB02",
-                                        "nspp": 1,
-                                        "n_records": 1,
-                                        "n_users": 1,
-                                        "n_species": 1
-                                    }
-                                ]
                             }
                         ]
                     },
@@ -14968,7 +14968,7 @@
                         "name": "Myrtales",
                         "common": "Dicots",
                         "level": "order",
-                        "hex": "#08080D",
+                        "hex": "#07080F",
                         "nspp": 8,
                         "nobs": 8,
                         "children": [
@@ -14976,18 +14976,18 @@
                                 "name": "Myrtaceae",
                                 "common": "Myrtle Family",
                                 "level": "family",
-                                "hex": "#161525",
+                                "hex": "#12143A",
                                 "nspp": 1,
                                 "nobs": 1,
                                 "children": [
                                     {
                                         "level": "species",
-                                        "name": "Eucalyptus globulus",
-                                        "common": "Tasmanian Blue Gum",
-                                        "hex": "#464273",
+                                        "name": "Trientalis latifolia",
+                                        "common": "Western Star Flower",
+                                        "hex": "#383EB5",
                                         "nspp": 1,
-                                        "n_records": 1,
-                                        "n_users": 1,
+                                        "n_records": 9,
+                                        "n_users": 9,
                                         "n_species": 1
                                     }
                                 ]
@@ -14996,10 +14996,20 @@
                                 "name": "Onagraceae",
                                 "common": "Evening primrose family",
                                 "level": "family",
-                                "hex": "#181A28",
+                                "hex": "#16192C",
                                 "nspp": 7,
                                 "nobs": 7,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Nymphaea alba",
+                                        "common": "White Waterlily",
+                                        "hex": "#1F46D7",
+                                        "nspp": 1,
+                                        "n_records": 1,
+                                        "n_users": 1,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Camissoniopsis cheiranthifolia",
@@ -15059,16 +15069,6 @@
                                         "n_records": 2,
                                         "n_users": 2,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Taraxia ovata",
-                                        "common": "Sun Cup",
-                                        "hex": "#4A567A",
-                                        "nspp": 1,
-                                        "n_records": 8,
-                                        "n_users": 8,
-                                        "n_species": 1
                                     }
                                 ]
                             }
@@ -15078,7 +15078,7 @@
                         "name": "Nymphaeales",
                         "common": "Water lilies and allies",
                         "level": "order",
-                        "hex": "#030716",
+                        "hex": "#0A0F0F",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -15086,18 +15086,18 @@
                                 "name": "Nymphaeaceae",
                                 "common": "Water lilies",
                                 "level": "family",
-                                "hex": "#0A1645",
+                                "hex": "#202F2F",
                                 "nspp": 1,
                                 "nobs": 1,
                                 "children": [
                                     {
                                         "level": "species",
-                                        "name": "Nymphaea alba",
-                                        "common": "White Waterlily",
-                                        "hex": "#1F46D7",
+                                        "name": "Abronia umbellata",
+                                        "common": "Pink Sand Verbena",
+                                        "hex": "#649292",
                                         "nspp": 1,
-                                        "n_records": 1,
-                                        "n_users": 1,
+                                        "n_records": 3,
+                                        "n_users": 3,
                                         "n_species": 1
                                     }
                                 ]
@@ -15108,7 +15108,7 @@
                         "name": "Oxalidales",
                         "common": "Dicots",
                         "level": "order",
-                        "hex": "#061218",
+                        "hex": "#040C10",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -15116,10 +15116,20 @@
                                 "name": "Oxalidaceae",
                                 "common": "Wood sorrel family",
                                 "level": "family",
-                                "hex": "#13394C",
+                                "hex": "#0D2632",
                                 "nspp": 3,
                                 "nobs": 3,
                                 "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Triphysaria versicolor",
+                                        "common": "Yellow-beak False Owl's-clover",
+                                        "hex": "#000000",
+                                        "nspp": 1,
+                                        "n_records": 1,
+                                        "n_users": 1,
+                                        "n_species": 1
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Oxalis incarnata",
@@ -15139,16 +15149,6 @@
                                         "n_records": 3,
                                         "n_users": 3,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Oxalis pilosa",
-                                        "common": "Hairy Wood Sorrel",
-                                        "hex": "#3BB3EE",
-                                        "nspp": 1,
-                                        "n_records": 1,
-                                        "n_users": 1,
-                                        "n_species": 1
                                     }
                                 ]
                             }
@@ -15158,7 +15158,7 @@
                         "name": "Plocamiales",
                         "common": "Red Algae",
                         "level": "order",
-                        "hex": "#000000",
+                        "hex": "#050919",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -15166,15 +15166,15 @@
                                 "name": "Plocamiaceae",
                                 "common": "Red Algae",
                                 "level": "family",
-                                "hex": "#000000",
+                                "hex": "#111D4F",
                                 "nspp": 1,
                                 "nobs": 1,
                                 "children": [
                                     {
                                         "level": "species",
-                                        "name": "Plocamium cartilagineum",
-                                        "common": "Sea Comb",
-                                        "hex": "#000000",
+                                        "name": "Veronica anagallis-aquatica",
+                                        "common": "Blue Water-speedwell",
+                                        "hex": "#345BF7",
                                         "nspp": 1,
                                         "n_records": 1,
                                         "n_users": 1,
@@ -15188,7 +15188,7 @@
                         "name": "Rosales",
                         "common": "Roses and allies",
                         "level": "order",
-                        "hex": "#030C15",
+                        "hex": "#040B14",
                         "nspp": 20,
                         "nobs": 20,
                         "children": [
@@ -15196,9 +15196,49 @@
                                 "name": "Rhamnaceae",
                                 "common": "Buckthorns",
                                 "level": "family",
-                                "hex": "#082545",
+                                "hex": "#1D202C",
                                 "nspp": 3,
                                 "nobs": 3,
+                                "children": [
+                                    {
+                                        "level": "species",
+                                        "name": "Ranunculus orthorhynchus",
+                                        "common": "Straightbeak buttercup",
+                                        "hex": "#5C6888",
+                                        "nspp": 1,
+                                        "n_records": 5,
+                                        "n_users": 4,
+                                        "n_species": 1
+                                    },
+                                    {
+                                        "level": "species",
+                                        "name": "Ranunculus repens",
+                                        "common": "Creeping buttercup",
+                                        "hex": "#59668B",
+                                        "nspp": 1,
+                                        "n_records": 3,
+                                        "n_users": 2,
+                                        "n_species": 1
+                                    },
+                                    {
+                                        "level": "species",
+                                        "name": "Thalictrum fendleri",
+                                        "common": "Fendler's meadow-rue",
+                                        "hex": "#59638F",
+                                        "nspp": 1,
+                                        "n_records": 2,
+                                        "n_users": 2,
+                                        "n_species": 1
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Rosaceae",
+                                "common": "Rose family",
+                                "level": "family",
+                                "hex": "#082342",
+                                "nspp": 16,
+                                "nobs": 16,
                                 "children": [
                                     {
                                         "level": "species",
@@ -15229,17 +15269,7 @@
                                         "n_records": 28,
                                         "n_users": 15,
                                         "n_species": 1
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "Rosaceae",
-                                "common": "Rose family",
-                                "level": "family",
-                                "hex": "#082443",
-                                "nspp": 16,
-                                "nobs": 16,
-                                "children": [
+                                    },
                                     {
                                         "level": "species",
                                         "name": "Adenostoma fasciculatum",
@@ -15369,36 +15399,6 @@
                                         "n_records": 3,
                                         "n_users": 2,
                                         "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Rubus parviflorus",
-                                        "common": "Thimbleberry",
-                                        "hex": "#1D79E8",
-                                        "nspp": 1,
-                                        "n_records": 22,
-                                        "n_users": 12,
-                                        "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Rubus spectabilis",
-                                        "common": "Salmonberry",
-                                        "hex": "#1A70E2",
-                                        "nspp": 1,
-                                        "n_records": 24,
-                                        "n_users": 17,
-                                        "n_species": 1
-                                    },
-                                    {
-                                        "level": "species",
-                                        "name": "Rubus ursinus",
-                                        "common": "Trailing blackberry",
-                                        "hex": "#1C7BE3",
-                                        "nspp": 1,
-                                        "n_records": 21,
-                                        "n_users": 11,
-                                        "n_species": 1
                                     }
                                 ]
                             },
@@ -15406,18 +15406,18 @@
                                 "name": "Urticaceae",
                                 "common": "Nettles and allies",
                                 "level": "family",
-                                "hex": "#0A2F46",
+                                "hex": "#0A1341",
                                 "nspp": 1,
                                 "nobs": 1,
                                 "children": [
                                     {
                                         "level": "species",
-                                        "name": "Urtica dioica",
-                                        "common": "Stinging nettle",
-                                        "hex": "#1F92DD",
+                                        "name": "Tropaeolum majus",
+                                        "common": "Nasturtium",
+                                        "hex": "#1E3DCC",
                                         "nspp": 1,
-                                        "n_records": 13,
-                                        "n_users": 9,
+                                        "n_records": 2,
+                                        "n_users": 2,
                                         "n_species": 1
                                     }
                                 ]
@@ -15428,7 +15428,7 @@
                         "name": "Trentepohliales",
                         "common": "Sea Lettuces and Single-celled Algae",
                         "level": "order",
-                        "hex": "#00040C",
+                        "hex": "#01150B",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -15436,18 +15436,18 @@
                                 "name": "Trentepohliaceae",
                                 "common": "Sea Lettuces and Single-celled Algae",
                                 "level": "family",
-                                "hex": "#010B27",
+                                "hex": "#044123",
                                 "nspp": 1,
                                 "nobs": 1,
                                 "children": [
                                     {
                                         "level": "species",
-                                        "name": "Trentepohlia iolithus",
-                                        "common": "Plants",
-                                        "hex": "#03247B",
+                                        "name": "Dichelostemma capitatum",
+                                        "common": "Bluedicks",
+                                        "hex": "#0BCC6F",
                                         "nspp": 1,
-                                        "n_records": 1,
-                                        "n_users": 1,
+                                        "n_records": 4,
+                                        "n_users": 3,
                                         "n_species": 1
                                     }
                                 ]

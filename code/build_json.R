@@ -90,7 +90,7 @@ for(hierarchy in names(hierarchies)){
             groupings <- distinct(d[,c(level, child_level)])
             groupings <- groupings[apply(groupings, 1, function(x) min(nchar(x))>0),]
             p <- group_taxa(p, groupings, level,
-                            max_col=switch(hierarchy, "linnean"=255, "simple"=600))
+                            max_col=switch(hierarchy, "linnean"=400, "simple"=800))
                         #max_col=switch(hierarchy, "linnean"=400, "simple"=800))
       }
       

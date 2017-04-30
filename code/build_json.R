@@ -68,6 +68,7 @@ leaves <- lapply(1:nrow(d), function(i) data.frame(level="species",
                                                    common=ifelse(!is.na(d$genus.common[i]), 
                                                                  d$species.common[i], 
                                                                  "Common name unknown"),
+                                                   inat_id=d$species.inat.ID[i],
                                                    hex=d$hex[i],
                                                    nspp=1,
                                                    n_records=d$total_obs[i],
@@ -89,12 +90,15 @@ group_taxa <- function(data, groupings, level, max_col){
             color <- sapply(kids, function(x) x$hex) %>% col2rgb()
             color <- sapply(1:3, function(x) weighted.mean(color[x,], weights_spp))
             
-            #if(x=="plant") browser()
             common <- d[d[,level] == x, paste0(level, ".common")][1]
             if(is.null(common)) common <- x
             
+            inat_id <- d[d[,level] == x, paste0(level, ".inat.ID")][1]
+            if(is.null(inat_id)) inat_id <- "NA"
+            
             list(name=x,
                  common=common,
+                 inat_id=inat_id,
                  level=level, 
                  hex=rgb(color[1], color[2], color[3], maxColorValue=max_col), # mcv/255 ratio controls fade to black
                  nspp=sum(weights_spp),
@@ -104,7 +108,7 @@ group_taxa <- function(data, groupings, level, max_col){
 }
 
 hierarchies <- list(linnean=c("root", "kingdom", "phylum", "class", "order", "family", "genus", "species"),
-                    simple=c("root", "category", "order", "family", "species"))
+                    simple=c("root", "category", "family", "species"))
 
 for(hierarchy in names(hierarchies)){
       

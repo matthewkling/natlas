@@ -3,7 +3,7 @@
         "common": "life",
         "inat_id": "NA",
         "level": "root",
-        "hex": "#090909",
+        "hex": "#040404",
         "nspp": 1040,
         "nobs": 1040,
         "children": [
@@ -12,7 +12,7 @@
                 "common": "bird",
                 "inat_id": "NA",
                 "level": "category",
-                "hex": "#26170D",
+                "hex": "#150D07",
                 "nspp": 195,
                 "nobs": 195,
                 "children": [
@@ -21,7 +21,7 @@
                         "common": "Hawks, Eagles, and Kites",
                         "inat_id": 5067,
                         "level": "family",
-                        "hex": "#563B21",
+                        "hex": "#402D19",
                         "nspp": 10,
                         "nobs": 10,
                         "children": [
@@ -142,7 +142,7 @@
                         "common": "Long-tailed Tits",
                         "inat_id": 7264,
                         "level": "family",
-                        "hex": "#564E1C",
+                        "hex": "#413A15",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -164,7 +164,7 @@
                         "common": "Larks",
                         "inat_id": 7284,
                         "level": "family",
-                        "hex": "#4E3D1A",
+                        "hex": "#3B2E14",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -186,7 +186,7 @@
                         "common": "Kingfishers",
                         "inat_id": 2314,
                         "level": "family",
-                        "hex": "#4D2219",
+                        "hex": "#3A1A12",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -208,7 +208,7 @@
                         "common": "Auks, Murres, and Puffins",
                         "inat_id": 71295,
                         "level": "family",
-                        "hex": "#632227",
+                        "hex": "#4A1A1D",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -241,7 +241,7 @@
                         "common": "Ducks, Geese, and Swans",
                         "inat_id": 6912,
                         "level": "family",
-                        "hex": "#5E3120",
+                        "hex": "#462518",
                         "nspp": 25,
                         "nobs": 25,
                         "children": [
@@ -527,7 +527,7 @@
                         "common": "Herons, Egrets, and Bitterns",
                         "inat_id": 4929,
                         "level": "family",
-                        "hex": "#5B2E12",
+                        "hex": "#44230E",
                         "nspp": 5,
                         "nobs": 5,
                         "children": [
@@ -593,7 +593,7 @@
                         "common": "Nightjars and Nighthawks",
                         "inat_id": 19376,
                         "level": "family",
-                        "hex": "#5F191F",
+                        "hex": "#471317",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -626,7 +626,7 @@
                         "common": "Cardinals and Allies",
                         "inat_id": 71305,
                         "level": "family",
-                        "hex": "#50481E",
+                        "hex": "#3C3617",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -670,7 +670,7 @@
                         "common": "New World Vultures",
                         "inat_id": 71306,
                         "level": "family",
-                        "hex": "#5B381F",
+                        "hex": "#442A17",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -703,7 +703,7 @@
                         "common": "Treecreepers",
                         "inat_id": 7448,
                         "level": "family",
-                        "hex": "#554D21",
+                        "hex": "#403A19",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -725,7 +725,7 @@
                         "common": "Plovers and Lapwings",
                         "inat_id": 4783,
                         "level": "family",
-                        "hex": "#641B2A",
+                        "hex": "#4B1420",
                         "nspp": 6,
                         "nobs": 6,
                         "children": [
@@ -802,7 +802,7 @@
                         "common": "Pigeons and Doves",
                         "inat_id": 2715,
                         "level": "family",
-                        "hex": "#5F282B",
+                        "hex": "#471E21",
                         "nspp": 4,
                         "nobs": 4,
                         "children": [
@@ -857,7 +857,7 @@
                         "common": "Crows, Jays, and Magpies",
                         "inat_id": 7823,
                         "level": "family",
-                        "hex": "#584A19",
+                        "hex": "#423812",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -901,7 +901,7 @@
                         "common": "Buntings and New World Sparrows",
                         "inat_id": 56039,
                         "level": "family",
-                        "hex": "#544518",
+                        "hex": "#3F3412",
                         "nspp": 12,
                         "nobs": 12,
                         "children": [
@@ -1044,7 +1044,7 @@
                         "common": "Falcons and Caracaras",
                         "inat_id": 4637,
                         "level": "family",
-                        "hex": "#5A172A",
+                        "hex": "#441120",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -1077,7 +1077,7 @@
                         "common": "Finches, Euphonias, and Allies",
                         "inat_id": 9079,
                         "level": "family",
-                        "hex": "#524B1E",
+                        "hex": "#3E3816",
                         "nspp": 5,
                         "nobs": 5,
                         "children": [
@@ -1143,7 +1143,7 @@
                         "common": "Loons",
                         "inat_id": 4619,
                         "level": "family",
-                        "hex": "#5A3516",
+                        "hex": "#442810",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -1187,7 +1187,7 @@
                         "common": "Oystercatchers",
                         "inat_id": 71325,
                         "level": "family",
-                        "hex": "#652A25",
+                        "hex": "#4C201C",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -1209,7 +1209,7 @@
                         "common": "Swallows and Martins",
                         "inat_id": 11853,
                         "level": "family",
-                        "hex": "#514617",
+                        "hex": "#3D3511",
                         "nspp": 7,
                         "nobs": 7,
                         "children": [
@@ -1297,7 +1297,7 @@
                         "common": "New World Blackbirds and Orioles",
                         "inat_id": 11989,
                         "level": "family",
-                        "hex": "#534619",
+                        "hex": "#3E3413",
                         "nspp": 6,
                         "nobs": 6,
                         "children": [
@@ -1374,7 +1374,7 @@
                         "common": "Gulls, Terns, and Skimmers",
                         "inat_id": 4342,
                         "level": "family",
-                        "hex": "#62272A",
+                        "hex": "#491D1F",
                         "nspp": 10,
                         "nobs": 10,
                         "children": [
@@ -1495,7 +1495,7 @@
                         "common": "Wagtails and Pipits",
                         "inat_id": 71339,
                         "level": "family",
-                        "hex": "#4E4115",
+                        "hex": "#3B3110",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -1517,7 +1517,7 @@
                         "common": "New World Quail",
                         "inat_id": 1278,
                         "level": "family",
-                        "hex": "#592A2B",
+                        "hex": "#431F21",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -1539,7 +1539,7 @@
                         "common": "Ospreys",
                         "inat_id": 200958,
                         "level": "family",
-                        "hex": "#5B3726",
+                        "hex": "#45291C",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -1561,7 +1561,7 @@
                         "common": "Parrotbills, Wrentit, and Allies",
                         "inat_id": 339898,
                         "level": "family",
-                        "hex": "#4E4615",
+                        "hex": "#3A3510",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -1583,7 +1583,7 @@
                         "common": "Tits, Chickadees, and Titmice",
                         "inat_id": 13547,
                         "level": "family",
-                        "hex": "#574C22",
+                        "hex": "#41391A",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -1605,7 +1605,7 @@
                         "common": "New World Warblers",
                         "inat_id": 71349,
                         "level": "family",
-                        "hex": "#58441D",
+                        "hex": "#423316",
                         "nspp": 13,
                         "nobs": 13,
                         "children": [
@@ -1759,7 +1759,7 @@
                         "common": "Pelicans",
                         "inat_id": 4323,
                         "level": "family",
-                        "hex": "#5B2712",
+                        "hex": "#441D0D",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -1792,7 +1792,7 @@
                         "common": "Cormorants and Shags",
                         "inat_id": 4262,
                         "level": "family",
-                        "hex": "#5A372A",
+                        "hex": "#432920",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -1836,7 +1836,7 @@
                         "common": "Woodpeckers",
                         "inat_id": 17599,
                         "level": "family",
-                        "hex": "#4F2D12",
+                        "hex": "#3B220D",
                         "nspp": 6,
                         "nobs": 6,
                         "children": [
@@ -1913,7 +1913,7 @@
                         "common": "Grebes",
                         "inat_id": 4203,
                         "level": "family",
-                        "hex": "#4F3123",
+                        "hex": "#3B251A",
                         "nspp": 4,
                         "nobs": 4,
                         "children": [
@@ -1968,7 +1968,7 @@
                         "common": "Rails, Gallinules, and Coots",
                         "inat_id": 154,
                         "level": "family",
-                        "hex": "#551711",
+                        "hex": "#40110D",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -2001,7 +2001,7 @@
                         "common": "Kinglets",
                         "inat_id": 180354,
                         "level": "family",
-                        "hex": "#544E1C",
+                        "hex": "#3F3B15",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -2023,7 +2023,7 @@
                         "common": "Sandpipers and Allies",
                         "inat_id": 3835,
                         "level": "family",
-                        "hex": "#612127",
+                        "hex": "#49191D",
                         "nspp": 17,
                         "nobs": 17,
                         "children": [
@@ -2221,7 +2221,7 @@
                         "common": "Nuthatches",
                         "inat_id": 14799,
                         "level": "family",
-                        "hex": "#4F4C18",
+                        "hex": "#3B3912",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -2254,7 +2254,7 @@
                         "common": "Typical Owls",
                         "inat_id": 19728,
                         "level": "family",
-                        "hex": "#562721",
+                        "hex": "#411D18",
                         "nspp": 4,
                         "nobs": 4,
                         "children": [
@@ -2309,7 +2309,7 @@
                         "common": "Starlings",
                         "inat_id": 14841,
                         "level": "family",
-                        "hex": "#543A1B",
+                        "hex": "#3F2B14",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -2331,7 +2331,7 @@
                         "common": "Boobies and Gannets",
                         "inat_id": 3784,
                         "level": "family",
-                        "hex": "#643328",
+                        "hex": "#4B271E",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -2353,7 +2353,7 @@
                         "common": "Hummingbirds",
                         "inat_id": 5562,
                         "level": "family",
-                        "hex": "#652523",
+                        "hex": "#4C1C1A",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -2386,7 +2386,7 @@
                         "common": "Wrens",
                         "inat_id": 15964,
                         "level": "family",
-                        "hex": "#514A1C",
+                        "hex": "#3D3815",
                         "nspp": 4,
                         "nobs": 4,
                         "children": [
@@ -2441,7 +2441,7 @@
                         "common": "Thrushes",
                         "inat_id": 15977,
                         "level": "family",
-                        "hex": "#51431D",
+                        "hex": "#3D3216",
                         "nspp": 6,
                         "nobs": 6,
                         "children": [
@@ -2518,7 +2518,7 @@
                         "common": "Tyrant Flycatchers",
                         "inat_id": 15984,
                         "level": "family",
-                        "hex": "#4F4718",
+                        "hex": "#3B3612",
                         "nspp": 7,
                         "nobs": 7,
                         "children": [
@@ -2606,7 +2606,7 @@
                         "common": "Barn-Owls",
                         "inat_id": 20413,
                         "level": "family",
-                        "hex": "#564228",
+                        "hex": "#40311E",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -2628,7 +2628,7 @@
                         "common": "Vireos, Shrike-Babblers, and Erpornis",
                         "inat_id": 17354,
                         "level": "family",
-                        "hex": "#544418",
+                        "hex": "#3F3312",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -2663,7 +2663,7 @@
                 "common": "fish",
                 "inat_id": "NA",
                 "level": "category",
-                "hex": "#220B18",
+                "hex": "#13060E",
                 "nspp": 12,
                 "nobs": 12,
                 "children": [
@@ -2672,7 +2672,7 @@
                         "common": "Typical Sculpins",
                         "inat_id": 47645,
                         "level": "family",
-                        "hex": "#661445",
+                        "hex": "#4D0F34",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -2694,7 +2694,7 @@
                         "common": "Surfperches",
                         "inat_id": 63687,
                         "level": "family",
-                        "hex": "#661449",
+                        "hex": "#4D0F37",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -2727,7 +2727,7 @@
                         "common": "Sticklebacks and Allies",
                         "inat_id": 48405,
                         "level": "family",
-                        "hex": "#4E1758",
+                        "hex": "#3B1142",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -2749,7 +2749,7 @@
                         "common": "Molas",
                         "inat_id": 49607,
                         "level": "family",
-                        "hex": "#5E112C",
+                        "hex": "#460D21",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -2771,7 +2771,7 @@
                         "common": "Eagle Rays",
                         "inat_id": 49298,
                         "level": "family",
-                        "hex": "#4C1323",
+                        "hex": "#390E1A",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -2793,7 +2793,7 @@
                         "common": "Large-tooth Flounders",
                         "inat_id": 48417,
                         "level": "family",
-                        "hex": "#661449",
+                        "hex": "#4D0F37",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -2815,7 +2815,7 @@
                         "common": "Livebearers and Lampeyes",
                         "inat_id": 59116,
                         "level": "family",
-                        "hex": "#521659",
+                        "hex": "#3D1043",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -2837,7 +2837,7 @@
                         "common": "Salmon and Allies",
                         "inat_id": 47520,
                         "level": "family",
-                        "hex": "#4D122E",
+                        "hex": "#390E23",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -2881,7 +2881,7 @@
                         "common": "Houndsharks",
                         "inat_id": 49965,
                         "level": "family",
-                        "hex": "#4C422C",
+                        "hex": "#393121",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -2916,7 +2916,7 @@
                 "common": "fungi",
                 "inat_id": "NA",
                 "level": "category",
-                "hex": "#150305",
+                "hex": "#0C0203",
                 "nspp": 141,
                 "nobs": 141,
                 "children": [
@@ -2925,7 +2925,7 @@
                         "common": "Agaricaceae",
                         "inat_id": 47394,
                         "level": "family",
-                        "hex": "#340A0A",
+                        "hex": "#270708",
                         "nspp": 4,
                         "nobs": 4,
                         "children": [
@@ -2980,7 +2980,7 @@
                         "common": "Gilled mushrooms",
                         "inat_id": 118249,
                         "level": "family",
-                        "hex": "#320909",
+                        "hex": "#260707",
                         "nspp": 9,
                         "nobs": 9,
                         "children": [
@@ -3090,7 +3090,7 @@
                         "common": "Agaricomycetes",
                         "inat_id": 50816,
                         "level": "family",
-                        "hex": "#360C06",
+                        "hex": "#290904",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -3112,7 +3112,7 @@
                         "common": "Agaricomycetes",
                         "inat_id": 55176,
                         "level": "family",
-                        "hex": "#360D0F",
+                        "hex": "#280A0B",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -3134,7 +3134,7 @@
                         "common": "Agaricomycetes",
                         "inat_id": 52527,
                         "level": "family",
-                        "hex": "#300B06",
+                        "hex": "#240904",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -3156,7 +3156,7 @@
                         "common": "Boletes",
                         "inat_id": 48702,
                         "level": "family",
-                        "hex": "#2F0513",
+                        "hex": "#23040E",
                         "nspp": 5,
                         "nobs": 5,
                         "children": [
@@ -3222,7 +3222,7 @@
                         "common": "Sac fungi",
                         "inat_id": 83420,
                         "level": "family",
-                        "hex": "#390122",
+                        "hex": "#2A0119",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -3244,7 +3244,7 @@
                         "common": "Agaricomycetes",
                         "inat_id": 47349,
                         "level": "family",
-                        "hex": "#2E0B0E",
+                        "hex": "#23080A",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -3277,7 +3277,7 @@
                         "common": "Spindles and structured lichens",
                         "inat_id": 49489,
                         "level": "family",
-                        "hex": "#3A0104",
+                        "hex": "#2B0103",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -3299,7 +3299,7 @@
                         "common": "Agaricomycetes",
                         "inat_id": 63265,
                         "level": "family",
-                        "hex": "#170508",
+                        "hex": "#110406",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -3332,7 +3332,7 @@
                         "common": "Gilled mushrooms",
                         "inat_id": 48705,
                         "level": "family",
-                        "hex": "#350B0D",
+                        "hex": "#28090A",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -3354,7 +3354,7 @@
                         "common": "Gilled mushrooms",
                         "inat_id": 416506,
                         "level": "family",
-                        "hex": "#360706",
+                        "hex": "#280505",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -3376,7 +3376,7 @@
                         "common": "Fungi including lichens",
                         "inat_id": 53279,
                         "level": "family",
-                        "hex": "#2D0541",
+                        "hex": "#220431",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -3409,7 +3409,7 @@
                         "common": "Zygote Fungi",
                         "inat_id": 55116,
                         "level": "family",
-                        "hex": "#2D0C6C",
+                        "hex": "#220951",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -3431,7 +3431,7 @@
                         "common": "Shelf fungi",
                         "inat_id": 55974,
                         "level": "family",
-                        "hex": "#2F0C0E",
+                        "hex": "#23090A",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -3464,7 +3464,7 @@
                         "common": "Shelf fungi",
                         "inat_id": 48474,
                         "level": "family",
-                        "hex": "#2F0C09",
+                        "hex": "#230907",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -3497,7 +3497,7 @@
                         "common": "Agaricomycetes",
                         "inat_id": 48710,
                         "level": "family",
-                        "hex": "#370E06",
+                        "hex": "#290B05",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -3519,7 +3519,7 @@
                         "common": "Agaricomycetes",
                         "inat_id": 48426,
                         "level": "family",
-                        "hex": "#2E0512",
+                        "hex": "#23040D",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -3563,7 +3563,7 @@
                         "common": "Sac fungi",
                         "inat_id": 49205,
                         "level": "family",
-                        "hex": "#380402",
+                        "hex": "#2A0301",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -3596,7 +3596,7 @@
                         "common": "Sac fungi",
                         "inat_id": 176577,
                         "level": "family",
-                        "hex": "#3C0114",
+                        "hex": "#2D010F",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -3640,7 +3640,7 @@
                         "common": "Gilled mushrooms",
                         "inat_id": 351075,
                         "level": "family",
-                        "hex": "#1A0604",
+                        "hex": "#140403",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -3673,7 +3673,7 @@
                         "common": "Gilled mushrooms",
                         "inat_id": 51870,
                         "level": "family",
-                        "hex": "#34080C",
+                        "hex": "#270609",
                         "nspp": 6,
                         "nobs": 6,
                         "children": [
@@ -3750,7 +3750,7 @@
                         "common": "Agaricomycetes",
                         "inat_id": 63542,
                         "level": "family",
-                        "hex": "#300615",
+                        "hex": "#240410",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -3772,7 +3772,7 @@
                         "common": "Sac fungi",
                         "inat_id": 48247,
                         "level": "family",
-                        "hex": "#380101",
+                        "hex": "#2A0101",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -3805,7 +3805,7 @@
                         "common": "Sac fungi",
                         "inat_id": 50253,
                         "level": "family",
-                        "hex": "#1D0202",
+                        "hex": "#160101",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -3838,7 +3838,7 @@
                         "common": "Sac fungi",
                         "inat_id": 58672,
                         "level": "family",
-                        "hex": "#390125",
+                        "hex": "#2B011B",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -3860,7 +3860,7 @@
                         "common": "Sac fungi",
                         "inat_id": 48713,
                         "level": "family",
-                        "hex": "#3C0402",
+                        "hex": "#2D0302",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -3882,7 +3882,7 @@
                         "common": "Puffballs",
                         "inat_id": 48445,
                         "level": "family",
-                        "hex": "#34090A",
+                        "hex": "#270707",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -3915,7 +3915,7 @@
                         "common": "Gilled mushrooms",
                         "inat_id": 49545,
                         "level": "family",
-                        "hex": "#320707",
+                        "hex": "#250505",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -3948,7 +3948,7 @@
                         "common": "Gilled mushrooms",
                         "inat_id": 55920,
                         "level": "family",
-                        "hex": "#200506",
+                        "hex": "#180405",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -3992,7 +3992,7 @@
                         "common": "Sac fungi",
                         "inat_id": 54321,
                         "level": "family",
-                        "hex": "#320203",
+                        "hex": "#260202",
                         "nspp": 7,
                         "nobs": 7,
                         "children": [
@@ -4080,7 +4080,7 @@
                         "common": "Agaricomycetes",
                         "inat_id": 55942,
                         "level": "family",
-                        "hex": "#2E0612",
+                        "hex": "#23050D",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -4102,7 +4102,7 @@
                         "common": "Cup fungi",
                         "inat_id": 57373,
                         "level": "family",
-                        "hex": "#380402",
+                        "hex": "#2A0301",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -4124,7 +4124,7 @@
                         "common": "Gilled mushrooms",
                         "inat_id": 55931,
                         "level": "family",
-                        "hex": "#360708",
+                        "hex": "#290506",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -4157,7 +4157,7 @@
                         "common": "Sac fungi",
                         "inat_id": 60717,
                         "level": "family",
-                        "hex": "#3C0303",
+                        "hex": "#2D0202",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -4179,7 +4179,7 @@
                         "common": "Gilled mushrooms",
                         "inat_id": 48495,
                         "level": "family",
-                        "hex": "#37080C",
+                        "hex": "#290609",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -4201,7 +4201,7 @@
                         "common": "Gilled mushrooms",
                         "inat_id": 48420,
                         "level": "family",
-                        "hex": "#370909",
+                        "hex": "#290707",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -4234,7 +4234,7 @@
                         "common": "Bracket fungi",
                         "inat_id": 47379,
                         "level": "family",
-                        "hex": "#300D0D",
+                        "hex": "#240A0A",
                         "nspp": 5,
                         "nobs": 5,
                         "children": [
@@ -4300,7 +4300,7 @@
                         "common": "Gilled mushrooms",
                         "inat_id": 56310,
                         "level": "family",
-                        "hex": "#320A0A",
+                        "hex": "#260707",
                         "nspp": 4,
                         "nobs": 4,
                         "children": [
@@ -4355,7 +4355,7 @@
                         "common": "Sac fungi",
                         "inat_id": 48718,
                         "level": "family",
-                        "hex": "#380402",
+                        "hex": "#2A0302",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -4388,7 +4388,7 @@
                         "common": "Sac fungi",
                         "inat_id": 48326,
                         "level": "family",
-                        "hex": "#3B0204",
+                        "hex": "#2C0103",
                         "nspp": 8,
                         "nobs": 8,
                         "children": [
@@ -4487,7 +4487,7 @@
                         "common": "Sac fungi",
                         "inat_id": 55453,
                         "level": "family",
-                        "hex": "#380004",
+                        "hex": "#2A0003",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -4509,7 +4509,7 @@
                         "common": "Agaricomycetes",
                         "inat_id": 48340,
                         "level": "family",
-                        "hex": "#2E0C0A",
+                        "hex": "#230908",
                         "nspp": 12,
                         "nobs": 12,
                         "children": [
@@ -4652,7 +4652,7 @@
                         "common": "Elf Cups and Allies",
                         "inat_id": 49135,
                         "level": "family",
-                        "hex": "#390402",
+                        "hex": "#2A0301",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -4674,7 +4674,7 @@
                         "common": "Cauliflower Fungi",
                         "inat_id": 63019,
                         "level": "family",
-                        "hex": "#300E0F",
+                        "hex": "#240B0B",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -4696,7 +4696,7 @@
                         "common": "Agaricomycetes",
                         "inat_id": 55502,
                         "level": "family",
-                        "hex": "#370D0B",
+                        "hex": "#290A08",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -4718,7 +4718,7 @@
                         "common": "Strophariaceae",
                         "inat_id": 48768,
                         "level": "family",
-                        "hex": "#2B0806",
+                        "hex": "#200604",
                         "nspp": 6,
                         "nobs": 6,
                         "children": [
@@ -4795,7 +4795,7 @@
                         "common": "Agaricomycetes",
                         "inat_id": 53489,
                         "level": "family",
-                        "hex": "#2E0612",
+                        "hex": "#22040D",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -4839,7 +4839,7 @@
                         "common": "Sac fungi",
                         "inat_id": 54756,
                         "level": "family",
-                        "hex": "#3C0404",
+                        "hex": "#2D0303",
                         "nspp": 4,
                         "nobs": 4,
                         "children": [
@@ -4894,7 +4894,7 @@
                         "common": "Witch's Butter (Golden Ear)",
                         "inat_id": 48531,
                         "level": "family",
-                        "hex": "#370F34",
+                        "hex": "#290B27",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -4927,7 +4927,7 @@
                         "common": "Gilled mushrooms",
                         "inat_id": 47498,
                         "level": "family",
-                        "hex": "#260607",
+                        "hex": "#1D0405",
                         "nspp": 7,
                         "nobs": 7,
                         "children": [
@@ -5015,7 +5015,7 @@
                         "common": "Gilled mushrooms",
                         "inat_id": 416523,
                         "level": "family",
-                        "hex": "#310B07",
+                        "hex": "#250805",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -5037,7 +5037,7 @@
                         "common": "Sac fungi",
                         "inat_id": 48806,
                         "level": "family",
-                        "hex": "#380106",
+                        "hex": "#2A0104",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -5072,7 +5072,7 @@
                 "common": "herp",
                 "inat_id": "NA",
                 "level": "category",
-                "hex": "#241420",
+                "hex": "#140B12",
                 "nspp": 18,
                 "nobs": 18,
                 "children": [
@@ -5081,7 +5081,7 @@
                         "common": "Mole Salamanders",
                         "inat_id": 26720,
                         "level": "family",
-                        "hex": "#634D5A",
+                        "hex": "#4A3A43",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -5103,7 +5103,7 @@
                         "common": "Alligator Lizards and Legless Lizards",
                         "inat_id": 31888,
                         "level": "family",
-                        "hex": "#4B1544",
+                        "hex": "#380F33",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -5136,7 +5136,7 @@
                         "common": "Boas",
                         "inat_id": 32080,
                         "level": "family",
-                        "hex": "#4B1549",
+                        "hex": "#381037",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -5158,7 +5158,7 @@
                         "common": "Colubrid Snakes",
                         "inat_id": 26504,
                         "level": "family",
-                        "hex": "#4C1449",
+                        "hex": "#390F37",
                         "nspp": 4,
                         "nobs": 4,
                         "children": [
@@ -5213,7 +5213,7 @@
                         "common": "Pond and Box Turtles",
                         "inat_id": 39760,
                         "level": "family",
-                        "hex": "#4C1422",
+                        "hex": "#390F1A",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -5235,7 +5235,7 @@
                         "common": "Tree Frogs and Allies",
                         "inat_id": 23540,
                         "level": "family",
-                        "hex": "#4C454C",
+                        "hex": "#393439",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -5257,7 +5257,7 @@
                         "common": "Phrynosomatid Lizards",
                         "inat_id": 36074,
                         "level": "family",
-                        "hex": "#4B1545",
+                        "hex": "#381034",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -5279,7 +5279,7 @@
                         "common": "Lungless Salamanders",
                         "inat_id": 26909,
                         "level": "family",
-                        "hex": "#654A54",
+                        "hex": "#4C383F",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -5323,7 +5323,7 @@
                         "common": "True Frogs",
                         "inat_id": 25473,
                         "level": "family",
-                        "hex": "#4D454C",
+                        "hex": "#393339",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -5356,7 +5356,7 @@
                         "common": "Newts",
                         "inat_id": 27701,
                         "level": "family",
-                        "hex": "#664A52",
+                        "hex": "#4C373E",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -5391,7 +5391,7 @@
                 "common": "invertebrate",
                 "inat_id": "NA",
                 "level": "category",
-                "hex": "#1E2516",
+                "hex": "#11150C",
                 "nspp": 206,
                 "nobs": 206,
                 "children": [
@@ -5400,7 +5400,7 @@
                         "common": "Short-horned Grasshoppers",
                         "inat_id": 47649,
                         "level": "family",
-                        "hex": "#466061",
+                        "hex": "#354849",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -5444,7 +5444,7 @@
                         "common": "Sea Anemones",
                         "inat_id": 47796,
                         "level": "family",
-                        "hex": "#676105",
+                        "hex": "#4D4903",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -5488,7 +5488,7 @@
                         "common": "Nudibranchs",
                         "inat_id": 47465,
                         "level": "family",
-                        "hex": "#6A5914",
+                        "hex": "#4F430F",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -5510,7 +5510,7 @@
                         "common": "Darners",
                         "inat_id": 51469,
                         "level": "family",
-                        "hex": "#436047",
+                        "hex": "#334835",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -5554,7 +5554,7 @@
                         "common": "Headshield Slugs",
                         "inat_id": 49843,
                         "level": "family",
-                        "hex": "#685910",
+                        "hex": "#4E430C",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -5576,7 +5576,7 @@
                         "common": "Isopods",
                         "inat_id": 245412,
                         "level": "family",
-                        "hex": "#3D612E",
+                        "hex": "#2E4922",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -5598,7 +5598,7 @@
                         "common": "Foldingdoor Spiders",
                         "inat_id": 48359,
                         "level": "family",
-                        "hex": "#4A5F1C",
+                        "hex": "#374715",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -5620,7 +5620,7 @@
                         "common": "Honey Bees, Bumble Bees, and Allies",
                         "inat_id": 47221,
                         "level": "family",
-                        "hex": "#4A6542",
+                        "hex": "#374C31",
                         "nspp": 4,
                         "nobs": 4,
                         "children": [
@@ -5675,7 +5675,7 @@
                         "common": "Sea Hares",
                         "inat_id": 48656,
                         "level": "family",
-                        "hex": "#6C5826",
+                        "hex": "#51421C",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -5697,7 +5697,7 @@
                         "common": "Orbweavers",
                         "inat_id": 47535,
                         "level": "family",
-                        "hex": "#465C30",
+                        "hex": "#354524",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -5730,7 +5730,7 @@
                         "common": "Roundback Slugs",
                         "inat_id": 47778,
                         "level": "family",
-                        "hex": "#695A23",
+                        "hex": "#4F431A",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -5752,7 +5752,7 @@
                         "common": "Pillbugs",
                         "inat_id": 48296,
                         "level": "family",
-                        "hex": "#3D5D31",
+                        "hex": "#2E4625",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -5774,7 +5774,7 @@
                         "common": "Robber Flies",
                         "inat_id": 47982,
                         "level": "family",
-                        "hex": "#41634E",
+                        "hex": "#314A3B",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -5796,7 +5796,7 @@
                         "common": "Sea Stars",
                         "inat_id": 47671,
                         "level": "family",
-                        "hex": "#675104",
+                        "hex": "#4D3D03",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -5829,7 +5829,7 @@
                         "common": "Sea Stars",
                         "inat_id": 48831,
                         "level": "family",
-                        "hex": "#66586A",
+                        "hex": "#4D4250",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -5851,7 +5851,7 @@
                         "common": "Sea Stars",
                         "inat_id": 121601,
                         "level": "family",
-                        "hex": "#671406",
+                        "hex": "#4D0F04",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -5873,7 +5873,7 @@
                         "common": "Mudcreepers",
                         "inat_id": 68784,
                         "level": "family",
-                        "hex": "#69580F",
+                        "hex": "#4F420B",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -5895,7 +5895,7 @@
                         "common": "Decapods",
                         "inat_id": 193860,
                         "level": "family",
-                        "hex": "#3E6123",
+                        "hex": "#2E491A",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -5917,7 +5917,7 @@
                         "common": "Bee Flies",
                         "inat_id": 51558,
                         "level": "family",
-                        "hex": "#41675A",
+                        "hex": "#314D43",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -5939,7 +5939,7 @@
                         "common": "Common Land Snails and Slugs",
                         "inat_id": 62804,
                         "level": "family",
-                        "hex": "#695B22",
+                        "hex": "#4E451A",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -5983,7 +5983,7 @@
                         "common": "Bryozoans",
                         "inat_id": 81638,
                         "level": "family",
-                        "hex": "#3C4F06",
+                        "hex": "#2D3B04",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -6005,7 +6005,7 @@
                         "common": "Nudibranchs",
                         "inat_id": 349077,
                         "level": "family",
-                        "hex": "#352D09",
+                        "hex": "#282107",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -6038,7 +6038,7 @@
                         "common": "Ghost Shrimp",
                         "inat_id": 56657,
                         "level": "family",
-                        "hex": "#3F6217",
+                        "hex": "#2F4911",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -6082,7 +6082,7 @@
                         "common": "Decapods",
                         "inat_id": 47828,
                         "level": "family",
-                        "hex": "#3F6018",
+                        "hex": "#2F4812",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -6126,7 +6126,7 @@
                         "common": "Ground Beetles",
                         "inat_id": 49567,
                         "level": "family",
-                        "hex": "#406239",
+                        "hex": "#30492A",
                         "nspp": 4,
                         "nobs": 4,
                         "children": [
@@ -6181,7 +6181,7 @@
                         "common": "Cockles",
                         "inat_id": 50597,
                         "level": "family",
-                        "hex": "#68586A",
+                        "hex": "#4E424F",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -6203,7 +6203,7 @@
                         "common": "Gall Midges",
                         "inat_id": 55699,
                         "level": "family",
-                        "hex": "#426B59",
+                        "hex": "#315043",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -6225,7 +6225,7 @@
                         "common": "Leaf Beetles",
                         "inat_id": 51146,
                         "level": "family",
-                        "hex": "#406341",
+                        "hex": "#304A31",
                         "nspp": 4,
                         "nobs": 4,
                         "children": [
@@ -6280,7 +6280,7 @@
                         "common": "Green Lacewings",
                         "inat_id": 52425,
                         "level": "family",
-                        "hex": "#415E44",
+                        "hex": "#304633",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -6302,7 +6302,7 @@
                         "common": "Lady Beetles",
                         "inat_id": 48486,
                         "level": "family",
-                        "hex": "#406239",
+                        "hex": "#30492B",
                         "nspp": 4,
                         "nobs": 4,
                         "children": [
@@ -6357,7 +6357,7 @@
                         "common": "Narrow-winged Damselflies",
                         "inat_id": 47925,
                         "level": "family",
-                        "hex": "#485F41",
+                        "hex": "#364731",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -6390,7 +6390,7 @@
                         "common": "Dove Snails",
                         "inat_id": 50704,
                         "level": "family",
-                        "hex": "#6B5824",
+                        "hex": "#50421B",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -6412,7 +6412,7 @@
                         "common": "Spiketails and Allies",
                         "inat_id": 57448,
                         "level": "family",
-                        "hex": "#42604D",
+                        "hex": "#31483A",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -6434,7 +6434,7 @@
                         "common": "Ants, Bees, Wasps & Sawflies",
                         "inat_id": 51955,
                         "level": "family",
-                        "hex": "#4B6749",
+                        "hex": "#384D37",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -6456,7 +6456,7 @@
                         "common": "Crambid Snout Moths",
                         "inat_id": 52002,
                         "level": "family",
-                        "hex": "#45664C",
+                        "hex": "#344D39",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -6489,7 +6489,7 @@
                         "common": "True Weevils",
                         "inat_id": 48736,
                         "level": "family",
-                        "hex": "#406436",
+                        "hex": "#304B28",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -6511,7 +6511,7 @@
                         "common": "Sea Butterflies",
                         "inat_id": 55319,
                         "level": "family",
-                        "hex": "#6B5722",
+                        "hex": "#50411A",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -6533,7 +6533,7 @@
                         "common": "Sand Dollars",
                         "inat_id": 117701,
                         "level": "family",
-                        "hex": "#670F0E",
+                        "hex": "#4D0B0B",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -6599,7 +6599,7 @@
                         "common": "Overgrowing Tunicates",
                         "inat_id": 54931,
                         "level": "family",
-                        "hex": "#66113C",
+                        "hex": "#4D0C2D",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -6621,7 +6621,7 @@
                         "common": "Nudibranchs",
                         "inat_id": 47507,
                         "level": "family",
-                        "hex": "#6A5A11",
+                        "hex": "#50430C",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -6643,7 +6643,7 @@
                         "common": "Nudibranchs",
                         "inat_id": 50133,
                         "level": "family",
-                        "hex": "#6A5B14",
+                        "hex": "#50440F",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -6687,7 +6687,7 @@
                         "common": "Kelp Crabs and Spider Crabs",
                         "inat_id": 49724,
                         "level": "family",
-                        "hex": "#3E631B",
+                        "hex": "#2F4A14",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -6709,7 +6709,7 @@
                         "common": "Wentletrap Family",
                         "inat_id": 122558,
                         "level": "family",
-                        "hex": "#6B5811",
+                        "hex": "#50420D",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -6731,7 +6731,7 @@
                         "common": "Underwing, Tiger, and Tussock Moths and Allies",
                         "inat_id": 121850,
                         "level": "family",
-                        "hex": "#47664B",
+                        "hex": "#364C38",
                         "nspp": 4,
                         "nobs": 4,
                         "children": [
@@ -6786,7 +6786,7 @@
                         "common": "Nudibranchs",
                         "inat_id": 47211,
                         "level": "family",
-                        "hex": "#6A5A11",
+                        "hex": "#4F440D",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -6819,7 +6819,7 @@
                         "common": "Nudibranchs",
                         "inat_id": 50532,
                         "level": "family",
-                        "hex": "#231E07",
+                        "hex": "#1A1705",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -6896,7 +6896,7 @@
                         "common": "Ants",
                         "inat_id": 47336,
                         "level": "family",
-                        "hex": "#4B673F",
+                        "hex": "#384D2F",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -6929,7 +6929,7 @@
                         "common": "Geometer Moths",
                         "inat_id": 49530,
                         "level": "family",
-                        "hex": "#476650",
+                        "hex": "#354D3C",
                         "nspp": 6,
                         "nobs": 6,
                         "children": [
@@ -7006,7 +7006,7 @@
                         "common": "Bumble Bee Scarab Beetles",
                         "inat_id": 57465,
                         "level": "family",
-                        "hex": "#416338",
+                        "hex": "#314B2A",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -7028,7 +7028,7 @@
                         "common": "Clubtails",
                         "inat_id": 51128,
                         "level": "family",
-                        "hex": "#496051",
+                        "hex": "#37483D",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -7050,7 +7050,7 @@
                         "common": "Nudibranchs",
                         "inat_id": 47140,
                         "level": "family",
-                        "hex": "#342D0A",
+                        "hex": "#272207",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -7083,7 +7083,7 @@
                         "common": "Shore Crabs",
                         "inat_id": 47190,
                         "level": "family",
-                        "hex": "#3E6015",
+                        "hex": "#2F4810",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -7105,7 +7105,7 @@
                         "common": "Common Land Snails and Slugs",
                         "inat_id": 172056,
                         "level": "family",
-                        "hex": "#695B27",
+                        "hex": "#4F451D",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -7127,7 +7127,7 @@
                         "common": "Common Land Snails and Slugs",
                         "inat_id": 47484,
                         "level": "family",
-                        "hex": "#695B28",
+                        "hex": "#4E441E",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -7149,7 +7149,7 @@
                         "common": "Common Land Snails and Slugs",
                         "inat_id": 48471,
                         "level": "family",
-                        "hex": "#695B26",
+                        "hex": "#4E441C",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -7182,7 +7182,7 @@
                         "common": "Skippers",
                         "inat_id": 47653,
                         "level": "family",
-                        "hex": "#45694D",
+                        "hex": "#344E3A",
                         "nspp": 7,
                         "nobs": 7,
                         "children": [
@@ -7270,7 +7270,7 @@
                         "common": "Decapods",
                         "inat_id": 47184,
                         "level": "family",
-                        "hex": "#3D5F20",
+                        "hex": "#2E4718",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -7292,7 +7292,7 @@
                         "common": "Bordered Plant Bugs",
                         "inat_id": 52984,
                         "level": "family",
-                        "hex": "#496C55",
+                        "hex": "#375140",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -7314,7 +7314,7 @@
                         "common": "Lappet Moths",
                         "inat_id": 56584,
                         "level": "family",
-                        "hex": "#486B4F",
+                        "hex": "#36503B",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -7336,7 +7336,7 @@
                         "common": "Skimmers",
                         "inat_id": 47819,
                         "level": "family",
-                        "hex": "#466044",
+                        "hex": "#344833",
                         "nspp": 6,
                         "nobs": 6,
                         "children": [
@@ -7413,7 +7413,7 @@
                         "common": "True Limpets",
                         "inat_id": 48751,
                         "level": "family",
-                        "hex": "#473B0A",
+                        "hex": "#352D08",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -7457,7 +7457,7 @@
                         "common": "Gossamer-winged Butterflies",
                         "inat_id": 47923,
                         "level": "family",
-                        "hex": "#3B593D",
+                        "hex": "#2C432E",
                         "nspp": 7,
                         "nobs": 7,
                         "children": [
@@ -7545,7 +7545,7 @@
                         "common": "Seed Bugs",
                         "inat_id": 55558,
                         "level": "family",
-                        "hex": "#4A6B46",
+                        "hex": "#375035",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -7567,7 +7567,7 @@
                         "common": "Chitons",
                         "inat_id": 47631,
                         "level": "family",
-                        "hex": "#6C5362",
+                        "hex": "#513E4A",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -7600,7 +7600,7 @@
                         "common": "Murex Snails",
                         "inat_id": 50766,
                         "level": "family",
-                        "hex": "#2B230F",
+                        "hex": "#201A0B",
                         "nspp": 5,
                         "nobs": 5,
                         "children": [
@@ -7666,7 +7666,7 @@
                         "common": "Gapers",
                         "inat_id": 81635,
                         "level": "family",
-                        "hex": "#6A5755",
+                        "hex": "#4F4140",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -7688,7 +7688,7 @@
                         "common": "Mussels",
                         "inat_id": 50600,
                         "level": "family",
-                        "hex": "#6C5956",
+                        "hex": "#514340",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -7710,7 +7710,7 @@
                         "common": "Dog-whelks",
                         "inat_id": 50764,
                         "level": "family",
-                        "hex": "#6B582A",
+                        "hex": "#50421F",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -7754,7 +7754,7 @@
                         "common": "Noctuid Moths",
                         "inat_id": 48670,
                         "level": "family",
-                        "hex": "#46694E",
+                        "hex": "#344E3B",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -7798,7 +7798,7 @@
                         "common": "Gastropods",
                         "inat_id": 47576,
                         "level": "family",
-                        "hex": "#6B5728",
+                        "hex": "#50411E",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -7820,7 +7820,7 @@
                         "common": "Brush-footed Butterflies",
                         "inat_id": 47922,
                         "level": "family",
-                        "hex": "#44694F",
+                        "hex": "#334F3C",
                         "nspp": 13,
                         "nobs": 13,
                         "children": [
@@ -7974,7 +7974,7 @@
                         "common": "Gastropods",
                         "inat_id": 246175,
                         "level": "family",
-                        "hex": "#6B5828",
+                        "hex": "#50421E",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -8018,7 +8018,7 @@
                         "common": "True Oysters",
                         "inat_id": 47582,
                         "level": "family",
-                        "hex": "#675A4A",
+                        "hex": "#4D4337",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -8040,7 +8040,7 @@
                         "common": "Decapods",
                         "inat_id": 50819,
                         "level": "family",
-                        "hex": "#3E5E19",
+                        "hex": "#2F4613",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -8062,7 +8062,7 @@
                         "common": "Swallowtails and Parnassians",
                         "inat_id": 47223,
                         "level": "family",
-                        "hex": "#45664D",
+                        "hex": "#344D3A",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -8106,7 +8106,7 @@
                         "common": "True Jellyfish",
                         "inat_id": 48482,
                         "level": "family",
-                        "hex": "#675C01",
+                        "hex": "#4D4501",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -8128,7 +8128,7 @@
                         "common": "Veneroids",
                         "inat_id": 85983,
                         "level": "family",
-                        "hex": "#67596A",
+                        "hex": "#4D434F",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -8150,7 +8150,7 @@
                         "common": "Isopods",
                         "inat_id": 48294,
                         "level": "family",
-                        "hex": "#3D5E2D",
+                        "hex": "#2E4622",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -8205,7 +8205,7 @@
                         "common": "Whites, Yellows and Sulphurs",
                         "inat_id": 48508,
                         "level": "family",
-                        "hex": "#496652",
+                        "hex": "#374D3E",
                         "nspp": 4,
                         "nobs": 4,
                         "children": [
@@ -8260,7 +8260,7 @@
                         "common": "Nudibranchs",
                         "inat_id": 47112,
                         "level": "family",
-                        "hex": "#695A13",
+                        "hex": "#4F440E",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -8326,7 +8326,7 @@
                         "common": "Isopods",
                         "inat_id": 122239,
                         "level": "family",
-                        "hex": "#3D5E30",
+                        "hex": "#2E4624",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -8359,7 +8359,7 @@
                         "common": "Athecate Hydroids",
                         "inat_id": 59692,
                         "level": "family",
-                        "hex": "#6C6503",
+                        "hex": "#514C02",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -8381,7 +8381,7 @@
                         "common": "Swimming Crabs",
                         "inat_id": 49506,
                         "level": "family",
-                        "hex": "#3E5E1D",
+                        "hex": "#2E4716",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -8414,7 +8414,7 @@
                         "common": "Polyclad Flatworms",
                         "inat_id": 52317,
                         "level": "family",
-                        "hex": "#6C4F6B",
+                        "hex": "#513B50",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -8436,7 +8436,7 @@
                         "common": "Dirt-colored Seed Bugs",
                         "inat_id": 141732,
                         "level": "family",
-                        "hex": "#456C42",
+                        "hex": "#345132",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -8458,7 +8458,7 @@
                         "common": "Nudibranchs",
                         "inat_id": 47475,
                         "level": "family",
-                        "hex": "#695A12",
+                        "hex": "#4E440D",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -8480,7 +8480,7 @@
                         "common": "Polychaetes",
                         "inat_id": 59643,
                         "level": "family",
-                        "hex": "#3C6C3C",
+                        "hex": "#2D512D",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -8502,7 +8502,7 @@
                         "common": "Salps",
                         "inat_id": 122325,
                         "level": "family",
-                        "hex": "#5A4F3B",
+                        "hex": "#433B2C",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -8524,7 +8524,7 @@
                         "common": "Jumping Spiders",
                         "inat_id": 48139,
                         "level": "family",
-                        "hex": "#3F6C2B",
+                        "hex": "#2F5120",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -8546,7 +8546,7 @@
                         "common": "Emperor, Atlas, Moon & Silk Moths",
                         "inat_id": 47918,
                         "level": "family",
-                        "hex": "#42694B",
+                        "hex": "#314F38",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -8568,7 +8568,7 @@
                         "common": "Dung Flies",
                         "inat_id": 68719,
                         "level": "family",
-                        "hex": "#42695C",
+                        "hex": "#324E45",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -8590,7 +8590,7 @@
                         "common": "Carrion Beetles",
                         "inat_id": 53849,
                         "level": "family",
-                        "hex": "#406338",
+                        "hex": "#304A2A",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -8623,7 +8623,7 @@
                         "common": "Thread-waisted Wasps",
                         "inat_id": 48742,
                         "level": "family",
-                        "hex": "#4A6A3C",
+                        "hex": "#374F2D",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -8645,7 +8645,7 @@
                         "common": "Sphinx Moths",
                         "inat_id": 47213,
                         "level": "family",
-                        "hex": "#43654B",
+                        "hex": "#334C38",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -8678,7 +8678,7 @@
                         "common": "Rove Beetles",
                         "inat_id": 47951,
                         "level": "family",
-                        "hex": "#3F6241",
+                        "hex": "#2F4A31",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -8700,7 +8700,7 @@
                         "common": "Hover Flies",
                         "inat_id": 49995,
                         "level": "family",
-                        "hex": "#4A6658",
+                        "hex": "#374D42",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -8722,7 +8722,7 @@
                         "common": "Sandhoppers and Landhoppers",
                         "inat_id": 63288,
                         "level": "family",
-                        "hex": "#3D6C2D",
+                        "hex": "#2E5121",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -8744,7 +8744,7 @@
                         "common": "Common Sawflies",
                         "inat_id": 60628,
                         "level": "family",
-                        "hex": "#4A6348",
+                        "hex": "#384A36",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -8766,7 +8766,7 @@
                         "common": "Crab Spiders",
                         "inat_id": 47866,
                         "level": "family",
-                        "hex": "#4A5F1F",
+                        "hex": "#384717",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -8788,7 +8788,7 @@
                         "common": "Top Snails",
                         "inat_id": 53830,
                         "level": "family",
-                        "hex": "#685910",
+                        "hex": "#4E430C",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -8810,7 +8810,7 @@
                         "common": "Decapods",
                         "inat_id": 48344,
                         "level": "family",
-                        "hex": "#3E5F1B",
+                        "hex": "#2E4714",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -8843,7 +8843,7 @@
                         "common": "Venus Clams",
                         "inat_id": 50588,
                         "level": "family",
-                        "hex": "#68586A",
+                        "hex": "#4E4250",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -8876,7 +8876,7 @@
                         "common": "Bryozoans",
                         "inat_id": 124518,
                         "level": "family",
-                        "hex": "#3D4E31",
+                        "hex": "#2E3B25",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -8898,7 +8898,7 @@
                         "common": "Flat-backed Millipedes",
                         "inat_id": 47739,
                         "level": "family",
-                        "hex": "#415E06",
+                        "hex": "#314604",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -8922,7 +8922,7 @@
                 "common": "mammal",
                 "inat_id": "NA",
                 "level": "category",
-                "hex": "#240728",
+                "hex": "#140417",
                 "nspp": 28,
                 "nobs": 28,
                 "children": [
@@ -8931,7 +8931,7 @@
                         "common": "Canids",
                         "inat_id": 42043,
                         "level": "family",
-                        "hex": "#551162",
+                        "hex": "#400C49",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -8964,7 +8964,7 @@
                         "common": "Deer",
                         "inat_id": 42158,
                         "level": "family",
-                        "hex": "#521268",
+                        "hex": "#3D0E4E",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -9008,7 +9008,7 @@
                         "common": "Hamsters, Voles, Lemmings, and Allies",
                         "inat_id": 55986,
                         "level": "family",
-                        "hex": "#621369",
+                        "hex": "#490E4F",
                         "nspp": 4,
                         "nobs": 4,
                         "children": [
@@ -9063,7 +9063,7 @@
                         "common": "Ocean Dolphins",
                         "inat_id": 41479,
                         "level": "family",
-                        "hex": "#591058",
+                        "hex": "#430C42",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -9107,7 +9107,7 @@
                         "common": "Cats",
                         "inat_id": 41944,
                         "level": "family",
-                        "hex": "#4F105F",
+                        "hex": "#3B0C47",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -9129,7 +9129,7 @@
                         "common": "Pocket Gophers",
                         "inat_id": 44027,
                         "level": "family",
-                        "hex": "#651369",
+                        "hex": "#4C0E4F",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -9151,7 +9151,7 @@
                         "common": "Hares and Rabbits",
                         "inat_id": 43095,
                         "level": "family",
-                        "hex": "#5B1264",
+                        "hex": "#450D4B",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -9184,7 +9184,7 @@
                         "common": "Skunks",
                         "inat_id": 41871,
                         "level": "family",
-                        "hex": "#581164",
+                        "hex": "#420D4B",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -9206,7 +9206,7 @@
                         "common": "Mustelids",
                         "inat_id": 41770,
                         "level": "family",
-                        "hex": "#55105D",
+                        "hex": "#3F0C46",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -9250,7 +9250,7 @@
                         "common": "Eared Seals",
                         "inat_id": 41736,
                         "level": "family",
-                        "hex": "#571162",
+                        "hex": "#410D4A",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -9283,7 +9283,7 @@
                         "common": "True Seals",
                         "inat_id": 41687,
                         "level": "family",
-                        "hex": "#53115F",
+                        "hex": "#3E0C47",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -9316,7 +9316,7 @@
                         "common": "Raccoons and Allies",
                         "inat_id": 41660,
                         "level": "family",
-                        "hex": "#521165",
+                        "hex": "#3D0D4C",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -9338,7 +9338,7 @@
                         "common": "Squirrels and Allies",
                         "inat_id": 45933,
                         "level": "family",
-                        "hex": "#61136A",
+                        "hex": "#490E4F",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -9371,7 +9371,7 @@
                         "common": "Moles & Desmans",
                         "inat_id": 46927,
                         "level": "family",
-                        "hex": "#591054",
+                        "hex": "#420C3F",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -9406,7 +9406,7 @@
                 "common": "microbe",
                 "inat_id": "NA",
                 "level": "category",
-                "hex": "#1F1E0F",
+                "hex": "#121109",
                 "nspp": 12,
                 "nobs": 12,
                 "children": [
@@ -9415,7 +9415,7 @@
                         "common": "Kelps",
                         "inat_id": 123804,
                         "level": "family",
-                        "hex": "#396C01",
+                        "hex": "#2B5101",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -9437,7 +9437,7 @@
                         "common": "Brown Algae",
                         "inat_id": 117796,
                         "level": "family",
-                        "hex": "#396C01",
+                        "hex": "#2B5101",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -9459,7 +9459,7 @@
                         "common": "Rockweeds",
                         "inat_id": 48218,
                         "level": "family",
-                        "hex": "#396001",
+                        "hex": "#2B4801",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -9481,7 +9481,7 @@
                         "common": "Kelps",
                         "inat_id": 67425,
                         "level": "family",
-                        "hex": "#396B00",
+                        "hex": "#2B5000",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -9503,7 +9503,7 @@
                         "common": "Kelps",
                         "inat_id": 67418,
                         "level": "family",
-                        "hex": "#396B00",
+                        "hex": "#2B5000",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -9547,7 +9547,7 @@
                         "common": "Slime Molds",
                         "inat_id": 55485,
                         "level": "family",
-                        "hex": "#6C006C",
+                        "hex": "#510051",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -9580,7 +9580,7 @@
                         "common": "Brown Algae",
                         "inat_id": 117833,
                         "level": "family",
-                        "hex": "#3A6C00",
+                        "hex": "#2B5100",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -9602,7 +9602,7 @@
                         "common": "Slime Molds",
                         "inat_id": 47682,
                         "level": "family",
-                        "hex": "#6C006C",
+                        "hex": "#510051",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -9637,7 +9637,7 @@
                 "common": "plant",
                 "inat_id": "NA",
                 "level": "category",
-                "hex": "#09161E",
+                "hex": "#050C11",
                 "nspp": 428,
                 "nobs": 428,
                 "children": [
@@ -9646,7 +9646,7 @@
                         "common": "Dicots",
                         "inat_id": 55793,
                         "level": "family",
-                        "hex": "#253B3D",
+                        "hex": "#1B2C2E",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -9668,7 +9668,7 @@
                         "common": "Stone plants",
                         "inat_id": 49320,
                         "level": "family",
-                        "hex": "#2B4247",
+                        "hex": "#203235",
                         "nspp": 5,
                         "nobs": 5,
                         "children": [
@@ -9734,7 +9734,7 @@
                         "common": "Onions and garlics",
                         "inat_id": 47358,
                         "level": "family",
-                        "hex": "#05562D",
+                        "hex": "#044122",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -9767,7 +9767,7 @@
                         "common": "Amaranths",
                         "inat_id": 52327,
                         "level": "family",
-                        "hex": "#2D3747",
+                        "hex": "#212935",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -9789,7 +9789,7 @@
                         "common": "Amaryllis and allies",
                         "inat_id": 55849,
                         "level": "family",
-                        "hex": "#05522D",
+                        "hex": "#043D22",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -9811,7 +9811,7 @@
                         "common": "Cashews, sumacs and allies",
                         "inat_id": 48874,
                         "level": "family",
-                        "hex": "#143966",
+                        "hex": "#0F2B4D",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -9833,7 +9833,7 @@
                         "common": "Carrot family",
                         "inat_id": 48699,
                         "level": "family",
-                        "hex": "#261858",
+                        "hex": "#1C1242",
                         "nspp": 10,
                         "nobs": 10,
                         "children": [
@@ -9954,7 +9954,7 @@
                         "common": "Dogbanes and milkweeds",
                         "inat_id": 47362,
                         "level": "family",
-                        "hex": "#131F33",
+                        "hex": "#0E1726",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -9976,7 +9976,7 @@
                         "common": "Holly family",
                         "inat_id": 53855,
                         "level": "family",
-                        "hex": "#102C31",
+                        "hex": "#0C2125",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -9998,7 +9998,7 @@
                         "common": "Arums and duckweeds",
                         "inat_id": 48536,
                         "level": "family",
-                        "hex": "#045735",
+                        "hex": "#034128",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -10020,7 +10020,7 @@
                         "common": "Ivy family",
                         "inat_id": 52849,
                         "level": "family",
-                        "hex": "#281656",
+                        "hex": "#1E1041",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -10064,7 +10064,7 @@
                         "common": "Birthwort family",
                         "inat_id": 52860,
                         "level": "family",
-                        "hex": "#1A3030",
+                        "hex": "#132424",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -10086,7 +10086,7 @@
                         "common": "Asparagus family",
                         "inat_id": 47599,
                         "level": "family",
-                        "hex": "#03552F",
+                        "hex": "#024023",
                         "nspp": 5,
                         "nobs": 5,
                         "children": [
@@ -10152,7 +10152,7 @@
                         "common": "Asphodels",
                         "inat_id": 71400,
                         "level": "family",
-                        "hex": "#06552D",
+                        "hex": "#044021",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -10174,7 +10174,7 @@
                         "common": "Sunflowers, daisies, asters and allies",
                         "inat_id": 47604,
                         "level": "family",
-                        "hex": "#1F3A5C",
+                        "hex": "#172B45",
                         "nspp": 58,
                         "nobs": 58,
                         "children": [
@@ -10823,7 +10823,7 @@
                         "common": "Leptosporangiate ferns",
                         "inat_id": 332930,
                         "level": "family",
-                        "hex": "#1F355E",
+                        "hex": "#182847",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -10845,7 +10845,7 @@
                         "common": "Barberries and allies",
                         "inat_id": 49289,
                         "level": "family",
-                        "hex": "#16412A",
+                        "hex": "#103120",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -10878,7 +10878,7 @@
                         "common": "Birches and Allies",
                         "inat_id": 49155,
                         "level": "family",
-                        "hex": "#21213D",
+                        "hex": "#19192E",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -10911,7 +10911,7 @@
                         "common": "Leptosporangiate ferns",
                         "inat_id": 48434,
                         "level": "family",
-                        "hex": "#123B22",
+                        "hex": "#0D2C1A",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -10944,7 +10944,7 @@
                         "common": "Borage family",
                         "inat_id": 48150,
                         "level": "family",
-                        "hex": "#173639",
+                        "hex": "#12282B",
                         "nspp": 12,
                         "nobs": 12,
                         "children": [
@@ -11087,7 +11087,7 @@
                         "common": "True mosses",
                         "inat_id": 67859,
                         "level": "family",
-                        "hex": "#1D3747",
+                        "hex": "#162935",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -11109,7 +11109,7 @@
                         "common": "Mustards",
                         "inat_id": 47204,
                         "level": "family",
-                        "hex": "#0C1C47",
+                        "hex": "#091536",
                         "nspp": 13,
                         "nobs": 13,
                         "children": [
@@ -11263,7 +11263,7 @@
                         "common": "Bromeliads",
                         "inat_id": 49570,
                         "level": "family",
-                        "hex": "#101653",
+                        "hex": "#0C113E",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -11285,7 +11285,7 @@
                         "common": "Bellflower Family",
                         "inat_id": 48040,
                         "level": "family",
-                        "hex": "#034F36",
+                        "hex": "#033C28",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -11307,7 +11307,7 @@
                         "common": "Honeysuckles and allies",
                         "inat_id": 48527,
                         "level": "family",
-                        "hex": "#223751",
+                        "hex": "#1A293D",
                         "nspp": 5,
                         "nobs": 5,
                         "children": [
@@ -11373,7 +11373,7 @@
                         "common": "Pinks",
                         "inat_id": 48567,
                         "level": "family",
-                        "hex": "#2A414B",
+                        "hex": "#1F3139",
                         "nspp": 10,
                         "nobs": 10,
                         "children": [
@@ -11494,7 +11494,7 @@
                         "common": "Sea Lettuces and Single-celled Algae",
                         "inat_id": 51431,
                         "level": "family",
-                        "hex": "#2B474D",
+                        "hex": "#21363A",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -11516,7 +11516,7 @@
                         "common": "Green Algae",
                         "inat_id": 50866,
                         "level": "family",
-                        "hex": "#010836",
+                        "hex": "#010628",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -11549,7 +11549,7 @@
                         "common": "Morning glories and bindweeds",
                         "inat_id": 52345,
                         "level": "family",
-                        "hex": "#153E54",
+                        "hex": "#102E3F",
                         "nspp": 5,
                         "nobs": 5,
                         "children": [
@@ -11615,7 +11615,7 @@
                         "common": "Stonecrops and allies",
                         "inat_id": 51890,
                         "level": "family",
-                        "hex": "#204141",
+                        "hex": "#183130",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -11648,7 +11648,7 @@
                         "common": "Gourd family",
                         "inat_id": 48620,
                         "level": "family",
-                        "hex": "#172942",
+                        "hex": "#121F31",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -11681,7 +11681,7 @@
                         "common": "Cypresses",
                         "inat_id": 47374,
                         "level": "family",
-                        "hex": "#0B1363",
+                        "hex": "#080E4A",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -11714,7 +11714,7 @@
                         "common": "Sedges",
                         "inat_id": 47161,
                         "level": "family",
-                        "hex": "#074741",
+                        "hex": "#053630",
                         "nspp": 6,
                         "nobs": 6,
                         "children": [
@@ -11791,7 +11791,7 @@
                         "common": "Brackens and allies",
                         "inat_id": 52682,
                         "level": "family",
-                        "hex": "#085338",
+                        "hex": "#063E2A",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -11813,7 +11813,7 @@
                         "common": "Shieldfern family",
                         "inat_id": 47753,
                         "level": "family",
-                        "hex": "#015C0E",
+                        "hex": "#01450B",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -11846,7 +11846,7 @@
                         "common": "Red Algae",
                         "inat_id": 117798,
                         "level": "family",
-                        "hex": "#015D0E",
+                        "hex": "#01450B",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -11868,7 +11868,7 @@
                         "common": "Horsetails",
                         "inat_id": 47747,
                         "level": "family",
-                        "hex": "#2D4C6C",
+                        "hex": "#213951",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -11890,7 +11890,7 @@
                         "common": "Heathers",
                         "inat_id": 133387,
                         "level": "family",
-                        "hex": "#132457",
+                        "hex": "#0E1B41",
                         "nspp": 7,
                         "nobs": 7,
                         "children": [
@@ -11978,7 +11978,7 @@
                         "common": "Spurges",
                         "inat_id": 51821,
                         "level": "family",
-                        "hex": "#102C45",
+                        "hex": "#0C2133",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -12011,7 +12011,7 @@
                         "common": "Legumes",
                         "inat_id": 47122,
                         "level": "family",
-                        "hex": "#101F40",
+                        "hex": "#0C1830",
                         "nspp": 25,
                         "nobs": 25,
                         "children": [
@@ -12297,7 +12297,7 @@
                         "common": "Beech family",
                         "inat_id": 47852,
                         "level": "family",
-                        "hex": "#181B39",
+                        "hex": "#12142A",
                         "nspp": 4,
                         "nobs": 4,
                         "children": [
@@ -12352,7 +12352,7 @@
                         "common": "Dicots",
                         "inat_id": 58169,
                         "level": "family",
-                        "hex": "#191B37",
+                        "hex": "#121429",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -12374,7 +12374,7 @@
                         "common": "Dicots",
                         "inat_id": 53401,
                         "level": "family",
-                        "hex": "#294A50",
+                        "hex": "#1F373C",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -12396,7 +12396,7 @@
                         "common": "Gentians and allies",
                         "inat_id": 56235,
                         "level": "family",
-                        "hex": "#0D1F19",
+                        "hex": "#0A1712",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -12429,7 +12429,7 @@
                         "common": "Geranium family",
                         "inat_id": 47689,
                         "level": "family",
-                        "hex": "#231A3D",
+                        "hex": "#1A132D",
                         "nspp": 5,
                         "nobs": 5,
                         "children": [
@@ -12517,7 +12517,7 @@
                         "common": "Saxifrages and allies",
                         "inat_id": 47131,
                         "level": "family",
-                        "hex": "#2D4F6C",
+                        "hex": "#213B51",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -12539,7 +12539,7 @@
                         "common": "Water Milfoil",
                         "inat_id": 60205,
                         "level": "family",
-                        "hex": "#1E2C2F",
+                        "hex": "#162123",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -12561,7 +12561,7 @@
                         "common": "St. John's-wort",
                         "inat_id": 71412,
                         "level": "family",
-                        "hex": "#1B3331",
+                        "hex": "#142625",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -12583,7 +12583,7 @@
                         "common": "Iris family",
                         "inat_id": 47781,
                         "level": "family",
-                        "hex": "#04452A",
+                        "hex": "#03331F",
                         "nspp": 8,
                         "nobs": 8,
                         "children": [
@@ -12682,7 +12682,7 @@
                         "common": "Rushes",
                         "inat_id": 52642,
                         "level": "family",
-                        "hex": "#055336",
+                        "hex": "#043E28",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -12726,7 +12726,7 @@
                         "common": "Water plantain and allies",
                         "inat_id": 60266,
                         "level": "family",
-                        "hex": "#045239",
+                        "hex": "#033E2B",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -12748,7 +12748,7 @@
                         "common": "Mint family",
                         "inat_id": 48623,
                         "level": "family",
-                        "hex": "#112757",
+                        "hex": "#0D1D42",
                         "nspp": 12,
                         "nobs": 12,
                         "children": [
@@ -12891,7 +12891,7 @@
                         "common": "Laurels",
                         "inat_id": 48809,
                         "level": "family",
-                        "hex": "#142964",
+                        "hex": "#0F1F4B",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -12913,7 +12913,7 @@
                         "common": "Lilies",
                         "inat_id": 47328,
                         "level": "family",
-                        "hex": "#0B462A",
+                        "hex": "#08351F",
                         "nspp": 8,
                         "nobs": 8,
                         "children": [
@@ -13012,7 +13012,7 @@
                         "common": "Mustards and allies",
                         "inat_id": 51337,
                         "level": "family",
-                        "hex": "#0C5633",
+                        "hex": "#094126",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -13034,7 +13034,7 @@
                         "common": "Flax Family",
                         "inat_id": 51308,
                         "level": "family",
-                        "hex": "#0D2749",
+                        "hex": "#0A1D37",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -13078,7 +13078,7 @@
                         "common": "Mallows",
                         "inat_id": 48797,
                         "level": "family",
-                        "hex": "#093148",
+                        "hex": "#072536",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -13100,7 +13100,7 @@
                         "common": "Liverworts",
                         "inat_id": 55708,
                         "level": "family",
-                        "hex": "#284163",
+                        "hex": "#1E304A",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -13122,7 +13122,7 @@
                         "common": "Trilliums and allies",
                         "inat_id": 49464,
                         "level": "family",
-                        "hex": "#08561F",
+                        "hex": "#064117",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -13166,7 +13166,7 @@
                         "common": "Dicots",
                         "inat_id": 71417,
                         "level": "family",
-                        "hex": "#23443C",
+                        "hex": "#1A332D",
                         "nspp": 4,
                         "nobs": 4,
                         "children": [
@@ -13221,7 +13221,7 @@
                         "common": "Wax trees and shrubs",
                         "inat_id": 49035,
                         "level": "family",
-                        "hex": "#2C3A40",
+                        "hex": "#212B30",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -13243,7 +13243,7 @@
                         "common": "Myrsine family",
                         "inat_id": 64578,
                         "level": "family",
-                        "hex": "#101B29",
+                        "hex": "#0C141F",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -13287,7 +13287,7 @@
                         "common": "Myrtle Family",
                         "inat_id": 51816,
                         "level": "family",
-                        "hex": "#181A4D",
+                        "hex": "#12143A",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -13309,7 +13309,7 @@
                         "common": "Four O'Clocks",
                         "inat_id": 50256,
                         "level": "family",
-                        "hex": "#24313C",
+                        "hex": "#1B252D",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -13342,7 +13342,7 @@
                         "common": "Water lilies",
                         "inat_id": 51121,
                         "level": "family",
-                        "hex": "#2B3E3E",
+                        "hex": "#202F2F",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -13364,7 +13364,7 @@
                         "common": "Evening primrose family",
                         "inat_id": 47790,
                         "level": "family",
-                        "hex": "#1D223A",
+                        "hex": "#16192C",
                         "nspp": 7,
                         "nobs": 7,
                         "children": [
@@ -13452,7 +13452,7 @@
                         "common": "Orchids",
                         "inat_id": 47217,
                         "level": "family",
-                        "hex": "#0C4531",
+                        "hex": "#093425",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -13496,7 +13496,7 @@
                         "common": "Broomrape family",
                         "inat_id": 47322,
                         "level": "family",
-                        "hex": "#132661",
+                        "hex": "#0E1D49",
                         "nspp": 10,
                         "nobs": 10,
                         "children": [
@@ -13617,7 +13617,7 @@
                         "common": "Wood sorrel family",
                         "inat_id": 47759,
                         "level": "family",
-                        "hex": "#113343",
+                        "hex": "#0D2632",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -13661,7 +13661,7 @@
                         "common": "Poppies",
                         "inat_id": 47332,
                         "level": "family",
-                        "hex": "#223447",
+                        "hex": "#1A2735",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -13705,7 +13705,7 @@
                         "common": "Dicots",
                         "inat_id": 64552,
                         "level": "family",
-                        "hex": "#17245C",
+                        "hex": "#121B45",
                         "nspp": 4,
                         "nobs": 4,
                         "children": [
@@ -13760,7 +13760,7 @@
                         "common": "Red Algae",
                         "inat_id": 117818,
                         "level": "family",
-                        "hex": "#1F2B69",
+                        "hex": "#17204E",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -13793,7 +13793,7 @@
                         "common": "Pine family",
                         "inat_id": 47562,
                         "level": "family",
-                        "hex": "#0F216B",
+                        "hex": "#0B1850",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -13837,7 +13837,7 @@
                         "common": "Pittosporums and allies",
                         "inat_id": 51596,
                         "level": "family",
-                        "hex": "#03116B",
+                        "hex": "#020C50",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -13859,7 +13859,7 @@
                         "common": "Plantain family",
                         "inat_id": 50638,
                         "level": "family",
-                        "hex": "#172167",
+                        "hex": "#11184D",
                         "nspp": 13,
                         "nobs": 13,
                         "children": [
@@ -14013,7 +14013,7 @@
                         "common": "Red Algae",
                         "inat_id": 319537,
                         "level": "family",
-                        "hex": "#162769",
+                        "hex": "#111D4F",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -14035,7 +14035,7 @@
                         "common": "Dicots",
                         "inat_id": 60478,
                         "level": "family",
-                        "hex": "#161F28",
+                        "hex": "#10171E",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -14068,7 +14068,7 @@
                         "common": "Grasses",
                         "inat_id": 47434,
                         "level": "family",
-                        "hex": "#084D33",
+                        "hex": "#063A26",
                         "nspp": 24,
                         "nobs": 24,
                         "children": [
@@ -14343,7 +14343,7 @@
                         "common": "Phlox family",
                         "inat_id": 48932,
                         "level": "family",
-                        "hex": "#132644",
+                        "hex": "#0E1D33",
                         "nspp": 9,
                         "nobs": 9,
                         "children": [
@@ -14453,7 +14453,7 @@
                         "common": "Milkworts",
                         "inat_id": 61207,
                         "level": "family",
-                        "hex": "#152851",
+                        "hex": "#101E3D",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -14475,7 +14475,7 @@
                         "common": "Knotweeds and allies",
                         "inat_id": 48382,
                         "level": "family",
-                        "hex": "#284245",
+                        "hex": "#1E3234",
                         "nspp": 12,
                         "nobs": 12,
                         "children": [
@@ -14618,7 +14618,7 @@
                         "common": "Polypody Family",
                         "inat_id": 52679,
                         "level": "family",
-                        "hex": "#2A4544",
+                        "hex": "#1F3433",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -14640,7 +14640,7 @@
                         "common": "Brake Family",
                         "inat_id": 48437,
                         "level": "family",
-                        "hex": "#155129",
+                        "hex": "#103D1F",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -14673,7 +14673,7 @@
                         "common": "Buttercup family",
                         "inat_id": 48231,
                         "level": "family",
-                        "hex": "#1C392D",
+                        "hex": "#152B22",
                         "nspp": 10,
                         "nobs": 10,
                         "children": [
@@ -14794,7 +14794,7 @@
                         "common": "Buckthorns",
                         "inat_id": 49041,
                         "level": "family",
-                        "hex": "#262B3B",
+                        "hex": "#1D202C",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -14838,7 +14838,7 @@
                         "common": "Rose family",
                         "inat_id": 47148,
                         "level": "family",
-                        "hex": "#0A2F58",
+                        "hex": "#082342",
                         "nspp": 16,
                         "nobs": 16,
                         "children": [
@@ -15025,7 +15025,7 @@
                         "common": "Coffees, bedstraws, and allies",
                         "inat_id": 47693,
                         "level": "family",
-                        "hex": "#0C3261",
+                        "hex": "#092649",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -15069,7 +15069,7 @@
                         "common": "Willows and poplars",
                         "inat_id": 47567,
                         "level": "family",
-                        "hex": "#161736",
+                        "hex": "#101129",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -15091,7 +15091,7 @@
                         "common": "Soapberry family",
                         "inat_id": 58321,
                         "level": "family",
-                        "hex": "#19163E",
+                        "hex": "#13102F",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -15113,7 +15113,7 @@
                         "common": "Saxifrages",
                         "inat_id": 48386,
                         "level": "family",
-                        "hex": "#112044",
+                        "hex": "#0D1833",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -15146,7 +15146,7 @@
                         "common": "Figworts",
                         "inat_id": 47151,
                         "level": "family",
-                        "hex": "#172A44",
+                        "hex": "#112033",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -15179,7 +15179,7 @@
                         "common": "Nightshades",
                         "inat_id": 48516,
                         "level": "family",
-                        "hex": "#1B2153",
+                        "hex": "#14193E",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
@@ -15223,7 +15223,7 @@
                         "common": "Agaves and allies",
                         "inat_id": 64534,
                         "level": "family",
-                        "hex": "#154F4C",
+                        "hex": "#103B39",
                         "nspp": 4,
                         "nobs": 4,
                         "children": [
@@ -15278,7 +15278,7 @@
                         "common": "Mallows and allies",
                         "inat_id": 50313,
                         "level": "family",
-                        "hex": "#025530",
+                        "hex": "#024024",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -15300,7 +15300,7 @@
                         "common": "Sea Lettuces and Single-celled Algae",
                         "inat_id": 68610,
                         "level": "family",
-                        "hex": "#05572F",
+                        "hex": "#044123",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -15322,7 +15322,7 @@
                         "common": "Mustards and allies",
                         "inat_id": 54330,
                         "level": "family",
-                        "hex": "#03522F",
+                        "hex": "#023E23",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -15344,7 +15344,7 @@
                         "common": "Cattail family",
                         "inat_id": 48694,
                         "level": "family",
-                        "hex": "#121E4E",
+                        "hex": "#0E173A",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -15377,7 +15377,7 @@
                         "common": "Nettles and allies",
                         "inat_id": 51885,
                         "level": "family",
-                        "hex": "#0D1A57",
+                        "hex": "#0A1341",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
@@ -15399,7 +15399,7 @@
                         "common": "Violets and allies",
                         "inat_id": 50828,
                         "level": "family",
-                        "hex": "#045139",
+                        "hex": "#033D2A",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
@@ -15432,7 +15432,7 @@
                         "common": "Water plantain and allies",
                         "inat_id": 52615,
                         "level": "family",
-                        "hex": "#0B364C",
+                        "hex": "#092939",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [

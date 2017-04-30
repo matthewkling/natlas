@@ -178,7 +178,19 @@ var n_obs,
     max_species,
     max_users;
 
-
+function reset_active(){
+    active = {
+        level: "root",
+        latin: "life",
+        common: "life",
+        id: "NA",
+        obs_file: "PORE_obs_tidy.csv",
+        tree_file: tree_files[0],
+        tree: tree_names[0],
+        stat: stat_names[0],
+        stat_var: stat_vars[0]
+    }
+}
 
 //////////////////////////////////////////////////////
 
@@ -376,12 +388,17 @@ var path = d3.geoPath().projection(projection);
 
 //////////////////////////////////////////////////////
 
-function swapTree( ){
-    
+function swapTree(){
+
+    if(active.level != "root"){
+      alert("Please zoom out to 'life' before switching trees");
+      return "null"; };
+
     // reset tree level
     active.level = "root";
     active.latin = "life";
     active.common = "life";
+    //reset_active();
 
     active.tree_file = tree_files.pop();
     tree_files.splice(0, 0, active.tree_file);
@@ -406,8 +423,6 @@ function swapPark() {
     //todo: enable park switching
 }
 
-
-//var active_data;
 
 
 function makeMap(obs_file){
@@ -597,7 +612,7 @@ function makeMap(obs_file){
 
       
 
-      stat_button.on("click", function(){statChange(data)});
+      stat_button.on("click", function(){swapStat(data)});
 
       plotTitles();
 
@@ -647,7 +662,11 @@ function hexStat(){
 
 
 
-function statChange(data){
+function swapStat(data){
+
+    if(active.level != "root"){
+      alert("Please zoom out to 'life' before switching stats");
+      return "null"; };
 
     // toggle stat
     active.stat = stat_names.pop();
@@ -747,13 +766,18 @@ function plotTitles() {
 function makePie() {
 
     taxonomy_panel.selectAll("*").remove();
-    
+
+    //active.level = "root";
+    //active.latin = "life";
+    //active.common = "life";
+    //active.id = "NA";
+
     d3.json(active.tree_file, function(error, root) {
       if (error) throw error;
-      
+
       taxonomy_panel.append("g")
         .attr("transform", "translate(" + taxonomy_width / 2 + "," + taxonomy_height / 2 + ")");
-
+      
       taxonomy_panel.selectAll("path")
         .data(partition.nodes(root))
         .enter().append("path")
@@ -809,8 +833,6 @@ function taxonomyClick(d) {
     taxonTitle(active.common, active.latin);
 
     makeMap(active.obs_file);
-
-    console.log(d);
 };
 
 

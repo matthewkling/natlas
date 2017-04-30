@@ -30,36 +30,6 @@ d <- filter(d,
             total_obs>0, 
             !is.na(category),
             nchar(class)>0)
-#d$Common.Names <- gsub("'", "", d$Common.Names)
-
-
-
-
-# m1=d$m1[i],
-# m2=d$m2[i],
-# m3=d$m3[i],
-# m4=d$m4[i],
-# m5=d$m5[i],
-# m6=d$m6[i],
-# m7=d$m7[i],
-# m8=d$m8[i],
-# m9=d$m9[i],
-# m10=d$m10[i],
-# m11=d$m11[i],
-# m12=d$m12[i],
-# y2007=d$y2007[i],
-# y2008=d$y2008[i],
-# y2009=d$y2009[i],
-# y2010=d$y2010[i],
-# y2011=d$y2011[i],
-# y2012=d$y2012[i],
-# y2013=d$y2013[i],
-# y2014=d$y2014[i],
-# y2015=d$y2015[i],
-# y2016=d$y2016[i],
-# y2017=d$y2017[i],
-# npsOccurence = d$Occurrence[i]))
-
 
 # generate list of leaf-level species datasets
 leaves <- lapply(1:nrow(d), function(i) data.frame(level="species",
@@ -120,7 +90,8 @@ for(hierarchy in names(hierarchies)){
             groupings <- distinct(d[,c(level, child_level)])
             groupings <- groupings[apply(groupings, 1, function(x) min(nchar(x))>0),]
             p <- group_taxa(p, groupings, level,
-                            max_col=switch(hierarchy, "linnean"=400, "simple"=800))
+                            max_col=switch(hierarchy, "linnean"=255, "simple"=600))
+                        #max_col=switch(hierarchy, "linnean"=400, "simple"=800))
       }
       
       

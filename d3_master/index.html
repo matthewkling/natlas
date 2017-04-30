@@ -66,6 +66,14 @@
   font-weight: 100;
   text-decoration: none;
 }
+.stat_label_slice {
+  font-size: 20px;
+  fill: darkgreen;
+  fill-opacity: .5;
+  text-anchor: middle;
+  font-weight: 100;
+  text-decoration: none;
+}
 
 .stat_label_taxon {
   font-size: 20px;
@@ -140,26 +148,7 @@ var filter_title_y = taxonomy_height * .57;
 var r; // user point radius
 
 
-//// taxon pie parameters
 
-var radius = (Math.min(taxonomy_width, taxonomy_height) / 2.25) - 10;
-
-var formatNumber = d3.format(",d");
-
-var x = d3.scale.linear()
-    .range([0, 2 * Math.PI]);
-
-var y = d3.scale.sqrt()
-    .range([0, radius]);
-
-var partition = d3.layout.partition()
-    .value(function(d) { return d.n_records; });
-
-var arc = d3.svg.arc()
-    .startAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x))); })
-    .endAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x + d.dx))); })
-    .innerRadius(function(d) { return Math.max(0, y(d.y)); })
-    .outerRadius(function(d) { return Math.max(0, y(d.y + d.dy)); });
 
 
 //////////////////////////////
@@ -167,6 +156,7 @@ var arc = d3.svg.arc()
 var tree_files = ["taxonomy_pore_simple.json", "taxonomy_pore_linnean.json"]
 var tree_names = ["simple", "Linnean"]
 var stat_names = ["observations", "species", "users"]
+var stat_vars = ["n_records", "n_species", "n_users"]
 
 var active = {
   level: "root",
@@ -176,7 +166,8 @@ var active = {
   obs_file: "PORE_obs_tidy.csv",
   tree_file: tree_files[0],
   tree: tree_names[0],
-  stat: stat_names[0]
+  stat: stat_names[0],
+  stat_var: stat_vars[0]
 }
 
 var n_obs,
@@ -193,6 +184,28 @@ var n_obs,
 
 
 
+//// taxon pie parameters
+
+var radius = (Math.min(taxonomy_width, taxonomy_height) / 2.25) - 10;
+
+var formatNumber = d3.format(",d");
+
+var x = d3.scale.linear()
+    .range([0, 2 * Math.PI]);
+
+var y = d3.scale.sqrt()
+    .range([0, radius]);
+
+var partition = d3.layout.partition()
+    .value(function(d) { return d[active.stat_var]; });
+
+var arc = d3.svg.arc()
+    .startAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x))); })
+    .endAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x + d.dx))); })
+    .innerRadius(function(d) { return Math.max(0, y(d.y)); })
+    .outerRadius(function(d) { return Math.max(0, y(d.y + d.dy)); });
+
+/////////////////
 
 // header
 
@@ -319,6 +332,7 @@ var tree_button = control_panel.append("ellipse")
     .on("mouseout", function(d) {d3.select(this).attr("fill", "black")})
     .on("click", swapTree)
     .append("title").text("click to switch tree");
+
 var tree_title = control_panel.append("text")
             .text("Tree: " + active.tree)
             .attr("x", m0/4 + r*3)
@@ -375,16 +389,16 @@ function swapTree( ){
     active.tree_name = tree_names.pop();
     tree_names.splice(0, 0, active.tree_name);
     
-    taxonomy_panel.selectAll("*").remove();
     makePie();
     makeMap(active.obs_file);
 
     control_panel.selectAll(".tree_title").remove();
     control_panel.append("text")
-            .text("Tree: " + active.tree_name)
-            .attr("x", m0/4 + r*3)
-            .attr("y", m0 * .8)
-            .attr("class", "tree_title");
+        .text("Tree: " + active.tree_name)
+        .attr("x", m0/4 + r*3)
+        .attr("y", m0 * .8)
+        .attr("class", "tree_title");
+
 }
 
 
@@ -636,10 +650,11 @@ function hexStat(){
 function statChange(data){
 
     // toggle stat
-    var stat0 = active.stat;
-    if(stat0 == "observations"){active.stat = "species"};
-    if(stat0 == "species"){active.stat = "users"};
-    if(stat0 == "users"){active.stat = "observations"};
+    active.stat = stat_names.pop();
+    stat_names.splice(0, 0, active.stat);
+
+    active.stat_var = stat_vars.pop();
+    stat_vars.splice(0, 0, active.stat_var);
     
     // toggle stat title
     control_panel.selectAll("text.stat_title").remove()
@@ -667,7 +682,12 @@ function statChange(data){
 
     // toggle user
 
+    
     // toggle taxonomy
+    plotTitles();
+    partition = d3.layout.partition()
+        .value(function(d) { return d[active.stat_var]; });
+    makePie();
 };
 
 
@@ -707,10 +727,10 @@ function plotTitles() {
     };
 
     var stats_value_slice_stat = stats_bar.append("text")
-      .text("(slice size = # observations)")
+      .text("(slice size = # " + active.stat + ")")
         .attr("x", w/2)
         .attr("y", m/4 + 20)
-        .attr("class", "stat_label");
+        .attr("class", "stat_label_slice");
 
     var stats_value_users = stats_bar.append("text")
       .text(n_users + " citizen scientists")
@@ -789,6 +809,8 @@ function taxonomyClick(d) {
     taxonTitle(active.common, active.latin);
 
     makeMap(active.obs_file);
+
+    console.log(d);
 };
 
 
@@ -803,10 +825,9 @@ makeMap(active.obs_file);
 
 // TODO:
 // Fix buggy tree swapping behavior when shallow nodes are active
-// Display hyperlink to iNat page
+// Taxon name in circle should appear initially, not just after mouseover
 // Park swapping
-// Move stat change code outside makeMap. Same for hex functions.
-// Hexbin species richness currently absolute; normalize by number of points or by total richness.
+// Hexbin species richness currently absolute; normalize by number of points or by total richness. Same for user point size -- normalize by average
 
 
 ///////////////////////////////////

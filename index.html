@@ -470,37 +470,28 @@ function makeMap(obs_file){
         .attr("class", "park")
         .attr("d", path);
 
+      // hex heatmap
+      hexUpdate(data);
+      max_hex_observations = trans(d3.max(hex.data(), function(d){return(d.length)}));
+      max_hex_species = trans(d3.max(hex.data(), function(d){return(d3.map(d, function(d){return d.species;}).size() )}));
+      max_hex_users = trans(d3.max(hex.data(), function(d){return(d3.map(d, function(d){return d.user;}).size() )}));
+      hexScale();
+      hexStat();
+
       // points  
+      var obs_opacity = .5;
+      var obs_r = 2;
+
       map_panel.selectAll("circle").remove();
       map_panel.selectAll("circle")
         .data(data).enter()
         .append("circle")
         .attr("cx", function (d) { return d.x; })
         .attr("cy", function (d) { return d.y; })
-        .attr("r", "2")
+        .attr("r", obs_r)
         .attr("fill", "darkgreen")
-        .attr("opacity", .5);
-      
+        .attr("opacity", obs_opacity);
 
-
-      // hex heatmap
-      
-      hexUpdate(data);
-
-      // hexbin color ramp
-
-      max_hex_observations = trans(d3.max(hex.data(), function(d){return(d.length)}));
-      max_hex_species = trans(d3.max(hex.data(), function(d){return(d3.map(d, function(d){return d.species;}).size() )}));
-      max_hex_users = trans(d3.max(hex.data(), function(d){return(d3.map(d, function(d){return d.user;}).size() )}));
-
-      hexScale();
-
-
-      // hexbin summary statistics
-
-      
-
-      hexStat();
 
 
 
@@ -514,12 +505,12 @@ function makeMap(obs_file){
           .domain([0, 1])
           .range([user_width - inset, inset]);
 
-
       var users = d3.nest()
           .key(function(d) { return d.user;})
           .rollup(function(d) { 
               return [d3.mean(d, function(g) {return g.user_visits; }),
-                      d3.mean(d, function(g) {return g.user_spp; })]; })
+                      d3.mean(d, function(g) {return g.user_spp; }),
+                      d3.mean(d, function(g) {return g.user; })]; })
           .entries(data)
           .map(function(d){return d.value;});
 
@@ -533,6 +524,41 @@ function makeMap(obs_file){
           .range([30,5]);
       var user_size = user_scale_size(trans(n_users));
 
+
+      function userHighlight() {
+        user_panel.selectAll("circle")
+        .on("mouseover", function(d) {
+            uid = d[2];
+            
+            d3.select(this)
+              .style("fill", "red")
+              .attr("opacity", 1)
+              .attr("r", user_size * 1.5);
+
+            map_panel.selectAll("circle")
+              .filter(function(d){
+                return d.user != uid } )
+              .attr("opacity", 0)
+
+            map_panel.selectAll("circle")
+              .filter(function(d){
+                return d.user == uid } )
+              .attr("opacity", 1)
+              .attr("fill", "red")
+              .attr("r", obs_r * 2)
+            })
+        .on("mouseout", function(d) {d3.select(this)
+            .style("fill", "darkgreen")
+            .attr("opacity", user_opacity)
+            .attr("r", user_size);
+
+            map_panel.selectAll("circle")
+              .attr("opacity", obs_opacity)
+              .attr("r", obs_r)
+              .attr("fill", "darkgreen") 
+            });
+      }
+
       user_panel.selectAll("circle").remove();
       user_panel.selectAll("circle")
         .data(users).enter()
@@ -542,7 +568,8 @@ function makeMap(obs_file){
         .attr("r", user_size)
         .attr("fill", "darkgreen")
         .attr("opacity", user_opacity);
-      
+      userHighlight();
+
       user_panel.selectAll("text").remove();
       
       var blitzer = user_panel.append("text")

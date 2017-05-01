@@ -376,6 +376,7 @@ findUsingiNat <- function(id.species, ranks = ranks_to_species)
         if (gregexpr("preferred_common_name",all.lines[i])[[1]][1] != -1) {tax.idx = c(tax.idx, i)}
       }
       
+      
       tax.lines <- all.lines[tax.idx]
       n <- strsplit(tax.lines, "\\}\\,\\{\\\"observations_count") #breaks up taxonomy into components
       for (k in 1:length(n[[1]]))
@@ -422,6 +423,42 @@ findUsingiNat <- function(id.species, ranks = ranks_to_species)
   }
   
   #need.id = which(is.na(id.species$inat.ID)| id.species$inat.ID == "")
+  
+  id.species$kingdom.inat.ID <- NA
+  
+  
+  id.species$kingdom[which(id.species$kingdom == "Metazoa")] <- "Animalia"
+  id.species$kingdom.inat.ID[which(id.species$kingdom == "Animalia")] <- 1
+  id.species$kingdom.common[which(id.species$kingdom == "Animalia")] <- "Animals"
+  id.species$kingdom.science[which(id.species$kingdom == "Animalia")] <- "Animalia"
+  
+  id.species$kingdom[which(id.species$kingdom == "Viridiplantae")] <- "Plantae"
+  id.species$kingdom.inat.ID[which(id.species$kingdom == "Plantae")] <- 47126
+  id.species$kingdom.common[which(id.species$kingdom == "Plantae")] <- "Plants"
+  id.species$kingdom.science[which(id.species$kingdom == "Plantae")] <- "Plantae"
+  
+  id.species$kingdom.inat.ID[which(id.species$kingdom == "Chromista")] <- 48222
+  id.species$kingdom.common[which(id.species$kingdom == "Chromista")] <- "Kelp, Diatoms, and Allies"
+  id.species$kingdom.science[which(id.species$kingdom == "Chromista")] <- "Chromista"
+  
+  
+  id.species$kingdom.inat.ID[which(id.species$kingdom == "Fungi")] <- 47170
+  id.species$kingdom.common[which(id.species$kingdom == "Fungi")] <- "Fungi including lichens"
+  id.species$kingdom.science[which(id.species$kingdom == "Fungi")] <- "Fungi"
+  
+  id.species$kingdom.inat.ID[which(id.species$kingdom == "Protozoa")] <- 47686
+  id.species$kingdom.common[which(id.species$kingdom == "Protozoa")] <- "Protozoans"
+  id.species$kingdom.science[which(id.species$kingdom == "Protozoa")] <- "Protozoa"
+  
+  
+  id.species$kingdom.inat.ID[which(id.species$kingdom == "Bacteria")] <- 67333
+  id.species$kingdom.common[which(id.species$kingdom == "Bacteria")] <- "Bacteria"
+  id.species$kingdom.science[which(id.species$kingdom == "Bacteria")] <- "Bacteria"
+  
+  
+  id.species$kingdom.inat.ID[which(id.species$kingdom == "Archaea")] <- 151817
+  id.species$kingdom.common[which(id.species$kingdom == "Archaea")] <- "Archaea"
+  id.species$kingdom.science[which(id.species$kingdom == "Archaea")] <- "Archaea"
   
   clean.id.species <- id.species[, -which(names(id.species) %in% c("Taxon.Record.Status","Scientific.Name","Common.Names","Synonyms","Park.Accepted","Record.Status","original.inat.taxonID","speciesTidy", "matched.inat.ID","taxizeName","scrapediNatName"))]
   

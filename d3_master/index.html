@@ -32,21 +32,21 @@
 
 .park_title {
   font-size: 20px;
-  fill: black;
+  fill: rgb(0,80,0);
   text-anchor: start;
   dominant-baseline: middle;
 }
 
 .tree_title {
   font-size: 20px;
-  fill: black;
+  fill: rgb(0,80,0);
   text-anchor: start;
   dominant-baseline: middle;
 }
 
 .stat_title {
   font-size: 20px;
-  fill: black;
+  fill: rgb(0,80,0);
   text-anchor: start;
   dominant-baseline: middle;
   text-decoration: none;
@@ -56,6 +56,13 @@
   font-size: 20px;
   fill: white;
   text-anchor: middle;
+}
+
+.button {
+  fill: rgb(0,80,0);
+}
+.button:hover {
+  fill: red;
 }
 
 .stat_label {
@@ -228,7 +235,7 @@ var nameplate = d3.select("body")
 
 nameplate.append("rect")
     .attr("x", 0).attr("y", 0).attr("width", w/2).attr("height", m0)
-    .attr("fill", "black")
+    .attr("fill", "rgb(0,80,0)")
 var title = nameplate.append("text")
     .text("NATLAS")
     .attr("x", w/2 - m0/4)
@@ -250,7 +257,7 @@ var control_panel = d3.select("body")
     .attr("height", m0);
 control_panel.append("rect")
     .attr("x", 0).attr("y", 0).attr("width", w/2).attr("height", m0)
-    .attr("fill", "rgb(200,200,200)")
+    .attr("fill", "rgba(0,80,0,.3)")
 
 var title_bar = d3.select("body")
     .append("svg")
@@ -310,9 +317,10 @@ var park_button = control_panel.append("ellipse")
     .attr("cy", m0/2)
     .attr("rx", r)
     .attr("ry", r)
-    .attr("fill", "black");
+    .attr("class", "button");
+
 var park_title = control_panel.append("text")
-            .text("Point Reyes")
+            .text("Park: Point Reyes")
             .attr("x", m0/4 + r*3)
             .attr("y", m0/2)
             .attr("class", "park_title");
@@ -323,9 +331,9 @@ var stat_button = control_panel.append("ellipse")
     .attr("cy", m0 * .65)
     .attr("rx", r)
     .attr("ry", r)
-    .attr("fill", "black")
-    .on("mouseover", function(d) {d3.select(this).attr("fill", "green")})
-    .on("mouseout", function(d) {d3.select(this).attr("fill", "black")});
+    .attr("class", "button");
+//    .on("mouseover", function(d) {d3.select(this).attr("fill", "green")})
+//    .on("mouseout", function(d) {d3.select(this).attr("fill", "black")});
 
 var stat_title = control_panel.append("text")
             .text("Stat:  " + active.stat)
@@ -339,9 +347,9 @@ var tree_button = control_panel.append("ellipse")
     .attr("cy", m0 * .8)
     .attr("rx", r)
     .attr("ry", r)
-    .attr("fill", "black")
-    .on("mouseover", function(d) {d3.select(this).attr("fill", "green")})
-    .on("mouseout", function(d) {d3.select(this).attr("fill", "black")})
+    .attr("class", "button")
+//    .on("mouseover", function(d) {d3.select(this).attr("fill", "green")})
+//    .on("mouseout", function(d) {d3.select(this).attr("fill", "black")})
     .on("click", swapTree)
     .append("title").text("click to switch tree");
 
@@ -794,11 +802,6 @@ function makePie() {
 
     taxonomy_panel.selectAll("*").remove();
 
-    //active.level = "root";
-    //active.latin = "life";
-    //active.common = "life";
-    //active.id = "NA";
-
     d3.json(active.tree_file, function(error, root) {
       if (error) throw error;
 
@@ -840,22 +843,33 @@ function taxonTitle(t1, t2, id) {
 
 function taxonomyClick(d) {
     
-    taxonomy_panel.transition()
-        .delay(100) // to avoid bog
-        .duration(3000)
-        .tween("scale", function() {
-          var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
-              yd = d3.interpolate(y.domain(), [d.y, 1]),
-              yr = d3.interpolate(y.range(), [d.y ? 20 : 0, radius]);
-          return function(t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); };
-        })
-      .selectAll("path")
-        .attrTween("d", function(d) { return function() { return arc(d); }; });
-
     active.level = d["level"];
     active.latin = d["name"];
     active.common = d["common"];
     active.id = d["inat_id"];
+
+    function funx(){
+        var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
+            yd = d3.interpolate(y.domain(), [d.y, 1]),
+            yr = d3.interpolate(y.range(), [d.y ? 20 : 0, radius]);
+        return function(t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); };
+    };
+
+    taxonomy_panel.transition()
+        .delay(100) // to avoid bog
+        .duration(3000)
+        .tween("scale", funx)
+      .selectAll("path")
+        .attrTween("d", function(d) { return function() { return arc(d); }; });
+
+    if(active.level == "family" | active.level == "genus" | active.level == "species"){
+        taxonomy_panel.selectAll("path")
+          .attr("stroke-width", "0.5px")
+          .attr("stroke", "white");
+    } else {
+        taxonomy_panel.selectAll("path")
+          .attr("stroke-width", "0px");
+    };
 
     taxonTitle(active.common, active.latin);
 

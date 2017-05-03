@@ -49,7 +49,7 @@ leaves <- lapply(1:nrow(d), function(i) data.frame(level="species",
 group_taxa <- function(data, groupings, level, max_col){
       parents <- as.vector(unique(groupings[,1]))
       lapply(parents, function(x){
-            
+            browser()
             kids <- which(groupings[,1]==x)
             kids <- data[kids]
             kids <- kids[!sapply(kids, is.null)]

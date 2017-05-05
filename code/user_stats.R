@@ -14,6 +14,10 @@ d <- read.csv(paste0("processed_data/",park_id,"_data/",park_id,"_obs_tidy.csv")
              root="life",
              user=userNumber)
 
+# convert GMT to PST
+d$hour <- d$hour - 7
+d$hour[d$hour<0 & !is.na(d$hour)] <- d$hour[d$hour<0 & !is.na(d$hour)] + 24
+
 # assign obs to geographic bins (to address user cosmopolitanism)
 yrange <- range(d$decimalLatitude)
 xrange <- range(d$decimalLongitude)
@@ -45,6 +49,8 @@ u <- d %>%
              user_hits = rescale(user_visits + user_locations)) %>%
       select(userNumber, user_obs:user_locations)
 d <- left_join(d, u)
+
+d <- mutate(d, obs_id = 1:nrow(d))
 
 write.csv(d, "d3_master/PORE_obs_tidy.csv", row.names=F)
 

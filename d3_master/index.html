@@ -568,6 +568,7 @@ function makeMap(obs_file){
         d.species = d.speciesFixed;
         d.year = +d.year;
         d.month = +d.month;
+        d.hour = +d.hour;
         d.user = +d.userNumber;
         d.root = "life";
         //d.user_obs = +d.user_obs;
@@ -1004,102 +1005,116 @@ function taxonomyClick(d) {
 
 function makeTime(data) {
 
-    time_panel.selectAll("circle").remove();
-    
     var inset = time_width / 6;
-    var gutter = time_height / 10;
+    var gutter = time_height / 20;
+    var ht = (time_height - 2*gutter)/3;
+    var ymin = ht - gutter;
+    var ymax = gutter
 
-    
+    function timeChart(data, time_var, target, x) {
 
-    //// years
+        target.selectAll("circle").remove();
+        target.selectAll("path").remove();
+        target.selectAll("text").remove();
+        
 
-    var years = d3.nest()
-          .key(function(d) { return d.year;})
-          .rollup(function(d) {
-              unique = d3.nest()
-                .key(function(e) { return e[active.stat_obs_var];}) ///////////
-                .rollup(function(e) { return [e.length]; })
-                .entries(d)
-                .map(function(f){return [+f.key, f.value[0]];});
-              return [unique.length]; })
-          .entries(data)
-          .map(function(d){return [+d.key, d.value[0]];})
-          .sort(function(x,y){return d3.ascending(y[0], x[0]);});
-    
-    years_range = d3.extent(years, function(d){return(d[0])});
-    var year_scale_x = d3.scaleLinear()
-          .domain(years_range)
-          .range([inset, time_width - inset]);
-    years_count_range = [0, d3.max(years, function(d){return(d[1])})];
-    var year_scale_y = d3.scaleLinear()
-          .domain(years_count_range)
-          .range([w/9,gutter]);
+        var counts = d3.nest()
+            .key(function(d) { return d[time_var];})
+            .rollup(function(d) {
+                unique = d3.nest()
+                  .key(function(e) { return e[active.stat_obs_var];})
+                  .rollup(function(e) { return [e.length]; })
+                  .entries(d)
+                  .map(function(f){return [+f.key, f.value[0]];});
+                return [unique.length]; })
+            .entries(data)
+            .map(function(d){return [+d.key, d.value[0]];})
+            .sort(function(x,y){return d3.ascending(y[0], x[0]);})
+            .filter(function(x){return x[0] >= 0});
+      
+        var time_scale_x = d3.scaleLinear()
+              .domain(x)
+              .range([inset, time_width - inset]);
+        var time_scale_y = d3.scaleLinear()
+              .domain([0, d3.max(counts, function(d){return(d[1])})])
+              .range([ymin, ymax]);
 
-    year_panel.selectAll("circle").remove();
-    year_panel.selectAll("circle")
-      .data(years).enter()
-      .append("circle")
-      .attr("cx", function (d) { return year_scale_x(d[0]); })
-      .attr("cy", function (d) { return year_scale_y(d[1]); })
-      .attr("r", w/500)
-      .attr("fill", "darkgreen")
-      .attr("opacity", 1);
+        target.selectAll("circle")
+          .data(counts).enter()
+          .append("circle")
+          .attr("cx", function (d) { return time_scale_x(d[0]); })
+          .attr("cy", function (d) { return time_scale_y(d[1]); })
+          .attr("r", w/500)
+          .attr("fill", "darkgreen")
+          .attr("opacity", 1);
 
-    var lineFunction_year = d3.svg.line()
-      .x(function(d) { return year_scale_x(d[0]); })
-      .y(function(d) { return year_scale_y(d[1]); })
-      .interpolate("linear"); 
-    year_panel.selectAll("path").remove();
-    year_panel.append("path")
-      .attr("d", lineFunction_year(years))
-      .attr("stroke", "darkgreen")
-      .attr("fill", "rgba(0,0,0,0)")
-      .attr("stroke-width", 1);
+        var lineFunction = d3.svg.line()
+          .x(function(d) { return time_scale_x(d[0]); })
+          .y(function(d) { return time_scale_y(d[1]); })
+          .interpolate("linear"); 
+        target.selectAll("path").remove();
+        target.append("path")
+          .attr("d", lineFunction(counts))
+          .attr("stroke", "darkgreen")
+          .attr("fill", "rgba(0,0,0,0)")
+          .attr("stroke-width", 1);
+
+        // axes
+        target.append("path")
+          .attr("stroke-width", 1)
+          .attr("stroke", "darkgreen")
+          .attr("opacity", .5)
+          .attr("fill-opacity", 0)
+          .attr("d", "M " + (inset*.75) + " " + ymax + " " +
+                       "L " + (inset*.75) + " " + ymin + " " +
+                       "L " + (time_width-inset*.75) + " " + ymin);
+        
+        // title
+        target.append("text")
+          .text(time_var)
+          .attr("x", inset)
+          .attr("y", ymax)
+          .attr("font-size", w/25)
+          .attr("font-weight", 100)
+          .attr("fill", "darkgreen")
+          .attr("fill-opacity", .25)
+          .attr("text-anchor", "start")
+          .attr("dominant-baseline", "hanging");
+
+        // axis units
+        x.splice(1, 0, 
+          x[0] + Math.round((x[1] - x[0])/3), 
+          x[0] + Math.round((x[1] - x[0])/3*2));
+        for(i in x){
+          target.append("text")
+          .text(x[i])
+          .attr("x", time_scale_x(x[i]))
+          .attr("y", ymin + gutter/2)
+          .attr("font-size", w/120)
+          .attr("fill", "darkgreen")
+          .attr("fill-opacity", .25)
+          .attr("text-anchor", "middle")
+          .attr("dominant-baseline", "middle");
+        };
+
+        // y axis title
+        target.append("text")
+        .text("total " + active.stat)
+        .attr("x", -ht/2)
+        .attr("y", inset*.75 - gutter/2)
+        .attr("font-size", w/150)
+        .attr("transform", "rotate(-90)")
+        .attr("fill", "darkgreen")
+        .attr("fill-opacity", .25)
+        .style("text-anchor", "middle");
+        
 
 
-    //// months
-    
-    var months = d3.nest()
-          .key(function(d) { return d.month;})
-          .rollup(function(d) {
-              unique = d3.nest()
-                .key(function(e) { return e[active.stat_obs_var];}) ///////////
-                .rollup(function(e) { return [e.length]; })
-                .entries(d)
-                .map(function(f){return [+f.key, f.value[0]];});
-              return [unique.length]; })
-          .entries(data)
-          .map(function(d){return [+d.key, d.value[0]];})
-          .sort(function(x,y){return d3.ascending(y[0], x[0]);});
-    
-    var month_scale_x = d3.scaleLinear()
-          .domain([1,12])
-          .range([inset, time_width - inset]);
-    months_count_range = [0, d3.max(months, function(d){return(d[1])})];
-    var month_scale_y = d3.scaleLinear()
-          .domain(months_count_range)
-          .range([w/9, gutter]);
+    };
 
-    month_panel.selectAll("circle").remove();
-    month_panel.selectAll("circle")
-      .data(months).enter()
-      .append("circle")
-      .attr("cx", function (d) { return month_scale_x(d[0]); })
-      .attr("cy", function (d) { return month_scale_y(d[1]); })
-      .attr("r", w/500)
-      .attr("fill", "darkgreen")
-      .attr("opacity", 1);
-
-    var lineFunction_month = d3.svg.line()
-      .x(function(d) { return month_scale_x(d[0]); })
-      .y(function(d) { return month_scale_y(d[1]); })
-      .interpolate("linear"); 
-    month_panel.selectAll("path").remove();
-    month_panel.append("path")
-      .attr("d", lineFunction_month(months))
-      .attr("stroke", "darkgreen")
-      .attr("fill", "rgba(0,0,0,0)")
-      .attr("stroke-width", 1);
+    timeChart(data, "year", year_panel, [2007,2017]);
+    timeChart(data, "month", month_panel, [1,12]);
+    timeChart(data, "hour", hour_panel, [0,23]);
 };
 
 

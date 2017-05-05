@@ -6,11 +6,12 @@ library(rgdal)
 library(dplyr)
 library(raster)
 library(lubridate)
+library(beepr)
 
 setwd("/Users/lauraalexander/taxorama") 
 
 #### Read in data, select columns ####
-allObs <- read.csv("raw_data/observations.csv", header = TRUE, stringsAsFactors = FALSE) #read in complete iNat dataset
+allObs <- read.csv("raw_data/observations.csv", header = TRUE, stringsAsFactors = FALSE); beep(sound = 2) #read in complete iNat dataset
 
 #create list of all unique species/genera in the dataset
 allObsSpecies <- allObs[which(allObs$taxonRank == "species" |allObs$taxonRank == "genus"),c("taxonID","scientificName","taxonRank","kingdom","phylum","class","order","family","genus")]
@@ -46,6 +47,7 @@ usObs$eventDate <- as.Date(usObs$eventDate)
 usObs$dateIdentified <- as.Date(usObs$dateIdentified)
 usObs$year <- year(usObs$eventDate)
 usObs$month <- month(usObs$eventDate)
+usObs$hour <- gsub("([0-9].*):([0-9].*):.*", "\\1", usObs$eventTime)
 
 cleanObs <- usObs[-which(usObs$eventDate < "2007-01-01"),];  cleanObs <- cleanObs[-which(is.na(usObs$eventDate)),]#removes pre-2007 observations, observations with no assocated event date.
 write.csv(cleanObs, "processed_data/clean_us_obs.csv", row.names = F) #writes out files 

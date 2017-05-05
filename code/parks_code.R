@@ -309,8 +309,8 @@ NPScleanup <- function(park_id){
   # Change NPS categories to match our categories
   parkSpeciesFixed$Category[which(parkSpeciesFixed$Category %in% c("Slug/Snail","Insect","Other Non-vertebrates","Crab/Lobster/Shrimp"))] <- "Invertebrate"
   parkSpeciesFixed$Category[which(parkSpeciesFixed$Category %in% c("Reptile","Amphibian"))] <- "Herp"
-  parkSpeciesFixed$Category[which(parkSpeciesFixed$Category %in% c("Vascular Plant","Non-vascular Plant"))] <- "Plant"
-  parkSpeciesFixed$Category[which(parkSpeciesFixed$Category %in% c("Chromista","Bacteria","Protozoa","Archaea"))] <- "Microbe"
+  parkSpeciesFixed$Category[which(parkSpeciesFixed$Category %in% c("Vascular Plant","Non-vascular Plant","Chromista"))] <- "Plant"
+  parkSpeciesFixed$Category[which(parkSpeciesFixed$Category %in% c("Bacteria","Protozoa","Archaea"))] <- "Microbe"
 
   # Compare against all iNat observations, etc
   parkSpeciesFixed[,ranks_to_genus] <- NA

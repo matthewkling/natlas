@@ -7,6 +7,7 @@ setwd("~/documents/inviz/taxorama")
 # load data
 park_id = "PORE" #Point Reyes is park of interest
 spp <- read.csv(paste0("processed_data/",park_id,"_data/",park_id,"_species_list.csv"), header=T, stringsAsFactors=F)
+spp <- read.csv(paste0("processed_data/",park_id,"_data/",park_id,"_species.csv"), header=T, stringsAsFactors=F)
 
 f <- spp %>%
       mutate(species=speciesFixed,
@@ -49,7 +50,7 @@ leaves <- lapply(1:nrow(d), function(i) data.frame(level="species",
 group_taxa <- function(data, groupings, level, max_col){
       parents <- as.vector(unique(groupings[,1]))
       lapply(parents, function(x){
-            browser()
+            #browser()
             kids <- which(groupings[,1]==x)
             kids <- data[kids]
             kids <- kids[!sapply(kids, is.null)]

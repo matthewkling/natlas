@@ -23,30 +23,30 @@
 }
 
 .big_title {
-  font-size: 80px;
   font-weight: 100;
   fill: darkgreen;
-  fill-opacity: .5;
+  fill-opacity: 1;
   text-anchor: middle;
+  dominant-baseline: alphabetical;
 }
 
 .park_title {
   font-size: 20px;
-  fill: rgb(0,80,0);
+  fill: white;
   text-anchor: start;
   dominant-baseline: middle;
 }
 
 .tree_title {
   font-size: 20px;
-  fill: rgb(0,80,0);
+  fill: white;
   text-anchor: start;
   dominant-baseline: middle;
 }
 
 .stat_title {
   font-size: 20px;
-  fill: rgb(0,80,0);
+  fill: white;
   text-anchor: start;
   dominant-baseline: middle;
   text-decoration: none;
@@ -59,50 +59,48 @@
 }
 
 .button {
-  fill: rgb(0,80,0);
+  fill: white;
 }
 .button:hover {
   fill: red;
 }
 
+.arrow {
+}
+
 .stat_label {
-  font-size: 20px;
   fill: darkgreen;
-  fill-opacity: .5;
+  fill-opacity: 1;
   text-anchor: middle;
   font-weight: 100;
   text-decoration: none;
 }
 .stat_label_slice {
-  font-size: 20px;
   fill: darkgreen;
-  fill-opacity: .5;
+  fill-opacity: 1;
   text-anchor: middle;
   font-weight: 100;
   text-decoration: none;
 }
 
 .stat_label_taxon {
-  font-size: 20px;
   fill: darkgreen;
-  fill-opacity: .5;
+  fill-opacity: 1;
   text-anchor: middle;
   font-weight: 100;
   text-decoration: none;
 }
 
 .stat_label_2 { 
-  font-size: 20px;
   fill: darkgreen;
-  fill-opacity: .5;
+  fill-opacity: 1;
   text-anchor: middle;
   font-weight: 100;
 }
 
 .hyperlink {
-  font-size: 20px;
   fill: darkgreen;
-  fill-opacity: .5;
+  fill-opacity: 1;
   text-anchor: middle;
   font-weight: 100;
   text-decoration: underline;
@@ -136,34 +134,36 @@ var m0 = 200; // header
 var m = 100; // title strip
 var pad = 5;
 var w = document.body.clientWidth *.99 - pad*2;
+var h = document.body.scrollHeight - pad*2;
 var hf = document.body.scrollHeight - pad*4 - m;
 
+var fontsize_titlebar = w / 30,
+    fontsize_statsbar = w / 80;
 
 //////////////////////////////////////////////////////
-
-////
 
 var map_width = w / 3,
     map_height = w / 3,
     taxonomy_width = w / 3,
     taxonomy_height = w / 3,
     user_width = w / 3,
-    user_height = w / 3;
+    user_height = w / 3,
+    time_width = w / 3,
+    time_height = w / 3;
 
 var filter_title_y = taxonomy_height * .57;
 
 var r; // user point radius
 
 
-
-
-
 //////////////////////////////
 
 var tree_files = ["taxonomy_pore_simple.json", "taxonomy_pore_linnean.json"]
 var tree_names = ["simple", "Linnean"]
-var stat_names = ["observations", "species", "users"]
-var stat_vars = ["n_records", "n_species", "n_users"]
+
+var stat_names = ["observations", "species", "users"] // var names in visualization
+var stat_vars = ["n_records", "n_species", "n_users"] // var names in species dataset
+var stat_obs_vars = ["obs_id", "species", "user"] // var names in obs dataset
 
 var active = {
   level: "root",
@@ -174,7 +174,8 @@ var active = {
   tree_file: tree_files[0],
   tree: tree_names[0],
   stat: stat_names[0],
-  stat_var: stat_vars[0]
+  stat_var: stat_vars[0],
+  stat_obs_var: stat_obs_vars[0]
 }
 
 var n_obs,
@@ -195,7 +196,8 @@ function reset_active(){
         tree_file: tree_files[0],
         tree: tree_names[0],
         stat: stat_names[0],
-        stat_var: stat_vars[0]
+        stat_var: stat_vars[0],
+        stat_obs_var: stat_obs_vars[0]
     }
 }
 
@@ -205,7 +207,8 @@ function reset_active(){
 
 //// taxon pie parameters
 
-var radius = (Math.min(taxonomy_width, taxonomy_height) / 2.25) - 10;
+//var radius = (Math.min(taxonomy_width, taxonomy_height) / 2.25) - 10;
+var radius = (Math.min(taxonomy_width, taxonomy_height) / 2) - pad;
 
 var formatNumber = d3.format(",d");
 
@@ -226,95 +229,65 @@ var arc = d3.svg.arc()
 
 /////////////////
 
+var col1 = d3.select("body")
+    .append("svg")
+    .attr("width", w/3)
+    .attr("height", w/3*2);
+var col2 = d3.select("body")
+    .append("svg")
+    .attr("width", w/3)
+    .attr("height", w/3*2);
+var col3 = d3.select("body")
+    .append("svg")
+    .attr("width", w/3)
+    .attr("height", w/3*2);
+
+
 // header
 
-var nameplate = d3.select("body")
-    .append("svg")
-    .attr("width", w/2)
-    .attr("height", m0);
-
+var h1 = w/8;
+var nameplate = col2.append("svg")
+    .attr("x", w/24)
+    .attr("width", w/4)
+    .attr("height", h1);
 nameplate.append("rect")
-    .attr("x", 0).attr("y", 0).attr("width", w/2).attr("height", m0)
+    .attr("x", 0).attr("y", 0)
+    .attr("width", w/4).attr("height", w/4)
     .attr("fill", "rgb(0,80,0)")
+
 var title = nameplate.append("text")
     .text("NATLAS")
-    .attr("x", w/2 - m0/4)
-    .attr("y", m0/3*2)
-    .attr("font-size", "100px")
+    .attr("x", w/8)
+    .attr("y", w/8 * .75)
+    .attr("font-size", w/20 + "px")
     .attr("fill", "white")
     .attr("font-weight", 900)
-    .attr("text-anchor", "end")
+    .attr("text-anchor", "middle")
     .attr("dominant-baseline", "alphabetical")
 title.append("tspan")
     .text("an atlas of citizen naturalist observations")
-    .attr("x", w/2 - m0/4).attr("dy", 30)
-    .attr("font-size", "22px")
+    .attr("x", w/8).attr("dy", w/90)
+    .attr("font-size", w/90 + "px")
     .attr("font-weight", 100)
 
-var control_panel = d3.select("body")
-    .append("svg")
-    .attr("width", w/2)
-    .attr("height", m0);
+var h2 = w/12;
+var control_panel = col2.append("svg")
+    .attr("x", w/24)
+    .attr("y", w/8 + pad)
+    .attr("width", w/4)
+    .attr("height", h2);
 control_panel.append("rect")
-    .attr("x", 0).attr("y", 0).attr("width", w/2).attr("height", m0)
-    .attr("fill", "rgba(0,80,0,.3)")
+    .attr("x", 0).attr("y", 0)
+    .attr("width", w/4).attr("height", w/12)
+    .attr("fill", "rgba(0,80,0,1)")
 
-var title_bar = d3.select("body")
-    .append("svg")
-    .attr("width", w)
-    .attr("height", m);
-
-var stats_bar = d3.select("body")
-    .append("svg")
-    .attr("width", w)
-    .attr("height", m/2);
-
-// map containers
-var map_panel = d3.select("body")
-    .append("svg")
-    .attr("width", map_width)
-    .attr("height", map_height);
-
-var map_title = title_bar.append("text")
-    .text("where?")
-    .attr("x", w/6)
-    .attr("y", m*.9)
-    .attr("class", "big_title");
-
-// taxonomy containers
-var taxonomy_panel = d3.select("body")
-    .append("svg")
-    .attr("width", taxonomy_width)
-    .attr("height", taxonomy_height);
-
-var taxonomy_title = title_bar.append("text")
-    .text("what?")
-    .attr("x", w/2)
-    .attr("y", m*.9)
-    .attr("class", "big_title");
-
-// user containers
-var user_panel = d3.select("body")
-    .append("svg")
-    .attr("width", user_width)
-    .attr("height", user_height);
-
-var user_title = title_bar.append("text")
-    .text("who?")
-    .attr("x", w/6*5)
-    .attr("y", m*.9)
-    .attr("class", "big_title");
-
-
-
-///////////////////////////
 
 
 // park toggle button
-var r = 10;
+var r = w/200;
 var park_button = control_panel.append("ellipse")
     .attr("cx", m0/4 + r)
-    .attr("cy", m0/2)
+    .attr("cy", w/12 * .25)
     .attr("rx", r)
     .attr("ry", r)
     .attr("class", "button");
@@ -322,42 +295,192 @@ var park_button = control_panel.append("ellipse")
 var park_title = control_panel.append("text")
             .text("Park: Point Reyes")
             .attr("x", m0/4 + r*3)
-            .attr("y", m0/2)
+            .attr("y", w/12 * .25)
             .attr("class", "park_title");
 
 // stat toggle button
 var stat_button = control_panel.append("ellipse")
     .attr("cx", m0/4 + r)
-    .attr("cy", m0 * .65)
+    .attr("cy", w/12 * .5)
     .attr("rx", r)
     .attr("ry", r)
     .attr("class", "button");
-//    .on("mouseover", function(d) {d3.select(this).attr("fill", "green")})
-//    .on("mouseout", function(d) {d3.select(this).attr("fill", "black")});
 
 var stat_title = control_panel.append("text")
             .text("Stat:  " + active.stat)
             .attr("x", m0/4 + r*3)
-            .attr("y", m0 * .65)
+            .attr("y", w/12 * .5)
             .attr("class", "stat_title");
 
 // taxonomy toggle button
 var tree_button = control_panel.append("ellipse")
     .attr("cx", m0/4 + r)
-    .attr("cy", m0 * .8)
+    .attr("cy", w/12 * .75)
     .attr("rx", r)
     .attr("ry", r)
     .attr("class", "button")
-//    .on("mouseover", function(d) {d3.select(this).attr("fill", "green")})
-//    .on("mouseout", function(d) {d3.select(this).attr("fill", "black")})
     .on("click", swapTree)
     .append("title").text("click to switch tree");
 
 var tree_title = control_panel.append("text")
             .text("Tree: " + active.tree)
             .attr("x", m0/4 + r*3)
-            .attr("y", m0 * .8)
+            .attr("y", w/12 * .75)
             .attr("class", "tree_title");
+
+///////////////////////////
+
+var ax0 = w/24,
+    ax1 = w/24 + w/4,
+    ay = w/15,
+    am = w/24;
+
+var h3 = ay * 4 + pad * 3;
+var arrows = col2.append("svg")
+    .attr("x", 0)
+    .attr("y", h1 + pad + h2 + pad)
+    .attr("width", w/3)
+    .attr("height", h3);
+
+arrows.append("path")
+    .attr("class", "arrow")
+    .attr("d", "M " + ax0 + " " + 0 + " " +
+               "L " + ax1 + " " + 0 + " " +
+               "L " + ax1 + " " + ay + " " +
+               "L " + ax0 + " " + ay + " " +
+               "L " + (ax0-am) + " " + ay/2 + " " + " z");
+
+arrows.append("path")
+    .attr("class", "arrow")
+    .attr("d", "M " + ax0 + " " + (ay+pad) + " " +
+               "L " + ax1 + " " + (ay+pad) + " " +
+               "L " + (ax1+am) + " " + (ay+pad+ay/2) + " " +
+               "L " + ax1 + " " + (ay+pad+ay) + " " +
+               "L " + ax0 + " " + (ay+pad+ay) + " z");
+
+arrows.append("path")
+    .attr("class", "arrow")
+    .attr("d", "M " + ax0 + " " + (ay*2+pad*2) + " " +
+               "L " + ax1 + " " + (ay*2+pad*2) + " " +
+               "L " + ax1 + " " + (ay*3+pad*2) + " " +
+               "L " + ax0 + " " + (ay*3+pad*2) + " " +
+               "L " + (ax0-am) + " " + (ay*2+pad*2+ay/2) + " " + " z");
+
+arrows.append("path")
+    .attr("class", "arrow")
+    .attr("d", "M " + ax0 + " " + (ay*3+pad*3) + " " +
+               "L " + ax1 + " " + (ay*3+pad*3) + " " +
+               "L " + (ax1+am) + " " + (ay*3+pad*3+ay/2) + " " +
+               "L " + ax1 + " " + (ay*3+pad*3+ay) + " " +
+               "L " + ax0 + " " + (ay*3+pad*3+ay) + " z");
+
+arrows.selectAll("path").attr("fill", "rgba(0,80,0,.3)");
+
+
+////////
+
+
+
+///////////////////
+
+
+
+var title_bar = col2.append("svg")
+    .attr("x", w/24)
+    .attr("y", w/8 + pad + w/12 + pad)
+    .attr("width", w/4)
+    .attr("height", h);
+
+var stats_bar = col2.append("svg")
+    .attr("x", w/24)
+    .attr("y", w/8 + pad + w/12 + pad)
+    .attr("width", w/4)
+    .attr("height", h);
+
+var taxonomy_title = title_bar.append("text")
+    .text("what?")
+    .attr("x", w/8)
+    .attr("y", ay/2)
+    .attr("font-size", fontsize_titlebar)
+    .attr("class", "big_title");
+
+var map_title = title_bar.append("text")
+    .text("where?")
+    .attr("x", w/8)
+    .attr("y", ay/2 + ay+pad)
+    .attr("font-size", fontsize_titlebar)
+    .attr("class", "big_title");
+
+var user_title = title_bar.append("text")
+    .text("who?")
+    .attr("x", w/8)
+    .attr("y", ay/2 + ay*2+pad*2)
+    .attr("font-size", fontsize_titlebar)
+    .attr("class", "big_title");
+
+var time_title = title_bar.append("text")
+    .text("when?")
+    .attr("x", w/8)
+    .attr("y", ay/2 + ay*3+pad*3)
+    .attr("font-size", fontsize_titlebar)
+    .attr("class", "big_title");
+
+
+
+///////////////////////////
+
+var footer = col2.append("svg")
+    .attr("x", 0)
+    .attr("y", h1 + pad + h2 + pad + h3 + pad)
+    .attr("width", w/3)
+    .attr("height", w/3*2 - (h3 + pad + h2 + pad + h1));
+footer.append("rect")
+    .attr("x", w/24).attr("y", 0)
+    .attr("width", w/4)
+    .attr("height", w/3*2 - (h3 + pad + h2 + pad + h1))
+    .attr("fill", "rgb(0,80,0)")
+
+////////////////////////
+
+
+// taxonomy container
+var taxonomy_panel = col1.append("svg")
+    .attr("width", taxonomy_width)
+    .attr("height", taxonomy_height);
+
+// map container
+var map_panel = col3.append("svg")
+    .attr("width", map_width)
+    .attr("height", map_height);
+
+// user container
+var user_panel = col1.append("svg")
+    .attr("y", w/3)
+    .attr("width", user_width)
+    .attr("height", user_height);
+
+// timeline container
+var time_panel = col3.append("svg")
+    .attr("y", w/3)
+    .attr("width", time_width)
+    .attr("height", time_height);
+var year_panel = time_panel.append("svg")
+    .attr("width", time_width)
+    .attr("height", time_height/3);
+var month_panel = time_panel.append("svg")
+    .attr("width", time_width)
+    .attr("height", time_height/3)
+    .attr("y", time_height/3);
+var hour_panel = time_panel.append("svg")
+    .attr("width", time_width)
+    .attr("height", time_height/3)
+    .attr("y", time_height/3*2);
+
+
+
+
+///////////////////////////
+
 
 var filter_title = taxonomy_panel
       .append("text").text(active.common)
@@ -421,16 +544,14 @@ function swapTree(){
     control_panel.append("text")
         .text("Tree: " + active.tree_name)
         .attr("x", m0/4 + r*3)
-        .attr("y", m0 * .8)
+        .attr("y", w/12 * .75)
         .attr("class", "tree_title");
-
-}
+};
 
 
 function swapPark() {
     //todo: enable park switching
-}
-
+};
 
 
 function makeMap(obs_file){
@@ -445,13 +566,14 @@ function makeMap(obs_file){
         d.category = d.category.toLowerCase();
         d.family = d.family;
         d.species = d.speciesFixed;
-        //d.year = +d.year;
-        //d.month = +d.month;
+        d.year = +d.year;
+        d.month = +d.month;
         d.user = +d.userNumber;
         d.root = "life";
         //d.user_obs = +d.user_obs;
         d.user_visits = +d.user_visits;
         d.user_spp = +d.user_spp;
+        d.obs_id = +d.obs_id;
       });
 
       max_users = d3.map(data, function(d){return d.user;}).size();
@@ -464,8 +586,6 @@ function makeMap(obs_file){
       n_spp = d3.map(data, function(d){return d.species;}).size();
       n_users = d3.map(data, function(d){return d.user;}).size();
 
-
-      
 
 
       ///////////// observations map ///////////////
@@ -499,7 +619,6 @@ function makeMap(obs_file){
         .attr("r", obs_r)
         .attr("fill", "darkgreen")
         .attr("opacity", obs_opacity);
-
 
 
 
@@ -645,7 +764,11 @@ function makeMap(obs_file){
 
       //////////////////////////////////////////////////////
 
-      
+
+
+      makeTime(data);
+
+
 
       stat_button.on("click", function(){swapStat(data)});
 
@@ -653,6 +776,7 @@ function makeMap(obs_file){
 
   });
 };
+
 
 /////////////////
 
@@ -709,30 +833,23 @@ function swapStat(data){
 
     active.stat_var = stat_vars.pop();
     stat_vars.splice(0, 0, active.stat_var);
+
+    active.stat_obs_var = stat_obs_vars.pop();
+    stat_obs_vars.splice(0, 0, active.stat_obs_var);
     
     // toggle stat title
     control_panel.selectAll("text.stat_title").remove()
     stat_title = control_panel.append("text")
         .text("Stat:  " + active.stat)
         .attr("x", m0/4 + r*3)
-        .attr("y", m0*.65)
+        .attr("y", w/12 * .5)
         .attr("class", "stat_title");
-
-    // toggle stat annotations
-    stats_bar.selectAll("text.stat_label_2").remove()
-    var stats_value_obs = stats_bar.append("text")
-    .text(n_obs + " biodiversity geolocations")
-        .attr("x", w/6)
-        .attr("y", m/4)
-        .attr("class", "stat_label_2")
-    .append("tspan").text("(color = # " + active.stat + ")")
-        .attr("x", w/6).attr("y", m/4).attr("dy", 20);
-
 
     // toggle map      
     hexUpdate(data);
     hexScale();
     hexStat();
+    makeTime(data);
 
     // toggle user
 
@@ -750,29 +867,22 @@ function plotTitles() {
     
     stats_bar.selectAll("text").remove();
 
-    var stats_value_obs = stats_bar.append("text")
-      .text(n_obs + " biodiversity geolocations")
-          .attr("x", w/6)
-          .attr("y", m/4)
-          .attr("class", "stat_label_2")
-      .append("tspan").text("(hex color = # " + active.stat + ")")
-          .attr("x", w/6).attr("y", m/4).attr("dy", 20);
-
+    // taxonomy
     url = "http://www.inaturalist.org/taxa/" + active.id;
     var stats_value_spp = stats_bar.append("text")
       .text(n_spp + " species of ")
-        .attr("x", w/2)
-        .attr("y", m/4)
-        .attr("class", "stat_label_taxon")
+        .attr("x", w/8)
+        .attr("y", ay/2 + fontsize_statsbar)
+        .attr("class", "stat_label_taxon").attr("font-size", fontsize_statsbar)
       .append("tspan").text(active.common);
 
     if(active.level != "root" && active.level != "category"){
       stats_bar.selectAll(".stat_label_taxon").remove();
       stats_value_spp = stats_bar.append("text")
           .text(n_spp + " species of ")
-            .attr("x", w/2)
-            .attr("y", m/4)
-            .attr("class", "stat_label_taxon")
+            .attr("x", w/8)
+            .attr("y", ay/2 + fontsize_statsbar)
+            .attr("class", "stat_label_taxon").attr("font-size", fontsize_statsbar)
             .attr("font-weight", 100)
           .append("tspan").text(active.common)
               .attr("class", "hyperlink")
@@ -782,17 +892,29 @@ function plotTitles() {
 
     var stats_value_slice_stat = stats_bar.append("text")
       .text("(slice size = # " + active.stat + ")")
-        .attr("x", w/2)
-        .attr("y", m/4 + 20)
-        .attr("class", "stat_label_slice");
+        .attr("x", w/8)
+        .attr("y", ay/2 + fontsize_statsbar * 2)
+        .attr("class", "stat_label_slice").attr("font-size", fontsize_statsbar);
 
+    // observations
+    var stats_value_obs = stats_bar.append("text")
+      .text(n_obs + " biodiversity geolocations")
+          .attr("x", w/8)
+          .attr("y", ay/2 + ay+pad + fontsize_statsbar)
+          .attr("class", "stat_label_2").attr("font-size", fontsize_statsbar)
+      .append("tspan").text("(hex color = # " + active.stat + ")")
+          .attr("x", w/8).attr("y", ay/2 + ay+pad + fontsize_statsbar)
+          .attr("dy", fontsize_statsbar);
+
+    // users
     var stats_value_users = stats_bar.append("text")
       .text(n_users + " citizen scientists")
-      .attr("x", w/6*5)
-      .attr("y", m/4)
-      .attr("class", "stat_label")
+      .attr("x", w/8)
+      .attr("y", ay/2 + ay*2+pad*2 + fontsize_statsbar)
+      .attr("class", "stat_label").attr("font-size", fontsize_statsbar)
       .append("tspan").text(" ")
-          .attr("x", w/6*5).attr("y", m/4).attr("dy", 20);
+          .attr("x", w/6*5).attr("y", ay/2 + ay*2+pad*2 + fontsize_statsbar)
+          .attr("dy", fontsize_statsbar);
 }
 
 
@@ -822,12 +944,14 @@ function makePie() {
         .on("mouseout", function(d) {
             d3.select(this).style("fill", function(z){ return z.hex }); 
             taxonTitle(active.common, active.latin); }) ;
+
+      taxonTitle(active.common, active.latin);
     });
 
-    taxonTitle(active.common, active.latin);
+    
 }
 
-function taxonTitle(t1, t2, id) {
+function taxonTitle(t1, t2) {
     t2 = "(" + t2 + ")";
     if("(" + t1 + ")" == t2) {t2 = ""};
     
@@ -877,8 +1001,106 @@ function taxonomyClick(d) {
 };
 
 
-//d3.select(self.frameElement).style("height", taxonomy_height + "px");
 
+function makeTime(data) {
+
+    time_panel.selectAll("circle").remove();
+    
+    var inset = time_width / 6;
+    var gutter = time_height / 10;
+
+    
+
+    //// years
+
+    var years = d3.nest()
+          .key(function(d) { return d.year;})
+          .rollup(function(d) {
+              unique = d3.nest()
+                .key(function(e) { return e[active.stat_obs_var];}) ///////////
+                .rollup(function(e) { return [e.length]; })
+                .entries(d)
+                .map(function(f){return [+f.key, f.value[0]];});
+              return [unique.length]; })
+          .entries(data)
+          .map(function(d){return [+d.key, d.value[0]];})
+          .sort(function(x,y){return d3.ascending(y[0], x[0]);});
+    
+    years_range = d3.extent(years, function(d){return(d[0])});
+    var year_scale_x = d3.scaleLinear()
+          .domain(years_range)
+          .range([inset, time_width - inset]);
+    years_count_range = [0, d3.max(years, function(d){return(d[1])})];
+    var year_scale_y = d3.scaleLinear()
+          .domain(years_count_range)
+          .range([w/9,gutter]);
+
+    year_panel.selectAll("circle").remove();
+    year_panel.selectAll("circle")
+      .data(years).enter()
+      .append("circle")
+      .attr("cx", function (d) { return year_scale_x(d[0]); })
+      .attr("cy", function (d) { return year_scale_y(d[1]); })
+      .attr("r", w/500)
+      .attr("fill", "darkgreen")
+      .attr("opacity", 1);
+
+    var lineFunction_year = d3.svg.line()
+      .x(function(d) { return year_scale_x(d[0]); })
+      .y(function(d) { return year_scale_y(d[1]); })
+      .interpolate("linear"); 
+    year_panel.selectAll("path").remove();
+    year_panel.append("path")
+      .attr("d", lineFunction_year(years))
+      .attr("stroke", "darkgreen")
+      .attr("fill", "rgba(0,0,0,0)")
+      .attr("stroke-width", 1);
+
+
+    //// months
+    
+    var months = d3.nest()
+          .key(function(d) { return d.month;})
+          .rollup(function(d) {
+              unique = d3.nest()
+                .key(function(e) { return e[active.stat_obs_var];}) ///////////
+                .rollup(function(e) { return [e.length]; })
+                .entries(d)
+                .map(function(f){return [+f.key, f.value[0]];});
+              return [unique.length]; })
+          .entries(data)
+          .map(function(d){return [+d.key, d.value[0]];})
+          .sort(function(x,y){return d3.ascending(y[0], x[0]);});
+    
+    var month_scale_x = d3.scaleLinear()
+          .domain([1,12])
+          .range([inset, time_width - inset]);
+    months_count_range = [0, d3.max(months, function(d){return(d[1])})];
+    var month_scale_y = d3.scaleLinear()
+          .domain(months_count_range)
+          .range([w/9, gutter]);
+
+    month_panel.selectAll("circle").remove();
+    month_panel.selectAll("circle")
+      .data(months).enter()
+      .append("circle")
+      .attr("cx", function (d) { return month_scale_x(d[0]); })
+      .attr("cy", function (d) { return month_scale_y(d[1]); })
+      .attr("r", w/500)
+      .attr("fill", "darkgreen")
+      .attr("opacity", 1);
+
+    var lineFunction_month = d3.svg.line()
+      .x(function(d) { return month_scale_x(d[0]); })
+      .y(function(d) { return month_scale_y(d[1]); })
+      .interpolate("linear"); 
+    month_panel.selectAll("path").remove();
+    month_panel.append("path")
+      .attr("d", lineFunction_month(months))
+      .attr("stroke", "darkgreen")
+      .attr("fill", "rgba(0,0,0,0)")
+      .attr("stroke-width", 1);
+};
 
 
 makePie();

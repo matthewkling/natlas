@@ -121,7 +121,7 @@ html * {
   <script src="https://d3js.org/d3-hexbin.v0.2.min.js"></script>
   <script src="https://d3js.org/topojson.v2.min.js"></script>
   <script src="https://cdn.rawgit.com/fabid/d3-rectbin/master/rectbin.js"></script>
-  <script src="pore_json.js"></script>
+  <script src="park_boundaries.js"></script>
 
 
   </head>
@@ -593,7 +593,7 @@ function makeMap(obs_file){
 
       // park boundary
       var park_boundary = map_panel.selectAll("path")
-        .data(pore_json.features)
+        .data(pore_boundary.features)
         .enter()
         .append("path")
         .attr("class", "park")

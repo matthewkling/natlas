@@ -7861,7 +7861,7 @@
                                 "level": "species",
                                 "name": "Junonia coenia",
                                 "common": "Common Buckeye",
-                                "inat_id": 64181,
+                                "inat_id": 52794,
                                 "hex": "#A0FAB3",
                                 "nspp": 1,
                                 "n_records": 6,
@@ -10587,17 +10587,6 @@
                             },
                             {
                                 "level": "species",
-                                "name": "Lasthenia minor",
-                                "common": "Coastal goldfields",
-                                "inat_id": 98269,
-                                "hex": "#538BD4",
-                                "nspp": 1,
-                                "n_records": 1,
-                                "n_users": 1,
-                                "n_species": 1
-                            },
-                            {
-                                "level": "species",
                                 "name": "Layia carnosa",
                                 "common": "Beach tidytips",
                                 "inat_id": 16755,
@@ -10815,18 +10804,7 @@
                                 "n_records": 2,
                                 "n_users": 2,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Athyriaceae",
-                        "common": "Leptosporangiate ferns",
-                        "inat_id": 332930,
-                        "level": "family",
-                        "hex": "#182847",
-                        "nspp": 1,
-                        "nobs": 1,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Wyethia angustifolia",
@@ -10841,13 +10819,13 @@
                         ]
                     },
                     {
-                        "name": "Berberidaceae",
-                        "common": "Barberries and allies",
-                        "inat_id": 49289,
+                        "name": "Athyriaceae",
+                        "common": "Leptosporangiate ferns",
+                        "inat_id": 332930,
                         "level": "family",
-                        "hex": "#103120",
-                        "nspp": 2,
-                        "nobs": 2,
+                        "hex": "#00450B",
+                        "nspp": 1,
+                        "nobs": 1,
                         "children": [
                             {
                                 "level": "species",
@@ -10859,13 +10837,35 @@
                                 "n_records": 4,
                                 "n_users": 4,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Berberidaceae",
+                        "common": "Barberries and allies",
+                        "inat_id": 49289,
+                        "level": "family",
+                        "hex": "#201C2F",
+                        "nspp": 2,
+                        "nobs": 2,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Berberis darwinii",
                                 "common": "Darwin's Barberry",
                                 "inat_id": 1225392,
                                 "hex": "#665BA4",
+                                "nspp": 1,
+                                "n_records": 2,
+                                "n_users": 2,
+                                "n_species": 1
+                            },
+                            {
+                                "level": "species",
+                                "name": "Berberis pinnata",
+                                "common": "California barberry",
+                                "inat_id": 20076,
+                                "hex": "#605385",
                                 "nspp": 1,
                                 "n_records": 2,
                                 "n_users": 2,
@@ -10878,21 +10878,10 @@
                         "common": "Birches and Allies",
                         "inat_id": 49155,
                         "level": "family",
-                        "hex": "#19192E",
+                        "hex": "#17152E",
                         "nspp": 2,
                         "nobs": 2,
                         "children": [
-                            {
-                                "level": "species",
-                                "name": "Berberis pinnata",
-                                "common": "California barberry",
-                                "inat_id": 20076,
-                                "hex": "#605385",
-                                "nspp": 1,
-                                "n_records": 2,
-                                "n_users": 2,
-                                "n_species": 1
-                            },
                             {
                                 "level": "species",
                                 "name": "Alnus rubra",
@@ -10903,18 +10892,7 @@
                                 "n_records": 7,
                                 "n_users": 6,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Blechnaceae",
-                        "common": "Leptosporangiate ferns",
-                        "inat_id": 48434,
-                        "level": "family",
-                        "hex": "#0D2C1A",
-                        "nspp": 2,
-                        "nobs": 2,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Corylus cornuta",
@@ -10925,7 +10903,18 @@
                                 "n_records": 12,
                                 "n_users": 8,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Blechnaceae",
+                        "common": "Leptosporangiate ferns",
+                        "inat_id": 48434,
+                        "level": "family",
+                        "hex": "#01450B",
+                        "nspp": 2,
+                        "nobs": 2,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Blechnum spicant",
@@ -10936,18 +10925,7 @@
                                 "n_records": 5,
                                 "n_users": 3,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Boraginaceae",
-                        "common": "Borage family",
-                        "inat_id": 48150,
-                        "level": "family",
-                        "hex": "#12282B",
-                        "nspp": 12,
-                        "nobs": 12,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Woodwardia fimbriata",
@@ -10958,7 +10936,18 @@
                                 "n_records": 5,
                                 "n_users": 4,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Boraginaceae",
+                        "common": "Borage family",
+                        "inat_id": 48150,
+                        "level": "family",
+                        "hex": "#13262E",
+                        "nspp": 12,
+                        "nobs": 12,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Amsinckia intermedia",
@@ -11079,18 +11068,7 @@
                                 "n_records": 5,
                                 "n_users": 3,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Brachytheciaceae",
-                        "common": "True mosses",
-                        "inat_id": 67859,
-                        "level": "family",
-                        "hex": "#162935",
-                        "nspp": 1,
-                        "nobs": 1,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Phacelia ramosissima",
@@ -11105,13 +11083,13 @@
                         ]
                     },
                     {
-                        "name": "Brassicaceae",
-                        "common": "Mustards",
-                        "inat_id": 47204,
+                        "name": "Brachytheciaceae",
+                        "common": "True mosses",
+                        "inat_id": 67859,
                         "level": "family",
-                        "hex": "#091536",
-                        "nspp": 13,
-                        "nobs": 13,
+                        "hex": "#035101",
+                        "nspp": 1,
+                        "nobs": 1,
                         "children": [
                             {
                                 "level": "species",
@@ -11123,7 +11101,18 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Brassicaceae",
+                        "common": "Mustards",
+                        "inat_id": 47204,
+                        "level": "family",
+                        "hex": "#0A103A",
+                        "nspp": 13,
+                        "nobs": 13,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Alliaria petiolata",
@@ -11255,18 +11244,7 @@
                                 "n_records": 13,
                                 "n_users": 8,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Bromeliaceae",
-                        "common": "Bromeliads",
-                        "inat_id": 49570,
-                        "level": "family",
-                        "hex": "#0C113E",
-                        "nspp": 1,
-                        "nobs": 1,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Rorippa curvisiliqua",
@@ -11281,9 +11259,9 @@
                         ]
                     },
                     {
-                        "name": "Campanulaceae",
-                        "common": "Bellflower Family",
-                        "inat_id": 48040,
+                        "name": "Bromeliaceae",
+                        "common": "Bromeliads",
+                        "inat_id": 49570,
                         "level": "family",
                         "hex": "#033C28",
                         "nspp": 1,
@@ -11303,13 +11281,13 @@
                         ]
                     },
                     {
-                        "name": "Caprifoliaceae",
-                        "common": "Honeysuckles and allies",
-                        "inat_id": 48527,
+                        "name": "Campanulaceae",
+                        "common": "Bellflower Family",
+                        "inat_id": 48040,
                         "level": "family",
-                        "hex": "#1A293D",
-                        "nspp": 5,
-                        "nobs": 5,
+                        "hex": "#173241",
+                        "nspp": 1,
+                        "nobs": 1,
                         "children": [
                             {
                                 "level": "species",
@@ -11321,7 +11299,18 @@
                                 "n_records": 2,
                                 "n_users": 2,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Caprifoliaceae",
+                        "common": "Honeysuckles and allies",
+                        "inat_id": 48527,
+                        "level": "family",
+                        "hex": "#1B263D",
+                        "nspp": 5,
+                        "nobs": 5,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Dipsacus fullonum",
@@ -11365,18 +11354,7 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Caryophyllaceae",
-                        "common": "Pinks",
-                        "inat_id": 48567,
-                        "level": "family",
-                        "hex": "#1F3139",
-                        "nspp": 10,
-                        "nobs": 10,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Symphoricarpos albus",
@@ -11387,7 +11365,18 @@
                                 "n_records": 3,
                                 "n_users": 3,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Caryophyllaceae",
+                        "common": "Pinks",
+                        "inat_id": 48567,
+                        "level": "family",
+                        "hex": "#203238",
+                        "nspp": 10,
+                        "nobs": 10,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Cardionema ramosissimum",
@@ -11486,18 +11475,7 @@
                                 "n_records": 3,
                                 "n_users": 2,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Cladophoraceae",
-                        "common": "Sea Lettuces and Single-celled Algae",
-                        "inat_id": 51431,
-                        "level": "family",
-                        "hex": "#21363A",
-                        "nspp": 1,
-                        "nobs": 1,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Stellaria media",
@@ -11512,13 +11490,13 @@
                         ]
                     },
                     {
-                        "name": "Codiaceae",
-                        "common": "Green Algae",
-                        "inat_id": 50866,
+                        "name": "Cladophoraceae",
+                        "common": "Sea Lettuces and Single-celled Algae",
+                        "inat_id": 51431,
                         "level": "family",
-                        "hex": "#010628",
-                        "nspp": 2,
-                        "nobs": 2,
+                        "hex": "#000000",
+                        "nspp": 1,
+                        "nobs": 1,
                         "children": [
                             {
                                 "level": "species",
@@ -11530,13 +11508,35 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Codiaceae",
+                        "common": "Green Algae",
+                        "inat_id": 50866,
+                        "level": "family",
+                        "hex": "#010B50",
+                        "nspp": 2,
+                        "nobs": 2,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Codium fragile",
                                 "common": "Dead Man's Fingers",
                                 "inat_id": 21583,
                                 "hex": "#0424FC",
+                                "nspp": 1,
+                                "n_records": 1,
+                                "n_users": 1,
+                                "n_species": 1
+                            },
+                            {
+                                "level": "species",
+                                "name": "Codium setchellii",
+                                "common": "Green spongy cushion",
+                                "inat_id": 796037,
+                                "hex": "#0123FC",
                                 "nspp": 1,
                                 "n_records": 1,
                                 "n_users": 1,
@@ -11549,21 +11549,10 @@
                         "common": "Morning glories and bindweeds",
                         "inat_id": 52345,
                         "level": "family",
-                        "hex": "#102E3F",
+                        "hex": "#14373A",
                         "nspp": 5,
                         "nobs": 5,
                         "children": [
-                            {
-                                "level": "species",
-                                "name": "Codium setchellii",
-                                "common": "Green spongy cushion",
-                                "inat_id": 796037,
-                                "hex": "#0123FC",
-                                "nspp": 1,
-                                "n_records": 1,
-                                "n_users": 1,
-                                "n_species": 1
-                            },
                             {
                                 "level": "species",
                                 "name": "Calystegia purpurata",
@@ -11607,18 +11596,7 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Crassulaceae",
-                        "common": "Stonecrops and allies",
-                        "inat_id": 51890,
-                        "level": "family",
-                        "hex": "#183130",
-                        "nspp": 2,
-                        "nobs": 2,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Cuscuta salina",
@@ -11629,7 +11607,18 @@
                                 "n_records": 3,
                                 "n_users": 3,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Crassulaceae",
+                        "common": "Stonecrops and allies",
+                        "inat_id": 51890,
+                        "level": "family",
+                        "hex": "#1B2826",
+                        "nspp": 2,
+                        "nobs": 2,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Dudleya farinosa",
@@ -11640,18 +11629,7 @@
                                 "n_records": 24,
                                 "n_users": 19,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Cucurbitaceae",
-                        "common": "Gourd family",
-                        "inat_id": 48620,
-                        "level": "family",
-                        "hex": "#121F31",
-                        "nspp": 2,
-                        "nobs": 2,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Sedum spathulifolium",
@@ -11662,7 +11640,18 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Cucurbitaceae",
+                        "common": "Gourd family",
+                        "inat_id": 48620,
+                        "level": "family",
+                        "hex": "#0B1341",
+                        "nspp": 2,
+                        "nobs": 2,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Marah fabacea",
@@ -11673,18 +11662,7 @@
                                 "n_records": 16,
                                 "n_users": 10,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Cupressaceae",
-                        "common": "Cypresses",
-                        "inat_id": 47374,
-                        "level": "family",
-                        "hex": "#080E4A",
-                        "nspp": 2,
-                        "nobs": 2,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Marah oregana",
@@ -11695,7 +11673,18 @@
                                 "n_records": 2,
                                 "n_users": 2,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Cupressaceae",
+                        "common": "Cypresses",
+                        "inat_id": 47374,
+                        "level": "family",
+                        "hex": "#010D50",
+                        "nspp": 2,
+                        "nobs": 2,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Cupressus macrocarpa",
@@ -11706,18 +11695,7 @@
                                 "n_records": 7,
                                 "n_users": 5,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Cyperaceae",
-                        "common": "Sedges",
-                        "inat_id": 47161,
-                        "level": "family",
-                        "hex": "#053630",
-                        "nspp": 6,
-                        "nobs": 6,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Sequoia sempervirens",
@@ -11728,7 +11706,18 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Cyperaceae",
+                        "common": "Sedges",
+                        "inat_id": 47161,
+                        "level": "family",
+                        "hex": "#063E2A",
+                        "nspp": 6,
+                        "nobs": 6,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Carex obnupta",
@@ -11783,18 +11772,7 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Dennstaedtiaceae",
-                        "common": "Brackens and allies",
-                        "inat_id": 52682,
-                        "level": "family",
-                        "hex": "#063E2A",
-                        "nspp": 1,
-                        "nobs": 1,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Scirpus microcarpus",
@@ -11804,6 +11782,28 @@
                                 "nspp": 1,
                                 "n_records": 2,
                                 "n_users": 2,
+                                "n_species": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Dennstaedtiaceae",
+                        "common": "Brackens and allies",
+                        "inat_id": 52682,
+                        "level": "family",
+                        "hex": "#00450A",
+                        "nspp": 1,
+                        "nobs": 1,
+                        "children": [
+                            {
+                                "level": "species",
+                                "name": "Pteridium aquilinum",
+                                "common": "Common bracken",
+                                "inat_id": 32801,
+                                "hex": "#01D820",
+                                "nspp": 1,
+                                "n_records": 15,
+                                "n_users": 9,
                                 "n_species": 1
                             }
                         ]
@@ -11819,17 +11819,6 @@
                         "children": [
                             {
                                 "level": "species",
-                                "name": "Pteridium aquilinum",
-                                "common": "Common bracken",
-                                "inat_id": 32801,
-                                "hex": "#01D820",
-                                "nspp": 1,
-                                "n_records": 15,
-                                "n_users": 9,
-                                "n_species": 1
-                            },
-                            {
-                                "level": "species",
                                 "name": "Dryopteris arguta",
                                 "common": "Coastal Woodfern",
                                 "inat_id": 19326,
@@ -11838,18 +11827,7 @@
                                 "n_records": 2,
                                 "n_users": 2,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Endocladiaceae",
-                        "common": "Red Algae",
-                        "inat_id": 117798,
-                        "level": "family",
-                        "hex": "#01450B",
-                        "nspp": 1,
-                        "nobs": 1,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Polystichum munitum",
@@ -11864,9 +11842,9 @@
                         ]
                     },
                     {
-                        "name": "Equisetaceae",
-                        "common": "Horsetails",
-                        "inat_id": 47747,
+                        "name": "Endocladiaceae",
+                        "common": "Red Algae",
+                        "inat_id": 117798,
                         "level": "family",
                         "hex": "#213951",
                         "nspp": 1,
@@ -11886,13 +11864,13 @@
                         ]
                     },
                     {
-                        "name": "Ericaceae",
-                        "common": "Heathers",
-                        "inat_id": 133387,
+                        "name": "Equisetaceae",
+                        "common": "Horsetails",
+                        "inat_id": 47747,
                         "level": "family",
-                        "hex": "#0E1B41",
-                        "nspp": 7,
-                        "nobs": 7,
+                        "hex": "#000F51",
+                        "nspp": 1,
+                        "nobs": 1,
                         "children": [
                             {
                                 "level": "species",
@@ -11904,7 +11882,18 @@
                                 "n_records": 4,
                                 "n_users": 4,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Ericaceae",
+                        "common": "Heathers",
+                        "inat_id": 133387,
+                        "level": "family",
+                        "hex": "#111E3E",
+                        "nspp": 7,
+                        "nobs": 7,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Arbutus menziesii",
@@ -11970,18 +11959,7 @@
                                 "n_records": 3,
                                 "n_users": 2,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Euphorbiaceae",
-                        "common": "Spurges",
-                        "inat_id": 51821,
-                        "level": "family",
-                        "hex": "#0C2133",
-                        "nspp": 2,
-                        "nobs": 2,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Vaccinium ovatum",
@@ -11992,7 +11970,18 @@
                                 "n_records": 16,
                                 "n_users": 9,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Euphorbiaceae",
+                        "common": "Spurges",
+                        "inat_id": 51821,
+                        "level": "family",
+                        "hex": "#07222F",
+                        "nspp": 2,
+                        "nobs": 2,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Euphorbia lathyris",
@@ -12003,18 +11992,7 @@
                                 "n_records": 2,
                                 "n_users": 2,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Fabaceae",
-                        "common": "Legumes",
-                        "inat_id": 47122,
-                        "level": "family",
-                        "hex": "#0C1830",
-                        "nspp": 25,
-                        "nobs": 25,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Euphorbia oblongata",
@@ -12025,7 +12003,18 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fabaceae",
+                        "common": "Legumes",
+                        "inat_id": 47122,
+                        "level": "family",
+                        "hex": "#0C1730",
+                        "nspp": 25,
+                        "nobs": 25,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Acmispon americanus",
@@ -12289,6 +12278,17 @@
                                 "n_records": 4,
                                 "n_users": 4,
                                 "n_species": 1
+                            },
+                            {
+                                "level": "species",
+                                "name": "Vicia villosa",
+                                "common": "Hairy vetch",
+                                "inat_id": 1100587,
+                                "hex": "#2B4191",
+                                "nspp": 1,
+                                "n_records": 1,
+                                "n_users": 1,
+                                "n_species": 1
                             }
                         ]
                     },
@@ -12297,21 +12297,10 @@
                         "common": "Beech family",
                         "inat_id": 47852,
                         "level": "family",
-                        "hex": "#12142A",
+                        "hex": "#131429",
                         "nspp": 4,
                         "nobs": 4,
                         "children": [
-                            {
-                                "level": "species",
-                                "name": "Vicia villosa",
-                                "common": "Hairy Vetch",
-                                "inat_id": 3320289,
-                                "hex": "#2B4191",
-                                "nspp": 1,
-                                "n_records": 1,
-                                "n_users": 1,
-                                "n_species": 1
-                            },
                             {
                                 "level": "species",
                                 "name": "Chrysolepis chrysophylla",
@@ -12344,18 +12333,7 @@
                                 "n_records": 13,
                                 "n_users": 10,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Frankeniaceae",
-                        "common": "Dicots",
-                        "inat_id": 58169,
-                        "level": "family",
-                        "hex": "#121429",
-                        "nspp": 1,
-                        "nobs": 1,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Quercus chrysolepis",
@@ -12370,9 +12348,9 @@
                         ]
                     },
                     {
-                        "name": "Garryaceae",
+                        "name": "Frankeniaceae",
                         "common": "Dicots",
-                        "inat_id": 53401,
+                        "inat_id": 58169,
                         "level": "family",
                         "hex": "#1F373C",
                         "nspp": 1,
@@ -12392,13 +12370,13 @@
                         ]
                     },
                     {
-                        "name": "Gentianaceae",
-                        "common": "Gentians and allies",
-                        "inat_id": 56235,
+                        "name": "Garryaceae",
+                        "common": "Dicots",
+                        "inat_id": 53401,
                         "level": "family",
-                        "hex": "#0A1712",
-                        "nspp": 2,
-                        "nobs": 2,
+                        "hex": "#132E25",
+                        "nspp": 1,
+                        "nobs": 1,
                         "children": [
                             {
                                 "level": "species",
@@ -12410,7 +12388,18 @@
                                 "n_records": 2,
                                 "n_users": 2,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Gentianaceae",
+                        "common": "Gentians and allies",
+                        "inat_id": 56235,
+                        "level": "family",
+                        "hex": "#090E14",
+                        "nspp": 2,
+                        "nobs": 2,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Cicendia quadrangularis",
@@ -12421,18 +12410,7 @@
                                 "n_records": 2,
                                 "n_users": 2,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Geraniaceae",
-                        "common": "Geranium family",
-                        "inat_id": 47689,
-                        "level": "family",
-                        "hex": "#1A132D",
-                        "nspp": 5,
-                        "nobs": 5,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Gentiana affinis",
@@ -12443,7 +12421,18 @@
                                 "n_records": 6,
                                 "n_users": 6,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Geraniaceae",
+                        "common": "Geranium family",
+                        "inat_id": 47689,
+                        "level": "family",
+                        "hex": "#160E25",
+                        "nspp": 5,
+                        "nobs": 5,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Erodium botrys",
@@ -12487,18 +12476,7 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Gigartinaceae",
-                        "common": "Red Algae",
-                        "inat_id": 71119,
-                        "level": "family",
-                        "hex": "#000000",
-                        "nspp": 1,
-                        "nobs": 1,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Geranium molle",
@@ -12513,9 +12491,9 @@
                         ]
                     },
                     {
-                        "name": "Grossulariaceae",
-                        "common": "Saxifrages and allies",
-                        "inat_id": 47131,
+                        "name": "Gigartinaceae",
+                        "common": "Red Algae",
+                        "inat_id": 71119,
                         "level": "family",
                         "hex": "#213B51",
                         "nspp": 1,
@@ -12535,9 +12513,9 @@
                         ]
                     },
                     {
-                        "name": "Haloragaceae",
-                        "common": "Water Milfoil",
-                        "inat_id": 60205,
+                        "name": "Grossulariaceae",
+                        "common": "Saxifrages and allies",
+                        "inat_id": 47131,
                         "level": "family",
                         "hex": "#162123",
                         "nspp": 1,
@@ -12557,9 +12535,9 @@
                         ]
                     },
                     {
-                        "name": "Hypericaceae",
-                        "common": "St. John's-wort",
-                        "inat_id": 71412,
+                        "name": "Haloragaceae",
+                        "common": "Water Milfoil",
+                        "inat_id": 60205,
                         "level": "family",
                         "hex": "#142625",
                         "nspp": 1,
@@ -12579,13 +12557,13 @@
                         ]
                     },
                     {
-                        "name": "Iridaceae",
-                        "common": "Iris family",
-                        "inat_id": 47781,
+                        "name": "Hypericaceae",
+                        "common": "St. John's-wort",
+                        "inat_id": 71412,
                         "level": "family",
-                        "hex": "#03331F",
-                        "nspp": 8,
-                        "nobs": 8,
+                        "hex": "#072330",
+                        "nspp": 1,
+                        "nobs": 1,
                         "children": [
                             {
                                 "level": "species",
@@ -12597,7 +12575,18 @@
                                 "n_records": 3,
                                 "n_users": 3,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Iridaceae",
+                        "common": "Iris family",
+                        "inat_id": 47781,
+                        "level": "family",
+                        "hex": "#02371E",
+                        "nspp": 8,
+                        "nobs": 8,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Chasmanthe floribunda",
@@ -12674,18 +12663,7 @@
                                 "n_records": 9,
                                 "n_users": 8,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Juncaceae",
-                        "common": "Rushes",
-                        "inat_id": 52642,
-                        "level": "family",
-                        "hex": "#043E28",
-                        "nspp": 3,
-                        "nobs": 3,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Sparaxis tricolor",
@@ -12696,7 +12674,18 @@
                                 "n_records": 14,
                                 "n_users": 13,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Juncaceae",
+                        "common": "Rushes",
+                        "inat_id": 52642,
+                        "level": "family",
+                        "hex": "#043E2B",
+                        "nspp": 3,
+                        "nobs": 3,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Juncus patens",
@@ -12718,18 +12707,7 @@
                                 "n_records": 2,
                                 "n_users": 2,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Juncaginaceae",
-                        "common": "Water plantain and allies",
-                        "inat_id": 60266,
-                        "level": "family",
-                        "hex": "#033E2B",
-                        "nspp": 1,
-                        "nobs": 1,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Luzula comosa",
@@ -12744,13 +12722,13 @@
                         ]
                     },
                     {
-                        "name": "Lamiaceae",
-                        "common": "Mint family",
-                        "inat_id": 48623,
+                        "name": "Juncaginaceae",
+                        "common": "Water plantain and allies",
+                        "inat_id": 60266,
                         "level": "family",
-                        "hex": "#0D1D42",
-                        "nspp": 12,
-                        "nobs": 12,
+                        "hex": "#0C4021",
+                        "nspp": 1,
+                        "nobs": 1,
                         "children": [
                             {
                                 "level": "species",
@@ -12762,7 +12740,18 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Lamiaceae",
+                        "common": "Mint family",
+                        "inat_id": 48623,
+                        "level": "family",
+                        "hex": "#0D1B45",
+                        "nspp": 12,
+                        "nobs": 12,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Clinopodium douglasii",
@@ -12883,18 +12872,7 @@
                                 "n_records": 18,
                                 "n_users": 18,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Lauraceae",
-                        "common": "Laurels",
-                        "inat_id": 48809,
-                        "level": "family",
-                        "hex": "#0F1F4B",
-                        "nspp": 1,
-                        "nobs": 1,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Stachys rigida",
@@ -12909,13 +12887,13 @@
                         ]
                     },
                     {
-                        "name": "Liliaceae",
-                        "common": "Lilies",
-                        "inat_id": 47328,
+                        "name": "Lauraceae",
+                        "common": "Laurels",
+                        "inat_id": 48809,
                         "level": "family",
-                        "hex": "#08351F",
-                        "nspp": 8,
-                        "nobs": 8,
+                        "hex": "#0F2524",
+                        "nspp": 1,
+                        "nobs": 1,
                         "children": [
                             {
                                 "level": "species",
@@ -12927,7 +12905,18 @@
                                 "n_records": 13,
                                 "n_users": 10,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Liliaceae",
+                        "common": "Lilies",
+                        "inat_id": 47328,
+                        "level": "family",
+                        "hex": "#083820",
+                        "nspp": 8,
+                        "nobs": 8,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Calochortus tolmiei",
@@ -13004,18 +12993,7 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Limnanthaceae",
-                        "common": "Mustards and allies",
-                        "inat_id": 51337,
-                        "level": "family",
-                        "hex": "#094126",
-                        "nspp": 1,
-                        "nobs": 1,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Scoliopus bigelovii",
@@ -13030,13 +13008,13 @@
                         ]
                     },
                     {
-                        "name": "Linaceae",
-                        "common": "Flax Family",
-                        "inat_id": 51308,
+                        "name": "Limnanthaceae",
+                        "common": "Mustards and allies",
+                        "inat_id": 51337,
                         "level": "family",
-                        "hex": "#0A1D37",
-                        "nspp": 3,
-                        "nobs": 3,
+                        "hex": "#0E1041",
+                        "nspp": 1,
+                        "nobs": 1,
                         "children": [
                             {
                                 "level": "species",
@@ -13048,7 +13026,18 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Linaceae",
+                        "common": "Flax Family",
+                        "inat_id": 51308,
+                        "level": "family",
+                        "hex": "#082433",
+                        "nspp": 3,
+                        "nobs": 3,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Hesperolinon congestum",
@@ -13070,18 +13059,7 @@
                                 "n_records": 15,
                                 "n_users": 11,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Malvaceae",
-                        "common": "Mallows",
-                        "inat_id": 48797,
-                        "level": "family",
-                        "hex": "#072536",
-                        "nspp": 1,
-                        "nobs": 1,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Linum usitatissimum",
@@ -13096,9 +13074,9 @@
                         ]
                     },
                     {
-                        "name": "Marchantiaceae",
-                        "common": "Liverworts",
-                        "inat_id": 55708,
+                        "name": "Malvaceae",
+                        "common": "Mallows",
+                        "inat_id": 48797,
                         "level": "family",
                         "hex": "#1E304A",
                         "nspp": 1,
@@ -13118,13 +13096,13 @@
                         ]
                     },
                     {
-                        "name": "Melanthiaceae",
-                        "common": "Trilliums and allies",
-                        "inat_id": 49464,
+                        "name": "Marchantiaceae",
+                        "common": "Liverworts",
+                        "inat_id": 55708,
                         "level": "family",
-                        "hex": "#064117",
-                        "nspp": 3,
-                        "nobs": 3,
+                        "hex": "#004601",
+                        "nspp": 1,
+                        "nobs": 1,
                         "children": [
                             {
                                 "level": "species",
@@ -13136,7 +13114,18 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Melanthiaceae",
+                        "common": "Trilliums and allies",
+                        "inat_id": 49464,
+                        "level": "family",
+                        "hex": "#093F23",
+                        "nspp": 3,
+                        "nobs": 3,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Toxicoscordion fremontii",
@@ -13158,18 +13147,7 @@
                                 "n_records": 2,
                                 "n_users": 2,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Montiaceae",
-                        "common": "Dicots",
-                        "inat_id": 71417,
-                        "level": "family",
-                        "hex": "#1A332D",
-                        "nspp": 4,
-                        "nobs": 4,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Trillium ovatum",
@@ -13180,7 +13158,18 @@
                                 "n_records": 4,
                                 "n_users": 3,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Montiaceae",
+                        "common": "Dicots",
+                        "inat_id": 71417,
+                        "level": "family",
+                        "hex": "#202E30",
+                        "nspp": 4,
+                        "nobs": 4,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Calandrinia ciliata",
@@ -13213,18 +13202,7 @@
                                 "n_records": 24,
                                 "n_users": 14,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Myricaceae",
-                        "common": "Wax trees and shrubs",
-                        "inat_id": 49035,
-                        "level": "family",
-                        "hex": "#212B30",
-                        "nspp": 1,
-                        "nobs": 1,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Claytonia sibirica",
@@ -13239,13 +13217,13 @@
                         ]
                     },
                     {
-                        "name": "Myrsinaceae",
-                        "common": "Myrsine family",
-                        "inat_id": 64578,
+                        "name": "Myricaceae",
+                        "common": "Wax trees and shrubs",
+                        "inat_id": 49035,
                         "level": "family",
-                        "hex": "#0C141F",
-                        "nspp": 3,
-                        "nobs": 3,
+                        "hex": "#121C28",
+                        "nspp": 1,
+                        "nobs": 1,
                         "children": [
                             {
                                 "level": "species",
@@ -13257,7 +13235,18 @@
                                 "n_records": 3,
                                 "n_users": 3,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Myrsinaceae",
+                        "common": "Myrsine family",
+                        "inat_id": 64578,
+                        "level": "family",
+                        "hex": "#0C1125",
+                        "nspp": 3,
+                        "nobs": 3,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Anagallis arvensis",
@@ -13279,18 +13268,7 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Myrtaceae",
-                        "common": "Myrtle Family",
-                        "inat_id": 51816,
-                        "level": "family",
-                        "hex": "#12143A",
-                        "nspp": 1,
-                        "nobs": 1,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Trientalis latifolia",
@@ -13305,13 +13283,13 @@
                         ]
                     },
                     {
-                        "name": "Nyctaginaceae",
-                        "common": "Four O'Clocks",
-                        "inat_id": 50256,
+                        "name": "Myrtaceae",
+                        "common": "Myrtle Family",
+                        "inat_id": 51816,
                         "level": "family",
-                        "hex": "#1B252D",
-                        "nspp": 2,
-                        "nobs": 2,
+                        "hex": "#161525",
+                        "nspp": 1,
+                        "nobs": 1,
                         "children": [
                             {
                                 "level": "species",
@@ -13323,7 +13301,18 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Nyctaginaceae",
+                        "common": "Four O'Clocks",
+                        "inat_id": 50256,
+                        "level": "family",
+                        "hex": "#203232",
+                        "nspp": 2,
+                        "nobs": 2,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Abronia latifolia",
@@ -13334,18 +13323,7 @@
                                 "n_records": 20,
                                 "n_users": 15,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Nymphaeaceae",
-                        "common": "Water lilies",
-                        "inat_id": 51121,
-                        "level": "family",
-                        "hex": "#202F2F",
-                        "nspp": 1,
-                        "nobs": 1,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Abronia umbellata",
@@ -13360,13 +13338,13 @@
                         ]
                     },
                     {
-                        "name": "Onagraceae",
-                        "common": "Evening primrose family",
-                        "inat_id": 47790,
+                        "name": "Nymphaeaceae",
+                        "common": "Water lilies",
+                        "inat_id": 51121,
                         "level": "family",
-                        "hex": "#16192C",
-                        "nspp": 7,
-                        "nobs": 7,
+                        "hex": "#0A1645",
+                        "nspp": 1,
+                        "nobs": 1,
                         "children": [
                             {
                                 "level": "species",
@@ -13378,7 +13356,18 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Onagraceae",
+                        "common": "Evening primrose family",
+                        "inat_id": 47790,
+                        "level": "family",
+                        "hex": "#181A28",
+                        "nspp": 7,
+                        "nobs": 7,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Camissoniopsis cheiranthifolia",
@@ -13444,18 +13433,7 @@
                                 "n_records": 2,
                                 "n_users": 2,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Orchidaceae",
-                        "common": "Orchids",
-                        "inat_id": 47217,
-                        "level": "family",
-                        "hex": "#093425",
-                        "nspp": 3,
-                        "nobs": 3,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Taraxia ovata",
@@ -13466,7 +13444,18 @@
                                 "n_records": 8,
                                 "n_users": 8,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Orchidaceae",
+                        "common": "Orchids",
+                        "inat_id": 47217,
+                        "level": "family",
+                        "hex": "#024023",
+                        "nspp": 3,
+                        "nobs": 3,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Epipactis helleborine",
@@ -13488,18 +13477,7 @@
                                 "n_records": 3,
                                 "n_users": 3,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Orobanchaceae",
-                        "common": "Broomrape family",
-                        "inat_id": 47322,
-                        "level": "family",
-                        "hex": "#0E1D49",
-                        "nspp": 10,
-                        "nobs": 10,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Platanthera dilatata",
@@ -13510,7 +13488,18 @@
                                 "n_records": 4,
                                 "n_users": 4,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Orobanchaceae",
+                        "common": "Broomrape family",
+                        "inat_id": 47322,
+                        "level": "family",
+                        "hex": "#0E1645",
+                        "nspp": 10,
+                        "nobs": 10,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Castilleja affinis",
@@ -13609,18 +13598,7 @@
                                 "n_records": 4,
                                 "n_users": 4,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Oxalidaceae",
-                        "common": "Wood sorrel family",
-                        "inat_id": 47759,
-                        "level": "family",
-                        "hex": "#0D2632",
-                        "nspp": 3,
-                        "nobs": 3,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Triphysaria versicolor",
@@ -13631,7 +13609,18 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Oxalidaceae",
+                        "common": "Woodsorrel family",
+                        "inat_id": 47759,
+                        "level": "family",
+                        "hex": "#13394C",
+                        "nspp": 3,
+                        "nobs": 3,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Oxalis incarnata",
@@ -13653,18 +13642,7 @@
                                 "n_records": 3,
                                 "n_users": 3,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Papaveraceae",
-                        "common": "Poppies",
-                        "inat_id": 47332,
-                        "level": "family",
-                        "hex": "#1A2735",
-                        "nspp": 3,
-                        "nobs": 3,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Oxalis pilosa",
@@ -13675,7 +13653,18 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Papaveraceae",
+                        "common": "Poppies",
+                        "inat_id": 47332,
+                        "level": "family",
+                        "hex": "#1C1F2B",
+                        "nspp": 3,
+                        "nobs": 3,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Dicentra formosa",
@@ -13697,18 +13686,7 @@
                                 "n_records": 52,
                                 "n_users": 31,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Phrymaceae",
-                        "common": "Dicots",
-                        "inat_id": 64552,
-                        "level": "family",
-                        "hex": "#121B45",
-                        "nspp": 4,
-                        "nobs": 4,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Platystemon californicus",
@@ -13719,7 +13697,18 @@
                                 "n_records": 7,
                                 "n_users": 7,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Phrymaceae",
+                        "common": "Dicots",
+                        "inat_id": 64552,
+                        "level": "family",
+                        "hex": "#0E194D",
+                        "nspp": 4,
+                        "nobs": 4,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Erythranthe moschata",
@@ -13752,18 +13741,7 @@
                                 "n_records": 29,
                                 "n_users": 23,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Phyllophoraceae",
-                        "common": "Red Algae",
-                        "inat_id": 117818,
-                        "level": "family",
-                        "hex": "#17204E",
-                        "nspp": 2,
-                        "nobs": 2,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Mimulus moschatus",
@@ -13774,13 +13752,35 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Phyllophoraceae",
+                        "common": "Red Algae",
+                        "inat_id": 117818,
+                        "level": "family",
+                        "hex": "#202E51",
+                        "nspp": 2,
+                        "nobs": 2,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Ahnfeltiopsis linearis",
                                 "common": "Plants",
                                 "inat_id": 1424235,
                                 "hex": "#6887FD",
+                                "nspp": 1,
+                                "n_records": 1,
+                                "n_users": 1,
+                                "n_species": 1
+                            },
+                            {
+                                "level": "species",
+                                "name": "Mastocarpus papillatus",
+                                "common": "Turkish Washcloth",
+                                "inat_id": 55787,
+                                "hex": "#5F97FE",
                                 "nspp": 1,
                                 "n_records": 1,
                                 "n_users": 1,
@@ -13793,21 +13793,10 @@
                         "common": "Pine family",
                         "inat_id": 47562,
                         "level": "family",
-                        "hex": "#0B1850",
+                        "hex": "#020D50",
                         "nspp": 3,
                         "nobs": 3,
                         "children": [
-                            {
-                                "level": "species",
-                                "name": "Mastocarpus papillatus",
-                                "common": "Turkish Washcloth",
-                                "inat_id": 55787,
-                                "hex": "#5F97FE",
-                                "nspp": 1,
-                                "n_records": 1,
-                                "n_users": 1,
-                                "n_species": 1
-                            },
                             {
                                 "level": "species",
                                 "name": "Pinus muricata",
@@ -13829,18 +13818,7 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Pittosporaceae",
-                        "common": "Pittosporums and allies",
-                        "inat_id": 51596,
-                        "level": "family",
-                        "hex": "#020C50",
-                        "nspp": 1,
-                        "nobs": 1,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Pseudotsuga menziesii",
@@ -13855,13 +13833,13 @@
                         ]
                     },
                     {
-                        "name": "Plantaginaceae",
-                        "common": "Plantain family",
-                        "inat_id": 50638,
+                        "name": "Pittosporaceae",
+                        "common": "Pittosporums and allies",
+                        "inat_id": 51596,
                         "level": "family",
-                        "hex": "#11184D",
-                        "nspp": 13,
-                        "nobs": 13,
+                        "hex": "#1C1348",
+                        "nspp": 1,
+                        "nobs": 1,
                         "children": [
                             {
                                 "level": "species",
@@ -13873,7 +13851,18 @@
                                 "n_records": 2,
                                 "n_users": 2,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Plantaginaceae",
+                        "common": "Plantain family",
+                        "inat_id": 50638,
+                        "level": "family",
+                        "hex": "#10194E",
+                        "nspp": 13,
+                        "nobs": 13,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Collinsia heterophylla",
@@ -13911,7 +13900,7 @@
                                 "level": "species",
                                 "name": "Kickxia elatine",
                                 "common": "Sharp-leaved Fluellen",
-                                "inat_id": 43660,
+                                "inat_id": 7407669,
                                 "hex": "#2D49F0",
                                 "nspp": 1,
                                 "n_records": 1,
@@ -14005,18 +13994,7 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Plocamiaceae",
-                        "common": "Red Algae",
-                        "inat_id": 319537,
-                        "level": "family",
-                        "hex": "#111D4F",
-                        "nspp": 1,
-                        "nobs": 1,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Veronica anagallis-aquatica",
@@ -14031,13 +14009,13 @@
                         ]
                     },
                     {
-                        "name": "Plumbaginaceae",
-                        "common": "Dicots",
-                        "inat_id": 60478,
+                        "name": "Plocamiaceae",
+                        "common": "Red Algae",
+                        "inat_id": 319537,
                         "level": "family",
-                        "hex": "#10171E",
-                        "nspp": 2,
-                        "nobs": 2,
+                        "hex": "#000000",
+                        "nspp": 1,
+                        "nobs": 1,
                         "children": [
                             {
                                 "level": "species",
@@ -14049,7 +14027,18 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Plumbaginaceae",
+                        "common": "Dicots",
+                        "inat_id": 60478,
+                        "level": "family",
+                        "hex": "#1F3338",
+                        "nspp": 2,
+                        "nobs": 2,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Armeria maritima",
@@ -14060,18 +14049,7 @@
                                 "n_records": 16,
                                 "n_users": 13,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Poaceae",
-                        "common": "Grasses",
-                        "inat_id": 47434,
-                        "level": "family",
-                        "hex": "#063A26",
-                        "nspp": 24,
-                        "nobs": 24,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Limonium californicum",
@@ -14082,7 +14060,18 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Poaceae",
+                        "common": "Grasses",
+                        "inat_id": 47434,
+                        "level": "family",
+                        "hex": "#053A25",
+                        "nspp": 24,
+                        "nobs": 24,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Agrostis densiflora",
@@ -14335,18 +14324,7 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Polemoniaceae",
-                        "common": "Phlox family",
-                        "inat_id": 48932,
-                        "level": "family",
-                        "hex": "#0E1D33",
-                        "nspp": 9,
-                        "nobs": 9,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Polypogon monspeliensis",
@@ -14357,7 +14335,18 @@
                                 "n_records": 2,
                                 "n_users": 2,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Polemoniaceae",
+                        "common": "Phlox family",
+                        "inat_id": 48932,
+                        "level": "family",
+                        "hex": "#0F1936",
+                        "nspp": 9,
+                        "nobs": 9,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Collomia heterophylla",
@@ -14445,18 +14434,7 @@
                                 "n_records": 2,
                                 "n_users": 1,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Polygalaceae",
-                        "common": "Milkworts",
-                        "inat_id": 61207,
-                        "level": "family",
-                        "hex": "#101E3D",
-                        "nspp": 1,
-                        "nobs": 1,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Navarretia squarrosa",
@@ -14471,13 +14449,13 @@
                         ]
                     },
                     {
-                        "name": "Polygonaceae",
-                        "common": "Knotweeds and allies",
-                        "inat_id": 48382,
+                        "name": "Polygalaceae",
+                        "common": "Milkworts",
+                        "inat_id": 61207,
                         "level": "family",
-                        "hex": "#1E3234",
-                        "nspp": 12,
-                        "nobs": 12,
+                        "hex": "#0E1C2B",
+                        "nspp": 1,
+                        "nobs": 1,
                         "children": [
                             {
                                 "level": "species",
@@ -14489,7 +14467,18 @@
                                 "n_records": 4,
                                 "n_users": 4,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Polygonaceae",
+                        "common": "Knotweeds and allies",
+                        "inat_id": 48382,
+                        "level": "family",
+                        "hex": "#1F3434",
+                        "nspp": 12,
+                        "nobs": 12,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Chorizanthe cuspidata",
@@ -14610,6 +14599,17 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
+                            },
+                            {
+                                "level": "species",
+                                "name": "Rumex salicifolius",
+                                "common": "Willow dock",
+                                "inat_id": 1937151,
+                                "hex": "#62A2A1",
+                                "nspp": 1,
+                                "n_records": 2,
+                                "n_users": 2,
+                                "n_species": 1
                             }
                         ]
                     },
@@ -14618,43 +14618,10 @@
                         "common": "Polypody Family",
                         "inat_id": 52679,
                         "level": "family",
-                        "hex": "#1F3433",
+                        "hex": "#01460B",
                         "nspp": 1,
                         "nobs": 1,
                         "children": [
-                            {
-                                "level": "species",
-                                "name": "Rumex salicifolius",
-                                "common": "Willow dock",
-                                "inat_id": 1937151,
-                                "hex": "#62A2A1",
-                                "nspp": 1,
-                                "n_records": 2,
-                                "n_users": 2,
-                                "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Pteridaceae",
-                        "common": "Brake Family",
-                        "inat_id": 48437,
-                        "level": "family",
-                        "hex": "#103D1F",
-                        "nspp": 2,
-                        "nobs": 2,
-                        "children": [
-                            {
-                                "level": "species",
-                                "name": "Rumex salicifolius",
-                                "common": "Willow dock",
-                                "inat_id": 1937151,
-                                "hex": "#62A2A1",
-                                "nspp": 1,
-                                "n_records": 2,
-                                "n_users": 2,
-                                "n_species": 1
-                            },
                             {
                                 "level": "species",
                                 "name": "Polypodium scouleri",
@@ -14669,13 +14636,13 @@
                         ]
                     },
                     {
-                        "name": "Ranunculaceae",
-                        "common": "Buttercup family",
-                        "inat_id": 48231,
+                        "name": "Pteridaceae",
+                        "common": "Brake Family",
+                        "inat_id": 48437,
                         "level": "family",
-                        "hex": "#152B22",
-                        "nspp": 10,
-                        "nobs": 10,
+                        "hex": "#01450B",
+                        "nspp": 2,
+                        "nobs": 2,
                         "children": [
                             {
                                 "level": "species",
@@ -14698,18 +14665,18 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            },
-                            {
-                                "level": "species",
-                                "name": "Pentagramma triangularis",
-                                "common": "Goldback Fern",
-                                "inat_id": 302400,
-                                "hex": "#02DA23",
-                                "nspp": 1,
-                                "n_records": 1,
-                                "n_users": 1,
-                                "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Ranunculaceae",
+                        "common": "Buttercup family",
+                        "inat_id": 48231,
+                        "level": "family",
+                        "hex": "#1D202C",
+                        "nspp": 10,
+                        "nobs": 10,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Aquilegia formosa",
@@ -14786,18 +14753,7 @@
                                 "n_records": 2,
                                 "n_users": 2,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Rhamnaceae",
-                        "common": "Buckthorns",
-                        "inat_id": 49041,
-                        "level": "family",
-                        "hex": "#1D202C",
-                        "nspp": 3,
-                        "nobs": 3,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Ranunculus orthorhynchus",
@@ -14834,13 +14790,13 @@
                         ]
                     },
                     {
-                        "name": "Rosaceae",
-                        "common": "Rose family",
-                        "inat_id": 47148,
+                        "name": "Rhamnaceae",
+                        "common": "Buckthorns",
+                        "inat_id": 49041,
                         "level": "family",
-                        "hex": "#082342",
-                        "nspp": 16,
-                        "nobs": 16,
+                        "hex": "#082545",
+                        "nspp": 3,
+                        "nobs": 3,
                         "children": [
                             {
                                 "level": "species",
@@ -14874,7 +14830,18 @@
                                 "n_records": 28,
                                 "n_users": 15,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Rosaceae",
+                        "common": "Rose family",
+                        "inat_id": 47148,
+                        "level": "family",
+                        "hex": "#082443",
+                        "nspp": 16,
+                        "nobs": 16,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Adenostoma fasciculatum",
@@ -15017,18 +14984,7 @@
                                 "n_records": 3,
                                 "n_users": 2,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Rubiaceae",
-                        "common": "Coffees, bedstraws, and allies",
-                        "inat_id": 47693,
-                        "level": "family",
-                        "hex": "#092649",
-                        "nspp": 3,
-                        "nobs": 3,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Rubus parviflorus",
@@ -15065,13 +15021,13 @@
                         ]
                     },
                     {
-                        "name": "Salicaceae",
-                        "common": "Willows and poplars",
-                        "inat_id": 47567,
+                        "name": "Rubiaceae",
+                        "common": "Coffees, bedstraws, and allies",
+                        "inat_id": 47693,
                         "level": "family",
-                        "hex": "#101129",
-                        "nspp": 1,
-                        "nobs": 1,
+                        "hex": "#12112D",
+                        "nspp": 3,
+                        "nobs": 3,
                         "children": [
                             {
                                 "level": "species",
@@ -15083,18 +15039,7 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Sapindaceae",
-                        "common": "Soapberry family",
-                        "inat_id": 58321,
-                        "level": "family",
-                        "hex": "#13102F",
-                        "nspp": 1,
-                        "nobs": 1,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Galium californicum",
@@ -15105,18 +15050,7 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Saxifragaceae",
-                        "common": "Saxifrages",
-                        "inat_id": 48386,
-                        "level": "family",
-                        "hex": "#0D1833",
-                        "nspp": 2,
-                        "nobs": 2,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Galium trifidum",
@@ -15127,7 +15061,18 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Salicaceae",
+                        "common": "Willows and poplars",
+                        "inat_id": 47567,
+                        "level": "family",
+                        "hex": "#072037",
+                        "nspp": 1,
+                        "nobs": 1,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Salix sitchensis",
@@ -15142,13 +15087,13 @@
                         ]
                     },
                     {
-                        "name": "Scrophulariaceae",
-                        "common": "Figworts",
-                        "inat_id": 47151,
+                        "name": "Sapindaceae",
+                        "common": "Soapberry family",
+                        "inat_id": 58321,
                         "level": "family",
-                        "hex": "#112033",
-                        "nspp": 2,
-                        "nobs": 2,
+                        "hex": "#072441",
+                        "nspp": 1,
+                        "nobs": 1,
                         "children": [
                             {
                                 "level": "species",
@@ -15160,7 +15105,18 @@
                                 "n_records": 5,
                                 "n_users": 5,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Saxifragaceae",
+                        "common": "Saxifrages",
+                        "inat_id": 48386,
+                        "level": "family",
+                        "hex": "#1E1F27",
+                        "nspp": 2,
+                        "nobs": 2,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Boykinia occidentalis",
@@ -15171,18 +15127,7 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Solanaceae",
-                        "common": "Nightshades",
-                        "inat_id": 48516,
-                        "level": "family",
-                        "hex": "#14193E",
-                        "nspp": 3,
-                        "nobs": 3,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Tellima grandiflora",
@@ -15193,7 +15138,18 @@
                                 "n_records": 13,
                                 "n_users": 12,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Scrophulariaceae",
+                        "common": "Figworts",
+                        "inat_id": 47151,
+                        "level": "family",
+                        "hex": "#0E1549",
+                        "nspp": 2,
+                        "nobs": 2,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Scrophularia californica",
@@ -15219,13 +15175,13 @@
                         ]
                     },
                     {
-                        "name": "Themidaceae",
-                        "common": "Agaves and allies",
-                        "inat_id": 64534,
+                        "name": "Solanaceae",
+                        "common": "Nightshades",
+                        "inat_id": 48516,
                         "level": "family",
-                        "hex": "#103B39",
-                        "nspp": 4,
-                        "nobs": 4,
+                        "hex": "#143A41",
+                        "nspp": 3,
+                        "nobs": 3,
                         "children": [
                             {
                                 "level": "species",
@@ -15259,7 +15215,18 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Themidaceae",
+                        "common": "Agaves and allies",
+                        "inat_id": 64534,
+                        "level": "family",
+                        "hex": "#033F23",
+                        "nspp": 4,
+                        "nobs": 4,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Brodiaea elegans",
@@ -15270,18 +15237,7 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Thymelaeaceae",
-                        "common": "Mallows and allies",
-                        "inat_id": 50313,
-                        "level": "family",
-                        "hex": "#024024",
-                        "nspp": 1,
-                        "nobs": 1,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Brodiaea terrestris",
@@ -15292,18 +15248,7 @@
                                 "n_records": 4,
                                 "n_users": 4,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Trentepohliaceae",
-                        "common": "Sea Lettuces and Single-celled Algae",
-                        "inat_id": 68610,
-                        "level": "family",
-                        "hex": "#044123",
-                        "nspp": 1,
-                        "nobs": 1,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Dichelostemma capitatum",
@@ -15314,18 +15259,7 @@
                                 "n_records": 4,
                                 "n_users": 3,
                                 "n_species": 1
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Tropaeolaceae",
-                        "common": "Mustards and allies",
-                        "inat_id": 54330,
-                        "level": "family",
-                        "hex": "#023E23",
-                        "nspp": 1,
-                        "nobs": 1,
-                        "children": [
+                            },
                             {
                                 "level": "species",
                                 "name": "Triteleia laxa",
@@ -15340,13 +15274,13 @@
                         ]
                     },
                     {
-                        "name": "Typhaceae",
-                        "common": "Cattail family",
-                        "inat_id": 48694,
+                        "name": "Thymelaeaceae",
+                        "common": "Mallows and allies",
+                        "inat_id": 50313,
                         "level": "family",
-                        "hex": "#0E173A",
-                        "nspp": 2,
-                        "nobs": 2,
+                        "hex": "#1A224E",
+                        "nspp": 1,
+                        "nobs": 1,
                         "children": [
                             {
                                 "level": "species",
@@ -15358,7 +15292,18 @@
                                 "n_records": 1,
                                 "n_users": 1,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Trentepohliaceae",
+                        "common": "Sea Lettuces and Single-celled Algae",
+                        "inat_id": 68610,
+                        "level": "family",
+                        "hex": "#010B27",
+                        "nspp": 1,
+                        "nobs": 1,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Trentepohlia iolithus",
@@ -15373,9 +15318,9 @@
                         ]
                     },
                     {
-                        "name": "Urticaceae",
-                        "common": "Nettles and allies",
-                        "inat_id": 51885,
+                        "name": "Tropaeolaceae",
+                        "common": "Mustards and allies",
+                        "inat_id": 54330,
                         "level": "family",
                         "hex": "#0A1341",
                         "nspp": 1,
@@ -15395,9 +15340,9 @@
                         ]
                     },
                     {
-                        "name": "Violaceae",
-                        "common": "Violets and allies",
-                        "inat_id": 50828,
+                        "name": "Typhaceae",
+                        "common": "Cattail family",
+                        "inat_id": 48694,
                         "level": "family",
                         "hex": "#033D2A",
                         "nspp": 2,
@@ -15428,13 +15373,13 @@
                         ]
                     },
                     {
-                        "name": "Zosteraceae",
-                        "common": "Water plantain and allies",
-                        "inat_id": 52615,
+                        "name": "Urticaceae",
+                        "common": "Nettles and allies",
+                        "inat_id": 51885,
                         "level": "family",
-                        "hex": "#092939",
-                        "nspp": 2,
-                        "nobs": 2,
+                        "hex": "#0A2F46",
+                        "nspp": 1,
+                        "nobs": 1,
                         "children": [
                             {
                                 "level": "species",
@@ -15446,7 +15391,18 @@
                                 "n_records": 13,
                                 "n_users": 9,
                                 "n_species": 1
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Violaceae",
+                        "common": "Violets and allies",
+                        "inat_id": 50828,
+                        "level": "family",
+                        "hex": "#07222F",
+                        "nspp": 2,
+                        "nobs": 2,
+                        "children": [
                             {
                                 "level": "species",
                                 "name": "Viola adunca",
@@ -15456,6 +15412,50 @@
                                 "nspp": 1,
                                 "n_records": 11,
                                 "n_users": 11,
+                                "n_species": 1
+                            },
+                            {
+                                "level": "species",
+                                "name": "Viola sempervirens",
+                                "common": "Redwood Violet",
+                                "inat_id": 3815913,
+                                "hex": "#16689C",
+                                "nspp": 1,
+                                "n_records": 6,
+                                "n_users": 4,
+                                "n_species": 1
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Zosteraceae",
+                        "common": "Water plantain and allies",
+                        "inat_id": 52615,
+                        "level": "family",
+                        "hex": "#052010",
+                        "nspp": 2,
+                        "nobs": 2,
+                        "children": [
+                            {
+                                "level": "species",
+                                "name": "Phyllospadix torreyi",
+                                "common": "Surf Grass",
+                                "inat_id": 239570,
+                                "hex": "#000000",
+                                "nspp": 1,
+                                "n_records": 1,
+                                "n_users": 1,
+                                "n_species": 1
+                            },
+                            {
+                                "level": "species",
+                                "name": "Zostera marina",
+                                "common": "Eelgrass",
+                                "inat_id": 4769,
+                                "hex": "#20C767",
+                                "nspp": 1,
+                                "n_records": 2,
+                                "n_users": 2,
                                 "n_species": 1
                             }
                         ]

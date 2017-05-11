@@ -7,7 +7,6 @@ setwd("~/documents/inviz/taxorama")
 # load data
 park_id = "PORE" #Point Reyes is park of interest
 spp <- read.csv(paste0("processed_data/",park_id,"_data/",park_id,"_species_list.csv"), header=T, stringsAsFactors=F)
-spp <- read.csv(paste0("processed_data/",park_id,"_data/",park_id,"_species.csv"), header=T, stringsAsFactors=F)
 
 f <- spp %>%
       mutate(species=speciesFixed,
@@ -31,10 +30,10 @@ d <- filter(d,
             total_obs>0, 
             !is.na(category),
             nchar(class)>0)
+d <- d[!duplicated(d$speciesFixed),]
 
 # generate list of leaf-level species datasets
 leaves <- lapply(1:nrow(d), function(i) data.frame(level="species",
-                                                   #name=d$Common.Names[i],
                                                    name=d$speciesFixed[i],
                                                    common=ifelse(!is.na(d$genus.common[i]), 
                                                                  d$species.common[i], 
@@ -50,7 +49,7 @@ leaves <- lapply(1:nrow(d), function(i) data.frame(level="species",
 group_taxa <- function(data, groupings, level, max_col){
       parents <- as.vector(unique(groupings[,1]))
       lapply(parents, function(x){
-            #browser()
+            
             kids <- which(groupings[,1]==x)
             kids <- data[kids]
             kids <- kids[!sapply(kids, is.null)]
@@ -82,7 +81,6 @@ hierarchies <- list(linnean=c("root", "kingdom", "phylum", "class", "order", "fa
                     simple=c("root", "category", "family", "species"))
 
 for(hierarchy in names(hierarchies)){
-      
       # construct hierarchy
       levels <- hierarchies[[hierarchy]]
       p <- leaves
@@ -92,7 +90,6 @@ for(hierarchy in names(hierarchies)){
             groupings <- groupings[apply(groupings, 1, function(x) min(nchar(x))>0),]
             p <- group_taxa(p, groupings, level,
                             max_col=switch(hierarchy, "linnean"=400, "simple"=800))
-                        #max_col=switch(hierarchy, "linnean"=400, "simple"=800))
       }
       
       

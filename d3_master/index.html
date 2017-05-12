@@ -161,7 +161,7 @@ var r; // user point radius
 var park_abbvs = ["PORE", "GOGA"]
 var park_names = ["Point Reyes National Seashore", "Golden Gate National Recreation Area"]
 var park_borders = [pore_boundary, goga_boundary]
-var park_obs_files = ["PORE_obs_tidy.csv", "PORE_obs_tidy.csv"]
+var park_obs_files = ["PORE_obs_tidy.csv", "GOGA_obs_tidy.csv"]
 
 var tree_files = ["_taxonomy_simple.json", "_taxonomy_linnean.json"]
 var tree_names = ["simple", "Linnean"]
@@ -514,17 +514,7 @@ var hexbin = d3.hexbin()
     .y(function(d) { return d.y; });
 
 
-// geospatial properties
-var projection = d3.geoMercator();
-var lattop = 38.25;
-var lonleft = -123.09;
-var lonright = -122.64;
-var scale = 55 * map_width/(lonright-lonleft);
-projection.scale(scale);
-projection.translate([0,0]);
-var trans = projection([lonleft,lattop]);
-projection.translate([-1*trans[0],-1*trans[1]]);
-var path = d3.geoPath().projection(projection);
+
 
 
 
@@ -578,7 +568,7 @@ function swapPark() {
     active.park_name = park_names.pop();
     park_names.splice(0, 0, active.park_name);
     
-    active.park_boder = park_borders.pop();
+    active.park_border = park_borders.pop();
     park_borders.splice(0, 0, active.park_border);
     
     active.obs_file = park_obs_files.pop();
@@ -595,13 +585,23 @@ function swapPark() {
             .attr("class", "park_title");
 };
 
+// geospatial properties
+var projection = d3.geoMercator();
+var bbox = [38.25, -123.09, -122.64, 55]; // lattop, lonleft, lonright
+//var bbox = [38.08, -128.84, -122.24, 30]; // lattop, lonleft, lonright
+var scale = bbox[3] * map_width/(bbox[2]-bbox[1]);
+projection.scale(scale);
+projection.translate([0,0]);
+var trans = projection([bbox[1], bbox[0]]);
+projection.translate([-1*trans[0],-1*trans[1]]);
+var path = d3.geoPath().projection(projection);
+
 
 function makeMap(obs_file){
 
     d3.csv(obs_file, function(error, data) {  
       
       // data setup
-
       data.forEach(function(d) {
         d.x = projection([+d.decimalLongitude, 0])[0];
         d.y = projection([0, +d.decimalLatitude])[1];
@@ -634,6 +634,7 @@ function makeMap(obs_file){
       ///////////// observations map ///////////////
 
       // park boundary
+      map_panel.selectAll("path").remove();
       var park_boundary = map_panel.selectAll("path")
         .data(active.park_border.features)
         .enter()

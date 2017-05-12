@@ -158,7 +158,12 @@ var r; // user point radius
 
 //////////////////////////////
 
-var tree_files = ["taxonomy_pore_simple.json", "taxonomy_pore_linnean.json"]
+var park_abbvs = ["PORE", "GOGA"]
+var park_names = ["Point Reyes National Seashore", "Golden Gate National Recreation Area"]
+var park_borders = [pore_boundary, goga_boundary]
+var park_obs_files = ["PORE_obs_tidy.csv", "PORE_obs_tidy.csv"]
+
+var tree_files = ["_taxonomy_simple.json", "_taxonomy_linnean.json"]
 var tree_names = ["simple", "Linnean"]
 
 var stat_names = ["observations", "species", "users"] // var names in visualization
@@ -170,12 +175,15 @@ var active = {
   latin: "life",
   common: "life",
   id: "NA",
-  obs_file: "PORE_obs_tidy.csv",
+  obs_file: park_obs_files[0],
   tree_file: tree_files[0],
   tree: tree_names[0],
   stat: stat_names[0],
   stat_var: stat_vars[0],
-  stat_obs_var: stat_obs_vars[0]
+  stat_obs_var: stat_obs_vars[0],
+  park_name: park_names[0],
+  park_abbv: park_abbvs[0],
+  park_border: park_borders[0]
 }
 
 var n_obs,
@@ -192,12 +200,15 @@ function reset_active(){
         latin: "life",
         common: "life",
         id: "NA",
-        obs_file: "PORE_obs_tidy.csv",
+        obs_file: park_obs_files[0],
         tree_file: tree_files[0],
         tree: tree_names[0],
         stat: stat_names[0],
         stat_var: stat_vars[0],
-        stat_obs_var: stat_obs_vars[0]
+        stat_obs_var: stat_obs_vars[0],
+        park_name: park_names[0],
+        park_abbv: park_abbvs[0],
+        park_border: park_borders[0]
     }
 }
 
@@ -290,10 +301,12 @@ var park_button = control_panel.append("ellipse")
     .attr("cy", w/12 * .25)
     .attr("rx", r)
     .attr("ry", r)
-    .attr("class", "button");
+    .attr("class", "button")
+    .on("click", swapPark)
+    .append("title").text("click to switch parks");
 
 var park_title = control_panel.append("text")
-            .text("Park: Point Reyes")
+            .text("Park: " + active.park_name)
             .attr("x", m0/4 + r*3)
             .attr("y", w/12 * .25)
             .attr("class", "park_title");
@@ -304,7 +317,8 @@ var stat_button = control_panel.append("ellipse")
     .attr("cy", w/12 * .5)
     .attr("rx", r)
     .attr("ry", r)
-    .attr("class", "button");
+    .attr("class", "button")
+    .append("title").text("click to switch summary statistic");
 
 var stat_title = control_panel.append("text")
             .text("Stat:  " + active.stat)
@@ -529,7 +543,6 @@ function swapTree(){
     active.level = "root";
     active.latin = "life";
     active.common = "life";
-    //reset_active();
 
     active.tree_file = tree_files.pop();
     tree_files.splice(0, 0, active.tree_file);
@@ -550,7 +563,36 @@ function swapTree(){
 
 
 function swapPark() {
-    //todo: enable park switching
+    if(active.level != "root"){
+        alert("Please zoom out to 'life' before switching parks");
+        return "null"; };
+
+    // reset tree level
+    active.level = "root";
+    active.latin = "life";
+    active.common = "life";
+
+    active.park_abbv = park_abbvs.pop();
+    park_abbvs.splice(0, 0, active.park_abbv);
+    
+    active.park_name = park_names.pop();
+    park_names.splice(0, 0, active.park_name);
+    
+    active.park_boder = park_borders.pop();
+    park_borders.splice(0, 0, active.park_border);
+    
+    active.obs_file = park_obs_files.pop();
+    park_obs_files.splice(0, 0, active.obs_file);
+    
+    makePie();
+    makeMap(active.obs_file);
+
+    control_panel.selectAll(".park_title").remove();
+    control_panel.append("text")
+            .text("Park: " + active.park_name)
+            .attr("x", m0/4 + r*3)
+            .attr("y", w/12 * .25)
+            .attr("class", "park_title");
 };
 
 
@@ -593,7 +635,7 @@ function makeMap(obs_file){
 
       // park boundary
       var park_boundary = map_panel.selectAll("path")
-        .data(pore_boundary.features)
+        .data(active.park_border.features)
         .enter()
         .append("path")
         .attr("class", "park")
@@ -925,7 +967,8 @@ function makePie() {
 
     taxonomy_panel.selectAll("*").remove();
 
-    d3.json(active.tree_file, function(error, root) {
+    d3.json(active.park_abbv + active.tree_file, 
+      function(error, root) {
       if (error) throw error;
 
       taxonomy_panel.append("g")

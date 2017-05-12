@@ -113,6 +113,6 @@ for(hierarchy in names(hierarchies)){
       jsonn <- stringr::str_trim(jsonn)
       
       #write(jsonn, paste0("processed_data/",park_id,"_data/",park_id,"_taxonomy_", hierarchy, ".json"))
-      write(jsonn, paste0("d3_master/taxonomy_pore_", hierarchy, ".json"))
+      write(jsonn, paste0("d3_master/PORE_taxonomy_", hierarchy, ".json"))
 }
 

@@ -161,6 +161,7 @@ var r; // user point radius
 var park_abbvs = ["PORE", "GOGA"]
 var park_names = ["Point Reyes National Seashore", "Golden Gate National Recreation Area"]
 var park_borders = [pore_boundary, goga_boundary]
+var park_projections = [[38.25, -123.09, -122.64, 55], [38.25, -123.09, -122.64, 23]]
 var park_obs_files = ["PORE_obs_tidy.csv", "GOGA_obs_tidy.csv"]
 
 var tree_files = ["_taxonomy_simple.json", "_taxonomy_linnean.json"]
@@ -183,7 +184,8 @@ var active = {
   stat_obs_var: stat_obs_vars[0],
   park_name: park_names[0],
   park_abbv: park_abbvs[0],
-  park_border: park_borders[0]
+  park_border: park_borders[0],
+  park_projection: park_projections[0]
 }
 
 var n_obs,
@@ -194,23 +196,11 @@ var n_obs,
     max_species,
     max_users;
 
-function reset_active(){
-    active = {
-        level: "root",
-        latin: "life",
-        common: "life",
-        id: "NA",
-        obs_file: park_obs_files[0],
-        tree_file: tree_files[0],
-        tree: tree_names[0],
-        stat: stat_names[0],
-        stat_var: stat_vars[0],
-        stat_obs_var: stat_obs_vars[0],
-        park_name: park_names[0],
-        park_abbv: park_abbvs[0],
-        park_border: park_borders[0]
-    }
-}
+var projection,
+    bbox,
+    gscale,
+    trans,
+    path;
 
 //////////////////////////////////////////////////////
 
@@ -317,8 +307,7 @@ var stat_button = control_panel.append("ellipse")
     .attr("cy", w/12 * .5)
     .attr("rx", r)
     .attr("ry", r)
-    .attr("class", "button")
-    .append("title").text("click to switch summary statistic");
+    .attr("class", "button");
 
 var stat_title = control_panel.append("text")
             .text("Stat:  " + active.stat)
@@ -571,6 +560,9 @@ function swapPark() {
     active.park_border = park_borders.pop();
     park_borders.splice(0, 0, active.park_border);
     
+    active.park_projection = park_projections.pop();
+    park_projections.splice(0, 0, active.park_projection);
+    
     active.obs_file = park_obs_files.pop();
     park_obs_files.splice(0, 0, active.obs_file);
     
@@ -585,21 +577,25 @@ function swapPark() {
             .attr("class", "park_title");
 };
 
-// geospatial properties
-var projection = d3.geoMercator();
-var bbox = [38.25, -123.09, -122.64, 55]; // lattop, lonleft, lonright
-//var bbox = [38.08, -128.84, -122.24, 30]; // lattop, lonleft, lonright
-var scale = bbox[3] * map_width/(bbox[2]-bbox[1]);
-projection.scale(scale);
-projection.translate([0,0]);
-var trans = projection([bbox[1], bbox[0]]);
-projection.translate([-1*trans[0],-1*trans[1]]);
-var path = d3.geoPath().projection(projection);
+
+
+
+
 
 
 function makeMap(obs_file){
 
-    d3.csv(obs_file, function(error, data) {  
+    d3.csv(obs_file, function(error, data) {
+
+      // geospatial setup
+      projection = d3.geoMercator();
+      bbox = active.park_projection;
+      gscale = bbox[3] * map_width/(bbox[2]-bbox[1]);
+      projection.scale(gscale);
+      projection.translate([0,0]);
+      gtrans = projection([bbox[1], bbox[0]]);
+      projection.translate([-1*gtrans[0],-1*gtrans[1]]);
+      path = d3.geoPath().projection(projection);  
       
       // data setup
       data.forEach(function(d) {
@@ -632,6 +628,8 @@ function makeMap(obs_file){
 
 
       ///////////// observations map ///////////////
+
+
 
       // park boundary
       map_panel.selectAll("path").remove();
@@ -812,9 +810,9 @@ function makeMap(obs_file){
 
       makeTime(data);
 
-
-
-      stat_button.on("click", function(){swapStat(data)});
+      stat_button
+          .on("click", function(){swapStat(data)})
+          .append("title").text("click to switch summary statistic");
 
       plotTitles();
 
@@ -866,6 +864,8 @@ function hexStat(){
 
 
 function swapStat(data){
+
+    console.log("blammo");
 
     if(active.level != "root"){
       alert("Please zoom out to 'life' before switching stats");

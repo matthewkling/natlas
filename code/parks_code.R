@@ -1,4 +1,5 @@
-setwd("~/taxorama")
+#setwd("~/taxorama")
+setwd("~/natlas")
 library(lubridate)
 library(dplyr)
 library(jsonlite)
@@ -7,8 +8,8 @@ library(spocc)
 library(taxize)
 library(beepr) #optional- good for running in background. CTRL-F delete all "beep(sound = 2)" and you won't need
 
-park_id = "PORE" #Point Reyes is park of interest
-#park_id = "GOGA" #Golden Gate National Recreation Area (GOGA)
+#park_id = "PORE" #Point Reyes is park of interest
+park_id = "GOGA" #Golden Gate National Recreation Area (GOGA)
 
 
 #### Shapefile ####

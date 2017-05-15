@@ -7,20 +7,23 @@
 <style>
 
 .park {
-  fill: white;
-  stroke: black;
+  fill: none;
+  stroke: white;
+  stroke-width: .75px;
+  stroke-opacity: .3;
 }
 
-.states {
-  fill: none;
-  stroke: #fff;
-  stroke-linejoin: round;
+.land {
+  fill: black;
+  stroke: none;
 }
 
 .hexagon {
   stroke: none;
-  fill-opacity: .75;
+  fill: green;
+  fill-opacity: .7;
 }
+
 
 .big_title {
   font-weight: 100;
@@ -121,7 +124,7 @@ html * {
   <script src="https://d3js.org/d3-hexbin.v0.2.min.js"></script>
   <script src="https://d3js.org/topojson.v2.min.js"></script>
   <script src="https://cdn.rawgit.com/fabid/d3-rectbin/master/rectbin.js"></script>
-  <script src="pore_json.js"></script>
+  <script src="park_boundaries.js"></script>
 
 
   </head>
@@ -158,7 +161,13 @@ var r; // user point radius
 
 //////////////////////////////
 
-var tree_files = ["taxonomy_pore_simple.json", "taxonomy_pore_linnean.json"]
+var park_abbvs = ["PORE", "GOGA"]
+var park_names = ["Point Reyes National Seashore", "Golden Gate National Recreation Area"]
+var park_borders = [pore_boundary, goga_boundary]
+var park_projections = [[38.25, -123.09, -122.64, 55], [38.25, -123.09, -122.64, 23]]
+var park_obs_files = ["PORE_obs_tidy.csv", "GOGA_obs_tidy.csv"]
+
+var tree_files = ["_taxonomy_simple.json", "_taxonomy_linnean.json"]
 var tree_names = ["simple", "Linnean"]
 
 var stat_names = ["observations", "species", "users"] // var names in visualization
@@ -170,12 +179,16 @@ var active = {
   latin: "life",
   common: "life",
   id: "NA",
-  obs_file: "PORE_obs_tidy.csv",
+  obs_file: park_obs_files[0],
   tree_file: tree_files[0],
   tree: tree_names[0],
   stat: stat_names[0],
   stat_var: stat_vars[0],
-  stat_obs_var: stat_obs_vars[0]
+  stat_obs_var: stat_obs_vars[0],
+  park_name: park_names[0],
+  park_abbv: park_abbvs[0],
+  park_border: park_borders[0],
+  park_projection: park_projections[0]
 }
 
 var n_obs,
@@ -186,20 +199,11 @@ var n_obs,
     max_species,
     max_users;
 
-function reset_active(){
-    active = {
-        level: "root",
-        latin: "life",
-        common: "life",
-        id: "NA",
-        obs_file: "PORE_obs_tidy.csv",
-        tree_file: tree_files[0],
-        tree: tree_names[0],
-        stat: stat_names[0],
-        stat_var: stat_vars[0],
-        stat_obs_var: stat_obs_vars[0]
-    }
-}
+var projection,
+    bbox,
+    gscale,
+    trans,
+    path;
 
 //////////////////////////////////////////////////////
 
@@ -290,10 +294,12 @@ var park_button = control_panel.append("ellipse")
     .attr("cy", w/12 * .25)
     .attr("rx", r)
     .attr("ry", r)
-    .attr("class", "button");
+    .attr("class", "button")
+    .on("click", swapPark)
+    .append("title").text("click to switch parks");
 
 var park_title = control_panel.append("text")
-            .text("Park: Point Reyes")
+            .text("Park: " + active.park_name)
             .attr("x", m0/4 + r*3)
             .attr("y", w/12 * .25)
             .attr("class", "park_title");
@@ -429,16 +435,47 @@ var time_title = title_bar.append("text")
 
 ///////////////////////////
 
+var hfoot = w/3*2 - (h3 + pad + h2 + pad + h1);
+var fontsize_footer = w/130;
+
 var footer = col2.append("svg")
     .attr("x", 0)
     .attr("y", h1 + pad + h2 + pad + h3 + pad)
     .attr("width", w/3)
-    .attr("height", w/3*2 - (h3 + pad + h2 + pad + h1));
+    .attr("height", hfoot);
+
 footer.append("rect")
     .attr("x", w/24).attr("y", 0)
     .attr("width", w/4)
     .attr("height", w/3*2 - (h3 + pad + h2 + pad + h1))
     .attr("fill", "rgb(0,80,0)")
+
+footer.append("text")
+    .text("Citizen scientists using their smartphones")
+        .attr("x", w/6)
+        .attr("y", hfoot * 0.15)
+        .attr("font-size", fontsize_footer)
+        .attr("font-weight", 100)
+        .attr("fill", "white")
+        .attr("text-anchor", "middle")
+        .attr("dominant-baseline", "alphabetical")
+    .append("tspan").text("to collectively catalog the natural world have")
+        .attr("x", w/6).attr("y", hfoot * 0.15).attr("dy", fontsize_footer*1.5)
+    .append("tspan").text("recorded millions of biodiversity observations")
+        .attr("x", w/6).attr("y", hfoot * 0.15).attr("dy", fontsize_footer*1.5*2)
+    .append("tspan").text("through the iNaturalist platform.")
+        .attr("x", w/6).attr("y", hfoot * 0.15).attr("dy", fontsize_footer*1.5*3)
+    .append("tspan").text("NATLAS displays records from Bay Area national parks;")
+        .attr("x", w/6).attr("y", hfoot * 0.15).attr("dy", fontsize_footer*1.5*5)
+    .append("tspan").text("click and mouse over the charts to explore!")
+        .attr("x", w/6).attr("y", hfoot * 0.15).attr("dy", fontsize_footer*1.5*6)
+    .append("tspan").text("Created by Matthew Kling,")
+        .attr("x", w/6).attr("y", hfoot * 0.15).attr("dy", fontsize_footer*1.5*9).attr("font-style", "italic")
+    .append("tspan").text("Laura Alexander, and Christine Wilkinson")
+        .attr("x", w/6).attr("y", hfoot * 0.15).attr("dy", fontsize_footer*1.5*10)
+    .append("tspan").text("UC Berkeley DS421")
+        .attr("x", w/6).attr("y", hfoot * 0.15).attr("dy", fontsize_footer*1.5*11);
+
 
 ////////////////////////
 
@@ -500,17 +537,7 @@ var hexbin = d3.hexbin()
     .y(function(d) { return d.y; });
 
 
-// geospatial properties
-var projection = d3.geoMercator();
-var lattop = 38.25;
-var lonleft = -123.09;
-var lonright = -122.64;
-var scale = 55 * map_width/(lonright-lonleft);
-projection.scale(scale);
-projection.translate([0,0]);
-var trans = projection([lonleft,lattop]);
-projection.translate([-1*trans[0],-1*trans[1]]);
-var path = d3.geoPath().projection(projection);
+
 
 
 
@@ -529,7 +556,6 @@ function swapTree(){
     active.level = "root";
     active.latin = "life";
     active.common = "life";
-    //reset_active();
 
     active.tree_file = tree_files.pop();
     tree_files.splice(0, 0, active.tree_file);
@@ -550,16 +576,62 @@ function swapTree(){
 
 
 function swapPark() {
-    //todo: enable park switching
+    if(active.level != "root"){
+        alert("Please zoom out to 'life' before switching parks");
+        return "null"; };
+
+    // reset tree level
+    active.level = "root";
+    active.latin = "life";
+    active.common = "life";
+
+    active.park_abbv = park_abbvs.pop();
+    park_abbvs.splice(0, 0, active.park_abbv);
+    
+    active.park_name = park_names.pop();
+    park_names.splice(0, 0, active.park_name);
+    
+    active.park_border = park_borders.pop();
+    park_borders.splice(0, 0, active.park_border);
+    
+    active.park_projection = park_projections.pop();
+    park_projections.splice(0, 0, active.park_projection);
+    
+    active.obs_file = park_obs_files.pop();
+    park_obs_files.splice(0, 0, active.obs_file);
+    
+    makePie();
+    makeMap(active.obs_file);
+
+    control_panel.selectAll(".park_title").remove();
+    control_panel.append("text")
+            .text("Park: " + active.park_name)
+            .attr("x", m0/4 + r*3)
+            .attr("y", w/12 * .25)
+            .attr("class", "park_title");
 };
+
+
+
+
+
 
 
 function makeMap(obs_file){
 
-    d3.csv(obs_file, function(error, data) {  
+    d3.csv(obs_file, function(error, data) {
+
+      // geospatial setup
+      projection = d3.geoMercator();
+      bbox = active.park_projection;
+      gscale = bbox[3] * map_width/(bbox[2]-bbox[1]);
+      projection.scale(gscale);
+      projection.translate([0,0]);
+      gtrans = projection([bbox[1], bbox[0]]);
+      projection.translate([-1*gtrans[0],-1*gtrans[1]]);
+      path = d3.geoPath().projection(projection);  
       
       // data setup
-
       data.forEach(function(d) {
         d.x = projection([+d.decimalLongitude, 0])[0];
         d.y = projection([0, +d.decimalLatitude])[1];
@@ -591,14 +663,19 @@ function makeMap(obs_file){
 
       ///////////// observations map ///////////////
 
-      // park boundary
-      var park_boundary = map_panel.selectAll("path")
-        .data(pore_json.features)
+
+      map_panel.selectAll("path").remove();
+      
+      
+      //coastline
+      map_panel.selectAll("path")
+        .data(coastline.features)
         .enter()
         .append("path")
-        .attr("class", "park")
+        .attr("class", "land")
         .attr("d", path);
 
+      
       // hex heatmap
       hexUpdate(data);
       max_hex_observations = trans(d3.max(hex.data(), function(d){return(d.length)}));
@@ -609,7 +686,7 @@ function makeMap(obs_file){
 
       // points  
       var obs_opacity = .5;
-      var obs_r = 2;
+      var obs_r = w/1000;
 
       map_panel.selectAll("circle").remove();
       map_panel.selectAll("circle")
@@ -618,10 +695,16 @@ function makeMap(obs_file){
         .attr("cx", function (d) { return d.x; })
         .attr("cy", function (d) { return d.y; })
         .attr("r", obs_r)
-        .attr("fill", "darkgreen")
+        .attr("fill", "green")
         .attr("opacity", obs_opacity);
 
+      // park boundary
+      map_panel.append("path")
+        .data(active.park_border.features)
+        .attr("class", "park")
+        .attr("d", path);
 
+      
 
       ///////////// user scatterplot ///////////////
       
@@ -769,9 +852,9 @@ function makeMap(obs_file){
 
       makeTime(data);
 
-
-
-      stat_button.on("click", function(){swapStat(data)});
+      stat_button
+          .on("click", function(){swapStat(data)})
+          .append("title").text("click to switch summary statistic");
 
       plotTitles();
 
@@ -790,7 +873,7 @@ function hexUpdate(data){
   .data(hexbin(data))
   .enter().append("path")
   .attr("d", hexbin.hexagon())
-  .attr("fill", "darkgreen")
+  //.attr("fill", "darkgreen")
   .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
 };
 
@@ -804,7 +887,7 @@ function hexScale(){
   if(active.stat == "users"){max_hex_density = max_hex_users};
   scale_opacity = d3.scaleLinear()
     .domain([0, max_hex_density])
-    .range([0.05,1]);
+    .range([0,1]);
 };
 
 
@@ -899,7 +982,7 @@ function plotTitles() {
 
     // observations
     var stats_value_obs = stats_bar.append("text")
-      .text(n_obs + " biodiversity geolocations")
+      .text(n_obs + " geolocations")
           .attr("x", w/8)
           .attr("y", ay/2 + ay+pad + fontsize_statsbar)
           .attr("class", "stat_label_2").attr("font-size", fontsize_statsbar)
@@ -916,6 +999,16 @@ function plotTitles() {
       .append("tspan").text(" ")
           .attr("x", w/6*5).attr("y", ay/2 + ay*2+pad*2 + fontsize_statsbar)
           .attr("dy", fontsize_statsbar);
+
+    // time
+    var stats_value_time = stats_bar.append("text")
+      .text("# " + active.stat + " across")
+      .attr("x", w/8)
+      .attr("y", ay/2 + ay*3+pad*3 + fontsize_statsbar)
+      .attr("class", "stat_label").attr("font-size", fontsize_statsbar)
+      .append("tspan").text("3 dimensions of time")
+          .attr("x", w/8).attr("y", ay/2 + ay*3+pad*3 + fontsize_statsbar)
+          .attr("dy", fontsize_statsbar);
 }
 
 
@@ -925,7 +1018,8 @@ function makePie() {
 
     taxonomy_panel.selectAll("*").remove();
 
-    d3.json(active.tree_file, function(error, root) {
+    d3.json(active.park_abbv + active.tree_file, 
+      function(error, root) {
       if (error) throw error;
 
       taxonomy_panel.append("g")
@@ -1121,16 +1215,6 @@ function makeTime(data) {
 makePie();
 makeMap(active.obs_file);
 
-///////////////////////////////////
-
-// TODO:
-// Fix buggy tree swapping behavior when shallow nodes are active
-// Taxon name in circle should appear initially, not just after mouseover
-// Park swapping
-// Hexbin species richness currently absolute; normalize by number of points or by total richness. Same for user point size -- normalize by average
-
-
-///////////////////////////////////
 
 
 </script>

@@ -34,21 +34,18 @@
 }
 
 .park_title {
-  font-size: 20px;
   fill: white;
   text-anchor: start;
   dominant-baseline: middle;
 }
 
 .tree_title {
-  font-size: 20px;
   fill: white;
   text-anchor: start;
   dominant-baseline: middle;
 }
 
 .stat_title {
-  font-size: 20px;
   fill: white;
   text-anchor: start;
   dominant-baseline: middle;
@@ -56,7 +53,6 @@
 }
 
 .filter_title {
-  font-size: 20px;
   fill: white;
   text-anchor: middle;
 }
@@ -141,7 +137,8 @@ var h = document.body.scrollHeight - pad*2;
 var hf = document.body.scrollHeight - pad*4 - m;
 
 var fontsize_titlebar = w / 30,
-    fontsize_statsbar = w / 80;
+    fontsize_statsbar = w / 80,
+    fontsize_navbar = w / 100;
 
 //////////////////////////////////////////////////////
 
@@ -300,6 +297,7 @@ var park_button = control_panel.append("ellipse")
 
 var park_title = control_panel.append("text")
             .text("Park: " + active.park_name)
+            .attr("font-size", fontsize_navbar)
             .attr("x", m0/4 + r*3)
             .attr("y", w/12 * .25)
             .attr("class", "park_title");
@@ -314,6 +312,7 @@ var stat_button = control_panel.append("ellipse")
 
 var stat_title = control_panel.append("text")
             .text("Stat:  " + active.stat)
+            .attr("font-size", fontsize_navbar)
             .attr("x", m0/4 + r*3)
             .attr("y", w/12 * .5)
             .attr("class", "stat_title");
@@ -330,6 +329,7 @@ var tree_button = control_panel.append("ellipse")
 
 var tree_title = control_panel.append("text")
             .text("Tree: " + active.tree)
+            .attr("font-size", fontsize_navbar)
             .attr("x", m0/4 + r*3)
             .attr("y", w/12 * .75)
             .attr("class", "tree_title");
@@ -569,6 +569,7 @@ function swapTree(){
     control_panel.selectAll(".tree_title").remove();
     control_panel.append("text")
         .text("Tree: " + active.tree_name)
+        .attr("font-size", fontsize_navbar)
         .attr("x", m0/4 + r*3)
         .attr("y", w/12 * .75)
         .attr("class", "tree_title");
@@ -606,6 +607,7 @@ function swapPark() {
     control_panel.selectAll(".park_title").remove();
     control_panel.append("text")
             .text("Park: " + active.park_name)
+            .attr("font-size", fontsize_navbar)
             .attr("x", m0/4 + r*3)
             .attr("y", w/12 * .25)
             .attr("class", "park_title");
@@ -925,7 +927,7 @@ function swapStat(data){
     control_panel.selectAll("text.stat_title").remove()
     stat_title = control_panel.append("text")
         .text("Stat:  " + active.stat)
-        .attr("x", m0/4 + r*3)
+        .attr("font-size", fontsize_navbar).attr("x", m0/4 + r*3)
         .attr("y", w/12 * .5)
         .attr("class", "stat_title");
 

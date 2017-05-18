@@ -4890,7 +4890,7 @@
                             {
                                 "level": "species",
                                 "name": "Hypomyces chrysospermus",
-                                "common": "Bolete Eater",
+                                "common": "Bolete Mould",
                                 "inat_id": 2339650,
                                 "hex": "#840FB4",
                                 "nspp": 1,
@@ -5143,7 +5143,7 @@
                             {
                                 "level": "species",
                                 "name": "Mycena acicula",
-                                "common": "Fungi including lichens",
+                                "common": "Orange bonnet",
                                 "inat_id": 2910373,
                                 "hex": "#7A04A5",
                                 "nspp": 1,
@@ -5408,7 +5408,7 @@
                                 "level": "species",
                                 "name": "Parmotrema",
                                 "common": "Parmotrema Lichen",
-                                "inat_id": 463680,
+                                "inat_id": 463681,
                                 "hex": "#7F0E4E",
                                 "nspp": 1,
                                 "n_records": 2,
@@ -5440,8 +5440,8 @@
                             {
                                 "level": "species",
                                 "name": "Usnea",
-                                "common": "California Beard Lichen",
-                                "inat_id": 532729,
+                                "common": "Spotted Beard Lichen",
+                                "inat_id": 532734,
                                 "hex": "#7F0F4F",
                                 "nspp": 1,
                                 "n_records": 1,
@@ -5484,7 +5484,7 @@
                             {
                                 "level": "species",
                                 "name": "Peltigera collina",
-                                "common": "Tree Pelt Lichen",
+                                "common": "Tree pelt lichen",
                                 "inat_id": 398894,
                                 "hex": "#830B52",
                                 "nspp": 1,
@@ -5957,7 +5957,7 @@
                             {
                                 "level": "species",
                                 "name": "Aleuria aurantia",
-                                "common": "Orange Peel Fungus",
+                                "common": "Orange peel fungus",
                                 "inat_id": 858,
                                 "hex": "#850AAD",
                                 "nspp": 1,
@@ -9027,7 +9027,7 @@
                                 "level": "species",
                                 "name": "Psyllobora vigintimaculata",
                                 "common": "Twenty-spotted Lady Beetle",
-                                "inat_id": 1551302,
+                                "inat_id": 5448120,
                                 "hex": "#E3EE15",
                                 "nspp": 1,
                                 "n_records": 1,
@@ -9455,7 +9455,7 @@
                             {
                                 "level": "species",
                                 "name": "Culex pipiens",
-                                "common": "Animals",
+                                "common": "Common house mosquito",
                                 "inat_id": 190302,
                                 "hex": "#E0E818",
                                 "nspp": 1,
@@ -12370,7 +12370,7 @@
                             {
                                 "level": "species",
                                 "name": "Cercyonis pegala",
-                                "common": "Common Wood Nymph",
+                                "common": "Common Wood-Nymph",
                                 "inat_id": 18257,
                                 "hex": "#D1F709",
                                 "nspp": 1,
@@ -12426,7 +12426,7 @@
                                 "level": "species",
                                 "name": "Junonia coenia",
                                 "common": "Common Buckeye",
-                                "inat_id": 64181,
+                                "inat_id": 52794,
                                 "hex": "#D2F709",
                                 "nspp": 1,
                                 "n_records": 50,
@@ -17144,7 +17144,7 @@
                             {
                                 "level": "species",
                                 "name": "Heracleum maximum",
-                                "common": "Cow Parsnip",
+                                "common": "Common cowparsnip",
                                 "inat_id": 23131,
                                 "hex": "#3CAB95",
                                 "nspp": 1,
@@ -17881,7 +17881,7 @@
                             {
                                 "level": "species",
                                 "name": "Centaurea melitensis",
-                                "common": "Maltese Star-thistle",
+                                "common": "Maltese star-thistle",
                                 "inat_id": 3450410,
                                 "hex": "#5F8B69",
                                 "nspp": 1,
@@ -17947,7 +17947,7 @@
                             {
                                 "level": "species",
                                 "name": "Cotula coronopifolia",
-                                "common": "Brass Buttons",
+                                "common": "Brass buttons",
                                 "inat_id": 15427,
                                 "hex": "#59936C",
                                 "nspp": 1,
@@ -18420,7 +18420,7 @@
                             {
                                 "level": "species",
                                 "name": "Matricaria discoidea",
-                                "common": "Pineapple Weed",
+                                "common": "Pineapple weed",
                                 "inat_id": 5168,
                                 "hex": "#5B916C",
                                 "nspp": 1,
@@ -18508,7 +18508,7 @@
                             {
                                 "level": "species",
                                 "name": "Pseudognaphalium stramineum",
-                                "common": "Wooly Cudweed",
+                                "common": "Cottonbatting plant",
                                 "inat_id": 34235,
                                 "hex": "#608C6F",
                                 "nspp": 1,
@@ -18651,7 +18651,7 @@
                             {
                                 "level": "species",
                                 "name": "Sonchus oleraceus",
-                                "common": "Common Sowthistle",
+                                "common": "Common sowthistle",
                                 "inat_id": 23750,
                                 "hex": "#579165",
                                 "nspp": 1,
@@ -18883,7 +18883,7 @@
                     },
                     {
                         "name": "Betulaceae",
-                        "common": "Birches and Allies",
+                        "common": "Birches and allies",
                         "inat_id": 49155,
                         "level": "family",
                         "hex": "#15291A",
@@ -19025,7 +19025,7 @@
                             {
                                 "level": "species",
                                 "name": "Heliotropium curassavicum",
-                                "common": "Seaside heliotrope",
+                                "common": "Seaside Heliotrope",
                                 "inat_id": 23370,
                                 "hex": "#4F758F",
                                 "nspp": 1,
@@ -19058,7 +19058,7 @@
                             {
                                 "level": "species",
                                 "name": "Nemophila menziesii",
-                                "common": "Baby-blue-eyes",
+                                "common": "Baby blue-eyes",
                                 "inat_id": 144082,
                                 "hex": "#4F758E",
                                 "nspp": 1,
@@ -19388,7 +19388,7 @@
                             {
                                 "level": "species",
                                 "name": "Matthiola incana",
-                                "common": "Hoary Stock",
+                                "common": "Hoary stock",
                                 "inat_id": 129541,
                                 "hex": "#2F9D88",
                                 "nspp": 1,
@@ -19421,7 +19421,7 @@
                             {
                                 "level": "species",
                                 "name": "Raphanus sativus",
-                                "common": "Wild Radish",
+                                "common": "Wild radish",
                                 "inat_id": 9164,
                                 "hex": "#2D9C89",
                                 "nspp": 1,
@@ -19619,7 +19619,7 @@
                             {
                                 "level": "species",
                                 "name": "Cerastium arvense",
-                                "common": "Field Chickweed",
+                                "common": "Field chickweed",
                                 "inat_id": 2778,
                                 "hex": "#247379",
                                 "nspp": 1,
@@ -20543,8 +20543,8 @@
                             {
                                 "level": "species",
                                 "name": "Arctostaphylos",
-                                "common": "Ione manzanita",
-                                "inat_id": 206511,
+                                "common": "Pecho manzanita",
+                                "inat_id": 75538,
                                 "hex": "#447044",
                                 "nspp": 1,
                                 "n_records": 1,
@@ -20983,7 +20983,7 @@
                             {
                                 "level": "species",
                                 "name": "Lotus corniculatus",
-                                "common": "Common Bird's-foot Trefoil",
+                                "common": "Bird's-foot trefoil",
                                 "inat_id": 927,
                                 "hex": "#448371",
                                 "nspp": 1,
@@ -21170,7 +21170,7 @@
                             {
                                 "level": "species",
                                 "name": "Securigera varia",
-                                "common": "Purple Crown-vetch",
+                                "common": "Common crownvetch",
                                 "inat_id": 34301,
                                 "hex": "#467D72",
                                 "nspp": 1,
@@ -21280,7 +21280,7 @@
                             {
                                 "level": "species",
                                 "name": "Trifolium pratense",
-                                "common": "Red Clover",
+                                "common": "Red clover",
                                 "inat_id": 5762,
                                 "hex": "#497F77",
                                 "nspp": 1,
@@ -21368,7 +21368,7 @@
                             {
                                 "level": "species",
                                 "name": "Vicia benghalensis",
-                                "common": "Purple vetch",
+                                "common": "Reddish tufted vetch",
                                 "inat_id": 11739,
                                 "hex": "#458474",
                                 "nspp": 1,
@@ -21401,8 +21401,8 @@
                             {
                                 "level": "species",
                                 "name": "Vicia villosa",
-                                "common": "Hairy Vetch",
-                                "inat_id": 3320289,
+                                "common": "Hairy vetch",
+                                "inat_id": 1100587,
                                 "hex": "#458474",
                                 "nspp": 1,
                                 "n_records": 1,
@@ -22017,7 +22017,7 @@
                             {
                                 "level": "species",
                                 "name": "Iris germanica",
-                                "common": "Earded iris",
+                                "common": "Bearded iris",
                                 "inat_id": 13881,
                                 "hex": "#122BAB",
                                 "nspp": 1,
@@ -22248,8 +22248,8 @@
                             {
                                 "level": "species",
                                 "name": "Lamium amplexicaule",
-                                "common": "Henbit Deadnettle",
-                                "inat_id": 9174,
+                                "common": "Henbit deadnettle",
+                                "inat_id": 3051768,
                                 "hex": "#338B5E",
                                 "nspp": 1,
                                 "n_records": 1,
@@ -22259,7 +22259,7 @@
                             {
                                 "level": "species",
                                 "name": "Lamium purpureum",
-                                "common": "Red deadnettle",
+                                "common": "Red Deadnettle",
                                 "inat_id": 9778,
                                 "hex": "#338B5D",
                                 "nspp": 1,
@@ -22369,8 +22369,8 @@
                             {
                                 "level": "species",
                                 "name": "Stachys",
-                                "common": "Berg's hedgenettle",
-                                "inat_id": 502028,
+                                "common": "Big Betony",
+                                "inat_id": 485184,
                                 "hex": "#328A5F",
                                 "nspp": 1,
                                 "n_records": 1,
@@ -22942,7 +22942,7 @@
                     },
                     {
                         "name": "Myrsinaceae",
-                        "common": "Myrsine family",
+                        "common": "Myrsines",
                         "inat_id": 64578,
                         "level": "family",
                         "hex": "#152415",
@@ -22952,7 +22952,7 @@
                             {
                                 "level": "species",
                                 "name": "Anagallis arvensis",
-                                "common": "Scarlet Pimpernel",
+                                "common": "Scarlet pimpernel",
                                 "inat_id": 4903,
                                 "hex": "#427143",
                                 "nspp": 1,
@@ -23195,7 +23195,7 @@
                                 "level": "species",
                                 "name": "Epilobium minutum",
                                 "common": "Little willowherb",
-                                "inat_id": 52080,
+                                "inat_id": 1559099,
                                 "hex": "#1C6A4B",
                                 "nspp": 1,
                                 "n_records": 1,
@@ -23227,7 +23227,7 @@
                             {
                                 "level": "species",
                                 "name": "Ludwigia peploides",
-                                "common": "Floating Primrose-willow",
+                                "common": "Floating primrose-willow",
                                 "inat_id": 4158524,
                                 "hex": "#1B6C49",
                                 "nspp": 1,
@@ -23293,7 +23293,7 @@
                             {
                                 "level": "species",
                                 "name": "Corallorhiza maculata",
-                                "common": "Spotted Coralroot",
+                                "common": "Spotted coralroot",
                                 "inat_id": 48756,
                                 "hex": "#142AA9",
                                 "nspp": 1,
@@ -23403,8 +23403,8 @@
                             {
                                 "level": "species",
                                 "name": "Castilleja",
-                                "common": "Raup's Indian-paintbrush",
-                                "inat_id": 207461,
+                                "common": "Mt. Hamilton Indian Paintbrush",
+                                "inat_id": 160189,
                                 "hex": "#22965E",
                                 "nspp": 1,
                                 "n_records": 1,
@@ -23613,7 +23613,7 @@
                     },
                     {
                         "name": "Oxalidaceae",
-                        "common": "Wood sorrel family",
+                        "common": "Woodsorrel family",
                         "inat_id": 47759,
                         "level": "family",
                         "hex": "#14261B",
@@ -23799,7 +23799,7 @@
                             {
                                 "level": "species",
                                 "name": "Passiflora mollissima",
-                                "common": "Banana Passionfruit",
+                                "common": "Banana passionfruit",
                                 "inat_id": 1511619,
                                 "hex": "#21AD62",
                                 "nspp": 1,
@@ -23931,7 +23931,7 @@
                             {
                                 "level": "species",
                                 "name": "Phytolacca americana",
-                                "common": "American Pokeweed",
+                                "common": "American pokeweed",
                                 "inat_id": 911,
                                 "hex": "#1F9F7B",
                                 "nspp": 1,
@@ -24217,7 +24217,7 @@
                             {
                                 "level": "species",
                                 "name": "Platanus racemosa",
-                                "common": "Western Sycamore",
+                                "common": "Western sycamore",
                                 "inat_id": 4932563,
                                 "hex": "#52A684",
                                 "nspp": 1,
@@ -24305,8 +24305,8 @@
                             {
                                 "level": "species",
                                 "name": "Anthoxanthum odoratum",
-                                "common": "Sweet vernal grass",
-                                "inat_id": 324347,
+                                "common": "Grasses",
+                                "inat_id": 524194,
                                 "hex": "#0B3BC2",
                                 "nspp": 1,
                                 "n_records": 1,
@@ -25350,7 +25350,7 @@
                             {
                                 "level": "species",
                                 "name": "Actaea rubra",
-                                "common": "Red Baneberry",
+                                "common": "Red baneberry",
                                 "inat_id": 5233,
                                 "hex": "#36AB63",
                                 "nspp": 1,
@@ -26252,8 +26252,8 @@
                             {
                                 "level": "species",
                                 "name": "Solanum",
-                                "common": "Viscid Nightshade",
-                                "inat_id": 280927,
+                                "common": "Bush Tomato",
+                                "inat_id": 83969,
                                 "hex": "#4EB299",
                                 "nspp": 1,
                                 "n_records": 1,
@@ -26704,7 +26704,7 @@
                                 "level": "species",
                                 "name": "Viola sempervirens",
                                 "common": "Redwood Violet",
-                                "inat_id": 8865,
+                                "inat_id": 3815913,
                                 "hex": "#28AF71",
                                 "nspp": 1,
                                 "n_records": 11,

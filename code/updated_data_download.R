@@ -1,6 +1,8 @@
 setwd("~/Desktop/clean/natlas")
 library(beepr)
 library(taxize)
+library(rgdal)
+library(raster)
 
 ####Download functions####
 downloadObservations <- function(){
@@ -21,7 +23,9 @@ downloadObservations <- function(){
 
 ####Tidy data functions####
 tidyData <- function(){
-  allObs <- read.csv("raw_data/observations.csv", header = TRUE, stringsAsFactors = FALSE); beep(sound = 2) #read in complete iNat dataset
+  allObs <- read.csv("raw_data/observations.csv", header = TRUE, stringsAsFactors = FALSE)#; beep(sound = 2) #read in complete iNat dataset
+  
+  print("All obs read in")
   
   #create list of all unique species/genera in the dataset
   allObsTaxa <- allObs[,c("taxonID","scientificName","taxonRank","kingdom","phylum","class","order","family","genus")]
@@ -35,6 +39,8 @@ tidyData <- function(){
   #Work with US observations
   usObsRaw <- subset(allObs,countryCode == "US") #select only observations from inside US
   usObs <- usObsRaw #so that if we make an error while removing columns or other data, we don't have to read in all the data over again.
+  
+  print("US data subsetted")
   
   usObs <- usObs[-which(usObs$establishmentMeans == "cultivated"),] #so leaves observations that are wild
   usObs <- usObs[-which(!is.finite(usObs$decimalLatitude)),]  #removes observations with bad coordinates
@@ -64,6 +70,8 @@ tidyData <- function(){
   cleanObs <- usObs[-which(usObs$eventDate < "2007-01-01"),];  cleanObs <- cleanObs[-which(is.na(usObs$eventDate)),]#removes pre-2007 observations, observations with no assocated event date.
   write.csv(cleanObs, "processed_data/clean_us_obs.csv", row.names = F) #writes out files 
   
+  print("Clean US obs written out")
+  
   #### Add park info; for counties, see obs_by_county.R ####
   obs <- cleanObs
   #obs <- read.csv("processed_data/clean_us_obs.csv", header = T) #if we have already run the top bit, we can just read in the output; I also like this as a check that the top bit worked. It's more time consuming than reassigning cleanObs (or just using cleanObs, but eh.)
@@ -83,6 +91,8 @@ tidyData <- function(){
   
   parkObs <- obs[which(obs$IN_PARK == T),] #pulls all observations made within park
   write.csv(parkObs, "processed_data/park_obs.csv", row.names = F) #writes file of park observations.
+  
+  print("Park file written")
 }
 
 

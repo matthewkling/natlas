@@ -65,9 +65,9 @@ checkNPSbyiNat <- function(inatTaxaObs, tidied_park_list){
       morethanone <- c(morethanone, t)
       tidied_park_list$matched.ID[t] <- max(inatTaxaObs$taxonID[obs.idx]) #picks the larger taxon ID number, this seems to happen from inactive taxa.
     }
-    print(paste0(100*t/length(tidied_park_list$matched.ID),"% matched"))
+    if (which(need.ID == t) %% 10 == 0| which(need.ID == t) == 1 | which(need.ID == t) == length(need.ID)) print(paste0(100*t/length(tidied_park_list$matched.ID),"% matched")) #if something breaks look here
   }
-  print(paste0(100*length(which(is.na(tidied_park_list$matched.ID)))/length(tidied_park_list$matched.ID), "% without IDs"))
+  print(paste0(100*length(which(is.na(tidied_park_list$matched.ID)))/length(tidied_park_list$matched.ID), "% without IDs")) 
   return(tidied_park_list)
 }
 
@@ -220,7 +220,8 @@ scrape.iNat.ID <- function(scrape.ID, ranks_to_scrape = c("kingdom","phylum","cl
     return(scraped.tax)
   }
 }
-addCategoriesNPS <- function(species.data,kingdom.column = "kingdom.science", class.column = "class.science"){
+
+addCategoriesNPSOLD <- function(species.data,kingdom.column = "kingdom.science", class.column = "class.science"){
   species.data$category <- NA
   levels(species.data$category) <- c("Mammal","Bird", "Herp", "Plant", "Fish",  "Invertebrate", "Fungi")
   
@@ -254,6 +255,60 @@ addCategoriesNPS <- function(species.data,kingdom.column = "kingdom.science", cl
   return(species.data)
 }
 
+addCategoriesNPS <- function(species.data,kingdom.column = "kingdom.science", class.column = "class.science"){
+  species.data$category <- NA
+  levels(species.data$category) <- c("Mammal","Bird", "Herp", "Plant", "Fish",  "Invertebrate", "Fungi")
+  
+  species.data$category[which(species.data[,kingdom.column] == "Plantae")] <- "Plant"
+  species.data$category[which(species.data[,kingdom.column] == "Fungi")] <- "Fungi"
+  species.data$category[which(species.data[,kingdom.column] == "Animalia")] <- "Invertebrate"; species.data$category[which(species.data$phylum == "Chordata")] <- NA #tags all animals as invertebrates, then returns chordates to NA. Issues with chordate inverts to be dealt with in a few lines- they aren't left as NAs.
+  
+  species.data$category[which(species.data[,class.column] == "Aves")] <- "Bird"
+  species.data$category[which(species.data[,class.column] == "Mammalia")] <- "Mammal"
+  species.data$category[which(species.data[,class.column] == "Reptilia")] <- "Herp"
+  species.data$category[which(species.data[,class.column] == "Amphibia")] <- "Herp"
+  species.data$category[which(species.data[,class.column] == "Chondrichthyes")] <- "Fish" #cartelaginous fishes
+  species.data$category[which(species.data[,class.column] == "Actinopterygii")] <- "Fish" #bony fishes
+  species.data$category[which(species.data[,class.column] == "Myxini")] <- "Fish" #hagfishes
+  species.data$category[which(species.data[,class.column] == "Hyperoartia")] <- "Fish" #lamprays
+  species.data$category[which(species.data[,class.column] == "Sarcopterygii")] <- "Fish" #lobe-finned fish
+  species.data$category[which(species.data[,kingdom.column] == "Chromista")] <- "Plants" #this includes the kelps, so plants made marginally more sense than microbes?
+  species.data$category[which(species.data[,kingdom.column] == "Archaea")] <- "Microbe"
+  species.data$category[which(species.data[,kingdom.column] == "Bacteria")] <- "Microbe"
+  species.data$category[which(species.data[,kingdom.column] == "Protozoa")] <- "Microbe"
+  
+  #taxize was producing errors; changing NPS categories instead (it's also faster)
+  fix.idx <- which(is.na(species.data$category))
+  
+  species.data$category[fix.idx[which(species.data$Category[fix.idx] == "Vascular Plant" |
+                                        species.data$Category[fix.idx] =="Non-vascular Plant" | 
+                                        species.data$Category[fix.idx] == "Chromista")]] <- "Plant"
+  
+  species.data$category[fix.idx[which(species.data$Category[fix.idx] == "Amphibian" |
+                                        species.data$Category[fix.idx] == "Reptile")]] <- "Herp"
+  
+  species.data$category[fix.idx[which(species.data$Category[fix.idx] == "Mammal")]] <- "Mammal"
+  species.data$category[fix.idx[which(species.data$Category[fix.idx] == "Bird")]] <- "Bird"
+  species.data$category[fix.idx[which(species.data$Category[fix.idx] == "Fungi")]] <- "Fungi"
+  species.data$category[fix.idx[which(species.data$Category[fix.idx] == "Fish")]] <- "Fish"
+  
+  species.data$category[fix.idx[which(species.data$Category[fix.idx] == "Amphibian" |
+                                        species.data$Category[fix.idx] == "Reptile")]] <- "Herp"
+  
+  species.data$category[fix.idx[which(species.data$Category[fix.idx] == "Spider/Scorpion" |
+                                        species.data$Category[fix.idx] =="Slug/Snail" | 
+                                        species.data$Category[fix.idx] =="Insect" | 
+                                        species.data$Category[fix.idx] =="Crab/Lobster/Shrimp" | 
+                                        species.data$Category[fix.idx] == "Other Non-vertebrates")]] <- "Invertebrate"
+  
+  species.data$category[fix.idx[which(species.data$Category[fix.idx] == "Vascular Plant" | species.data$Category[fix.idx] =="Non-vascular Plant" | species.data$Category[fix.idx] == "Chromista")]] <- "Plant"
+  species.data$category[fix.idx[which(species.data$Category[fix.idx] == "Vascular Plant" | species.data$Category[fix.idx] =="Non-vascular Plant" | species.data$Category[fix.idx] == "Chromista")]] <- "Plant"
+  species.data$category[fix.idx[which(species.data$Category[fix.idx] == "Vascular Plant" | species.data$Category[fix.idx] =="Non-vascular Plant" | species.data$Category[fix.idx] == "Chromista")]] <- "Plant"
+  species.data$category[fix.idx[which(species.data$Category[fix.idx] == "Vascular Plant" | species.data$Category[fix.idx] =="Non-vascular Plant" | species.data$Category[fix.idx] == "Chromista")]] <- "Plant"
+  species.data$category[fix.idx[which(species.data$Category[fix.idx] == "Vascular Plant" | species.data$Category[fix.idx] =="Non-vascular Plant" | species.data$Category[fix.idx] == "Chromista")]] <- "Plant"
+  
+  return(species.data)
+}
 
   
 ####Larger functions####
@@ -298,7 +353,7 @@ useiNat <- function(checked_park_list, ranks_to_scrape){
       }
       checked_park_list$matched.ID[beep] <- found.ID
     }
-    print(paste0(100*(which(search.iNat.idx == beep)/length(search.iNat.idx)), "% through checking IDs"))
+    if (i %% 50 == 0| i == 1 | i == length(IDs.to.check)){print(paste0(100*(which(search.iNat.idx == beep)/length(search.iNat.idx)), "% through checking IDs"))}
   }
   return(checked_park_list)
 }
@@ -334,7 +389,7 @@ scrapeMissing <- function(processedNPS,ranks_to_scrape){
   for (m in missing.info){
     scraped <- scrape.iNat.ID(scrape.ID = processedNPS$matched.ID[m], return.df = df, ranks_to_scrape = ranks_to_scrape)
     processedNPS[m,names(scraped)] <- scraped
-    print(paste0(100*which(missing.info == m)/length(missing.info), "% missing entries added"))
+    if (which(missing.info == m) %% 10 == 0| which(missing.info == m) == 1 | which(missing.info == m) == length(missing.info)) print(paste0(100*which(missing.info == m)/length(missing.info), "% missing entries added"))
   }
   processedNPS <- addCategoriesNPS(processedNPS)
   
@@ -356,21 +411,21 @@ writeCleanNPSlist <- function(processedList, park_id){
 #### Current test code###
 NPS.lists <- list.files(path = "raw_data",pattern = "NPSpecies_(.*).csv")
 allObsTaxa <- read.csv("processed_data/iNatObservedTaxa.csv", header = TRUE, stringsAsFactors = FALSE)
-ranks.to.species <- c("kingdom","phylum","class","order","family","genus","species")
+ranks_to_species <- c("kingdom","phylum","class","order","family","genus","species")
 
 for(each in NPS.lists){
   park_id <- gsub('NPSpecies_(.*).csv','\\1',each)
-  if(file.exists(paste0("processed_data/",park_id,"_data/",park_id,"_clean_NPSpecies.csv")) == FALSE){
+  #if(file.exists(paste0("processed_data/",park_id,"_data/",park_id,"_clean_NPSpecies.csv")) == FALSE){
     tidyNPS <- tidyNPSpecies(list.path = paste0("raw_data/", each))
     first.matched <- checkNPSbyiNat(tidied_park_list = tidyNPS, inatTaxaObs = allObsTaxa)
     ssp.rm <- subspeciesRemove(tidied_park_list = first.matched, inatTaxaObs = allObsTaxa)
     
-    checked <- useiNat(checked_park_list = ssp.rm, ranks_to_scrape  = ranks.to.species); beep(2)
-    matched <- matchToParkList(checked.NPS = checked, ranks_to_scrape  = ranks.to.species); beep(2)
-    completed <- scrapeMissing(processedNPS = matched, ranks_to_scrape = ranks.to.species); beep(2)
+    checked <- useiNat(checked_park_list = ssp.rm, ranks_to_scrape  = ranks_to_species); beep(2)
+    matched <- matchToParkList(checked.NPS = checked, ranks_to_scrape  = ranks_to_species); beep(2)
+    completed <- scrapeMissing(processedNPS = matched, ranks_to_scrape = ranks_to_species); beep(2)
     clean <- writeCleanNPSlist(completed,park_id)
     
     print(paste0(park_id, " NPSpecies has been tidied!"))
-  }
+  #} else print(paste0(park_id, " already has tidied file"))
 }
 

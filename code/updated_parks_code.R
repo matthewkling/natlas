@@ -116,6 +116,10 @@ matchNPSpecies <- function(parkStats, park_id,ranks_to_match = ranks_to_species)
   NPSpecies[which(NPSpecies$species.science == "Calandrinia ciliata"),"species.inat.ID"] <- parkStats[which(parkStats$species.science == "Calandrinia ciliata"),"species.inat.ID"]
   }
   
+  if(park_id == "SAMO"){
+    NPSpecies[which(NPSpecies$family.science == "Plantaginaceae"),"family.common"] <- "Plantain family"
+  }
+  
   if(park_id == "GOGA"){
     NPSpecies[which(NPSpecies$species.science == "Nucella emarginata"),"species.common"] <- parkStats[which(parkStats$species.science == "Nucella emarginata"),"species.common"]
     NPSpecies[which(NPSpecies$species.science == "Nucella emarginata"),"species.inat.ID"] <- parkStats[which(parkStats$species.science == "Nucella emarginata"),"species.inat.ID"]
@@ -128,6 +132,8 @@ matchNPSpecies <- function(parkStats, park_id,ranks_to_match = ranks_to_species)
     
     NPSpecies[which(NPSpecies$species.science == "Calandrinia ciliata"),"species.common"] <- parkStats[which(parkStats$species.science == "Calandrinia ciliata"),"species.common"]
     NPSpecies[which(NPSpecies$species.science == "Calandrinia ciliata"),"species.inat.ID"] <- parkStats[which(parkStats$species.science == "Calandrinia ciliata"),"species.inat.ID"]
+    
+    NPSpecies[which(NPSpecies$family.science == "Plantaginaceae"),"family.common"] <- "Plantain family"
   }
   
   mergedSpecies <- merge.data.frame(parkStats, NPSpecies, by = wanted.columns, all = TRUE, suffixes = c("",".NPS"))
@@ -139,9 +145,19 @@ matchNPSpecies <- function(parkStats, park_id,ranks_to_match = ranks_to_species)
     NPSpecies$species.inat.ID[which(NPSpecies$species.science == mergedSpecies$species.science[m])] <-  parkStats$species.inat.ID[which(parkStats$species.science == mergedSpecies$species.science[m])]
   }
   
-  if(length(multiples > 0)){print("There are multiples!")}
+  if(length(multiples > 0)){print(paste0("There are multiples for ", park_id))}
   
-  mergedSpecies <- mergedSpecies[-which(mergedSpecies$Occurrence == "Not In Park" & is.na(mergedSpecies$total_obs)),]
+  mergedSpecies <- mergedSpecies[-which(mergedSpecies$Occurrence == "Not In Park" & is.na(mergedSpecies$total_obs)),] #remove species agreed to not be in park
+  
+  #add speciesFixed where needed
+  has.species <- which(is.na(mergedSpecies$speciesFixed) & mergedSpecies$species.science != "")
+  mergedSpecies$speciesFixed[has.species] <- mergedSpecies$species.science[has.species]
+  
+  use.genus <- which(is.na(mergedSpecies$speciesFixed) & mergedSpecies$species.science == "" & mergedSpecies$genus.science != "")
+  mergedSpecies$speciesFixed[use.genus] <- mergedSpecies$species.science[use.genus]
+  
+  if(length(which(is.na(mergedSpecies$speciesFixed))) != 0) print("Some speciesFixed are NA")
+  
   
   filePathFull = paste0("processed_data/",park_id,"_data/",park_id,"_species_list_updated.csv")
   write.csv(mergedSpecies, filePathFull, row.names = FALSE)
@@ -176,7 +192,7 @@ cleanParkObservations = function(park_id,allParkObs){
   cleanObs <- parkObs[,c("decimalLongitude","decimalLatitude",
                          "category","kingdom","phylum","class","order","family","genus","speciesFixed",
                          "year","month","hour",
-                         "userNumber", "original.inat.taxonID")]
+                         "userNumber", "original.inat.taxonID", "id")]
   filePathClean = paste0("processed_data/",park_id,"_data/",park_id,"_obs_tidy_updated.csv")
   write.csv(cleanObs,filePathClean,row.names = F)
   
@@ -196,6 +212,8 @@ processPark <- function(allParkObs, park_id){
 
 ####Running functions####
 allParkObs <- read.csv("processed_data/park_obs.csv",header = T, stringsAsFactors = FALSE)
+ranks_to_species <- c("kingdom","phylum","class","order","family","genus","species")
+
 parks <- c("PORE", #Point Reyes, ~5.5k observations
            "SAMO", #Santa Monica Mountains, ~11k obsevations
            "GOGA" #Golden Gate National Recreation Area (GOGA), ~14k observations

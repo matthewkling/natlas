@@ -415,7 +415,7 @@ ranks_to_species <- c("kingdom","phylum","class","order","family","genus","speci
 
 for(each in NPS.lists){
   park_id <- gsub('NPSpecies_(.*).csv','\\1',each)
-  #if(file.exists(paste0("processed_data/",park_id,"_data/",park_id,"_clean_NPSpecies.csv")) == FALSE){
+  if(file.exists(paste0("processed_data/",park_id,"_data/",park_id,"_clean_NPSpecies.csv")) == FALSE){
     tidyNPS <- tidyNPSpecies(list.path = paste0("raw_data/", each))
     first.matched <- checkNPSbyiNat(tidied_park_list = tidyNPS, inatTaxaObs = allObsTaxa)
     ssp.rm <- subspeciesRemove(tidied_park_list = first.matched, inatTaxaObs = allObsTaxa)
@@ -426,6 +426,6 @@ for(each in NPS.lists){
     clean <- writeCleanNPSlist(completed,park_id)
     
     print(paste0(park_id, " NPSpecies has been tidied!"))
-  #} else print(paste0(park_id, " already has tidied file"))
+  } else print(paste0(park_id, " already has tidied file"))
 }
 

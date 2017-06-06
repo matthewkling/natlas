@@ -1,3 +1,6 @@
+
+# this script adds user stats to the obs files, and saves the result in the d3 directory.
+
 library(dplyr)
 library(scales)
 
@@ -7,18 +10,18 @@ setwd("~/documents/inviz/taxorama")
 for(park_id in c("PORE", "GOGA")){
       
       # load observations data
-      d <- read.csv(paste0("processed_data/", park_id, "_data/", park_id, "_obs_tidy.csv"), header=T, stringsAsFactors=F) %>%
+      d <- read.csv(paste0("processed_data/", park_id, "_data/", park_id, "_obs_tidy_updated.csv"), header=T, stringsAsFactors=F) %>%
             mutate(species=speciesFixed,
                    category=tolower(category),
                    root="life",
                    user=userNumber)
       
       # convert GMT to PST
-      if(!"hour" %in% names(d)) d$hour <- 12 # stopgap until Laura adds this field
       d$hour <- d$hour - 7
       d$hour[d$hour<0 & !is.na(d$hour)] <- d$hour[d$hour<0 & !is.na(d$hour)] + 24
       
       # assign obs to geographic bins (to address user cosmopolitanism)
+      # (currently not used in visualization)
       yrange <- range(d$decimalLatitude)
       xrange <- range(d$decimalLongitude)
       span <- max(diff(xrange), diff(yrange))

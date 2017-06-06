@@ -1125,9 +1125,9 @@ function makeTime(data) {
                 return [unique.length]; })
             .entries(data)
             .map(function(d){return [+d.key, d.value[0]];})
-            .sort(function(x,y){return d3.ascending(y[0], x[0]);})
+            .sort(function(x,y){return d3.descending(y[0], x[0]);})
             .filter(function(x){return x[0] >= 0});
-      
+        
         var time_scale_x = d3.scaleLinear()
               .domain(x)
               .range([inset, time_width - inset]);

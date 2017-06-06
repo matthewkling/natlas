@@ -10,7 +10,7 @@ setwd("~/documents/inviz/taxorama")
 
 for(park_id in c("PORE", "GOGA")){
       # load data
-      spp <- read.csv(paste0("processed_data/",park_id,"_data/",park_id,"_species_list.csv"), header=T, stringsAsFactors=F)
+      spp <- read.csv(paste0("processed_data/",park_id,"_data/",park_id,"_species_list_updated.csv"), header=T, stringsAsFactors=F)
       
       f <- spp %>%
             mutate(species=speciesFixed,

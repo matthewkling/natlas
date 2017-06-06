@@ -1,4 +1,7 @@
 
+# this script generates simple and linnean hierarchical json taxonomies for each park
+# it references the speces list and species colors files, and exports a json file to the d3 directory.
+
 library(dplyr)
 library(jsonlite)
 setwd("~/documents/inviz/taxorama")
@@ -6,7 +9,7 @@ setwd("~/documents/inviz/taxorama")
 for(park_id in c("PORE", "GOGA")){
       
       # load data
-      spp <- read.csv(paste0("processed_data/", park_id, "_data/", park_id, "_species_list.csv"), header=T, stringsAsFactors=F)
+      spp <- read.csv(paste0("processed_data/", park_id, "_data/", park_id, "_species_list_updated.csv"), header=T, stringsAsFactors=F)
       
       f <- spp %>%
             mutate(species=speciesFixed,

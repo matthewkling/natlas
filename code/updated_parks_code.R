@@ -22,6 +22,7 @@ addCategories <- function(species.data,kingdom.column = "kingdom", class.column 
   species.data$category[which(species.data[,class.column] == "Reptilia")] <- "Herp"
   species.data$category[which(species.data[,class.column] == "Amphibia")] <- "Herp"
   species.data$category[which(species.data[,class.column] == "Chondrichthyes")] <- "Fish" #cartelaginous fishes
+  species.data$category[which(species.data[,class.column] == "Elasmobranchii")] <- "Fish" #cartelaginous fishes
   species.data$category[which(species.data[,class.column] == "Actinopterygii")] <- "Fish" #bony fishes
   species.data$category[which(species.data[,class.column] == "Myxini")] <- "Fish" #hagfishes
   species.data$category[which(species.data[,class.column] == "Hyperoartia")] <- "Fish" #lamprays
@@ -42,6 +43,10 @@ addCategories <- function(species.data,kingdom.column = "kingdom", class.column 
       species.data$category[fix.loc] <- "Invertebrate"
     }
   }
+  fix.idx <- which(is.na(species.data$category))
+  
+  if (length(fix.idx) >1) print(paste0(length(fix.idx), " entries do not have categories!"))
+  
   return(species.data)
 }
 
@@ -112,8 +117,14 @@ matchNPSpecies <- function(parkStats, park_id,ranks_to_match = ranks_to_species)
   
   #specific corrections
   if(park_id == "PORE"){
-  NPSpecies[which(NPSpecies$species.science == "Calandrinia ciliata"),"species.common"] <- parkStats[which(parkStats$species.science == "Calandrinia ciliata"),"species.common"]
-  NPSpecies[which(NPSpecies$species.science == "Calandrinia ciliata"),"species.inat.ID"] <- parkStats[which(parkStats$species.science == "Calandrinia ciliata"),"species.inat.ID"]
+    # NPSpecies[which(NPSpecies$species.science == "Calandrinia ciliata"),"species.common"] <- parkStats[which(parkStats$species.science == "Calandrinia ciliata"),"species.common"]
+    # NPSpecies[which(NPSpecies$species.science == "Calandrinia ciliata"),"species.inat.ID"] <- parkStats[which(parkStats$species.science == "Calandrinia ciliata"),"species.inat.ID"] 
+    
+    NPSpecies[which(NPSpecies$species.science == "Calandrinia ciliata"),"species.common"] <- "Fringed redmaids" #explicit correction prevents error
+    NPSpecies[which(NPSpecies$species.science == "Calandrinia ciliata"),"species.inat.ID"] <- 489239
+    
+    NPSpecies[which(NPSpecies$family.common == "Mallows"),"order.common"] <- ""
+    NPSpecies[which(NPSpecies$family.common == "Mallows"),"family.common"] <- "Mallows and allies"
   }
   
   if(park_id == "SAMO"){
@@ -138,14 +149,33 @@ matchNPSpecies <- function(parkStats, park_id,ranks_to_match = ranks_to_species)
   
   mergedSpecies <- merge.data.frame(parkStats, NPSpecies, by = wanted.columns, all = TRUE, suffixes = c("",".NPS"))
 
-  #useful for firguring out what to out in specific corrections
+  ##To troubleshoot multiples:
   multiples <- which(duplicated(mergedSpecies[,c("species.science", "genus.science")]))
-  for (m in multiples){
-    entries <- mergedSpecies[which(mergedSpecies$species.science == mergedSpecies$species.science[m]),]
-    NPSpecies$species.inat.ID[which(NPSpecies$species.science == mergedSpecies$species.science[m])] <-  parkStats$species.inat.ID[which(parkStats$species.science == mergedSpecies$species.science[m])]
+  if (length(multiples) > 0){
+    for (m in multiples){
+      entries <- mergedSpecies[which(mergedSpecies$species.science == mergedSpecies$species.science[m]),]
+      NPSpecies$species.inat.ID[which(NPSpecies$species.science == mergedSpecies$species.science[m])] <-  parkStats$species.inat.ID[which(parkStats$species.science == mergedSpecies$species.science[m])]
+      
+      # if(entries$family.science[1] == "Malvaceae"){
+      #   NPSpecies$order.common[which(NPSpecies$species.science == mergedSpecies$species.science[m])] <-  parkStats$order.common[which(parkStats$species.science == mergedSpecies$species.science[m])]
+      #   NPSpecies$family.common[which(NPSpecies$species.science == mergedSpecies$species.science[m])] <-  parkStats$family.common[which(parkStats$species.science == mergedSpecies$species.science[m])]
+      # }
+      
+      if(identical(entries$species.inat.ID,entries$species.inat.ID) == TRUE & identical(entries$species.science,entries$species.science) == TRUE){
+        NPSpecies[which(NPSpecies$species.science == mergedSpecies$species.science[m]),paste0(ranks_to_match, ".common")] <-  parkStats[which(parkStats$species.science == mergedSpecies$species.science[m]),paste0(ranks_to_match, ".common")]
+      }
+       
+    }
+    mergedSpecies <- merge.data.frame(parkStats, NPSpecies, by = wanted.columns, all = TRUE, suffixes = c("",".NPS"))
   }
   
+  
+  multiples <- which(duplicated(mergedSpecies[,c("species.science", "genus.science")]))
   if(length(multiples > 0)){print(paste0("There are multiples for ", park_id))}
+  
+  
+  
+  
   
   mergedSpecies <- mergedSpecies[-which(mergedSpecies$Occurrence == "Not In Park" & is.na(mergedSpecies$total_obs)),] #remove species agreed to not be in park
   

@@ -1,8 +1,11 @@
-setwd("~/Desktop/clean/natlas")
+setwd("~/natlas")
 library(beepr)
 library(taxize)
 library(rgdal)
 library(raster)
+library(dplyr)
+library(lubridate)
+library(stringr)
 
 ####Download functions####
 downloadObservations <- function(){
@@ -237,6 +240,7 @@ iNatUpdateObs <- function(iNat.obs,ranks_to_scrape = c("kingdom","phylum","class
   extant.lists <- list.files(path = "processed_data",pattern = "(.*)_all_parks_inat_species_list.csv")
   most.recent.file <- extant.lists[which.max(gsub("_all_parks_inat_species_list.csv","", extant.lists))]
   old.list <- read.csv(paste0("processed_data/",most.recent.file))
+  new.list <- NULL
   
   #find new taxon IDs
   new.IDs <- setdiff(obs.species$taxonID, old.list$taxonID)
@@ -285,7 +289,7 @@ iNatUpdateObs <- function(iNat.obs,ranks_to_scrape = c("kingdom","phylum","class
 
 ####Update and first runs####
 updateiNat <- function(){
-  downloadObservations(); print("Observations downloaded")
+  #downloadObservations(); print("Observations downloaded")
   tidyData(); print("Observations tidied")
   
   all.park.observations <- read.csv("processed_data/park_obs.csv",header = T)

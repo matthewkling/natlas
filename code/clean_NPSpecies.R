@@ -1,4 +1,4 @@
-setwd("~/Desktop/clean/natlas")
+setwd("~/natlas")
 library(stringr)
 library(dplyr)
 library(beepr)

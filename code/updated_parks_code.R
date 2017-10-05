@@ -98,7 +98,7 @@ inatStatsByPark <- function(matchedParkObs)
     {
       inatSpecies[i,paste("y",k,sep="")] <- length(which(spObs$year == k))
     }
-    if (i %% 100 == 1 | i == length(inatSpecies$total_obs)) print(paste0(100*i/numSp, "% species stats calculated") )
+    if (i %% 100 == 1 | i == length(inatSpecies$total_obs)) print(paste0(floor(100*i/numSp), "% species stats calculated") )
   }
   return(inatSpecies)
 }
@@ -114,6 +114,10 @@ matchNPSpecies <- function(parkStats, park_id,ranks_to_match = ranks_to_species)
   
   NPSpecies$category <- as.character(NPSpecies$category)
   parkStats$category <- as.character(parkStats$category)
+  
+  #corrections for all 
+  parkStats$phylum.common[which(parkStats$phylum.common == "Molluscs")] <- "Mollusks"
+  
   
   #specific corrections
   if(park_id == "PORE"){
@@ -152,8 +156,9 @@ matchNPSpecies <- function(parkStats, park_id,ranks_to_match = ranks_to_species)
   ##To troubleshoot multiples:
   multiples <- which(duplicated(mergedSpecies[,c("species.science", "genus.science")]))
   if (length(multiples) > 0){
-    for (m in multiples){
+    for (m in multiples){ #check each multiple
       entries <- mergedSpecies[which(mergedSpecies$species.science == mergedSpecies$species.science[m]),]
+      # which(entries[1,wanted.columns] != entries[2,wanted.columns]) #find the difference
       NPSpecies$species.inat.ID[which(NPSpecies$species.science == mergedSpecies$species.science[m])] <-  parkStats$species.inat.ID[which(parkStats$species.science == mergedSpecies$species.science[m])]
       
       # if(entries$family.science[1] == "Malvaceae"){
@@ -161,13 +166,35 @@ matchNPSpecies <- function(parkStats, park_id,ranks_to_match = ranks_to_species)
       #   NPSpecies$family.common[which(NPSpecies$species.science == mergedSpecies$species.science[m])] <-  parkStats$family.common[which(parkStats$species.science == mergedSpecies$species.science[m])]
       # }
       
+      #automatic fix for if common names differ- defaults to what iNat has
       if(identical(entries$species.inat.ID,entries$species.inat.ID) == TRUE & identical(entries$species.science,entries$species.science) == TRUE){
         NPSpecies[which(NPSpecies$species.science == mergedSpecies$species.science[m]),paste0(ranks_to_match, ".common")] <-  parkStats[which(parkStats$species.science == mergedSpecies$species.science[m]),paste0(ranks_to_match, ".common")]
       }
-       
     }
     mergedSpecies <- merge.data.frame(parkStats, NPSpecies, by = wanted.columns, all = TRUE, suffixes = c("",".NPS"))
   }
+
+  #check if multiples still exist, if they do but species/IDs match up, assign to iNat values
+  multiples <- which(duplicated(mergedSpecies[,c("species.science", "genus.science")]))
+  if (length(multiples) > 0){
+    for (m in multiples){ #check each multiple
+      entries <- mergedSpecies[which(mergedSpecies$species.science == mergedSpecies$species.science[m]),]
+      
+      
+      #if all the species IDs match up, uses iNat entries for all the values.
+      iNat.ent <- which(!is.na(entries$original.inat.taxonID))
+      NPS.idx <- which(NPSpecies$species.science == mergedSpecies$species.science[m])
+      if (identical(entries$species.inat.ID,entries$species.inat.ID) == TRUE 
+          & identical(entries$species.science,entries$species.science) == TRUE 
+          & identical(as.character(entries$original.inat.taxonID[iNat.ent]), entries$species.inat.ID[-iNat.ent]) == TRUE) {
+       
+         NPSpecies[NPS.idx,wanted.columns] <- entries[iNat.ent,wanted.columns]
+      
+         }
+    }
+    mergedSpecies <- merge.data.frame(parkStats, NPSpecies, by = wanted.columns, all = TRUE, suffixes = c("",".NPS"))
+  }
+  
   
   
   multiples <- which(duplicated(mergedSpecies[,c("species.science", "genus.science")]))
@@ -241,7 +268,8 @@ processPark <- function(allParkObs, park_id){
 }
 
 ####Running functions####
-allParkObs <- read.csv("processed_data/park_obs.csv",header = T, stringsAsFactors = FALSE)
+allParkObs.all <- read.csv("processed_data/park_obs.csv",header = T, stringsAsFactors = FALSE)
+allParkObs <- allParkObs.all[-which(is.na(allParkObs.all$eventDate)),]
 ranks_to_species <- c("kingdom","phylum","class","order","family","genus","species")
 
 parks <- c("PORE", #Point Reyes, ~5.5k observations
